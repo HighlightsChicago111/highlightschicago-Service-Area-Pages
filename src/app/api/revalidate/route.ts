@@ -4,7 +4,7 @@ import {parseBody} from 'next-sanity/webhook'
 
 type Payload = {path?: string; documentType?: string}
 
-const serviceContentTypes = new Set(['v2ServicePage', 'v2ServiceArea', 'v2SiteSettings'])
+const serviceContentTypes = new Set(['areaPage', 'areaSettings'])
 
 export async function POST(request: NextRequest) {
   const secret = process.env.SANITY_REVALIDATE_SECRET
@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
   }
   if (body?.documentType && serviceContentTypes.has(body.documentType)) {
     revalidatePath('/', 'layout')
-    return NextResponse.json({revalidated: 'all service routes', documentType: body.documentType})
+    return NextResponse.json({revalidated: 'all service area routes', documentType: body.documentType})
   }
   return NextResponse.json({message: 'Unsupported webhook payload'}, {status: 400})
 }

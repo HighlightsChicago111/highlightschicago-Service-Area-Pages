@@ -1,0 +1,23 @@
+{
+  "name": "Highlights Chicago Inc.",
+  "short": "Highlights",
+  "phone_display": "(773) 262-3333",
+  "phone_tel": "+17732623333",
+  "phone_schema": "+1-773-262-3333",
+  "site": "https://www.highlightschicago.com",
+  "address": {"street": "5766 N Lincoln Ave", "city": "Chicago", "region": "IL", "zip": "60659"},
+  "licence": "ECC96456",
+  "licence_2": "ECC94521",
+  "bbb": "BBB accredited since 2016. Licensed, bonded, insured.",
+  "permits_citywide": "1,213",
+  "permits_since": "2012",
+  "permits_rank": "in the top 13% of Chicago electrical contractors by volume",
+  "top_wards": "Wards 1, 32, 26, 47 and 27",
+  "google_rating": "4.9",
+  "google_reviews": "494",
+  "office_hours": "Monday to Friday, 8am to 5pm",
+  "founder_short": "Boz",
+  "founder_line": "Bozidar, founder. Customers call him the owner, the president and the managing director. He usually does the walkthrough and writes the quote.",
+  "founder_confirm": "spelling of surname: the template says Milosevich, City permit records say Milosevic",
+  "services_url": "https://www.highlightschicago.com/services/"
+}

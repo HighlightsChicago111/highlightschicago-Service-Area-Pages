@@ -30,7 +30,7 @@ export default function ThankYouPage() {
           <p className="thank-you-lede">A Highlights Chicago team member will contact you shortly to discuss your service request.</p>
           <div className="thank-you-actions">
             <a href="tel:773-262-3333">Need us sooner? Call <span className="thank-you-nowrap">773-262-3333</span></a>
-            <Link href="/">Explore more services</Link>
+            <Link href="/">Explore more service areas</Link>
           </div>
         </section>
         <section className="thank-you-steps" aria-labelledby="thank-you-steps-title">

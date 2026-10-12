@@ -10,14 +10,13 @@ const browserConfig = {
 }
 
 const nextConfig: NextConfig = {
-  // Same URL shape as the live service pages, so a page tested here keeps its
-  // URL when the V2 template replaces the live one.
-  basePath: '/services',
+  // Served at www.highlightschicago.com/service-areas (Cloudflare routes the path here).
+  basePath: '/service-areas',
   env: browserConfig,
   poweredByHeader: false,
   reactStrictMode: true,
   async redirects() {
-    return [{source: '/', destination: '/services', permanent: false, basePath: false}]
+    return [{source: '/', destination: '/service-areas', permanent: false, basePath: false}]
   },
 }
 

@@ -2,9 +2,9 @@ import {defineLocations, type PresentationPluginOptions} from 'sanity/presentati
 
 export const resolve: PresentationPluginOptions['resolve'] = {
   locations: {
-    v2ServicePage: defineLocations({
-      select: {title: 'name', slug: 'slug.current'},
-      resolve: (doc) => ({locations: doc?.slug ? [{title: doc.title || 'Service page', href: `/services/${doc.slug}`}] : []}),
+    areaPage: defineLocations({
+      select: {title: 'area', slug: 'slug.current'},
+      resolve: (doc) => ({locations: doc?.slug ? [{title: doc.title || 'Service area page', href: `/service-areas/${doc.slug}`}] : []}),
     }),
   },
 }

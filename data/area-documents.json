@@ -1,0 +1,1177 @@
+[
+  {
+    "_id": "area-settings",
+    "_type": "areaSettings",
+    "name": "Highlights Chicago Inc.",
+    "short": "Highlights",
+    "phoneDisplay": "(773) 262-3333",
+    "phoneTel": "+17732623333",
+    "phoneSchema": "+1-773-262-3333",
+    "site": "https://www.highlightschicago.com",
+    "address": {
+      "street": "5766 N Lincoln Ave",
+      "city": "Chicago",
+      "region": "IL",
+      "zip": "60659"
+    },
+    "licence": "ECC96456",
+    "licence2": "ECC94521",
+    "bbb": "BBB accredited since 2016. Licensed, bonded, insured.",
+    "permitsCitywide": "1,213",
+    "permitsSince": "2012",
+    "permitsRank": "in the top 13% of Chicago electrical contractors by volume",
+    "topWards": "Wards 1, 32, 26, 47 and 27",
+    "googleRating": "4.9",
+    "googleReviews": "494",
+    "officeHours": "Monday to Friday, 8am to 5pm",
+    "founderShort": "Boz",
+    "founderLine": "Bozidar, founder. Customers call him the owner, the president and the managing director. He usually does the walkthrough and writes the quote.",
+    "founderConfirm": "spelling of surname: the template says Milosevich, City permit records say Milosevic",
+    "servicesUrl": "https://www.highlightschicago.com/services/",
+    "reviewStats": {
+      "total": 300,
+      "fiveStar": 294,
+      "owner": 115,
+      "punctual": 93,
+      "fairPrice": 84,
+      "clean": 81
+    }
+  },
+  {
+    "_id": "area-west-loop",
+    "_type": "areaPage",
+    "area": "West Loop",
+    "areaThe": "the West Loop",
+    "areaIn": "in the West Loop",
+    "slug": {
+      "_type": "slug",
+      "current": "west-loop"
+    },
+    "title": "Electricians in the West Loop, Chicago | Highlights Chicago",
+    "metaDescription": "Family-owned, City-registered electricians for West Loop lofts, high-rises, restaurants and offices, with 48 permits in the area since 2013. How to choose, what changes the price, and every service we offer. Call (773) 262-3333.",
+    "eyebrow": "West Loop · Fulton Market · Greektown · West Loop Gate",
+    "heroLede": "Lighting, panels, EV chargers, repairs, restaurant fit-outs and everything in between, for West Loop lofts, high-rise condos, townhomes, restaurants and offices. A family-owned, founder-led contractor registered with the City of Chicago, quoting every job in writing.",
+    "addressPlaceholder": "e.g. 1000 W Washington, or the building's name",
+    "formDistricts": [
+      "Fulton Market",
+      "Fulton River District",
+      "Randolph Street",
+      "West Loop Gate / Union Station",
+      "Greektown",
+      "West of Racine, toward Ashland"
+    ],
+    "formBuildingTypes": [
+      "Converted warehouse loft",
+      "High-rise condo or apartment",
+      "Mid-rise or walk-up condo",
+      "Townhome or rowhouse",
+      "Restaurant or bar",
+      "Office or tenant space",
+      "Retail, studio or showroom",
+      "New construction"
+    ],
+    "boundaryText": "Bounded by Grand Avenue to the north, the Eisenhower Expressway (I-290) to the south, Ashland Avenue to the west and the Chicago River to the east. It's less one neighbourhood than a set of districts, and the electrical work differs between them.",
+    "bbox": {
+      "north": 41.8915,
+      "south": 41.8755,
+      "west": -87.6667,
+      "east": -87.6375
+    },
+    "bboxText": "Grand Ave, I-290, Ashland Ave and the Chicago River",
+    "facts": [
+      {
+        "_key": "fact-1",
+        "label": "Community area",
+        "value": "Mostly Near West Side (28), with edges in West Town (24)"
+      },
+      {
+        "_key": "fact-2",
+        "label": "ZIP codes",
+        "value": "60607, 60661, and 60606 west of the river"
+      },
+      {
+        "_key": "fact-3",
+        "label": "City wards",
+        "value": "Mostly the 27th, 34th and 42nd"
+      },
+      {
+        "_key": "fact-4",
+        "label": "Transit",
+        "value": "Union Station, Ogilvie, Morgan and Clinton stations"
+      },
+      {
+        "_key": "fact-5",
+        "label": "Utility",
+        "value": "ComEd"
+      },
+      {
+        "_key": "fact-6",
+        "label": "Permits",
+        "value": "City of Chicago Department of Buildings"
+      }
+    ],
+    "zips": [
+      "60607",
+      "60661",
+      "60606"
+    ],
+    "mapDesc": "The West Loop runs from Grand Avenue south to the Eisenhower Expressway (I-290), and from Ashland Avenue east to the Chicago River. Districts shown: Fulton Market, Fulton River District, Randolph Street, West Loop Gate, Greektown and the residential blocks toward Ashland. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+    "map": {
+      "bbox": {
+        "north": 41.8916,
+        "south": 41.8758,
+        "west": -87.667,
+        "east": -87.6372
+      },
+      "height": 640,
+      "ewStreets": [
+        {
+          "_key": "ew-1",
+          "label": "W Grand Ave",
+          "lat": 41.8912
+        },
+        {
+          "_key": "ew-2",
+          "label": "W Kinzie St",
+          "lat": 41.8892
+        },
+        {
+          "_key": "ew-3",
+          "label": "W Fulton Market",
+          "lat": 41.8866
+        },
+        {
+          "_key": "ew-4",
+          "label": "W Lake St",
+          "lat": 41.8857
+        },
+        {
+          "_key": "ew-5",
+          "label": "W Randolph St",
+          "lat": 41.8845
+        },
+        {
+          "_key": "ew-6",
+          "label": "W Madison St",
+          "lat": 41.8819
+        },
+        {
+          "_key": "ew-7",
+          "label": "W Adams St",
+          "lat": 41.8793
+        },
+        {
+          "_key": "ew-8",
+          "label": "W Jackson Blvd",
+          "lat": 41.878
+        },
+        {
+          "_key": "ew-9",
+          "label": "W Van Buren St",
+          "lat": 41.8767
+        }
+      ],
+      "nsStreets": [
+        {
+          "_key": "ns-1",
+          "label": "S Ashland Ave",
+          "lon": -87.6667
+        },
+        {
+          "_key": "ns-2",
+          "label": "S Racine Ave",
+          "lon": -87.657
+        },
+        {
+          "_key": "ns-3",
+          "label": "S Morgan St",
+          "lon": -87.652
+        },
+        {
+          "_key": "ns-4",
+          "label": "S Halsted St",
+          "lon": -87.6475
+        },
+        {
+          "_key": "ns-5",
+          "label": "S Desplaines St",
+          "lon": -87.644
+        },
+        {
+          "_key": "ns-6",
+          "label": "S Canal St",
+          "lon": -87.6395
+        }
+      ],
+      "districts": [
+        {
+          "_key": "md-1",
+          "name": "Fulton Market",
+          "north": 41.8915,
+          "south": 41.8852,
+          "west": -87.6667,
+          "east": -87.646
+        },
+        {
+          "_key": "md-2",
+          "name": "Fulton River District",
+          "north": 41.8915,
+          "south": 41.8852,
+          "west": -87.646,
+          "east": -87.638
+        },
+        {
+          "_key": "md-3",
+          "name": "Randolph Street",
+          "north": 41.8852,
+          "south": 41.8836,
+          "west": -87.66,
+          "east": -87.646
+        },
+        {
+          "_key": "md-4",
+          "name": "West Loop Gate",
+          "north": 41.8852,
+          "south": 41.876,
+          "west": -87.6455,
+          "east": -87.638
+        },
+        {
+          "_key": "md-5",
+          "name": "Greektown",
+          "north": 41.8822,
+          "south": 41.876,
+          "west": -87.65,
+          "east": -87.6455
+        },
+        {
+          "_key": "md-6",
+          "name": "Mid-rise blocks toward Ashland",
+          "north": 41.8836,
+          "south": 41.876,
+          "west": -87.6667,
+          "east": -87.65
+        }
+      ],
+      "landmarks": [
+        {
+          "_key": "lm-1",
+          "name": "Union Station",
+          "lat": 41.8786,
+          "lon": -87.6403
+        },
+        {
+          "_key": "lm-2",
+          "name": "Ogilvie",
+          "lat": 41.8826,
+          "lon": -87.6405
+        },
+        {
+          "_key": "lm-3",
+          "name": "Morgan (Green/Pink)",
+          "lat": 41.8856,
+          "lon": -87.6522
+        },
+        {
+          "_key": "lm-4",
+          "name": "Mary Bartelme Park",
+          "lat": 41.8805,
+          "lon": -87.6505
+        }
+      ],
+      "features": [
+        {
+          "_key": "ft-1",
+          "kind": "expressway_ns",
+          "lon": -87.6456,
+          "label": "Kennedy Expwy (I-90/94)"
+        },
+        {
+          "_key": "ft-2",
+          "kind": "water_east",
+          "lon": -87.638,
+          "label": "Chicago River"
+        },
+        {
+          "_key": "ft-3",
+          "kind": "expressway_ew",
+          "lat": 41.876,
+          "label": "Eisenhower Expwy (I-290)"
+        }
+      ]
+    },
+    "districts": [
+      {
+        "_key": "district-1",
+        "name": "Fulton Market",
+        "intro": "The old meatpacking and cold-storage district north of Lake St, now offices, hotels, showrooms and restaurants.",
+        "work": "Large tenant build-outs, loft conversions with exposed ceilings, heavy signage and lighting, and new office and residential towers."
+      },
+      {
+        "_key": "district-2",
+        "name": "Randolph Street",
+        "intro": "Restaurant Row, between Halsted and Racine.",
+        "work": "Kitchen equipment circuits, three-phase service, dining-room lighting and signage, scheduled around service hours."
+      },
+      {
+        "_key": "district-3",
+        "name": "Fulton River District",
+        "intro": "Riverside lofts and towers between the river and the Kennedy, north of Lake St.",
+        "work": "Condo unit work in older loft buildings and newer towers, under building management rules."
+      },
+      {
+        "_key": "district-4",
+        "name": "West Loop Gate",
+        "intro": "Around Union Station and Ogilvie, between the river and the Kennedy.",
+        "work": "High-rise apartments and offices. Certificates of insurance, freight elevators and building engineers are part of every job."
+      },
+      {
+        "_key": "district-5",
+        "name": "Greektown",
+        "intro": "Halsted St south of Madison: restaurants with condos and apartments above and around.",
+        "work": "Restaurant electrical, mixed-use buildings and mid-rise condo units."
+      },
+      {
+        "_key": "district-6",
+        "name": "West of Racine, toward Ashland",
+        "intro": "Blocks of four-storey masonry condo buildings with ground-floor garages, townhomes and new mixed-use buildings.",
+        "work": "Unit lighting and remodels, EV chargers in building garages and newer construction. Most of our own West Loop permits are here."
+      }
+    ],
+    "buildings": [
+      {
+        "_key": "building-1",
+        "illus": "b-loft",
+        "title": "Converted warehouse loft",
+        "where": "Fulton Market, Fulton River District, Randolph St, Lake St",
+        "changes": "Masonry walls and timber or concrete ceilings, often left exposed. Wiring may have to run in surface conduit that has to look intentional. Ceilings are high.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Chandeliers, pendants, track lighting",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-2",
+            "label": "ceiling fans",
+            "category": "svc-wiring"
+          },
+          {
+            "_key": "svc-3",
+            "label": "unit panels",
+            "category": "svc-panels"
+          }
+        ]
+      },
+      {
+        "_key": "building-2",
+        "illus": "b-highrise",
+        "title": "High-rise condo or apartment",
+        "where": "West Loop Gate, Fulton Market, along Canal and Clinton",
+        "changes": "Concrete slabs limit where boxes can go. Management approval, a certificate of insurance, an elevator booking and set working hours come first.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Recessed lighting and fixtures",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-2",
+            "label": "panel replacement",
+            "category": "svc-panels"
+          },
+          {
+            "_key": "svc-3",
+            "label": "EV charging in the garage",
+            "category": "svc-energy"
+          }
+        ]
+      },
+      {
+        "_key": "building-3",
+        "illus": "b-midrise",
+        "title": "Mid-rise or walk-up condo, 2000s onward",
+        "where": "West of Racine toward Ashland, and around Mary Bartelme Park",
+        "changes": "Modern wiring, panels in each unit, shared garages. Good access, and association rules still apply.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Lighting upgrades",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-2",
+            "label": "EV chargers",
+            "category": "svc-energy"
+          },
+          {
+            "_key": "svc-3",
+            "label": "outlets and circuits",
+            "category": "svc-wiring"
+          }
+        ]
+      },
+      {
+        "_key": "building-4",
+        "illus": "b-townhome",
+        "title": "Townhome or rowhouse",
+        "where": "Side streets west of Racine and north of Lake",
+        "changes": "Your own service and panel, roof decks, attached garages.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Outdoor and roof-deck lighting",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-2",
+            "label": "EV chargers, generators, solar",
+            "category": "svc-energy"
+          },
+          {
+            "_key": "svc-3",
+            "label": "surge protection",
+            "category": "svc-panels"
+          }
+        ]
+      },
+      {
+        "_key": "building-5",
+        "illus": "b-restaurant",
+        "title": "Restaurant or bar",
+        "where": "Randolph St, Greektown, Fulton Market",
+        "changes": "Heavy equipment loads, three-phase power, health and fire inspections, and work that can't disturb service.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Restaurant electrical",
+            "category": "svc-commercial"
+          },
+          {
+            "_key": "svc-2",
+            "label": "emergency and exit lighting",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-3",
+            "label": "service upgrades",
+            "category": "svc-panels"
+          }
+        ]
+      },
+      {
+        "_key": "building-6",
+        "illus": "b-office",
+        "title": "Office or tenant space",
+        "where": "Fulton Market, W Madison St, West Loop Gate",
+        "changes": "Permits with plans, fire alarm coordination with the building, data cabling, and after-hours work in occupied buildings.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Tenant build-outs",
+            "category": "svc-commercial"
+          },
+          {
+            "_key": "svc-2",
+            "label": "structured cabling",
+            "category": "svc-lowvoltage"
+          },
+          {
+            "_key": "svc-3",
+            "label": "LED retrofits",
+            "category": "svc-lighting"
+          }
+        ]
+      }
+    ],
+    "scopeLede": "The same job on paper can cost very differently in a timber loft, a concrete tower and a restaurant. These are the things that change it, and most are settled at the walkthrough.",
+    "scopeRows": [
+      {
+        "_key": "scope-1",
+        "factor": "Building approval and certificate of insurance",
+        "why": "Most managed buildings won't schedule work until they have both, and some name specific insurance limits.",
+        "who": "Your building manager, with us"
+      },
+      {
+        "_key": "scope-2",
+        "factor": "Freight elevator and loading dock",
+        "why": "Booked time windows decide when materials and crews get in, and how long a day on site really is.",
+        "who": "Your building"
+      },
+      {
+        "_key": "scope-3",
+        "factor": "Parking",
+        "why": "Most West Loop streets have little parking near the door, so carrying tools and materials in takes time.",
+        "who": "Us, at the walkthrough"
+      },
+      {
+        "_key": "scope-4",
+        "factor": "How the building is built",
+        "why": "Wire can be fished through wood framing, has to run in conduit across concrete, or needs approved core drilling through a slab.",
+        "who": "Us, at the walkthrough"
+      },
+      {
+        "_key": "scope-5",
+        "factor": "Exposed ceilings",
+        "why": "In a loft, conduit is part of the look. It's planned so it reads as intentional, which takes longer than hidden wiring.",
+        "who": "You and us"
+      },
+      {
+        "_key": "scope-6",
+        "factor": "Ceiling height",
+        "why": "Heavy chandeliers on 14-foot-plus ceilings need the right support, the right box and sometimes a lift.",
+        "who": "Us"
+      },
+      {
+        "_key": "scope-7",
+        "factor": "Working hours",
+        "why": "Restaurants and occupied offices often need early, late or weekend work. [CONFIRM: whether after-hours rates apply]",
+        "who": "You and us"
+      },
+      {
+        "_key": "scope-8",
+        "factor": "Building systems",
+        "why": "In high-rises, fire alarm and life-safety tie-ins go through the building's own contractor.",
+        "who": "Your building"
+      },
+      {
+        "_key": "scope-9",
+        "factor": "Permit route",
+        "why": "Many unit jobs go through the City's Express Permit Program. Build-outs need plans and a standard review.",
+        "who": "Us"
+      },
+      {
+        "_key": "scope-10",
+        "factor": "Condo board or association",
+        "why": "Boards often want a written proposal before they approve work in common areas or shared garages.",
+        "who": "Your board, with our proposal"
+      },
+      {
+        "_key": "scope-11",
+        "factor": "Shared garage EV chargers",
+        "why": "Whose meter the charger runs from, the building's spare capacity, and submetering decide the design.",
+        "who": "Your association, with us"
+      }
+    ],
+    "hourlyAnswer": "We quote by scope, not by the hour, because the hours on a West Loop job depend on everything in the table above. A fixture swap in a walk-up and the same fixture on a 16-foot loft ceiling aren't the same job. The written quote tells you the whole price before you agree to it.",
+    "choosingBuildingWhy": "A loft with an exposed timber ceiling, a concrete-slab tower and a restaurant kitchen are three different jobs.",
+    "choosingBuildingAnswer": "High-rise and loft units, new-construction mid-rises, tenant build-outs and a Halsted St restaurant",
+    "choosingPaperworkWhy": "Most towers want a certificate of insurance, and sometimes an elevator booking, before work is scheduled.",
+    "whereWeFit": "Highlights is a family-owned contractor. In the West Loop we're the right call for condo, loft and townhome work, lighting, panels, EV chargers, restaurants, tenant build-outs and mid-rise new construction. Base-building work on a 40-storey tower is a job for the large commercial firms, and we'll tell you so.",
+    "permits": {
+      "source": "City of Chicago building permits (data.cityofchicago.org, ydr8-5enu)",
+      "windowFrom": "2024-10-11",
+      "windowTo": "2026-10-12",
+      "months": 24,
+      "electricalTotal": 1463,
+      "contractors": 286,
+      "mix": [
+        {
+          "_key": "mix-1",
+          "label": "Low voltage, data and communications",
+          "count": 434
+        },
+        {
+          "_key": "mix-2",
+          "label": "Work inside a specific unit or condo",
+          "count": 366
+        },
+        {
+          "_key": "mix-3",
+          "label": "Interior build-outs and alterations",
+          "count": 336
+        },
+        {
+          "_key": "mix-4",
+          "label": "Lighting",
+          "count": 250
+        },
+        {
+          "_key": "mix-5",
+          "label": "Fire alarm",
+          "count": 228
+        },
+        {
+          "_key": "mix-6",
+          "label": "Signs",
+          "count": 164
+        },
+        {
+          "_key": "mix-7",
+          "label": "Outlets and receptacles",
+          "count": 159
+        },
+        {
+          "_key": "mix-8",
+          "label": "Electrical service",
+          "count": 92
+        },
+        {
+          "_key": "mix-9",
+          "label": "EV charging",
+          "count": 49
+        },
+        {
+          "_key": "mix-10",
+          "label": "Restaurants",
+          "count": 43
+        },
+        {
+          "_key": "mix-11",
+          "label": "Panels",
+          "count": 10
+        },
+        {
+          "_key": "mix-12",
+          "label": "Generators",
+          "count": 2
+        },
+        {
+          "_key": "mix-13",
+          "label": "Solar",
+          "count": 1
+        }
+      ],
+      "highlights": {
+        "count": 48,
+        "addresses": 40,
+        "firstYear": "2013",
+        "byType": [
+          {
+            "_key": "type-1",
+            "type": "New Construction",
+            "count": 20
+          },
+          {
+            "_key": "type-2",
+            "type": "Express Permit Program",
+            "count": 13
+          },
+          {
+            "_key": "type-3",
+            "type": "Renovation/Alteration",
+            "count": 13
+          },
+          {
+            "_key": "type-4",
+            "type": "Signs",
+            "count": 2
+          }
+        ],
+        "points": [
+          {
+            "_key": "pt-1",
+            "lat": 41.879,
+            "lon": -87.659,
+            "count": 1
+          },
+          {
+            "_key": "pt-2",
+            "lat": 41.887,
+            "lon": -87.656,
+            "count": 2
+          },
+          {
+            "_key": "pt-3",
+            "lat": 41.88,
+            "lon": -87.665,
+            "count": 3
+          },
+          {
+            "_key": "pt-4",
+            "lat": 41.881,
+            "lon": -87.665,
+            "count": 1
+          },
+          {
+            "_key": "pt-5",
+            "lat": 41.89,
+            "lon": -87.641,
+            "count": 1
+          },
+          {
+            "_key": "pt-6",
+            "lat": 41.888,
+            "lon": -87.64,
+            "count": 2
+          },
+          {
+            "_key": "pt-7",
+            "lat": 41.879,
+            "lon": -87.667,
+            "count": 1
+          },
+          {
+            "_key": "pt-8",
+            "lat": 41.88,
+            "lon": -87.649,
+            "count": 1
+          },
+          {
+            "_key": "pt-9",
+            "lat": 41.882,
+            "lon": -87.662,
+            "count": 1
+          },
+          {
+            "_key": "pt-10",
+            "lat": 41.877,
+            "lon": -87.648,
+            "count": 1
+          },
+          {
+            "_key": "pt-11",
+            "lat": 41.884,
+            "lon": -87.648,
+            "count": 2
+          },
+          {
+            "_key": "pt-12",
+            "lat": 41.89,
+            "lon": -87.66,
+            "count": 1
+          },
+          {
+            "_key": "pt-13",
+            "lat": 41.881,
+            "lon": -87.658,
+            "count": 3
+          },
+          {
+            "_key": "pt-14",
+            "lat": 41.885,
+            "lon": -87.658,
+            "count": 2
+          },
+          {
+            "_key": "pt-15",
+            "lat": 41.879,
+            "lon": -87.665,
+            "count": 1
+          },
+          {
+            "_key": "pt-16",
+            "lat": 41.891,
+            "lon": -87.662,
+            "count": 1
+          },
+          {
+            "_key": "pt-17",
+            "lat": 41.881,
+            "lon": -87.659,
+            "count": 5
+          },
+          {
+            "_key": "pt-18",
+            "lat": 41.881,
+            "lon": -87.66,
+            "count": 1
+          },
+          {
+            "_key": "pt-19",
+            "lat": 41.88,
+            "lon": -87.667,
+            "count": 1
+          },
+          {
+            "_key": "pt-20",
+            "lat": 41.88,
+            "lon": -87.654,
+            "count": 2
+          },
+          {
+            "_key": "pt-21",
+            "lat": 41.881,
+            "lon": -87.655,
+            "count": 1
+          },
+          {
+            "_key": "pt-22",
+            "lat": 41.878,
+            "lon": -87.657,
+            "count": 1
+          },
+          {
+            "_key": "pt-23",
+            "lat": 41.891,
+            "lon": -87.649,
+            "count": 1
+          },
+          {
+            "_key": "pt-24",
+            "lat": 41.885,
+            "lon": -87.647,
+            "count": 1
+          },
+          {
+            "_key": "pt-25",
+            "lat": 41.887,
+            "lon": -87.644,
+            "count": 1
+          },
+          {
+            "_key": "pt-26",
+            "lat": 41.878,
+            "lon": -87.659,
+            "count": 2
+          },
+          {
+            "_key": "pt-27",
+            "lat": 41.877,
+            "lon": -87.652,
+            "count": 1
+          },
+          {
+            "_key": "pt-28",
+            "lat": 41.89,
+            "lon": -87.658,
+            "count": 1
+          },
+          {
+            "_key": "pt-29",
+            "lat": 41.882,
+            "lon": -87.655,
+            "count": 2
+          },
+          {
+            "_key": "pt-30",
+            "lat": 41.882,
+            "lon": -87.654,
+            "count": 3
+          },
+          {
+            "_key": "pt-31",
+            "lat": 41.881,
+            "lon": -87.647,
+            "count": 1
+          }
+        ]
+      }
+    },
+    "mixNotes": [
+      {
+        "_key": "note-1",
+        "label": "Low voltage, data and communications",
+        "note": "An office-heavy area. Cabling is routine here."
+      },
+      {
+        "_key": "note-2",
+        "label": "Interior build-outs and alterations",
+        "note": "Spaces are constantly being refitted for new tenants."
+      },
+      {
+        "_key": "note-3",
+        "label": "Lighting",
+        "note": "The biggest single category of hands-on electrical work."
+      },
+      {
+        "_key": "note-4",
+        "label": "Outlets and receptacles",
+        "note": "Kitchen, office and unit remodels."
+      },
+      {
+        "_key": "note-5",
+        "label": "Work inside a specific unit or condo",
+        "note": "Condo and apartment owners are a large share of the work."
+      },
+      {
+        "_key": "note-6",
+        "label": "Fire alarm",
+        "note": "High-rise and commercial buildings, where tie-ins are tightly controlled."
+      },
+      {
+        "_key": "note-7",
+        "label": "Electrical service",
+        "note": "New and upgraded services for buildings and tenants."
+      },
+      {
+        "_key": "note-8",
+        "label": "Restaurants",
+        "note": "Restaurant Row, Fulton Market and Greektown keep this steady."
+      },
+      {
+        "_key": "note-9",
+        "label": "EV charging",
+        "note": "Most add a single new circuit for one charger."
+      }
+    ],
+    "recordBullets": [
+      "Electrical for new four-storey residential buildings on the 1000–1200 blocks of W Madison, the 1200 block of W Jackson, and S Laflin and S Aberdeen.",
+      "Tenant build-outs on the 1200 block of W Madison: offices, a salon and a Pilates studio.",
+      "A restaurant build-out on S Halsted in Greektown.",
+      "A 400-amp three-phase service on the 1300 block of W Grand.",
+      "An EV charger feeder for a unit on S Peoria.",
+      "Lighting in condo units on W Monroe, S Laflin and N May, and temporary construction power on W Madison and W Monroe."
+    ],
+    "honestContext": [
+      "We're a north-side shop. Most of our 1,213 Chicago permits are in Wards 1, 32, 26, 47 and 27, and the 27th covers part of the West Loop. Our West Loop work peaked with the mid-rise building wave of 2013 to 2020. Since then it has been mostly unit-level work: lighting, panels, circuits and EV chargers.",
+      "The busiest names in West Loop permits are large commercial contractors working on towers and office floors. That's a different job from yours if you're refitting a loft."
+    ],
+    "reviewsHeading": "Reviews from condo, loft and high-rise jobs",
+    "reviews": [
+      {
+        "_key": "review-1",
+        "reviewer": "Marcel",
+        "label": "EV charger in a downtown condo building",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pRd1NrcGtRMlpyZDA5SWNTMTRjbXh0VkZGWlZWRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOjQwSkpkQ2Zrd09IcS14cmxtVFFZVVE%7C%7C?hl=en",
+        "text": "I find that it's not easy to find good service providers in downtown Chicago, but Boz and Highlights Chicago are certainly among the best!  I needed to install a Tesla EV charger connected to my building's grid and have an submeter to track energy consumption. While others were quoting exorbitant prices or even deeming the project impossible, Boz made the discussions very straightforward and provided a reasonable quote. The team provided the required certificate of liability insurance on the same day I requested, I got the project approved by my building's association and had the installation scheduled.  The execution was on point! The team arrived at the exact time scheduled, with everything they needed and perfectly installed my charger as requested, all with proper care, safety and cleanliness. Shout out to Boz, Iva, Kaplan, Gerardo, Cristian and Matthew, a super team of super experts! I'll definitely recommend their services to others in my building and friends."
+      },
+      {
+        "_key": "review-2",
+        "reviewer": "Katherine Smailis",
+        "label": "Panel and outlets in a high-rise unit",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210V2QyZDNZVTVRZEhka2FrUklSVzlNTFZCMlpuYxAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOmtWd2d3YU5QdHdkakRIRW9MLVB2Znc%7C%7C?hl=en",
+        "text": "It is quite hard to find \"good\" contract work. It is even harder to find \"good\" contract work done by really nice and genuine people. Juve and Marin, two electricians from Highlights Chicago, came to complete a project at my property and they were absolutely delightful. They were respectful and aware of all of the rules that needed to be followed in high rise buildings, they were extremely patient navigating the tough parking situation, elevator challenges, and back and forth trips to bring materials and tools from their vehicles to the 4th floor unit. They spent ample time not only answering all of my questions but walking me through the process so that I was becoming educated about what was happening along the way. They did a phenomenal job with the actual electrical work, replacing a full electrical panel, several outlets in the kitchen and bathroom, and moving light fixtures. They go above and beyond what you would expect for electrical work. To add to the great experience,  Bozidar, the managing director at Highlights, was exceptional in following the progression of the project with kindness and expertise."
+      },
+      {
+        "_key": "review-3",
+        "reviewer": "Brian McConkey",
+        "label": "Loft with high ceilings",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkQmJHRjVUbGd0YzJzdGVVTjNhVTA0TW5ablQxRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOldBbGF5Tlgtc2steUN3aU04MnZnT1E%7C%7C?hl=en",
+        "text": "Highly recommend Highlights Chicago for any of your electrical needs.  They were very easy to work with. Boz, came by and gave a quote. Iva did all the scheduling. And Jimmy, Christobal and Davor did fabulous work.  Everyone was friendly and profesional. Can't say enough good things about the overall experience and the finished work. We are in a loft with high ceilings and they were installing large chandeliers, fans and pendant lights."
+      },
+      {
+        "_key": "review-4",
+        "reviewer": "Lulu Zhang",
+        "label": "Downtown high-rise condo",
+        "year": "2023",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcmFlQVRBEAE!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgIDpraeATA%7C%7C?hl=en",
+        "text": "I had an awesome experience using Highlights for my downtown highrise condo project. The work list included a large variety of tasks such as adding a new outlet, new ceiling fans, stove outlet, new dimmers. Everything was done on time and everything was left very clean. I was also very impressed by the efficiency of the project management team in terms of getting me a quote and refining the quote as I kept changing my mind. Finally, every technician seemed very knowledgeable and able to make good decisions on the fly, and adapt to problems on the spot. I also appreciated that they were able to guide me on decisions that had functional and aesthetic implications. For example, on the spacing for the recessed lights I wanted their opinion since they must see so many more kitchens and hallways per month than I've ever seen in my life. So they gave their honest opinion on what would look good, and I'm very happy with the results."
+      },
+      {
+        "_key": "review-5",
+        "reviewer": "J Stinton",
+        "label": "Proposal for an HOA board",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sb1NUZDBZVzlHWkV4bllrWndNRWh1T0V4WlJuYxAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOmloSTd0YW9GZExnYkZwMEhuOExZRnc%7C%7C?hl=en",
+        "text": "I had an excellent experience with Highlights Chicago from start to finish. Boz came out for the initial inspection and provided a detailed, well-written proposal for my HOA board. Out of the four proposals I received, theirs was not only the most professional but also the most fairly priced.  On installation day, the team showed up early, worked efficiently, and was minimally disruptive throughout the process. The quality of work was outstanding—they left everything spotless, as if no work had ever been done, except now I have a perfectly installed EV charger.  A huge shoutout to Cristobal and Cesar for their precision and professionalism in getting the install done right the first time. Everything about this experience was smooth, transparent, and reliable. I would absolutely recommend Highlights Chicago to anyone looking for electrical work or EV charger installation."
+      },
+      {
+        "_key": "review-6",
+        "reviewer": "Nancy French",
+        "label": "Heavy fixture in a high-rise",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMVDJqOGUzLVBpWURnEAE!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKELT2j8e3-PiYDg%7C%7C?hl=en",
+        "text": "I can't say enough good things about our experience with Highlights Chicago Installing a large, heavy light fixture in a tall-ceilinged room in a high-rise is no small feat, but they handled it with absolute ease, confidence, and class. From the moment they arrived, they were calm, prepared, and focused. They took every safety precaution seriously, navigated the space skillfully, and managed the entire install with quiet efficiency. The fixture was not only installed perfectly--it looks like it was always meant to be there. Their attention to detail and pride in their work really showed!"
+      },
+      {
+        "_key": "review-7",
+        "reviewer": "liz smiley",
+        "label": "17 recessed lights in a condo",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SVlNEbHpSMFZ4TWpCd2JWbFhPWG8xYW05U2JtYxAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOmRVSDlzR0VxMjBwbVlXOXo1am9Sbmc%7C%7C?hl=en",
+        "text": "We got several estimates to have recessed lighting put in our condo (17 in total). Not only was Highlights Chicago the best cost wise, but they were in depth with the estimate and very responsive to any questions we had prior to the project. Victor, Benjamin & Gus arrived on time, were very friendly, detailed with covering everything in plastic and did an excellent job installing our lights. We were absolutely thrilled with result and will not hesitate to recommend Highlights to our friends and family."
+      },
+      {
+        "_key": "review-8",
+        "reviewer": "Francisco Moya",
+        "label": "New construction",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaVWRFeDNRMk15ZUhoaU1rWXhTa3hVZVVGV2QzYxAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOlZUdEx3Q2MyeHhiMkYxSkxUeUFWd3c%7C%7C?hl=en-US",
+        "text": "We simply cannot recommend Highlights Chicago highly enough. They handled all the electrical work for our new house, which is a massive job, and they were truly outstanding from start to finish. Right from the initial meeting, Boz was fantastic. He gave us a very accurate, honest assessment of exactly what our new home needed and never once tried to upsell or push unnecessary work—something we really appreciated in the middle of a big build. His estimates were delivered precisely when promised, keeping our project on schedule. The work itself was of exceptionally high quality. They wired our entire house in a timely manner, and the result is honestly outstanding. The ultimate seal of approval came from the city inspector, who actually went out of his way to compliment the new service installation, saying it was \"done by the books.\" That kind of third-party praise speaks volumes about the quality and professionalism of their team. Boz and his crew were always professional, easy to reach, and punctual. They took the time to clarify all our questions and made sure we understood what was being done every step of the way."
+      }
+    ],
+    "nearby": [
+      {
+        "_key": "near-1",
+        "name": "The Loop",
+        "note": "Office towers and high-rise residential conversions east of the river."
+      },
+      {
+        "_key": "near-2",
+        "name": "River North",
+        "note": "Lofts and towers north of the river, with similar building rules."
+      },
+      {
+        "_key": "near-3",
+        "name": "West Town and River West",
+        "note": "Older brick two- and three-flats north of Grand, where fuse boxes and 100-amp services still turn up."
+      },
+      {
+        "_key": "near-4",
+        "name": "Ukrainian Village",
+        "note": "Pre-1940 masonry stock with knob-and-tube surprises behind new drywall."
+      },
+      {
+        "_key": "near-5",
+        "name": "Near West Side, Illinois Medical District",
+        "note": "Medical and institutional buildings, plus residential blocks around them."
+      },
+      {
+        "_key": "near-6",
+        "name": "Little Italy and University Village",
+        "note": "A mix of older rowhouses and newer townhome developments."
+      },
+      {
+        "_key": "near-7",
+        "name": "South Loop",
+        "note": "High-rise condos and loft conversions south of the Eisenhower."
+      },
+      {
+        "_key": "near-8",
+        "name": "Pilsen",
+        "note": "Older masonry buildings, many being renovated."
+      }
+    ],
+    "faq": [
+      {
+        "_key": "faq-1",
+        "key": "faq-highrise",
+        "question": "Do you work in West Loop high-rise buildings?",
+        "answer": "Yes. We work to the building's rules: a certificate of insurance before scheduling, booked freight elevator time, approved working hours and the building engineer's sign-off where it's needed. Reviewers describe our crews handling high-rise parking, elevators and building rules without fuss."
+      },
+      {
+        "_key": "faq-2",
+        "key": "faq-ev",
+        "question": "Can you install an EV charger in my condo building's garage?",
+        "answer": "Usually, yes. The design depends on whose electrical service the charger runs from, the building's spare capacity, whether the association wants a submeter, and its approval process. We provide the certificate of insurance and a proposal the association can review."
+      },
+      {
+        "_key": "faq-3",
+        "key": "faq-permit",
+        "question": "Do I need a permit for electrical work in my West Loop condo?",
+        "answer": "Most electrical work in Chicago needs a permit, and many unit jobs go through the City's Express Permit Program. Our own West Loop record includes permitted lighting work in condo units. We tell you at the walkthrough whether your job needs one, and we pull and close it."
+      },
+      {
+        "_key": "faq-4",
+        "key": "faq-restaurant",
+        "question": "Do you work on restaurants on Randolph Street and in Greektown?",
+        "answer": "Yes: kitchen equipment circuits, service upgrades, lighting, emergency and exit lighting, and signage, scheduled around service. Our West Loop record includes a restaurant build-out on S Halsted."
+      },
+      {
+        "_key": "faq-5",
+        "key": "faq-zip",
+        "question": "Which West Loop ZIP codes do you cover?",
+        "answer": "All of them: 60607, 60661 and the part of 60606 west of the river, along with every other Chicago neighbourhood."
+      }
+    ],
+    "ctaReady": [
+      "Your building's name, and the management office's contact",
+      "Its contractor requirements: certificate of insurance limits, elevator booking and working hours",
+      "A photo of your electrical panel with the door open",
+      "Photos of the room or ceiling, and of any fixture you've bought",
+      "For a condo: whether the board needs to approve the work",
+      "For a restaurant or office: drawings, if you have them, and the hours you can't be disturbed"
+    ],
+    "serviceOverrides": [
+      {
+        "_key": "override-1",
+        "target": "Fuse box replacement and fuse-to-breaker conversion",
+        "line": "Rare in new West Loop buildings, still found in older commercial and mixed-use properties around Ashland."
+      },
+      {
+        "_key": "override-2",
+        "target": "Temporary construction power",
+        "line": "Temporary services for build-outs and new construction. We've installed them on West Loop job sites."
+      },
+      {
+        "_key": "override-3",
+        "target": "Well pump wiring",
+        "line": "Not something the West Loop needs, but we wire pumps for clients elsewhere in Chicagoland."
+      },
+      {
+        "_key": "override-4",
+        "target": "Tenant build-outs",
+        "line": "White-box and vanilla-box spaces turned into offices, salons, studios and shops. We've done several on W Madison St."
+      },
+      {
+        "_key": "override-5",
+        "target": "Electrician for new construction",
+        "line": "Mid-rise residential and mixed-use buildings. 20 of our West Loop permits are new construction."
+      },
+      {
+        "_key": "override-6",
+        "target": "Industrial electrical services",
+        "line": "Light industrial and workshop power in the remaining industrial pockets near the Kennedy and Ashland."
+      },
+      {
+        "_key": "override-7",
+        "target": "svc-commercial",
+        "line": "Tenant build-outs, restaurants, offices and buildings from the ground up. A large share of West Loop permits are commercial."
+      }
+    ],
+    "researchSources": [
+      {
+        "_key": "source-1",
+        "title": "Four Seasons Heating, Cooling & Electric: Chicago electrical page",
+        "url": "https://www.fourseasonsheatingcooling.com/electrical/",
+        "type": "Electrical / HVAC, Chicago"
+      },
+      {
+        "_key": "source-2",
+        "title": "Four Seasons: Chicago plumbing page",
+        "url": "https://www.fourseasonsheatingcooling.com/plumbing/",
+        "type": "Plumbing, Chicago"
+      },
+      {
+        "_key": "source-3",
+        "title": "House Doctors: Electrical handyman in Lincoln Park",
+        "url": "https://www.housedoctors.com/chicago-and-north-shore/lincoln-park/electrical-services/",
+        "type": "Handyman franchise, Chicago"
+      },
+      {
+        "_key": "source-4",
+        "title": "Mr. Rooter: 24 hour emergency plumber in West Loop",
+        "url": "https://www.mrrooter.com/locations/illinois/west-loop/emergency-plumber",
+        "type": "Plumbing franchise, West Loop"
+      },
+      {
+        "_key": "source-5",
+        "title": "AJ Long Electric: Capitol Hill neighbourhood page",
+        "url": "https://ajlongelectric.com/neighborhoods/capitol-hill",
+        "type": "Electrical, Washington DC"
+      },
+      {
+        "_key": "source-6",
+        "title": "AJ Long Electric: Capitol Hill DC services page",
+        "url": "https://ajlongelectric.com/dc-electrical-services/capitol-hill",
+        "type": "Electrical, Washington DC"
+      },
+      {
+        "_key": "source-7",
+        "title": "AJ Long Electric: Hill East neighbourhood page",
+        "url": "https://ajlongelectric.com/neighborhoods/hill-east",
+        "type": "Electrical, Washington DC"
+      },
+      {
+        "_key": "source-8",
+        "title": "Harts: Capitol Hill Seattle electrician",
+        "url": "https://hartsservices.com/?p=11022",
+        "type": "Electrical / plumbing, Seattle"
+      },
+      {
+        "_key": "source-9",
+        "title": "This Old House: Best electricians in Lincoln Park, MI",
+        "url": "https://www.thisoldhouse.com/near-me/michigan/lincoln-park/electrical",
+        "type": "Listicle / directory"
+      },
+      {
+        "_key": "source-10",
+        "title": "ConsumerAffairs: Best electricians in Chicago",
+        "url": "https://www.consumeraffairs.com/homeowners/electricians-chicago.html",
+        "type": "Listicle / reviews"
+      },
+      {
+        "_key": "source-11",
+        "title": "Groupon: Electricians in Chicago",
+        "url": "https://www.groupon.com/local/chicago/electrician",
+        "type": "Deals directory"
+      },
+      {
+        "_key": "source-12",
+        "title": "Public Service Plumbers: high-rise and loft plumbing, Dallas",
+        "url": "https://publicserviceplumbers.com/plumbing-services/high-rise-residential/",
+        "type": "Plumbing, Dallas"
+      },
+      {
+        "_key": "source-13",
+        "title": "Rescue Plumbing: Lincoln Park Chamber listing",
+        "url": "https://www.lincolnparkchamber.com/member/rescue-plumbing/",
+        "type": "Plumbing, family-owned, Chicago"
+      }
+    ]
+  }
+]

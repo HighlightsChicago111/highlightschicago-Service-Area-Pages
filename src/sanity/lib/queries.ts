@@ -1,23 +1,19 @@
 import {defineQuery} from 'next-sanity'
 
-const IMAGE = `{..., "resolvedUrl": coalesce(image.asset->url, externalUrl)}`
+const CARD = `"slug": slug.current, area, areaIn, eyebrow, metaDescription, "permitCount": permits.highlights.count, "illus": buildings[0].illus, "districtCount": count(districts)`
 
-export const V2_ROUTES_QUERY = defineQuery(`
-  *[_type == "v2ServicePage" && defined(slug.current)] | order(serviceId asc) {
-    "slug": slug.current, name, parentName, "description": seo.description, "image": coalesce(gallery[0].image.asset->url, gallery[0].externalUrl), "imageAlt": gallery[0].alt, "areaName": area->name
-  }
+export const AREA_CARDS_QUERY = defineQuery(`
+  *[_type == "areaPage" && defined(slug.current)] | order(area asc) {${CARD}}
 `)
 
-export const V2_PAGE_QUERY = defineQuery(`
+export const AREA_PAGE_QUERY = defineQuery(`
   {
-    "routes": *[_type == "v2ServicePage" && defined(slug.current)] {"slug": slug.current, name, parentName},
-    "page": *[_type == "v2ServicePage" && slug.current == $slug][0] {
+    "page": *[_type == "areaPage" && slug.current == $slug][0] {
       ...,
       "slug": slug.current,
-      gallery[]${IMAGE},
-      workingPhotos[]${IMAGE},
-      "area": area->{..., "slug": slug.current, subAreas[]{..., photo${IMAGE}}}
+      teamPhoto{..., "resolvedUrl": coalesce(image.asset->url, src)}
     },
-    "settings": *[_id == "v2-siteSettings"][0]
+    "settings": *[_id == "area-settings"][0],
+    "areas": *[_type == "areaPage" && defined(slug.current)] | order(area asc) {${CARD}}
   }
 `)

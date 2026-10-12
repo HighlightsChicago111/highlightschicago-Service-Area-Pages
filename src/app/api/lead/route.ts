@@ -1,8 +1,8 @@
 import {randomUUID} from 'node:crypto'
 import {NextResponse} from 'next/server'
 
-// existingSystem, symptom and details are the optional V2 form questions (see LEAD_EXTRA_FIELDS).
-const allowedFields = ['name', 'email', 'phone', 'address', 'buildingType', 'issue', 'existingSystem', 'symptom', 'details', 'service', 'area'] as const
+// district and buildingRules come from the service area page form.
+const allowedFields = ['name', 'email', 'phone', 'address', 'district', 'buildingType', 'issue', 'buildingRules', 'service', 'area'] as const
 const resendEndpoint = 'https://api.resend.com/emails'
 
 function configured(value: string | undefined) {
@@ -66,9 +66,8 @@ export async function POST(request: Request) {
     `Address: ${clean.address || 'Not provided'}`,
     `Building type: ${clean.buildingType || 'Not provided'}`,
     `Request: ${clean.issue || 'Not provided'}`,
-    ...(clean.existingSystem ? [`Existing system: ${clean.existingSystem}`] : []),
-    ...(clean.symptom ? [`Symptom: ${clean.symptom}`] : []),
-    ...(clean.details ? [`Details: ${clean.details}`] : []),
+    ...(clean.district ? [`Where in the area: ${clean.district}`] : []),
+    ...(clean.buildingRules ? [`Building rules: ${clean.buildingRules}`] : []),
     `Service: ${clean.service || 'Not provided'}`,
     `Area: ${clean.area || 'Not provided'}`,
     `Submitted: ${new Date().toISOString()}`,
