@@ -23,7 +23,7 @@ const CONFIRM = /\[CONFIRM:[^\]]*\]/g
 
 /** Every area.json key the skill documents (references/area-config.md), each mapped to a Sanity field below. */
 export const AREA_JSON_KEYS = [
-  'area', 'area_the', 'area_in', 'slug', 'title', 'meta_description', 'eyebrow', 'h1', 'hero_lede', 'address_placeholder',
+  'area', 'area_the', 'area_in', 'city', 'slug', 'title', 'meta_description', 'eyebrow', 'h1', 'hero_lede', 'address_placeholder',
   'form_rules_question', 'form_districts', 'form_buildings', 'team_photo', 'boundary_text', 'bbox', 'bbox_text', 'facts', 'zips',
   'map_desc', 'map', 'districts', 'buildings', 'scope_lede', 'scope_rows', 'hourly_answer', 'choosing_building_why',
   'choosing_building_answer', 'choosing_paperwork_why', 'where_we_fit', 'mix_notes', 'record_bullets', 'no_record_text',
@@ -139,7 +139,7 @@ export function buildAreaDocuments({areas, company, reviews}: BuildInput): Build
 
     const doc = compact({
       _id: areaId(c.slug), _type: 'areaPage',
-      area: c.area, areaThe: c.area_the, areaIn: c.area_in, slug: {_type: 'slug', current: c.slug},
+      area: c.area, areaThe: c.area_the, areaIn: c.area_in, city: opt(c.city), slug: {_type: 'slug', current: c.slug},
       title: opt(c.title), metaDescription: opt(c.meta_description), eyebrow: opt(c.eyebrow), h1: opt(c.h1), heroLede: opt(c.hero_lede),
       addressPlaceholder: opt(c.address_placeholder), formRulesQuestion: opt(c.form_rules_question),
       formDistricts: c.form_districts, formBuildingTypes: c.form_buildings,

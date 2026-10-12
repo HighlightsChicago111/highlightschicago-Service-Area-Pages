@@ -1,7 +1,7 @@
 import type {ComponentType} from 'react'
 import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
 import {Icon} from '@/components/ds/icon'
-import {genericFaqs, mergeFaqs, type Faq} from '@/lib/area/copy'
+import {cityOf, genericFaqs, isChicago, mergeFaqs, type Faq} from '@/lib/area/copy'
 import {categoriesFor, SERVICES_URL, type Category} from '@/lib/area/library'
 import {hasConfirm, telHref} from '@/lib/ds'
 import {BASE_PATH, PUBLIC_SITE_ORIGIN, areaPageUrl} from '@/lib/urls'
@@ -57,15 +57,16 @@ function JsonLd({page, co, faqs, cats}: {page: AreaPage; co: AreaSettings; faqs:
     '@type': 'Electrician', '@id': `${site}/#business`, name: co.name, telephone: co.phoneSchema || co.phoneTel, url: `${site}/`,
     address: {'@type': 'PostalAddress', streetAddress: co.address?.street, addressLocality: co.address?.city, addressRegion: co.address?.region, postalCode: co.address?.zip, addressCountry: 'US'},
   }
-  const place: Record<string, unknown> = {'@type': 'Place', name: `${page.area}, Chicago`, containedInPlace: {'@type': 'City', name: 'Chicago'}}
-  if (page.zips?.length) place.address = {'@type': 'PostalAddress', addressLocality: 'Chicago', addressRegion: 'IL', postalCode: page.zips[0]}
+  const city = cityOf(page)
+  const place: Record<string, unknown> = city.toLowerCase() === page.area.toLowerCase() ? {'@type': 'City', name: `${city}, IL`} : {'@type': 'Place', name: `${page.area}, ${city}`, containedInPlace: {'@type': 'City', name: city}}
+  if (page.zips?.length) place.address = {'@type': 'PostalAddress', addressLocality: city, addressRegion: 'IL', postalCode: page.zips[0]}
   const catalogue = {
     '@type': 'OfferCatalog', name: `Electrical services ${page.areaIn}`,
     itemListElement: cats.map((cat) => ({'@type': 'OfferCatalog', name: cat.title, itemListElement: cat.items.map((item) => ({'@type': 'Offer', itemOffered: {'@type': 'Service', name: item.name, ...(item.slug ? {url: `${SERVICES_URL}${item.slug}`} : {})}}))})),
   }
   const graph = [
     business,
-    {'@type': 'Service', name: `Electrical services ${page.areaIn}, Chicago`, serviceType: 'Electrician', provider: {'@id': business['@id']}, areaServed: place, hasOfferCatalog: catalogue},
+    {'@type': 'Service', name: `Electrical services ${page.areaIn}, ${isChicago(page) ? 'Chicago' : 'IL'}`, serviceType: 'Electrician', provider: {'@id': business['@id']}, areaServed: place, hasOfferCatalog: catalogue},
     {'@type': 'BreadcrumbList', itemListElement: [
       {'@type': 'ListItem', position: 1, name: 'Home', item: `${site}/`},
       {'@type': 'ListItem', position: 2, name: 'Service areas', item: `${PUBLIC_SITE_ORIGIN}${BASE_PATH}`},

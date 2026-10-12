@@ -38,6 +38,684 @@
     }
   },
   {
+    "_id": "area-evanston",
+    "_type": "areaPage",
+    "area": "Evanston",
+    "areaThe": "Evanston",
+    "areaIn": "in Evanston",
+    "city": "Evanston",
+    "slug": {
+      "_type": "slug",
+      "current": "evanston"
+    },
+    "metaDescription": "Family-owned electricians for Evanston's older houses, courtyard condos and two-flats: panel and service upgrades, rewiring, EV chargers. Call (773) 262-3333.",
+    "eyebrow": "Evanston · Downtown · Central Street · Main–Dempster",
+    "heroLede": "Lighting, panels, service upgrades, EV chargers, repairs and rewiring for Evanston's Victorian and Prairie houses, courtyard condos, two-flats, bungalows and downtown towers. A family-owned, founder-led electrical contractor from Chicago's North Side, quoting every job in writing.",
+    "addressPlaceholder": "e.g. 900 Hinman Ave",
+    "boundaryText": "Evanston is its own city, directly north of Chicago: Howard St and the Chicago line to the south, Wilmette to the north, Skokie to the west and Lake Michigan to the east. It's a lakefront university town of older houses, courtyard apartment buildings and a downtown of towers.",
+    "bbox": {
+      "north": 42.0715,
+      "south": 42.019,
+      "west": -87.7325,
+      "east": -87.6655
+    },
+    "bboxText": "Howard St, the Wilmette line, the Skokie line and Lake Michigan",
+    "facts": [
+      {
+        "_key": "fact-1",
+        "label": "City",
+        "value": "City of Evanston, Cook County. Its own municipality, not part of Chicago"
+      },
+      {
+        "_key": "fact-2",
+        "label": "ZIP codes",
+        "value": "60201, 60202 and 60203, plus 60208 for Northwestern"
+      },
+      {
+        "_key": "fact-3",
+        "label": "City wards",
+        "value": "Evanston's own nine wards"
+      },
+      {
+        "_key": "fact-4",
+        "label": "Transit",
+        "value": "CTA Purple Line (South Blvd to Central) and Metra Union Pacific North (Main, Davis, Central)"
+      },
+      {
+        "_key": "fact-5",
+        "label": "Utility",
+        "value": "ComEd"
+      },
+      {
+        "_key": "fact-6",
+        "label": "Permits",
+        "value": "City of Evanston Building and Inspection Services, with contractor registration [CONFIRM: Highlights' current City of Evanston contractor registration]"
+      }
+    ],
+    "zips": [
+      "60201",
+      "60202",
+      "60203",
+      "60208"
+    ],
+    "mapDesc": "Schematic map of Evanston from Howard St to the Wilmette line and from the Skokie line to Lake Michigan, showing six districts, the main CTA and Metra stations and Northwestern University.",
+    "map": {
+      "height": 930,
+      "ewStreets": [
+        {
+          "_key": "ew-1",
+          "label": "Howard St",
+          "lat": 42.0192
+        },
+        {
+          "_key": "ew-2",
+          "label": "Oakton St",
+          "lat": 42.0265
+        },
+        {
+          "_key": "ew-3",
+          "label": "Main St",
+          "lat": 42.0335
+        },
+        {
+          "_key": "ew-4",
+          "label": "Dempster St",
+          "lat": 42.041
+        },
+        {
+          "_key": "ew-5",
+          "label": "Church St",
+          "lat": 42.048
+        },
+        {
+          "_key": "ew-6",
+          "label": "Emerson St",
+          "lat": 42.0525
+        },
+        {
+          "_key": "ew-7",
+          "label": "Noyes St",
+          "lat": 42.058
+        },
+        {
+          "_key": "ew-8",
+          "label": "Central St",
+          "lat": 42.064
+        }
+      ],
+      "nsStreets": [
+        {
+          "_key": "ns-1",
+          "label": "Sheridan Rd",
+          "lon": -87.6745
+        },
+        {
+          "_key": "ns-2",
+          "label": "Chicago Ave",
+          "lon": -87.6808
+        },
+        {
+          "_key": "ns-3",
+          "label": "Ridge Ave",
+          "lon": -87.6862
+        },
+        {
+          "_key": "ns-4",
+          "label": "Asbury Ave",
+          "lon": -87.6905
+        },
+        {
+          "_key": "ns-5",
+          "label": "Dodge Ave",
+          "lon": -87.699
+        },
+        {
+          "_key": "ns-6",
+          "label": "McCormick Blvd",
+          "lon": -87.7097
+        },
+        {
+          "_key": "ns-7",
+          "label": "Crawford Ave",
+          "lon": -87.7265
+        }
+      ],
+      "districts": [
+        {
+          "_key": "md-1",
+          "name": "North Evanston and Central St",
+          "north": 42.0715,
+          "south": 42.056,
+          "west": -87.7325,
+          "east": -87.68
+        },
+        {
+          "_key": "md-2",
+          "name": "Northwestern and the lakefront",
+          "north": 42.062,
+          "south": 42.051,
+          "west": -87.68,
+          "east": -87.6655
+        },
+        {
+          "_key": "md-3",
+          "name": "Downtown Evanston",
+          "north": 42.051,
+          "south": 42.043,
+          "west": -87.6905,
+          "east": -87.6745
+        },
+        {
+          "_key": "md-4",
+          "name": "West Evanston",
+          "north": 42.056,
+          "south": 42.03,
+          "west": -87.7325,
+          "east": -87.6905
+        },
+        {
+          "_key": "md-5",
+          "name": "Southeast Evanston and Main–Dempster",
+          "north": 42.043,
+          "south": 42.03,
+          "west": -87.6905,
+          "east": -87.6655
+        },
+        {
+          "_key": "md-6",
+          "name": "South Evanston and Howard St",
+          "north": 42.03,
+          "south": 42.019,
+          "west": -87.7097,
+          "east": -87.6655
+        }
+      ],
+      "landmarks": [
+        {
+          "_key": "lm-1",
+          "name": "Davis (CTA and Metra)",
+          "lat": 42.0477,
+          "lon": -87.6836
+        },
+        {
+          "_key": "lm-2",
+          "name": "Main St (CTA and Metra)",
+          "lat": 42.0334,
+          "lon": -87.6791
+        },
+        {
+          "_key": "lm-3",
+          "name": "Central St (Metra)",
+          "lat": 42.0639,
+          "lon": -87.6855
+        },
+        {
+          "_key": "lm-4",
+          "name": "Northwestern University",
+          "lat": 42.0565,
+          "lon": -87.6753
+        },
+        {
+          "_key": "lm-5",
+          "name": "Howard (CTA)",
+          "lat": 42.0192,
+          "lon": -87.6729
+        }
+      ],
+      "features": [
+        {
+          "_key": "ft-1",
+          "kind": "water_east",
+          "lon": -87.6685,
+          "label": "LAKE MICHIGAN"
+        }
+      ]
+    },
+    "districts": [
+      {
+        "_key": "district-1",
+        "name": "Downtown Evanston",
+        "intro": "The blocks around Davis St, Church St and Fountain Square, between the Purple Line and Chicago Ave: offices, restaurants, 1920s commercial buildings and newer condo and rental towers.",
+        "work": "Condo unit work in managed towers, tenant build-outs and restaurant kitchens, scheduled around building management and a certificate of insurance."
+      },
+      {
+        "_key": "district-2",
+        "name": "Northwestern and the lakefront",
+        "intro": "Northwestern's lakefront campus and the streets west of it along Sheridan Rd, Orrington Ave and Sherman Ave, where many large older houses are now rentals or apartments.",
+        "work": "Work in converted houses: more circuits for kitchens and laundry, smoke and CO alarms, and landlords who need the job done between leases."
+      },
+      {
+        "_key": "district-3",
+        "name": "North Evanston and Central St",
+        "intro": "Central Street's shops and stations, with large early 1900s houses from Northwestern up to the Wilmette line and the Northeast Evanston Historic District near the lake.",
+        "work": "Whole-house upgrades in big older homes: 200-amp services, new panels, lighting and EV chargers in detached garages. Exterior work in the historic district can need the Preservation Commission's sign-off."
+      },
+      {
+        "_key": "district-4",
+        "name": "Southeast Evanston and Main–Dempster",
+        "intro": "The lakeshore blocks from Dempster down to Main and the Main–Dempster Mile, with Victorian and Prairie houses in the Lakeshore Historic District and 1910s and 1920s courtyard apartments along Hinman Ave and Judson Ave.",
+        "work": "Knob-and-tube and fuse-box leftovers in the houses, and condo association work in the courtyard buildings, where the board approves anything in common areas."
+      },
+      {
+        "_key": "district-5",
+        "name": "West Evanston",
+        "intro": "West of Ridge Ave and Asbury Ave, out to the Skokie line: bungalows, Foursquares, two-flats and frame houses on narrower lots along Dodge Ave and Church St.",
+        "work": "Service upgrades from 60 or 100 amps, new circuits for kitchens and finished basements, and garage feeds for EV chargers."
+      },
+      {
+        "_key": "district-6",
+        "name": "South Evanston and Howard St",
+        "intro": "From Oakton St down to Howard St and the Chicago line: dense blocks of courtyard buildings, three-flats and condo conversions near the South Blvd and Howard stations.",
+        "work": "Unit-by-unit work in vintage condos: laundry circuits, small unit panels and fixtures on plaster ceilings, approved by the association."
+      }
+    ],
+    "buildings": [
+      {
+        "_key": "building-1",
+        "illus": "b-cottage",
+        "title": "Large pre-1930 house",
+        "where": "Southeast and North Evanston, the Lakeshore and Ridge historic districts",
+        "changes": "Plaster walls, original knob-and-tube in places and a service sized for a much smaller load. Exterior work on a landmark or in a historic district goes to the Preservation Commission before a permit is issued.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Panel and service upgrades",
+            "category": "svc-panels"
+          },
+          {
+            "_key": "svc-2",
+            "label": "Rewiring older homes",
+            "category": "svc-wiring"
+          },
+          {
+            "_key": "svc-3",
+            "label": "Lighting",
+            "category": "svc-lighting"
+          }
+        ]
+      },
+      {
+        "_key": "building-2",
+        "illus": "b-courtyard",
+        "title": "Courtyard apartment building",
+        "where": "South and Southeast Evanston, along Hinman Ave, Judson Ave, Chicago Ave and near Howard St",
+        "changes": "1910s and 1920s buildings with small unit panels, shared basements and an association or landlord who approves the work. Some are listed on the National Register.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Unit panels and circuits",
+            "category": "svc-panels"
+          },
+          {
+            "_key": "svc-2",
+            "label": "Fixtures and fans",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-3",
+            "label": "Repairs",
+            "category": "svc-repair"
+          }
+        ]
+      },
+      {
+        "_key": "building-3",
+        "illus": "b-twoflat",
+        "title": "Two-flat or three-flat",
+        "where": "South and West Evanston",
+        "changes": "One service split between units, with meters and panels in the basement. Laundry, kitchens and air conditioning often outgrow the original service.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Service upgrades",
+            "category": "svc-panels"
+          },
+          {
+            "_key": "svc-2",
+            "label": "Wiring and circuits",
+            "category": "svc-wiring"
+          }
+        ]
+      },
+      {
+        "_key": "building-4",
+        "illus": "b-bungalow",
+        "title": "Bungalow or Foursquare",
+        "where": "West Evanston, near Dodge Ave and Church St",
+        "changes": "1910s to 1930s houses with 60- or 100-amp services, basements being finished and detached garages getting EV chargers.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Service upgrades",
+            "category": "svc-panels"
+          },
+          {
+            "_key": "svc-2",
+            "label": "EV chargers",
+            "category": "svc-energy"
+          },
+          {
+            "_key": "svc-3",
+            "label": "Outlets and circuits",
+            "category": "svc-wiring"
+          }
+        ]
+      },
+      {
+        "_key": "building-5",
+        "illus": "b-highrise",
+        "title": "Downtown condo or rental tower",
+        "where": "Downtown, around Davis St, Church St and Sherman Ave",
+        "changes": "Concrete slabs limit where boxes can go. Management approval, a certificate of insurance, an elevator booking and set working hours come first.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Recessed lighting and fixtures",
+            "category": "svc-lighting"
+          },
+          {
+            "_key": "svc-2",
+            "label": "Unit panels",
+            "category": "svc-panels"
+          }
+        ]
+      },
+      {
+        "_key": "building-6",
+        "illus": "b-restaurant",
+        "title": "Restaurant or shopfront",
+        "where": "Downtown, Central St, the Main–Dempster Mile, Noyes St and Howard St",
+        "changes": "Kitchen equipment circuits, signage and lighting, scheduled outside opening hours, with permits through Evanston's Building and Inspection Services.",
+        "services": [
+          {
+            "_key": "svc-1",
+            "label": "Restaurant electrical",
+            "category": "svc-commercial"
+          },
+          {
+            "_key": "svc-2",
+            "label": "Lighting",
+            "category": "svc-lighting"
+          }
+        ]
+      }
+    ],
+    "scopeLede": "The same job on paper can cost very differently in a lakeshore Victorian, a courtyard condo and a downtown tower. These are the things that change it, and most are settled at the walkthrough.",
+    "scopeRows": [
+      {
+        "_key": "scope-1",
+        "factor": "Evanston contractor registration",
+        "why": "Permitted work in Evanston needs every contractor on the permit registered with the City, with a licence and a certificate of insurance naming the City.",
+        "who": "Us"
+      },
+      {
+        "_key": "scope-2",
+        "factor": "Historic district or landmark",
+        "why": "Exterior work seen from the street, alley or sidewalk in a local historic district, such as moving a meter, a new service mast or exterior lighting, needs a Certificate of Appropriateness before a permit is issued.",
+        "who": "The City, with us"
+      },
+      {
+        "_key": "scope-3",
+        "factor": "Age of the wiring",
+        "why": "Knob-and-tube, cloth-covered wire and fuse boxes still turn up in pre-1930 houses, and opening plaster changes the scope.",
+        "who": "Us, at the walkthrough"
+      },
+      {
+        "_key": "scope-4",
+        "factor": "Size of the service",
+        "why": "Older houses and two-flats often have 60- or 100-amp services. An EV charger, central air or a kitchen remodel can mean a 200-amp upgrade and a ComEd appointment.",
+        "who": "Us and ComEd"
+      },
+      {
+        "_key": "scope-5",
+        "factor": "Condo or association approval",
+        "why": "Courtyard buildings and towers want a written proposal and a certificate of insurance before work in units or common areas.",
+        "who": "Your association, with our proposal"
+      },
+      {
+        "_key": "scope-6",
+        "factor": "Plaster walls and ceilings",
+        "why": "Fishing wire through plaster and lath is slower than drywall and needs careful patching.",
+        "who": "Us, at the walkthrough"
+      },
+      {
+        "_key": "scope-7",
+        "factor": "Detached garage",
+        "why": "Many houses have a detached garage off the alley. A feed for an EV charger can mean trenching and new conduit.",
+        "who": "You and us"
+      },
+      {
+        "_key": "scope-8",
+        "factor": "Parking",
+        "why": "Downtown and near Northwestern, parking is metered or permit-only, which changes how materials and crews get in.",
+        "who": "Us, at the walkthrough"
+      },
+      {
+        "_key": "scope-9",
+        "factor": "Inspections",
+        "why": "Evanston usually requires a rough and a final inspection, and someone for the permit holder has to be on site for each.",
+        "who": "Us"
+      },
+      {
+        "_key": "scope-10",
+        "factor": "Working hours",
+        "why": "Restaurants and occupied offices often need early, late or weekend work. [CONFIRM: whether after-hours rates apply]",
+        "who": "You and us"
+      }
+    ],
+    "hourlyAnswer": "We quote by scope, not by the hour, because the hours on an Evanston job depend on everything in the table above. A fixture under a plaster ceiling in a 1915 courtyard condo and the same fixture in a new downtown tower aren't the same job. The written quote tells you the whole price before you agree to it.",
+    "choosingBuildingWhy": "Evanston changes street by street: Victorian and Prairie houses on the lakeshore, courtyard condos near Howard St and Hinman Ave, bungalows and two-flats in the west, and towers downtown.",
+    "choosingBuildingAnswer": "Older houses, fuse-box and service upgrades, vintage condos and two-flats across Chicago's North Side, and a commercial job in neighbouring Skokie under a village permit [CONFIRM: Evanston jobs Highlights can point to]",
+    "choosingPaperworkWhy": "Evanston wants every contractor registered with the City before a permit is issued, and towers and associations want a certificate of insurance before work is scheduled.",
+    "whereWeFit": "Highlights is a family-owned Chicago contractor. In Evanston we're the right call for house and condo work: service and panel upgrades in older houses, rewiring, lighting, EV chargers and small shops. Large university and hospital projects and tower base-building work are for the big commercial firms, and we'll tell you so.",
+    "noRecordText": "We don't publish an Evanston permit count. Evanston's permits aren't open data, and our City of Chicago record doesn't include work outside the city. [CONFIRM: how many Evanston jobs and permits Highlights has done]",
+    "honestContext": [
+      "We're a north-side Chicago shop at 5766 N Lincoln Ave, a short drive from Howard St. Most of our 1,213 City of Chicago permits are in Wards 1, 32, 26, 47 and 27, so our public record is in Chicago, not Evanston.",
+      "Evanston's buildings are close to the Chicago neighbourhoods we work in most: courtyard buildings, two-flats and older houses like Rogers Park's and Edgewater's. What differs is the paperwork: City of Evanston registration, its own inspectors, and historic-district review for exterior work."
+    ],
+    "reviewsHeading": "Reviews from older-house, vintage condo and two-flat jobs",
+    "reviews": [
+      {
+        "_key": "review-1",
+        "reviewer": "ryan dorty",
+        "label": "Commercial space in Skokie, village permit",
+        "year": "2026",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKemVFRjRMVmhVYm5CMmREVlpkalI0YlZVeVdrRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOkJzeEF4LVhUbnB2dDVZdjR4bVUyWkE%7C%7C?hl=en",
+        "text": "Did a commercial space for us in Skokie, the highlights did amazing work. Pulled a permit and dealed with the village. The village came and inspected and everything was great! Thanks so much to highlights team! Highly recommend"
+      },
+      {
+        "_key": "review-2",
+        "reviewer": "Mary Pence",
+        "label": "Service upgrade in a landmark apartment building",
+        "year": "2022",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPdGU3dkJ3EAE!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgIDOte7vBw%7C%7C?hl=en",
+        "text": "As both a homeowner and long-time landlord, I am very skeptical about all contractors. I found Highlights Chicago Electrical Services on Yelp, and was even more skeptical regarding well over 200 five-star reviews. I needed a major electrical service upgrade done on a historic landmark apartment building I own so I had no choice but to do the research and select a contractor.  I know there are ways to get great reviews on Yelp. However, nine times out of ten, those people or \"services\" won't bother to write reviews in great detail, let alone many paragraphs in length. As I read through the reviews I realized they were legit.  I can now add mine to the list. This company has truly earned every five-star review it has received. I have NEVER had such a positive experience with an electrical contractor. Quite the opposite. I got 3 different estimates, and they weren't the lowest, and not the highest either. Boz came out to look at what needed to be done (which included undoing the disaster the previous electrician created) within a few hours of my call. He explained everything in detail, and the pro's and con's of what my options were.  They never asked for any payment upfront. The estimate was extraordinarily detailed. Shock number one. The team I was assigned, Kaplan and Jose, showed up ready to go at 7 am the next day! Shock number two. They worked their butts off until well after 6 pm! Shock number 3. They came back the next two days and did it again. Shock number 4.  This is a company that is proud of what they do. The end result looked like a work of art! The conduit was perfectly aligned, evenly spaced and so symmetrical I couldn't get over it. Every detail was addressed, and all done without cutting corners, dodging building codes, or overcharging. Old houses are not easy to work on and require a lot of patience and genuine expertise. They worked around all the challenges and knocked it out of the ballpark.  As long as they are in business, I will NEVER use anyone else. The few hundred dollars you might save going with the lowest cost option is nothing compared to the misery you will spare yourself by having this company do the work. If I could give them more stars I would. They are also really nice people to work with. When was the last time you thought that about a contractor?"
+      },
+      {
+        "_key": "review-3",
+        "reviewer": "Eric Meschke",
+        "label": "200-amp upgrade in an older home",
+        "year": "2023",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoM3ZlVHNnRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgIDh3veTsgE%7C%7C?hl=en",
+        "text": "Highlights did a bunch of work on our house.  We had used them previously to do work in our condo (they were the best to install a couple of ceiling fans--previous review).  We moved to an older home and they have been out twice.  First to install and update a bunch of wiring and outlets.  The latest time, they came out to install a couple of outlets for a sump pump, but because the breaker box was small and outdated we ended up just upgrading to 200 amp service.  Not only were they able to get it scheduled within a week (big job), they also cleaned up a bunch of the wiring in the basement.  Boz (the main contact) is great--very helpful and a nice guy.  His crew was very professional and worked hard for two days.  The city inspector was just out to review the work for the permit, it was a quick inspection and passed with no issues.  I did get one other quote for comparison (from a place that a co-worker recommended) and their quote was within $100 of Highlights for the 200 amp upgrade.  Our experience is that Highlights does high quality work and their prices are reasonable.  We have recommended them to our friends who need electrical work."
+      },
+      {
+        "_key": "review-4",
+        "reviewer": "Mireye Bond",
+        "label": "Fuse box replaced with 100-amp service",
+        "year": "2024",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYa3FIcDZnRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgIDXkqHp6gE%7C%7C?hl=en",
+        "text": "We recently had exterior and interior electrical work at my mom's home. The work involved removal of the old fuse electrical sevice  throughout, installation of new 100 amp service, outside meter ground, supplemental ground inside, new washer and dryer outlets, installation of new utility light fixture and required permit. Highlight Chicago representative Boz was very responsive after I reached out to obtain a proposal. Their pricing was competitive with others we received. We are very pleased with the professional work and effort that the Highlight Chicago team - Luis, Jerado and Kaplan provided. They were polite, communicative as the work progressed and showed up on time. The work was completed in one day."
+      },
+      {
+        "_key": "review-5",
+        "reviewer": "Nicholas Stone",
+        "label": "Rewiring a 135-year-old house",
+        "year": "2019",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZd3NmRlNREAE!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgICYwsfFSQ%7C%7C?hl=en",
+        "text": "We originally thought remodeling our kitchen would just involve changing a few receptacles, but soon discovered that the wiring in our 135-year old house was badly in need of upgrading. Boz came up with a good, comprehensive, but reasonably priced proposal, and Zoran implemented it all very professionally, along with many other services. We will be sure to go back to them in the future, and have no hesitation in recommending Highlights Chicago to anyone looking for a good electrician in the Chicago area."
+      },
+      {
+        "_key": "review-6",
+        "reviewer": "Camille Medina",
+        "label": "EV charger in a detached garage",
+        "year": "2025",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCMWRHTkVhRGg0YjNkeWNYSjBZVTFQTUROa09WRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CAIQACodChtycF9oOlB1dGNEaDh4b3dycXJ0YU1PMDNkOVE%7C%7C?hl=en-US",
+        "text": "Amazing to work with. I had a Tesla charger installed in my detached garage and also had my electrical panel upgraded. The original estimate was that the work would take 2–3 days, but the team completed everything in just one day. The pricing was very reasonable, and all work was done cleanly and professionally.  Boz was my main point of contact and did a great job keeping me up to date throughout the process. He also followed up afterward to make sure I applied for the ComEd EV charger credits in time, which I really appreciated.  Everything was completed up to code and passed inspection without any issues. I would definitely recommend them for EV charger installations and electrical upgrades."
+      },
+      {
+        "_key": "review-7",
+        "reviewer": "Thomas Hayes",
+        "label": "Laundry circuit in a vintage condo",
+        "year": "2021",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5c1o3WUdnEAE!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgIDysZ7YGg%7C%7C?hl=en",
+        "text": "I've never actually written a Yelp review, but had to based on the above and beyond service from Boz, Kemal, Jimmy and the team. They did a great and thorough job on running a dedicated home run line for in-unit laundry in my vintage condo. During this project they ran a junction box for a ceiling light in my living room. I had an issue installing the light. I called Kemal who conferenced in Jimmy to literally talk me through how to finish my self install. This project was not easy, involved cutting into existing walls to run conduit and figuring things out along the way. If they can provide this level of service for me, I am confident they can handle anything! Thanks, Team!"
+      },
+      {
+        "_key": "review-8",
+        "reviewer": "Melissa Le Nicol",
+        "label": "Light fixtures in a Rogers Park condo",
+        "year": "2021",
+        "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5LU9mN3FBRRAB!2m1!1s0x0:0xae9382f0c0f6b3b!3m1!1s2@1:CIHM0ogKEICAgICy-Of7qAE%7C%7C?hl=en",
+        "text": "These guys are absolutely AWESOME!  Kemal took my initial request and was so attentive scheduling Raul and Jose to install several light fixtures in my Rogers Park condo.  They removed an old ceiling fan from my bedroom and replaced it with a new ceiling fan I purchased. They also installed a new fixture in my dining room and living room. The new fixtures were still in the boxes, so they put everything together too, saving me hours of frustration. The guys were so patient, showed up on time, put booties on their feet and wore their masks.  With the new fixtures, I decided to replace ugly wall sconces and contacted Kemal again and he sent someone over in 1 hour! This time Elvir arrived and once again, put booties on over his shoes and wore his mask. Elvir is super tall, 6'6\" so he didn't even need a ladder! He carefully measured and made sure the sconces were even. Everything looks GREAT!  Highlights Chicago are the best!!!"
+      }
+    ],
+    "nearby": [
+      {
+        "_key": "near-1",
+        "name": "Rogers Park",
+        "note": "Courtyard buildings and vintage condos south of Howard St, under City of Chicago permits."
+      },
+      {
+        "_key": "near-2",
+        "name": "West Ridge",
+        "note": "Bungalows, two-flats and brick apartment buildings across the Chicago line."
+      },
+      {
+        "_key": "near-3",
+        "name": "Edgewater",
+        "note": "Lakefront high-rises and courtyard buildings further south along Sheridan Rd."
+      },
+      {
+        "_key": "near-4",
+        "name": "Skokie",
+        "note": "Ranch houses, split-levels and commercial strips to the west, under village permits."
+      },
+      {
+        "_key": "near-5",
+        "name": "Wilmette",
+        "note": "Large early 1900s and post-war houses north of the Evanston line."
+      },
+      {
+        "_key": "near-6",
+        "name": "Lincolnwood",
+        "note": "Mid-century brick ranches and newer houses south of Skokie."
+      }
+    ],
+    "faq": [
+      {
+        "_key": "faq-1",
+        "key": "faq-evanston-registration",
+        "question": "Are you registered to work in Evanston?",
+        "answer": "Evanston requires every contractor working under a permit to register with the City, and electricians register with a licence from a testing city such as Chicago, which issued ours, ECC96456. [CONFIRM: Highlights' current City of Evanston contractor registration]"
+      },
+      {
+        "_key": "faq-2",
+        "key": "faq-evanston-historic",
+        "question": "Do I need Preservation Commission approval for electrical work in an Evanston historic district?",
+        "answer": "Only for exterior work seen from the street, alley or sidewalk on a landmark or in a historic district, such as moving a meter, a new service mast or exterior lighting. Interior work isn't reviewed unless it changes the outside. The City's Property Quick Info map shows whether your address is in a district."
+      },
+      {
+        "_key": "faq-3",
+        "key": "faq-evanston-knob",
+        "question": "Can you replace knob-and-tube or a fuse box in an older Evanston house?",
+        "answer": "Yes. We replace fuse boxes with breaker panels, upgrade 60- and 100-amp services, and rewire in stages so plaster patching stays small. The walkthrough is where we find out how much original wiring is left."
+      },
+      {
+        "_key": "faq-4",
+        "key": "faq-evanston-condo",
+        "question": "Can you work in my Evanston condo building?",
+        "answer": "Yes. Associations in courtyard buildings and towers usually want a written proposal and a certificate of insurance first, and we pull the City of Evanston permit where the work needs one."
+      },
+      {
+        "_key": "faq-5",
+        "key": "faq-evanston-zip",
+        "question": "Which Evanston ZIP codes do you cover?",
+        "answer": "All of Evanston: 60201, 60202 and 60203, including the blocks around Northwestern (60208), and the Chicago neighbourhoods across Howard St."
+      },
+      {
+        "_key": "faq-6",
+        "key": "faq-evanston-ev",
+        "question": "Can you install an EV charger in a detached garage in Evanston?",
+        "answer": "Yes. We run a feed from the house panel to the garage, which can mean trenching and new conduit, and check first whether the service can carry the charger. If it can't, the service upgrade comes first."
+      }
+    ],
+    "ctaReady": [
+      "Your address, and whether it's in a historic district (the City's Property Quick Info map shows it)",
+      "For a condo: your association's contact and its contractor requirements",
+      "A photo of your electrical panel with the door open, and of the meter",
+      "For a house: roughly when it was built, and any fuse boxes or old wiring you know of",
+      "Photos of the room, ceiling or garage where the work goes",
+      "For a shop or restaurant: drawings if you have them, and your opening hours"
+    ],
+    "researchSources": [
+      {
+        "_key": "source-1",
+        "title": "City of Evanston: contractor registration",
+        "url": "https://www.cityofevanston.org/government/departments/community-development/building-inspection-services/contractor-licensing",
+        "type": "official"
+      },
+      {
+        "_key": "source-2",
+        "title": "Evanston 311: is contractor registration required for permitted work?",
+        "url": "https://evanstonil.qscend.com/311/knowledgebase/article/599",
+        "type": "official"
+      },
+      {
+        "_key": "source-3",
+        "title": "City of Evanston: Preservation Commission",
+        "url": "https://cityofevanston.org/government/boards-commissions-and-committees/preservation-commission",
+        "type": "official"
+      },
+      {
+        "_key": "source-4",
+        "title": "City of Evanston: historic preservation",
+        "url": "https://cityofevanston.org/departments/community_development/planning_zoning/historic_preservation.php",
+        "type": "official"
+      },
+      {
+        "_key": "source-5",
+        "title": "City of Evanston: permit documents",
+        "url": "https://cityofevanston.org/departments/community_development/building_development_services/building_permits/permit_documents.php",
+        "type": "official"
+      },
+      {
+        "_key": "source-6",
+        "title": "City of Evanston: electrical owner affidavit (2020 NEC as amended)",
+        "url": "https://cityofevanston.org/home/showpublisheddocument/14978/638011678805030000",
+        "type": "official"
+      },
+      {
+        "_key": "source-7",
+        "title": "City of Evanston: business districts",
+        "url": "https://cityofevanston.org/government/departments/community-development/economic-development/explore-evanston/evanston-business-districts",
+        "type": "official"
+      },
+      {
+        "_key": "source-8",
+        "title": "American Planning Association: Central Street neighbourhood",
+        "url": "https://planning.org/greatplaces/neighborhoods/2013/centralstreet.htm",
+        "type": "reference"
+      },
+      {
+        "_key": "source-9",
+        "title": "National Park Service: suburban apartment buildings in Evanston",
+        "url": "https://npgallery.nps.gov/GetAsset/0ed9030d-a452-4426-a568-64852963c213",
+        "type": "reference"
+      }
+    ]
+  },
+  {
     "_id": "area-west-loop",
     "_type": "areaPage",
     "area": "West Loop",

@@ -3,6 +3,7 @@ import {draftMode} from 'next/headers'
 import {notFound} from 'next/navigation'
 import {AreaLandingPage} from '@/components/area/area-page'
 import {DisableDraftMode} from '@/components/disable-draft-mode'
+import {defaultH1} from '@/lib/area/copy'
 import {getAreaCards, getAreaPage} from '@/lib/content'
 import {areaPageUrl} from '@/lib/urls'
 
@@ -20,7 +21,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   if (!page) return {}
   return {
     // The root layout adds "| Highlights Chicago"; strip it from a stored full title.
-    title: (page.title || `Electricians ${page.areaIn}, Chicago`).replace(/\s*\|\s*Highlights Chicago\s*$/i, ''),
+    title: (page.title || defaultH1(page)).replace(/\s*\|\s*Highlights Chicago\s*$/i, ''),
     description: page.metaDescription,
     alternates: {canonical: areaPageUrl(page.slug)},
     // Test project: keep it out of search until the pages go live on the main domain.

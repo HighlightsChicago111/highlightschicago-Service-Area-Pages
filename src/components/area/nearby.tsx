@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import {ConfirmNotes} from '@/components/ds/atoms'
 import {Icon} from '@/components/ds/icon'
+import {isChicago} from '@/lib/area/copy'
 import {AreaHead} from './head'
 import type {AreaCtx} from './types'
 
@@ -13,7 +14,7 @@ export function NearbyBlock({ctx}: {ctx: AreaCtx}) {
   return (
     <div className="ds-wrap">
       <AreaHead id="nearby-title" eyebrow={`Nearby · ${nearby.length} neighbourhoods`} title={`Neighbourhoods next to ${page.areaThe}`} editorial={editorial}
-        lede={`We cover every Chicago neighbourhood. These border ${page.areaThe}, and the building stock changes as soon as you cross into them.`} />
+        lede={`${isChicago(page) ? 'We cover every Chicago neighbourhood.' : 'We work across Chicago and the nearby suburbs.'} These border ${page.areaThe}, and the building stock changes as soon as you cross into them.`} />
       <ul className="ar-nearby">
         {nearby.map((item, index) => {
           const slug = links.get(item.name.toLowerCase())

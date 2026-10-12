@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import {BUNDLED_SETTINGS} from '@/lib/area/company-fallback'
 import {contentSource} from '@/sanity/env'
 import {client, previewClient} from '@/sanity/lib/client'
 import {AREA_CARDS_QUERY, AREA_PAGE_QUERY, AREA_SETTINGS_QUERY} from '@/sanity/lib/queries'
@@ -35,18 +36,21 @@ export async function getAreaCards(draft = false): Promise<AreaCard[]> {
 }
 
 export async function getAreaPage(slug: string, draft = false): Promise<AreaPageData> {
-  if (contentSource === 'sanity') return (await (draft ? previewClient : client).fetch<AreaPageData>(AREA_PAGE_QUERY, {slug})) || {page: null, settings: null, areas: []}
+  if (contentSource === 'sanity') {
+    const data = (await (draft ? previewClient : client).fetch<AreaPageData>(AREA_PAGE_QUERY, {slug})) || {page: null, settings: null, areas: []}
+    return {...data, settings: data.settings || BUNDLED_SETTINGS}
+  }
   const docs = await localDocs()
   const pages = docs.filter((doc) => doc._type === 'areaPage').map(fromLocal)
   return {
     page: pages.find((page) => page.slug === slug) || null,
-    settings: (docs.find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || null,
+    settings: (docs.find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || BUNDLED_SETTINGS,
     areas: pages.sort((a, b) => a.area.localeCompare(b.area)).map(toCard),
   }
 }
 
-/** Company facts shared by every page. */
-export async function getAreaSettings(draft = false): Promise<AreaSettings | null> {
-  if (contentSource === 'sanity') return (await (draft ? previewClient : client).fetch<AreaSettings | null>(AREA_SETTINGS_QUERY)) || null
-  return ((await localDocs()).find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || null
+/** Company facts shared by every page: the published Sanity document, else the facts bundled with the build. */
+export async function getAreaSettings(draft = false): Promise<AreaSettings> {
+  if (contentSource === 'sanity') return (await (draft ? previewClient : client).fetch<AreaSettings | null>(AREA_SETTINGS_QUERY)) || BUNDLED_SETTINGS
+  return ((await localDocs()).find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || BUNDLED_SETTINGS
 }

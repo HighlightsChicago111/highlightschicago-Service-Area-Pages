@@ -35,6 +35,8 @@ export type AreaPage = {
   area: string
   areaThe: string
   areaIn: string
+  /** Empty for a Chicago neighbourhood; the city for a suburb (e.g. Evanston). */
+  city?: string
   slug: string
   title?: string
   metaDescription?: string

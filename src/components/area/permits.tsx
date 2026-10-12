@@ -1,6 +1,6 @@
 import {Copy, IconBadge} from '@/components/ds/atoms'
 import {Icon} from '@/components/ds/icon'
-import {andList, DEFAULT_MIX_NOTES, monthYear, permitTypeWords} from '@/lib/area/copy'
+import {andList, cityOf, DEFAULT_MIX_NOTES, isChicago, monthYear, permitTypeWords} from '@/lib/area/copy'
 import {AreaHead} from './head'
 import type {AreaCtx} from './types'
 
@@ -12,11 +12,14 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
   const notes = new Map((page.mixNotes || []).map((item) => [item.label, item.note]))
   const mix = (permits?.mix || []).filter((item) => item.label !== 'Signs').slice(0, 9)
   const max = Math.max(1, ...mix.map((item) => item.count))
-  const lede = permits ? `The City of Chicago publishes every building permit. We pulled ${page.areaThe}'s for the ${permits.months} months to ${monthYear(permits.windowTo)}: about ${permits.electricalTotal.toLocaleString('en-US')} permits involved electrical work, and ${permits.contractors} different electrical contractors were named on them.` : undefined
+  const chicago = isChicago(page)
+  // Suburbs run their own permit systems, and most do not publish them as open data.
+  const suburbLede = `${cityOf(page)} issues its own building permits and does not publish them as open data the way Chicago does, so there is no permit mix to show here. This is what we can tell you about our work ${page.areaIn}.`
+  const lede = !chicago && !permits ? suburbLede : permits ? `The City of Chicago publishes every building permit. We pulled ${page.areaThe}'s for the ${permits.months} months to ${monthYear(permits.windowTo)}: about ${permits.electricalTotal.toLocaleString('en-US')} permits involved electrical work, and ${permits.contractors} different electrical contractors were named on them.` : undefined
 
   return (
     <div className="ds-wrap">
-      <AreaHead id="permit-record-title" layout="stack" eyebrow="Permit record · City of Chicago data" title={`What the ${page.area} permit record shows`} lede={lede} editorial={editorial} />
+      <AreaHead id="permit-record-title" layout="stack" eyebrow={chicago || permits ? 'Permit record · City of Chicago data' : `Permit record · ${cityOf(page)}`} title={chicago || permits ? `What the ${page.area} permit record shows` : `Permits and our record ${page.areaIn}`} lede={lede} editorial={editorial} />
       {permits && <div className="ar-source">
         <p className="ar-source-label"><IconBadge icon="info" tone="blue" size={32} />Data source</p>
         <p>Permits issued {monthYear(permits.windowFrom, true)} to {monthYear(permits.windowTo, true)}, inside {page.bboxText}. A permit can count in more than one row. Grouped by keywords in the City&apos;s work descriptions, so treat the counts as approximate. Source: City of Chicago building permits data.</p>
@@ -44,7 +47,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
           {page.honestContext?.map((paragraph, index) => <Copy value={paragraph} show={editorial} key={index} />)}
         </div>}
       </div>
-      {!permits && <p className="ar-footnote"><Icon name="info" size={16} />No City permit data has been imported for this area yet.</p>}
+      {!permits && chicago && <p className="ar-footnote"><Icon name="info" size={16} />No City permit data has been imported for this area yet.</p>}
     </div>
   )
 }

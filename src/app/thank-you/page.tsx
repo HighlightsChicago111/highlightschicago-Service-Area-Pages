@@ -1,6 +1,5 @@
 import type {Metadata} from 'next'
 import Link from 'next/link'
-import {notFound} from 'next/navigation'
 import {Button, IconBadge} from '@/components/ds/atoms'
 import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
 import {Icon} from '@/components/ds/icon'
@@ -23,7 +22,6 @@ const steps = [
 
 export default async function ThankYouPage() {
   const [areas, co] = await Promise.all([getAreaCards(), getAreaSettings()])
-  if (!co) notFound()
   const tel = telHref(co.phoneTel, co.phoneDisplay)
   return (
     <div className="ds">
