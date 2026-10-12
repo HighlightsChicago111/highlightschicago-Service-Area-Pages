@@ -1,0 +1,647 @@
+{
+ "area": "West Loop",
+ "area_the": "the West Loop",
+ "area_in": "in the West Loop",
+ "slug": "west-loop",
+ "title": "Electricians in the West Loop, Chicago | Highlights Chicago",
+ "meta_description": "Family-owned, City-registered electricians for West Loop lofts, high-rises, restaurants and offices, with 48 permits in the area since 2013. How to choose, what changes the price, and every service we offer. Call (773) 262-3333.",
+ "eyebrow": "West Loop · Fulton Market · Greektown · West Loop Gate",
+ "hero_lede": "Lighting, panels, EV chargers, repairs, restaurant fit-outs and everything in between, for West Loop lofts, high-rise condos, townhomes, restaurants and offices. A family-owned, founder-led contractor registered with the City of Chicago, quoting every job in writing.",
+ "address_placeholder": "e.g. 1000 W Washington, or the building's name",
+ "form_districts": [
+  "Fulton Market",
+  "Fulton River District",
+  "Randolph Street",
+  "West Loop Gate / Union Station",
+  "Greektown",
+  "West of Racine, toward Ashland"
+ ],
+ "form_buildings": [
+  "Converted warehouse loft",
+  "High-rise condo or apartment",
+  "Mid-rise or walk-up condo",
+  "Townhome or rowhouse",
+  "Restaurant or bar",
+  "Office or tenant space",
+  "Retail, studio or showroom",
+  "New construction"
+ ],
+ "districts": [
+  {
+   "name": "Fulton Market",
+   "intro": "The old meatpacking and cold-storage district north of Lake St, now offices, hotels, showrooms and restaurants.",
+   "work": "Large tenant build-outs, loft conversions with exposed ceilings, heavy signage and lighting, and new office and residential towers."
+  },
+  {
+   "name": "Randolph Street",
+   "intro": "Restaurant Row, between Halsted and Racine.",
+   "work": "Kitchen equipment circuits, three-phase service, dining-room lighting and signage, scheduled around service hours."
+  },
+  {
+   "name": "Fulton River District",
+   "intro": "Riverside lofts and towers between the river and the Kennedy, north of Lake St.",
+   "work": "Condo unit work in older loft buildings and newer towers, under building management rules."
+  },
+  {
+   "name": "West Loop Gate",
+   "intro": "Around Union Station and Ogilvie, between the river and the Kennedy.",
+   "work": "High-rise apartments and offices. Certificates of insurance, freight elevators and building engineers are part of every job."
+  },
+  {
+   "name": "Greektown",
+   "intro": "Halsted St south of Madison: restaurants with condos and apartments above and around.",
+   "work": "Restaurant electrical, mixed-use buildings and mid-rise condo units."
+  },
+  {
+   "name": "West of Racine, toward Ashland",
+   "intro": "Blocks of four-storey masonry condo buildings with ground-floor garages, townhomes and new mixed-use buildings.",
+   "work": "Unit lighting and remodels, EV chargers in building garages and newer construction. Most of our own West Loop permits are here."
+  }
+ ],
+ "buildings": [
+  {
+   "illus": "b-loft",
+   "title": "Converted warehouse loft",
+   "where": "Fulton Market, Fulton River District, Randolph St, Lake St",
+   "changes": "Masonry walls and timber or concrete ceilings, often left exposed. Wiring may have to run in surface conduit that has to look intentional. Ceilings are high.",
+   "services": [
+    [
+     "Chandeliers, pendants, track lighting",
+     "svc-lighting"
+    ],
+    [
+     "ceiling fans",
+     "svc-wiring"
+    ],
+    [
+     "unit panels",
+     "svc-panels"
+    ]
+   ]
+  },
+  {
+   "illus": "b-highrise",
+   "title": "High-rise condo or apartment",
+   "where": "West Loop Gate, Fulton Market, along Canal and Clinton",
+   "changes": "Concrete slabs limit where boxes can go. Management approval, a certificate of insurance, an elevator booking and set working hours come first.",
+   "services": [
+    [
+     "Recessed lighting and fixtures",
+     "svc-lighting"
+    ],
+    [
+     "panel replacement",
+     "svc-panels"
+    ],
+    [
+     "EV charging in the garage",
+     "svc-energy"
+    ]
+   ]
+  },
+  {
+   "illus": "b-midrise",
+   "title": "Mid-rise or walk-up condo, 2000s onward",
+   "where": "West of Racine toward Ashland, and around Mary Bartelme Park",
+   "changes": "Modern wiring, panels in each unit, shared garages. Good access, and association rules still apply.",
+   "services": [
+    [
+     "Lighting upgrades",
+     "svc-lighting"
+    ],
+    [
+     "EV chargers",
+     "svc-energy"
+    ],
+    [
+     "outlets and circuits",
+     "svc-wiring"
+    ]
+   ]
+  },
+  {
+   "illus": "b-townhome",
+   "title": "Townhome or rowhouse",
+   "where": "Side streets west of Racine and north of Lake",
+   "changes": "Your own service and panel, roof decks, attached garages.",
+   "services": [
+    [
+     "Outdoor and roof-deck lighting",
+     "svc-lighting"
+    ],
+    [
+     "EV chargers, generators, solar",
+     "svc-energy"
+    ],
+    [
+     "surge protection",
+     "svc-panels"
+    ]
+   ]
+  },
+  {
+   "illus": "b-restaurant",
+   "title": "Restaurant or bar",
+   "where": "Randolph St, Greektown, Fulton Market",
+   "changes": "Heavy equipment loads, three-phase power, health and fire inspections, and work that can't disturb service.",
+   "services": [
+    [
+     "Restaurant electrical",
+     "svc-commercial"
+    ],
+    [
+     "emergency and exit lighting",
+     "svc-lighting"
+    ],
+    [
+     "service upgrades",
+     "svc-panels"
+    ]
+   ]
+  },
+  {
+   "illus": "b-office",
+   "title": "Office or tenant space",
+   "where": "Fulton Market, W Madison St, West Loop Gate",
+   "changes": "Permits with plans, fire alarm coordination with the building, data cabling, and after-hours work in occupied buildings.",
+   "services": [
+    [
+     "Tenant build-outs",
+     "svc-commercial"
+    ],
+    [
+     "structured cabling",
+     "svc-lowvoltage"
+    ],
+    [
+     "LED retrofits",
+     "svc-lighting"
+    ]
+   ]
+  }
+ ],
+ "scope_lede": "The same job on paper can cost very differently in a timber loft, a concrete tower and a restaurant. These are the things that change it, and most are settled at the walkthrough.",
+ "scope_rows": [
+  [
+   "Building approval and certificate of insurance",
+   "Most managed buildings won't schedule work until they have both, and some name specific insurance limits.",
+   "Your building manager, with us"
+  ],
+  [
+   "Freight elevator and loading dock",
+   "Booked time windows decide when materials and crews get in, and how long a day on site really is.",
+   "Your building"
+  ],
+  [
+   "Parking",
+   "Most West Loop streets have little parking near the door, so carrying tools and materials in takes time.",
+   "Us, at the walkthrough"
+  ],
+  [
+   "How the building is built",
+   "Wire can be fished through wood framing, has to run in conduit across concrete, or needs approved core drilling through a slab.",
+   "Us, at the walkthrough"
+  ],
+  [
+   "Exposed ceilings",
+   "In a loft, conduit is part of the look. It's planned so it reads as intentional, which takes longer than hidden wiring.",
+   "You and us"
+  ],
+  [
+   "Ceiling height",
+   "Heavy chandeliers on 14-foot-plus ceilings need the right support, the right box and sometimes a lift.",
+   "Us"
+  ],
+  [
+   "Working hours",
+   "Restaurants and occupied offices often need early, late or weekend work. [CONFIRM: whether after-hours rates apply]",
+   "You and us"
+  ],
+  [
+   "Building systems",
+   "In high-rises, fire alarm and life-safety tie-ins go through the building's own contractor.",
+   "Your building"
+  ],
+  [
+   "Permit route",
+   "Many unit jobs go through the City's Express Permit Program. Build-outs need plans and a standard review.",
+   "Us"
+  ],
+  [
+   "Condo board or association",
+   "Boards often want a written proposal before they approve work in common areas or shared garages.",
+   "Your board, with our proposal"
+  ],
+  [
+   "Shared garage EV chargers",
+   "Whose meter the charger runs from, the building's spare capacity, and submetering decide the design.",
+   "Your association, with us"
+  ]
+ ],
+ "hourly_answer": "We quote by scope, not by the hour, because the hours on a West Loop job depend on everything in the table above. A fixture swap in a walk-up and the same fixture on a 16-foot loft ceiling aren't the same job. The written quote tells you the whole price before you agree to it.",
+ "choosing_building_why": "A loft with an exposed timber ceiling, a concrete-slab tower and a restaurant kitchen are three different jobs.",
+ "choosing_building_answer": "High-rise and loft units, new-construction mid-rises, tenant build-outs and a Halsted St restaurant",
+ "choosing_paperwork_why": "Most towers want a certificate of insurance, and sometimes an elevator booking, before work is scheduled.",
+ "where_we_fit": "Highlights is a family-owned contractor. In the West Loop we're the right call for condo, loft and townhome work, lighting, panels, EV chargers, restaurants, tenant build-outs and mid-rise new construction. Base-building work on a 40-storey tower is a job for the large commercial firms, and we'll tell you so.",
+ "boundary_text": "Bounded by Grand Avenue to the north, the Eisenhower Expressway (I-290) to the south, Ashland Avenue to the west and the Chicago River to the east. It's less one neighbourhood than a set of districts, and the electrical work differs between them.",
+ "facts": [
+  [
+   "Community area",
+   "Mostly Near West Side (28), with edges in West Town (24)"
+  ],
+  [
+   "ZIP codes",
+   "60607, 60661, and 60606 west of the river"
+  ],
+  [
+   "City wards",
+   "Mostly the 27th, 34th and 42nd"
+  ],
+  [
+   "Transit",
+   "Union Station, Ogilvie, Morgan and Clinton stations"
+  ],
+  [
+   "Utility",
+   "ComEd"
+  ],
+  [
+   "Permits",
+   "City of Chicago Department of Buildings"
+  ]
+ ],
+ "zips": [
+  "60607",
+  "60661",
+  "60606"
+ ],
+ "bbox": {
+  "north": 41.8915,
+  "south": 41.8755,
+  "west": -87.6667,
+  "east": -87.6375
+ },
+ "bbox_text": "Grand Ave, I-290, Ashland Ave and the Chicago River",
+ "map_desc": "The West Loop runs from Grand Avenue south to the Eisenhower Expressway (I-290), and from Ashland Avenue east to the Chicago River. Districts shown: Fulton Market, Fulton River District, Randolph Street, West Loop Gate, Greektown and the residential blocks toward Ashland. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+ "map": {
+  "bbox": {
+   "north": 41.8916,
+   "south": 41.8758,
+   "west": -87.667,
+   "east": -87.6372
+  },
+  "height": 640,
+  "ew_streets": [
+   [
+    "W Grand Ave",
+    41.8912
+   ],
+   [
+    "W Kinzie St",
+    41.8892
+   ],
+   [
+    "W Fulton Market",
+    41.8866
+   ],
+   [
+    "W Lake St",
+    41.8857
+   ],
+   [
+    "W Randolph St",
+    41.8845
+   ],
+   [
+    "W Madison St",
+    41.8819
+   ],
+   [
+    "W Adams St",
+    41.8793
+   ],
+   [
+    "W Jackson Blvd",
+    41.878
+   ],
+   [
+    "W Van Buren St",
+    41.8767
+   ]
+  ],
+  "ns_streets": [
+   [
+    "S Ashland Ave",
+    -87.6667
+   ],
+   [
+    "S Racine Ave",
+    -87.657
+   ],
+   [
+    "S Morgan St",
+    -87.652
+   ],
+   [
+    "S Halsted St",
+    -87.6475
+   ],
+   [
+    "S Desplaines St",
+    -87.644
+   ],
+   [
+    "S Canal St",
+    -87.6395
+   ]
+  ],
+  "districts": [
+   [
+    "Fulton Market",
+    41.8915,
+    41.8852,
+    -87.6667,
+    -87.646
+   ],
+   [
+    "Fulton River District",
+    41.8915,
+    41.8852,
+    -87.646,
+    -87.638
+   ],
+   [
+    "Randolph Street",
+    41.8852,
+    41.8836,
+    -87.66,
+    -87.646
+   ],
+   [
+    "West Loop Gate",
+    41.8852,
+    41.876,
+    -87.6455,
+    -87.638
+   ],
+   [
+    "Greektown",
+    41.8822,
+    41.876,
+    -87.65,
+    -87.6455
+   ],
+   [
+    "Mid-rise blocks toward Ashland",
+    41.8836,
+    41.876,
+    -87.6667,
+    -87.65
+   ]
+  ],
+  "landmarks": [
+   [
+    "Union Station",
+    41.8786,
+    -87.6403
+   ],
+   [
+    "Ogilvie",
+    41.8826,
+    -87.6405
+   ],
+   [
+    "Morgan (Green/Pink)",
+    41.8856,
+    -87.6522
+   ],
+   [
+    "Mary Bartelme Park",
+    41.8805,
+    -87.6505
+   ]
+  ],
+  "features": [
+   {
+    "kind": "expressway_ns",
+    "lon": -87.6456,
+    "label": "Kennedy Expwy (I-90/94)"
+   },
+   {
+    "kind": "water_east",
+    "lon": -87.638,
+    "label": "Chicago River"
+   },
+   {
+    "kind": "expressway_ew",
+    "lat": 41.876,
+    "label": "Eisenhower Expwy (I-290)"
+   }
+  ]
+ },
+ "mix_notes": {
+  "Low voltage, data and communications": "An office-heavy area. Cabling is routine here.",
+  "Interior build-outs and alterations": "Spaces are constantly being refitted for new tenants.",
+  "Lighting": "The biggest single category of hands-on electrical work.",
+  "Outlets and receptacles": "Kitchen, office and unit remodels.",
+  "Work inside a specific unit or condo": "Condo and apartment owners are a large share of the work.",
+  "Fire alarm": "High-rise and commercial buildings, where tie-ins are tightly controlled.",
+  "Electrical service": "New and upgraded services for buildings and tenants.",
+  "Restaurants": "Restaurant Row, Fulton Market and Greektown keep this steady.",
+  "EV charging": "Most add a single new circuit for one charger."
+ },
+ "record_bullets": [
+  "Electrical for new four-storey residential buildings on the 1000–1200 blocks of W Madison, the 1200 block of W Jackson, and S Laflin and S Aberdeen.",
+  "Tenant build-outs on the 1200 block of W Madison: offices, a salon and a Pilates studio.",
+  "A restaurant build-out on S Halsted in Greektown.",
+  "A 400-amp three-phase service on the 1300 block of W Grand.",
+  "An EV charger feeder for a unit on S Peoria.",
+  "Lighting in condo units on W Monroe, S Laflin and N May, and temporary construction power on W Madison and W Monroe."
+ ],
+ "honest_context": [
+  "We're a north-side shop. Most of our 1,213 Chicago permits are in Wards 1, 32, 26, 47 and 27, and the 27th covers part of the West Loop. Our West Loop work peaked with the mid-rise building wave of 2013 to 2020. Since then it has been mostly unit-level work: lighting, panels, circuits and EV chargers.",
+  "The busiest names in West Loop permits are large commercial contractors working on towers and office floors. That's a different job from yours if you're refitting a loft."
+ ],
+ "nearby": [
+  [
+   "The Loop",
+   "Office towers and high-rise residential conversions east of the river."
+  ],
+  [
+   "River North",
+   "Lofts and towers north of the river, with similar building rules."
+  ],
+  [
+   "West Town and River West",
+   "Older brick two- and three-flats north of Grand, where fuse boxes and 100-amp services still turn up."
+  ],
+  [
+   "Ukrainian Village",
+   "Pre-1940 masonry stock with knob-and-tube surprises behind new drywall."
+  ],
+  [
+   "Near West Side, Illinois Medical District",
+   "Medical and institutional buildings, plus residential blocks around them."
+  ],
+  [
+   "Little Italy and University Village",
+   "A mix of older rowhouses and newer townhome developments."
+  ],
+  [
+   "South Loop",
+   "High-rise condos and loft conversions south of the Eisenhower."
+  ],
+  [
+   "Pilsen",
+   "Older masonry buildings, many being renovated."
+  ]
+ ],
+ "faq": [
+  [
+   "faq-highrise",
+   "Do you work in West Loop high-rise buildings?",
+   "Yes. We work to the building's rules: a certificate of insurance before scheduling, booked freight elevator time, approved working hours and the building engineer's sign-off where it's needed. Reviewers describe our crews handling high-rise parking, elevators and building rules without fuss."
+  ],
+  [
+   "faq-ev",
+   "Can you install an EV charger in my condo building's garage?",
+   "Usually, yes. The design depends on whose electrical service the charger runs from, the building's spare capacity, whether the association wants a submeter, and its approval process. We provide the certificate of insurance and a proposal the association can review."
+  ],
+  [
+   "faq-permit",
+   "Do I need a permit for electrical work in my West Loop condo?",
+   "Most electrical work in Chicago needs a permit, and many unit jobs go through the City's Express Permit Program. Our own West Loop record includes permitted lighting work in condo units. We tell you at the walkthrough whether your job needs one, and we pull and close it."
+  ],
+  [
+   "faq-restaurant",
+   "Do you work on restaurants on Randolph Street and in Greektown?",
+   "Yes: kitchen equipment circuits, service upgrades, lighting, emergency and exit lighting, and signage, scheduled around service. Our West Loop record includes a restaurant build-out on S Halsted."
+  ],
+  [
+   "faq-zip",
+   "Which West Loop ZIP codes do you cover?",
+   "All of them: 60607, 60661 and the part of 60606 west of the river, along with every other Chicago neighbourhood."
+  ]
+ ],
+ "cta_ready": [
+  "Your building's name, and the management office's contact",
+  "Its contractor requirements: certificate of insurance limits, elevator booking and working hours",
+  "A photo of your electrical panel with the door open",
+  "Photos of the room or ceiling, and of any fixture you've bought",
+  "For a condo: whether the board needs to approve the work",
+  "For a restaurant or office: drawings, if you have them, and the hours you can't be disturbed"
+ ],
+ "reviews_heading": "Reviews from condo, loft and high-rise jobs",
+ "reviews": [
+  {
+   "reviewer": "Marcel",
+   "label": "EV charger in a downtown condo building"
+  },
+  {
+   "reviewer": "Katherine Smailis",
+   "label": "Panel and outlets in a high-rise unit",
+   "cut_before": " I am so pleased"
+  },
+  {
+   "reviewer": "Brian McConkey",
+   "label": "Loft with high ceilings"
+  },
+  {
+   "reviewer": "Lulu Zhang",
+   "label": "Downtown high-rise condo"
+  },
+  {
+   "reviewer": "J Stinton",
+   "label": "Proposal for an HOA board"
+  },
+  {
+   "reviewer": "Nancy French",
+   "label": "Heavy fixture in a high-rise"
+  },
+  {
+   "reviewer": "liz smiley",
+   "label": "17 recessed lights in a condo"
+  },
+  {
+   "reviewer": "Francisco Moya",
+   "label": "New construction",
+   "cut_before": " If you need reliable"
+  }
+ ],
+ "service_overrides": {
+  "Fuse box replacement and fuse-to-breaker conversion": "Rare in new West Loop buildings, still found in older commercial and mixed-use properties around Ashland.",
+  "Temporary construction power": "Temporary services for build-outs and new construction. We've installed them on West Loop job sites.",
+  "Well pump wiring": "Not something the West Loop needs, but we wire pumps for clients elsewhere in Chicagoland.",
+  "Tenant build-outs": "White-box and vanilla-box spaces turned into offices, salons, studios and shops. We've done several on W Madison St.",
+  "Electrician for new construction": "Mid-rise residential and mixed-use buildings. 20 of our West Loop permits are new construction.",
+  "Industrial electrical services": "Light industrial and workshop power in the remaining industrial pockets near the Kennedy and Ashland.",
+  "svc-commercial": "Tenant build-outs, restaurants, offices and buildings from the ground up. A large share of West Loop permits are commercial."
+ },
+ "research_sources": [
+  [
+   "Four Seasons Heating, Cooling & Electric: Chicago electrical page",
+   "https://www.fourseasonsheatingcooling.com/electrical/",
+   "Electrical / HVAC, Chicago"
+  ],
+  [
+   "Four Seasons: Chicago plumbing page",
+   "https://www.fourseasonsheatingcooling.com/plumbing/",
+   "Plumbing, Chicago"
+  ],
+  [
+   "House Doctors: Electrical handyman in Lincoln Park",
+   "https://www.housedoctors.com/chicago-and-north-shore/lincoln-park/electrical-services/",
+   "Handyman franchise, Chicago"
+  ],
+  [
+   "Mr. Rooter: 24 hour emergency plumber in West Loop",
+   "https://www.mrrooter.com/locations/illinois/west-loop/emergency-plumber",
+   "Plumbing franchise, West Loop"
+  ],
+  [
+   "AJ Long Electric: Capitol Hill neighbourhood page",
+   "https://ajlongelectric.com/neighborhoods/capitol-hill",
+   "Electrical, Washington DC"
+  ],
+  [
+   "AJ Long Electric: Capitol Hill DC services page",
+   "https://ajlongelectric.com/dc-electrical-services/capitol-hill",
+   "Electrical, Washington DC"
+  ],
+  [
+   "AJ Long Electric: Hill East neighbourhood page",
+   "https://ajlongelectric.com/neighborhoods/hill-east",
+   "Electrical, Washington DC"
+  ],
+  [
+   "Harts: Capitol Hill Seattle electrician",
+   "https://hartsservices.com/?p=11022",
+   "Electrical / plumbing, Seattle"
+  ],
+  [
+   "This Old House: Best electricians in Lincoln Park, MI",
+   "https://www.thisoldhouse.com/near-me/michigan/lincoln-park/electrical",
+   "Listicle / directory"
+  ],
+  [
+   "ConsumerAffairs: Best electricians in Chicago",
+   "https://www.consumeraffairs.com/homeowners/electricians-chicago.html",
+   "Listicle / reviews"
+  ],
+  [
+   "Groupon: Electricians in Chicago",
+   "https://www.groupon.com/local/chicago/electrician",
+   "Deals directory"
+  ],
+  [
+   "Public Service Plumbers: high-rise and loft plumbing, Dallas",
+   "https://publicserviceplumbers.com/plumbing-services/high-rise-residential/",
+   "Plumbing, Dallas"
+  ],
+  [
+   "Rescue Plumbing: Lincoln Park Chamber listing",
+   "https://www.lincolnparkchamber.com/member/rescue-plumbing/",
+   "Plumbing, family-owned, Chicago"
+  ]
+ ]
+}

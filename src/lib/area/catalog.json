@@ -1,0 +1,481 @@
+{
+ "servicesUrl": "https://www.highlightschicago.com/services/",
+ "categories": [
+  {
+   "id": "svc-repair",
+   "title": "Repairs, troubleshooting and emergencies",
+   "intro": "Something has stopped working, tripped, buzzed or smelled hot. Diagnosis comes before any replacement.",
+   "items": [
+    {
+     "name": "Emergency electrician",
+     "slug": null,
+     "line": "Power out to part of a unit, a burning smell, a sparking outlet or a panel that's hot to the touch. Safe a hazard first, then repair."
+    },
+    {
+     "name": "Power outage electrician",
+     "slug": null,
+     "line": "Half the unit dark while the building has power usually means a lost phase, a failed breaker or a loose feeder termination."
+    },
+    {
+     "name": "Burning smell from an outlet",
+     "slug": null,
+     "line": "Turn the circuit off at the breaker and call. Heat at a device is a loose connection or an overloaded circuit, not a nuisance."
+    },
+    {
+     "name": "Electrical repair services",
+     "slug": "electrical-repair",
+     "line": "Dead outlets, flickering lights and intermittent faults, found and fixed with the cause written down."
+    },
+    {
+     "name": "Electrical troubleshooting",
+     "slug": "electrical-troubleshooting",
+     "line": "Methodical fault-finding for problems that come and go, the kind that need testing rather than guessing."
+    },
+    {
+     "name": "Circuit breaker repair and replacement",
+     "slug": "circuit-breaker-replacement",
+     "line": "A breaker that keeps tripping is reporting a fault. We find the fault before swapping the breaker."
+    },
+    {
+     "name": "GFCI outlet not working",
+     "slug": "gfci-outlet-installation",
+     "line": "A GFCI that won't reset, or trips with nothing plugged in, often points to moisture or a shared downstream circuit."
+    },
+    {
+     "name": "Electrical wiring repair",
+     "slug": "electrical-wiring-and-repair-services",
+     "line": "Damaged, overheated or amateur wiring found behind fixtures and in junction boxes during renovation."
+    }
+   ]
+  },
+  {
+   "id": "svc-panels",
+   "title": "Panels, service and protection",
+   "intro": "The equipment every circuit depends on: the panel in your unit, the service to the building, and what protects both.",
+   "items": [
+    {
+     "name": "Electrical panel upgrade",
+     "slug": "electrical-panel-upgrade",
+     "line": "More capacity for an induction range, an EV charger or a full kitchen. Starts with a load calculation, not a sales pitch."
+    },
+    {
+     "name": "Breaker box replacement and breaker panel repair",
+     "slug": "breaker-box-and-panel-repair",
+     "line": "Panels with failed bus bars, scorched breakers or brands no longer made, replaced in the unit or the building."
+    },
+    {
+     "name": "Circuit breaker replacement",
+     "slug": "circuit-breaker-replacement",
+     "line": "Correctly rated, listed breakers for your panel, including when the original is out of production."
+    },
+    {
+     "name": "AFCI and arc-fault breaker installation",
+     "slug": null,
+     "line": "Arc-fault protection for living areas, often added when circuits are extended during a remodel."
+    },
+    {
+     "name": "Fuse box replacement and fuse-to-breaker conversion",
+     "slug": "fuse-box-replacement",
+     "line": "Still found in older houses, two-flats and mixed-use buildings across Chicago."
+    },
+    {
+     "name": "Whole-house surge protector installation",
+     "slug": "whole-house-surge-protector",
+     "line": "A surge protective device at the panel for units full of electronics and smart-home equipment."
+    },
+    {
+     "name": "Grounding and bonding, ground rod installation",
+     "slug": "grounding-and-bonding",
+     "line": "Correct grounding is what makes every other protective device work. Often the finding behind failed inspections."
+    },
+    {
+     "name": "Electrical riser and meter riser repair",
+     "slug": null,
+     "line": "Feeders and risers between the meter bank and units in multi-unit buildings."
+    },
+    {
+     "name": "Overhead and underground electrical service",
+     "slug": null,
+     "line": "Service drops and laterals on townhomes and low-rise buildings, coordinated with ComEd."
+    },
+    {
+     "name": "Temporary construction power",
+     "slug": null,
+     "line": "Temporary services for build-outs and new construction."
+    },
+    {
+     "name": "Switchgear installation and maintenance",
+     "slug": null,
+     "line": "Distribution equipment for commercial spaces and small buildings."
+    },
+    {
+     "name": "Busway and bus duct installation",
+     "slug": null,
+     "line": "Overhead power distribution for workshops, showrooms and light industrial spaces."
+    },
+    {
+     "name": "Dry-type transformer installation",
+     "slug": null,
+     "line": "Step-down transformers for commercial equipment and tenant spaces."
+    }
+   ]
+  },
+  {
+   "id": "svc-wiring",
+   "title": "Wiring, outlets, switches and appliance circuits",
+   "intro": "Adding, moving and upgrading the devices you touch every day, and the dedicated circuits appliances need.",
+   "items": [
+    {
+     "name": "Electrical wiring services and rewiring",
+     "slug": "electrical-wiring-and-repair-services",
+     "line": "New circuits and rewiring for remodels, including runs in concrete-ceiling units where wire can't simply be fished."
+    },
+    {
+     "name": "Electrical outlet installation",
+     "slug": "electrical-outlet-installation",
+     "line": "New and relocated outlets, kitchen island outlets, USB and floor outlets."
+    },
+    {
+     "name": "GFCI outlet installation",
+     "slug": "gfci-outlet-installation",
+     "line": "Required protection in kitchens, bathrooms, laundry areas and outdoors."
+    },
+    {
+     "name": "Light switch installation and replacement",
+     "slug": "light-switch-replacement-and-installation",
+     "line": "New switch locations, three-way and four-way switching, and replacing worn devices."
+    },
+    {
+     "name": "Dimmer switch installation",
+     "slug": "light-switch-replacement-and-installation",
+     "line": "Dimmers matched to LED fixtures so they don't flicker or buzz."
+    },
+    {
+     "name": "Smart switch and occupancy sensor installation",
+     "slug": "light-switch-replacement-and-installation",
+     "line": "Smart switches that need a neutral, and occupancy sensors for offices and common areas."
+    },
+    {
+     "name": "Junction box installation",
+     "slug": null,
+     "line": "Accessible, correctly sized boxes, which is often what's missing behind old fixtures."
+    },
+    {
+     "name": "Ceiling fan installation",
+     "slug": "ceiling-fan-installation",
+     "line": "Fan-rated boxes and supports, including on high and sloped loft ceilings, and hardwiring fans to a wall switch."
+    },
+    {
+     "name": "Bathroom exhaust fan installation",
+     "slug": "bathroom-exhaust-fan-installation",
+     "line": "Correctly ducted fans with timer or humidity controls."
+    },
+    {
+     "name": "Garbage disposal installation and wiring",
+     "slug": "garbage-disposal-wiring",
+     "line": "A switched circuit and the protection a disposal needs."
+    },
+    {
+     "name": "Dishwasher electrical hookup",
+     "slug": null,
+     "line": "Dedicated dishwasher circuits and hookups in kitchen remodels."
+    },
+    {
+     "name": "Refrigerator and microwave dedicated circuits",
+     "slug": null,
+     "line": "Separate circuits so the kitchen doesn't trip every time two appliances run."
+    },
+    {
+     "name": "Range hood wiring",
+     "slug": null,
+     "line": "Hood wiring and controls in open-plan loft kitchens."
+    },
+    {
+     "name": "Electric stove hookup and dryer outlet installation",
+     "slug": null,
+     "line": "240V circuits for ranges, induction cooktops and dryers."
+    },
+    {
+     "name": "Electric water heater wiring",
+     "slug": null,
+     "line": "Correctly sized circuits and disconnects for electric and tankless water heaters."
+    },
+    {
+     "name": "Well pump wiring",
+     "slug": null,
+     "line": "Pump circuits and controls for properties on wells across Chicagoland."
+    }
+   ]
+  },
+  {
+   "id": "svc-lighting",
+   "title": "Lighting, inside and out",
+   "intro": "The work Highlights is reviewed for most. High ceilings, heavy fixtures and exposed loft ceilings are routine.",
+   "items": [
+    {
+     "name": "Lighting installation",
+     "slug": "light-fixture-installation-and-replacement",
+     "line": "Planning and installing lighting for whole units, offices and restaurants."
+    },
+    {
+     "name": "Recessed lighting installation",
+     "slug": "recessed-lighting-installation",
+     "line": "Layout, spacing and installation, including how the cost changes in concrete ceilings versus framed ones."
+    },
+    {
+     "name": "Light fixture installation and replacement",
+     "slug": "light-fixture-installation-and-replacement",
+     "line": "Swapping fixtures, adding boxes, and supporting heavy fixtures properly."
+    },
+    {
+     "name": "Chandelier installation and hanging",
+     "slug": "chandelier-installation",
+     "line": "Large, heavy chandeliers on tall loft and high-rise ceilings, with the right box and support."
+    },
+    {
+     "name": "Pendant light installation",
+     "slug": "light-fixture-installation-and-replacement",
+     "line": "Kitchen-island and dining pendants hung level, at heights agreed with you on site."
+    },
+    {
+     "name": "Track lighting installation",
+     "slug": "light-fixture-installation-and-replacement",
+     "line": "A loft staple: track and monorail systems for exposed ceilings."
+    },
+    {
+     "name": "Under-cabinet lighting installation",
+     "slug": "light-fixture-installation-and-replacement",
+     "line": "Hardwired under-cabinet lighting with a hidden driver."
+    },
+    {
+     "name": "Wall sconce installation",
+     "slug": "light-fixture-installation-and-replacement",
+     "line": "Sconces on brick, drywall and concrete, with the box placed for the fixture."
+    },
+    {
+     "name": "Accent and cove lighting installation",
+     "slug": "led-retrofit",
+     "line": "Concealed LED tape and cove lighting with remote drivers."
+    },
+    {
+     "name": "Low-voltage lighting installation",
+     "slug": "low-voltage-wiring-installation",
+     "line": "Low-voltage fixtures and the transformers and drivers they rely on."
+    },
+    {
+     "name": "LED retrofit and LED lighting upgrade",
+     "slug": "led-retrofit",
+     "line": "Converting older fixtures and offices to LED, including lighting retrofit services for commercial spaces."
+    },
+    {
+     "name": "Outdoor lighting",
+     "slug": "outdoor-lighting-installation",
+     "line": "Roof decks, balconies, patios and entrances, with weather-rated fixtures and controls."
+    },
+    {
+     "name": "Landscape lighting installation",
+     "slug": "landscape-lighting-installation",
+     "line": "Townhome gardens and building courtyards."
+    },
+    {
+     "name": "Emergency lighting and exit sign installation",
+     "slug": "emergency-lighting-services-and-maintenance",
+     "line": "Emergency lighting maintenance, exit signs and egress lighting requirements for commercial spaces and common areas."
+    },
+    {
+     "name": "Parking lot lighting installation and repair",
+     "slug": "parking-lot-lighting-repair-and-installation",
+     "line": "Surface lots and garage lighting."
+    }
+   ]
+  },
+  {
+   "id": "svc-energy",
+   "title": "EV charging, backup power, solar and energy",
+   "intro": "New loads and new sources of power. Each one starts with whether your unit, panel or building can take it.",
+   "items": [
+    {
+     "name": "EV charger installation",
+     "slug": "tesla-and-ev-charger-installation",
+     "line": "Level 2 chargers in private garages and in shared condo garages, where association approval, load and submetering decide the design."
+    },
+    {
+     "name": "Tesla charger installation",
+     "slug": "tesla-and-ev-charger-installation",
+     "line": "Tesla Wall Connector installs, including power sharing between chargers."
+    },
+    {
+     "name": "Generator installation",
+     "slug": "generator-installation",
+     "line": "Standby generators with a transfer switch and load calculation, mainly for townhomes and small commercial spaces."
+    },
+    {
+     "name": "Generator repair and maintenance",
+     "slug": "generator-repair",
+     "line": "Generators that won't start, won't transfer or haven't been exercised."
+    },
+    {
+     "name": "Solar panel installation and repair",
+     "slug": "solar-panel-installation",
+     "line": "Rooftop solar on townhomes and low-rise buildings where the roof is yours to use, plus inverter and wiring repair."
+    },
+    {
+     "name": "Solar battery installation",
+     "slug": "solar-battery-installation",
+     "line": "Battery storage and backup subpanels."
+    },
+    {
+     "name": "Solar inverter installation",
+     "slug": "solar-panel-installation",
+     "line": "Inverter replacement and upgrades on existing arrays."
+    },
+    {
+     "name": "Home energy audit and assessment",
+     "slug": "home-energy-audit",
+     "line": "Where the load goes, and what's worth changing."
+    },
+    {
+     "name": "Energy efficiency upgrades and services",
+     "slug": "energy-efficiency-upgrades",
+     "line": "Lighting, controls and equipment changes that reduce consumption."
+    },
+    {
+     "name": "Energy Star appliance circuits",
+     "slug": "energy-star-appliances",
+     "line": "Circuits and hookups for efficient appliances, including induction and heat-pump equipment."
+    }
+   ]
+  },
+  {
+   "id": "svc-safety",
+   "title": "Inspections, code and life safety",
+   "intro": "Finding out what's there, bringing it up to code, and the detection that protects the people inside.",
+   "items": [
+    {
+     "name": "Electrical inspection and electrical safety inspection",
+     "slug": null,
+     "line": "A room-by-room check of a unit or space before you buy, lease or renovate."
+    },
+    {
+     "name": "Electrical code compliance and safety checks",
+     "slug": null,
+     "line": "Correcting violations found by a home inspector, a buyer's inspection or the City."
+    },
+    {
+     "name": "Infrared electrical inspection and thermal imaging",
+     "slug": "infrared-electrical-inspection",
+     "line": "Thermal scans of panels and connections that show heat before it shows damage."
+    },
+    {
+     "name": "Smoke detector installation and wiring",
+     "slug": "smoke-detector-installation-and-wiring",
+     "line": "Hardwired, interconnected smoke alarms in units and townhomes."
+    },
+    {
+     "name": "Carbon monoxide detector installation",
+     "slug": "carbon-monoxide-detector-installation",
+     "line": "Smoke and carbon monoxide detector installation where gas appliances or attached garages are present."
+    },
+    {
+     "name": "Heat detector installation",
+     "slug": null,
+     "line": "Heat detectors for kitchens and garages where smoke alarms would false-alarm."
+    },
+    {
+     "name": "Fire alarm installation",
+     "slug": "fire-alarm-installation",
+     "line": "Fire alarm system installation for small commercial spaces. In high-rises, tie-ins are coordinated with the building's own fire alarm contractor."
+    }
+   ]
+  },
+  {
+   "id": "svc-lowvoltage",
+   "title": "Low voltage, data, security and AV",
+   "intro": "The cabling a modern unit or office runs on, and the systems that sit on it.",
+   "items": [
+    {
+     "name": "Low voltage wiring",
+     "slug": "low-voltage-wiring-installation",
+     "line": "A low voltage contractor for data, AV, doorbells, thermostats and lighting control."
+    },
+    {
+     "name": "Structured cabling installation",
+     "slug": "structured-cabling-installation",
+     "line": "Network cabling installation for offices and home offices, terminated and tested."
+    },
+    {
+     "name": "Fiber optic cable installation",
+     "slug": "fiber-optic-cable-installation",
+     "line": "Fiber runs for offices and tenant spaces."
+    },
+    {
+     "name": "CCTV installation and security camera wiring",
+     "slug": "cctv-installation",
+     "line": "Camera wiring and installation for storefronts, restaurants and townhomes."
+    },
+    {
+     "name": "Intercom and door intercom installation",
+     "slug": null,
+     "line": "Entry intercoms for small buildings and townhomes."
+    },
+    {
+     "name": "AV installation and whole-home audio",
+     "slug": null,
+     "line": "In-wall and in-ceiling speakers, TV power and cabling."
+    },
+    {
+     "name": "Home theater and surround sound wiring",
+     "slug": null,
+     "line": "Pre-wire and finish wiring for media rooms."
+    },
+    {
+     "name": "Phone jack installation",
+     "slug": null,
+     "line": "Still needed for some alarm panels and elevators."
+    }
+   ]
+  },
+  {
+   "id": "svc-commercial",
+   "title": "Commercial, restaurant and new construction",
+   "intro": "Tenant build-outs, restaurants, offices and buildings from the ground up.",
+   "items": [
+    {
+     "name": "Commercial electrician and commercial electrical services",
+     "slug": "electrical-installation-services",
+     "line": "Offices, retail, studios and showrooms, permitted and closed out."
+    },
+    {
+     "name": "Tenant build-outs",
+     "slug": "electrical-installation-services",
+     "line": "White-box and vanilla-box spaces turned into offices, salons, studios and shops."
+    },
+    {
+     "name": "Restaurant and bar electrical",
+     "slug": "electrical-installation-services",
+     "line": "Kitchen equipment circuits, three-phase service, signage and lighting, scheduled around service hours."
+    },
+    {
+     "name": "Electrician for new construction",
+     "slug": "electrical-installation-services",
+     "line": "Residential and mixed-use buildings, from rough-in to final inspection."
+    },
+    {
+     "name": "Electrical installation services",
+     "slug": "electrical-installation-services",
+     "line": "New circuits, equipment and systems from plans to inspection."
+    },
+    {
+     "name": "Industrial electrical services",
+     "slug": null,
+     "line": "Light industrial and workshop power for small manufacturers and makers."
+    },
+    {
+     "name": "Residential electrician",
+     "slug": null,
+     "line": "Condos, lofts, townhomes and apartments: every residential job type on this page."
+    }
+   ]
+  }
+ ]
+}

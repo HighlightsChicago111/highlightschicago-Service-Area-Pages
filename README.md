@@ -1,59 +1,41 @@
-# Highlights Chicago Service Pages: V2 template (test collection)
+# Highlights Chicago Service Areas
 
-A separate copy of the service-page site that renders the new design ("Service Landing Page new Template.html") from its own Sanity collection. The live project (`C:\highlight chicago service pages`) is not touched. When V2 is approved, the same pages can replace the live ones at the same URLs (`/services/<slug>`).
+Electrician service area pages ("Electricians in the West Loop, Chicago"), one per neighbourhood, at
+`www.highlightschicago.com/service-areas/<slug>`, with a card collection at `/service-areas`. Content lives in Sanity;
+the design is the approved service area page template.
 
 ## What is here
 
 | Part | Where |
 |---|---|
-| New page template | `src/components/service-landing-page-v2.tsx`, styles at the end of `src/app/globals.css` |
-| Sanity collection (schema) | `src/sanity/schemaTypes/` (`v2ServicePage`, `v2ServiceArea`, `v2SiteSettings`) |
-| Studio | `http://localhost:3008/services/studio` |
-| Workbook | `Highlights Chicago - Service Pages V2 Data.xlsx` (sheet `05 Field Map` maps every column to its Sanity field) |
-| Workbook -> Sanity scripts | `scripts/` |
-| Writing skill (V2) | `skills/highlights-chicago-service-page-v2/` (also installed in `~/.claude/skills`; `skills/*.zip` for claude.ai) |
+| Area page template | `src/components/area/area-landing-page.tsx` (folds), `area-map.tsx` (schematic map), `area-behaviours.tsx` (tabs, carousels, review slider), `src/app/area-page.css` |
+| Collection page | `src/app/page.tsx`, `src/components/area/area-collection.tsx` |
+| Sanity fields | `src/sanity/schemaTypes/areaPage.ts` (one document per area), `areaSettings.ts` (company facts, one document) |
+| Service catalogue, icons, drawings | `src/lib/area/*.json`, exported from the area-page skill by `scripts/export_area_library.py` |
+| Content (skill output) | `content/areas/<slug>/area.json` + `permits.json`, `content/company.json`, `content/highlights-reviews.csv` |
+| Import pipeline | `scripts/build-area-documents.ts`, `scripts/push-area-documents.ts`, tests in `scripts/test-area-documents.ts` |
+| Studio | `/service-areas/studio` |
 
-## First-time setup
+The Sanity fields mirror the `area.json` content file of the `highlights-chicago-service-area-page` skill
+(`references/area-config.md`), so the skill keeps writing content exactly as it does today.
 
-1. Open `.env.local` and paste: project ID, organization ID, read token (Viewer), write token (Editor) and a revalidation secret (any 32+ random characters). Leave the lead webhook lines empty while testing.
-2. `corepack pnpm install`
-3. `corepack pnpm sanity:check` (read-only) to confirm the connection and see what the dataset holds.
-4. In sanity.io/manage > API > CORS origins, add `http://localhost:3008` (allow credentials) so the Studio can sign in.
+## Adding or refreshing an area
 
-## Writing and publishing a page
+1. Run the skill for the area. Put its `area.json` and `permits.json` in `content/areas/<slug>/` (folder name = slug).
+2. `corepack pnpm content:build`: validates (illustrations, service categories, reviewers, required fields) and writes `data/area-documents.json`.
+3. Preview without Sanity: start the dev server with `AREA_CONTENT_SOURCE=local` and open `http://localhost:3008/service-areas/<slug>`.
+4. `corepack pnpm sanity:check`: read-only, shows which project/dataset `.env.local` points at.
+5. `corepack pnpm content:push`: dry run. `--yes` writes drafts; `--publish --yes` publishes. `--only west-loop` limits pages.
 
-```
-corepack pnpm content:extract     # workbook -> data/v2-source.json
-corepack pnpm content:build       # validate -> data/v2-documents.json
-corepack pnpm dev                 # http://localhost:3008/services/<slug>
-corepack pnpm content:push        # dry run: shows target and documents
-corepack pnpm content:push --yes  # writes DRAFTS to Sanity
-corepack pnpm content:push --publish --yes   # publish after review
-```
-
-Without a project ID in `.env.local`, the site renders from `data/v2-documents.json`, so a page can be checked before anything is written to Sanity.
-
-`[CONFIRM: question]` in any cell marks a fact Highlights still has to confirm. It shows as a yellow chip, stays out of the FAQ schema, and is listed by `content:build`.
-
-## Deploying on Vercel
-
-1. New project from `HighlightsChicago111/Service-New-pages-`, framework Next.js, root directory `/`. Vercel detects pnpm from `pnpm-lock.yaml`.
-2. Environment variables (Production and Preview):
-   - `NEXT_SANITY_PROJECT_ID` = `hzu8fe77`
-   - `NEXT_SANITY_DATASET` = `production`
-   - `NEXT_SANITY_API_VERSION` = `2026-03-01`
-   - `NEXT_SANITY_STUDIO_URL` = `/services/studio`
-   - `NEXT_SITE_URL` = the deployment URL, e.g. `https://<project>.vercel.app`
-   - `SANITY_API_READ_TOKEN` = the Viewer token (lets the Studio preview drafts)
-   - Do not add `SANITY_API_WRITE_TOKEN` to Vercel; it is only for the local import script.
-   - `SANITY_REVALIDATE_SECRET` later, together with a Sanity webhook to `https://<domain>/services/api/revalidate`.
-3. The site lives under `/services` (the bare domain redirects there). The collection page `/services` lists **published** pages as cards; each card opens its page. Drafts only show in the Studio's preview.
-4. In sanity.io/manage > API > CORS origins, add the Vercel domain (allow credentials) so `/services/studio` can sign in.
+`[CONFIRM: question]` in any text marks a fact still to confirm. It shows as a yellow chip, stays out of the FAQ schema,
+and `content:build` lists every one.
 
 ## Checks
 
-`corepack pnpm test:content` (mapping and validation rules), `corepack pnpm typecheck`, `corepack pnpm lint`, `corepack pnpm build`.
+`corepack pnpm test:content`, `corepack pnpm typecheck`, `corepack pnpm lint`, `corepack pnpm build`.
 
-## Regenerating the blank workbook
+## Deploying on Vercel
 
-`python -I scripts/make_workbook.py --template "<design file>.html" --source "<live project>/data/source-content.json"` rebuilds the workbook with the solar example. It overwrites the workbook, so save your rows first.
+Environment variables: `NEXT_SANITY_PROJECT_ID`, `NEXT_SANITY_DATASET`, `NEXT_SANITY_API_VERSION`,
+`NEXT_SANITY_STUDIO_URL=/service-areas/studio`, `NEXT_SITE_URL`, `SANITY_API_READ_TOKEN`. Never add the write token.
+Add the Vercel domain to the Sanity project's CORS origins. Pages are `noindex` until they go live on the main domain.

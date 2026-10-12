@@ -9,14 +9,14 @@ import {schemaTypes} from './src/sanity/schemaTypes'
 import {structure} from './src/sanity/structure'
 
 export default defineConfig({
-  name: 'service-pages-v2',
-  title: 'Highlights Chicago Service Pages (V2 template)',
+  name: 'service-areas',
+  title: 'Highlights Chicago Service Areas',
   projectId: process.env.NEXT_SANITY_PROJECT_ID || 'not-configured',
   dataset: process.env.NEXT_SANITY_DATASET || 'production',
-  basePath: '/services/studio',
+  basePath: '/service-areas/studio',
   plugins: [
     structureTool({structure}),
-    presentationTool({resolve, previewUrl: {previewMode: {enable: '/services/api/draft-mode/enable'}}}),
+    presentationTool({resolve, previewUrl: {previewMode: {enable: '/service-areas/api/draft-mode/enable'}}}),
     visionTool(),
   ],
   schema: {types: schemaTypes},

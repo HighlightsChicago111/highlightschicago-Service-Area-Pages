@@ -1,13 +1,11 @@
 import type {StructureResolver} from 'sanity/structure'
-
-export const SETTINGS_ID = 'v2-siteSettings'
+import {AREA_SETTINGS_ID} from './schemaTypes/areaSettings'
 
 export const structure: StructureResolver = (S) =>
   S.list()
-    .title('Service Pages (V2 template)')
+    .title('Service Areas')
     .items([
-      S.documentTypeListItem('v2ServicePage').title('Service pages (V2)'),
+      S.documentTypeListItem('areaPage').title('Service area pages'),
       S.divider(),
-      S.documentTypeListItem('v2ServiceArea').title('Service areas'),
-      S.listItem().title('Site settings').child(S.document().schemaType('v2SiteSettings').documentId(SETTINGS_ID)),
+      S.listItem().title('Company facts').child(S.document().schemaType('areaSettings').documentId(AREA_SETTINGS_ID)),
     ])

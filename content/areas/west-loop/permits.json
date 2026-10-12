@@ -1,0 +1,642 @@
+{
+ "source": "City of Chicago building permits (data.cityofchicago.org, ydr8-5enu)",
+ "bbox": {
+  "north": 41.8915,
+  "south": 41.8755,
+  "west": -87.6667,
+  "east": -87.6375
+ },
+ "community_area_filter": [],
+ "window": {
+  "from": "2024-10-11",
+  "to": "2026-10-12",
+  "months": 24
+ },
+ "permits_in_window": 2235,
+ "electrical_total": 1463,
+ "contractors": 286,
+ "mix": [
+  [
+   "Low voltage, data and communications",
+   434
+  ],
+  [
+   "Work inside a specific unit or condo",
+   366
+  ],
+  [
+   "Interior build-outs and alterations",
+   336
+  ],
+  [
+   "Lighting",
+   250
+  ],
+  [
+   "Fire alarm",
+   228
+  ],
+  [
+   "Signs",
+   164
+  ],
+  [
+   "Outlets and receptacles",
+   159
+  ],
+  [
+   "Electrical service",
+   92
+  ],
+  [
+   "EV charging",
+   49
+  ],
+  [
+   "Restaurants",
+   43
+  ],
+  [
+   "Panels",
+   10
+  ],
+  [
+   "Generators",
+   2
+  ],
+  [
+   "Solar",
+   1
+  ]
+ ],
+ "wards": [
+  [
+   "27",
+   928
+  ],
+  [
+   "34",
+   867
+  ],
+  [
+   "42",
+   386
+  ],
+  [
+   "1",
+   28
+  ],
+  [
+   "28",
+   26
+  ]
+ ],
+ "community_areas": [
+  [
+   "28",
+   1970
+  ],
+  [
+   "24",
+   179
+  ],
+  [
+   "8",
+   86
+  ]
+ ],
+ "highlights": {
+  "count": 48,
+  "addresses": 40,
+  "by_type": [
+   [
+    "New Construction",
+    20
+   ],
+   [
+    "Express Permit Program",
+    13
+   ],
+   [
+    "Renovation/Alteration",
+    13
+   ],
+   [
+    "Signs",
+    2
+   ]
+  ],
+  "by_year": [
+   [
+    "2013",
+    8
+   ],
+   [
+    "2014",
+    4
+   ],
+   [
+    "2015",
+    1
+   ],
+   [
+    "2016",
+    9
+   ],
+   [
+    "2017",
+    6
+   ],
+   [
+    "2018",
+    2
+   ],
+   [
+    "2019",
+    7
+   ],
+   [
+    "2020",
+    5
+   ],
+   [
+    "2021",
+    1
+   ],
+   [
+    "2022",
+    2
+   ],
+   [
+    "2023",
+    1
+   ],
+   [
+    "2025",
+    1
+   ],
+   [
+    "2026",
+    1
+   ]
+  ],
+  "first_year": "2013",
+  "blocks": {
+   "1200 block of W ADAMS ST": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 1 CIRCUITS TO EXISTING 150 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: GARAGE."
+    }
+   ],
+   "300 block of N MAY ST": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LOW VOLTAGE/COMMUNICATION ELECTRICAL WORK. INSTALL LIGHTING. SPECIFIC LOCATION: STUDIO,BEDROOMS,KITCHEN,LIVINGROOM."
+    },
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "REMOVE EXISTING LIGHT FIXTURES, ELECTRICAL OUTLETS AND SWITCHES.INSTALL ONE TEMP OUTLET IN UNIT 6AB. INTERIOR WORK ONLY."
+    }
+   ],
+   "1500 block of W MONROE ST": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW LIGHT FIXTURES IN THE DINING ROOM, MASTER BEDROOM, AND GUEST BEDROOM IN UNIT #604"
+    }
+   ],
+   "0 block of S LAFLIN ST": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "UNIT #313 INSTALL NEW LIGHT FIXTURES IN BEDROOMS, LIVING ROOM, ENTRANCE, AND HALLWAY"
+    }
+   ],
+   "400 block of N CANAL ST": [
+    {
+     "year": "2022",
+     "type": "Renovation/Alteration",
+     "work": "2019 CBC SELF CERT INTERIOR ALTERATIONS TO EXISTING TOWNHOME, CONVERT PARTIAL UTILITY CLOSET INTO BATHROOM ON GROUND FLOOR. 90 SQ. OF WORK."
+    }
+   ],
+   "300 block of N CANAL ST": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "REPLACE 20 FEET OF 1/2 INCH  RIGID  CONDUIT FOR FRONT LIGHT"
+    },
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "*SELF-CERTIFIED PROJECT*  INTERIOR RENOVATION OF UNIT #808 IN EXISTING MULTI-UNIT BUILDING, PER PLANS. NO STRUCTURAL WORK. NO CHANGE TO HEATING OR AIR-CONDITIONING. NEW MECHANICAL VENTILATION, ELECTRICAL, PLUMBING, PER P"
+    }
+   ],
+   "100 block of S ASHLAND AVE": [
+    {
+     "year": "2020",
+     "type": "New Construction",
+     "work": "DIRECT DEVELOPER SERVICES: NEW 4 STORY RESIDENTIAL BUILDING OF TYPE III-B CONSTRUCTION W/TYPE 1-C CONSTRUCTION AT 1ST FLOOR.  GROUND FLOOR RESIDENTIAL WITH 89 UNITS COMBINED WITH 117 PARKING SPACES AND 3 ACCESSIBLE PARKI"
+    }
+   ],
+   "100 block of S PEORIA ST": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "UNIT #601 PROVIDE AND INSTALL NEW FEEDER FOR THE  ELECTRIC CAR CHARGER"
+    }
+   ],
+   "0 block of N LOOMIS ST": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "EXISTING MIXED USE BUILDING. RESIDENTIAL ABOVE COMMERCIAL. USE AND OCCUPANCY TO REMAIN. INTERIOR BUILD-OUT OF DAY CARE CENTER. NEW STOREFRONT WINDOWS, MECH., ELECT, AND PLUMBING PER PLANS. **CERTIFIED PLANS CORRECTIONS:C"
+    }
+   ],
+   "800 block of W VAN BUREN ST": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "NEW INTERIOR STAIRS AND NEW ROOF DECK  AND PERGOLA AS PER PLANS FOR UNIT APT 6FG (NO MECHANICAL WORK)(CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS)"
+    }
+   ],
+   "100 block of S LAFLIN ST": [
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "AMENDED PERMIT # 100776377 FOR REVISIONS TO UNIT TIERS X01 - X04, BALCONIES, COMMON CORRIDORS, AND ALL UNIT BATHS AS PER PLANS. ALL OTHER AREAS N.I.C. BUILDING IS FULLY SPRINKLED."
+    },
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "NEW 4 STORY RESIDENTIAL BUILDING OF TYPE III-B CONSTRUCTION W/TYPE 1-C CONSTRUCTION AT 1ST FLOOR GARAGE. GROUND FLOOR RESIDENTIAL WITH 51 UNITS COMBINED WITH 51 PARKING SPACES. BUILDING IS FULLY SPRINKLERED."
+    },
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "ERECT NEW 4 STORY MASONRY BUILDING 52 DWELLING UNITS WITH 52 INDOOR PARKING SPACES  (128 S LAFLIN ST / 1500 W ADAMS ST)"
+    }
+   ],
+   "800 block of W RANDOLPH ST": [
+    {
+     "year": "2019",
+     "type": "Signs",
+     "work": "NORTH ELEVATION: 3' X 3' LED ILLUMINATED BLADE SIGN \"WEST LOOP VETERINARY CARE\" (2 OF 2) - PROPOSED SIGN TO REPLACE EXISTING SIGN."
+    },
+    {
+     "year": "2019",
+     "type": "Signs",
+     "work": "NORTH ELEVATION: 3' X 3' LED ILLUMINATED BLADE SIGN \"WEST LOOP VETERINARY CARE\" (1 OF 2) - NEW PROPOSED SIGN TO REPLACE EXISTING."
+    }
+   ],
+   "1300 block of W HUBBARD ST": [
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 3 D.U. BUILDING (3B CONSTRUCTION) WITH BASEMENT, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 3 CAR GARAGE (3B CONSTRUCTION) WITH ROOFTOP DECK AS PER PLAN."
+    }
+   ],
+   "1200 block of W MADISON ST": [
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "***SELF CERTIFICATION*** THE PROJECT IS THE MODIFICATION OF A PREVIOUSLY UNOCCUPIED TENANT SPACE IN A NEW MULTI-USE BUILDING (GROUND FLOOR BUSINESS/RETAIL; UPPER FLOORS RESIDENTIAL) FOR A CLASS E - BUSINESS TENANT. WORK "
+    },
+    {
+     "year": "2017",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 100AMP TEMP SERVICE"
+    },
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT NEW 4 STORY MASONRY BUILDING,1 COMMERCIAL SPACE, 12 RESIDENTIAL UNITS, TYPE 3B CONSTRUCTION AS PER PLANS ( 1215-1217 W MADISON ST )"
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILD OUT OF WHITE BOX SPACE TO OFFICE. NEW INTERIOR PARTITIONS, NEW MECHANICAL, ELECTRICAL, PLUMBING, & SPRINKLER EQUIPMENT INSTALLED."
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILD OUT OF WHITE BOX SPACE TO OFFICE.  NEW PARTITIONS, MECHANICAL, ELECTRICAL, PLUMBING, & SPRINKLER EQUIPMENT TO BE INSTALLED"
+    },
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "TENANT BUILD-OUT OF EXISTING VANILLA BOX COMMERCIAL SPACE INTO NEW PILATES STUDIO PER PLANS"
+    },
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "TENANT BUILD-OUT OF EXISTING VANILLA BOX COMMERCIAL SPACE INTO NEW HAIR SALON PER PLANS"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "NEW CONSTRUCTION - 4 STORY BUILDING WITH 42 RESIDENTIAL UNITS WITH GROUND FLOOR PARKING FOR 42 SPACES AND GROUND FLOOR COMMERCIAL RETAIL SPACE AS PER PLANS.**CERTIFIED PLAN CORRECTIONS - CONDITIONAL APPROVAL - SUBJECT TO"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "NEW CONSTRUCTION 4 STOTY BUILDING WITH 30 RESIDENTIAL UNITS AND 30 GROUND FLOOR PARKING SPACES. GROUND FLOOR COMMERCIAL RETAIL SPACE AS PER PLANS. **CERTIFIED PLAN CORRECTIONS - CONDITIONAL APPROVAL - SUBJECT TO FIELD IN"
+    }
+   ],
+   "1200 block of W LAKE ST": [
+    {
+     "year": "2018",
+     "type": "Renovation/Alteration",
+     "work": "REVISION TO ORIGINAL PERMIT #100683151.  SCOPE INCLUDES: CONVERTING PREVIOUSLY PERMITTED OFFICE-BUSINESS SPACE INTO A FURNITURE SHOWROOM (I.E. RETAIL/MERCANTILE) ON THE 2ND FLOOR AS PER PLANS., ADD UNISEX TOILET ROOMS ON"
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILD OUT OF AN EXISTING 2-STORY MASONRY BUILDING FORMERLY USED AS A DRY WAREHOUSE STORAGE ON THE FIRST FLOOR AND AN UNOCCUPIED SPACE ON THE SECOND FLOOR.  THE PROPOSED FUTURE USE WILL BE A FURNITURE SHOWROOM ON"
+    }
+   ],
+   "1300 block of W GRAND AVE": [
+    {
+     "year": "2017",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING SERVICE WITH A NEW 400AMP 120/240 3PHASE ALONG WITH PANEL BOX"
+    }
+   ],
+   "0 block of S ASHLAND AVE": [
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "NEW 4 STORY 47 UNIT BUILDING WITH 47 RENTAL UNITS AND 58 ACCESSORY PARKING GARAGE- 33 SOUTH ASHLAND AVENUE"
+    }
+   ],
+   "1000 block of W MONROE ST": [
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 100AMP TEMP SERVICE"
+    },
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "NEW, 4-STORY RESIDENTIAL BUILDING OF TYPE III-B CONSTRUCTION W/ TYPE    I-C CONSTRUCTION AT FIRST FLOOR.  GROUND FLOOR RESIDENTIAL WITH 70 UNITS COMBINED W/ 70 PARKING SPACES AT THE GROUND LEVEL PARKING GARAGE PER PLANS."
+    }
+   ],
+   "0 block of S ABERDEEN ST": [
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "NEW 4 STORY, 50 UNIT RESIDENTIAL BUILDING OF TYPE III-B CONSTRUCTION WITH 55 PARKING SPACES AND RESIDENTIAL UNITS ON FIRST FLOOR AND ROOF TOP DECKS.  FIRST FLOOR IS TYPE 1-C CONSTRUCTION ALL AS PER PLANS."
+    }
+   ],
+   "200 block of S RACINE AVE": [
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "FOUNDATION ONLY PERMIT FOR NEW 6 STORY MIXED USE: ONE BUSINESS SPACE AND 20 DWELLING UNITS WITH 20 PARKING SPACES, TYPE 1C CONSTRUCTION"
+    }
+   ],
+   "800 block of W GRAND AVE": [
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "STRAP AND SECURE ARMORED CABLE. REMOVE BUILDING CIRCUIT BREAKER FROM TENANT'S PANEL. REMOVE EXPOSED WIRING"
+    }
+   ],
+   "700 block of W RANDOLPH ST": [
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATION AND CONVERSION OF 2 STORY WITH BASEMENT FORMER MERCANTILE BIKE SHOP INTO SMALL ASSEMBLY RESTAURANT AND BAR PER PLANS **CERTIFIED PLANS CORRECTIONS: CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS **"
+    }
+   ],
+   "200 block of N DESPLAINES ST": [
+    {
+     "year": "2015",
+     "type": "Express Permit Program",
+     "work": "REMOVE 5 OLD FIRE ESCAPE SIGNS"
+    }
+   ],
+   "1200 block of W JACKSON BLVD": [
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "NEW CONSTRUCTION - ERECT NEW 4-STORY RESIDENTIAL BUILDING - 51 DWELLING UNITS WITH 67 PARKING SPACES GROUND LEVEL GARAGE AS PER PLANS. 1245 W JACKSON BLVD. *** GREEN ROOF AREA= 10,799 SQ.FT. ***"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "NEW CONSTRUCTION - ERECT NEW 4-STORY RESIDENTIAL BUILDING - 42 DWELLING UNITS WITH 56 PARKING SPACES AT THE GROUND LEVEL, TYPE III-B CONSTRUCTION AS PER PLANS.  1241 W JACKSON BLVD. *** GREEN ROOF AREA= 9,385 SF ***"
+    }
+   ],
+   "1000 block of W VAN BUREN ST": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "NEW 4- STORY 26 UNIT TYPE III-B BUILDING WITH 26 PARKING SPACES AT GROUND FLOOR - PER PLANS BUILDING IS FULLY SPRINKLED"
+    }
+   ],
+   "1200 block of W HUBBARD ST": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "ERECT 3 D.U. MASONRY BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 1 CAR MASONRY GARAGE (3B CONSTRUCTION) & DETACHED 2 CAR MASONRY GARAGE WITH ROOF TOP DECK (3B CONSTRUCTION) AS PER PLAN.**SELF-CERTIFICATION - "
+    }
+   ],
+   "0 block of N ABERDEEN ST": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "NEW FOUR STORY RESIDENTIAL BUILDING WITH RETAIL SPACE AND GARAGE ON FIRST FLOOR. NO BASEMENT PER PLANS (ELEVATOR UNDER SEPERATE PERMIT) **CERTIFIED PLANS CORRECTIONS: CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS **"
+    },
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "NEW FOUR STORY 27 DWELLING UNIT  RESIDENTIAL BUILDING WITH RETAIL SPACE AND GARAGE ON FIRS FLOOR. NO BASEMENT"
+    },
+    {
+     "year": "2013",
+     "type": "Express Permit Program",
+     "work": "CHANGE OF ELECTRICAL CONTRACTOR FOR ORIGINAL PERMIT #100444350"
+    }
+   ],
+   "1000 block of W MADISON ST": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "NEW 4 STORY MASONRY BUILDING  3 UNIT APARMENT ,AND RETAIL SPACE"
+    },
+    {
+     "year": "2013",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATION PER PLANS"
+    }
+   ],
+   "0 block of S HALSTED ST": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "INTERIOR BUILDOUT FOR NEW RESTAURANT"
+    }
+   ]
+  },
+  "points": [
+   [
+    41.879,
+    -87.659,
+    1
+   ],
+   [
+    41.887,
+    -87.656,
+    2
+   ],
+   [
+    41.88,
+    -87.665,
+    3
+   ],
+   [
+    41.881,
+    -87.665,
+    1
+   ],
+   [
+    41.89,
+    -87.641,
+    1
+   ],
+   [
+    41.888,
+    -87.64,
+    2
+   ],
+   [
+    41.879,
+    -87.667,
+    1
+   ],
+   [
+    41.88,
+    -87.649,
+    1
+   ],
+   [
+    41.882,
+    -87.662,
+    1
+   ],
+   [
+    41.877,
+    -87.648,
+    1
+   ],
+   [
+    41.884,
+    -87.648,
+    2
+   ],
+   [
+    41.89,
+    -87.66,
+    1
+   ],
+   [
+    41.881,
+    -87.658,
+    3
+   ],
+   [
+    41.885,
+    -87.658,
+    2
+   ],
+   [
+    41.879,
+    -87.665,
+    1
+   ],
+   [
+    41.891,
+    -87.662,
+    1
+   ],
+   [
+    41.881,
+    -87.659,
+    5
+   ],
+   [
+    41.881,
+    -87.66,
+    1
+   ],
+   [
+    41.88,
+    -87.667,
+    1
+   ],
+   [
+    41.88,
+    -87.654,
+    2
+   ],
+   [
+    41.881,
+    -87.655,
+    1
+   ],
+   [
+    41.878,
+    -87.657,
+    1
+   ],
+   [
+    41.891,
+    -87.649,
+    1
+   ],
+   [
+    41.885,
+    -87.647,
+    1
+   ],
+   [
+    41.887,
+    -87.644,
+    1
+   ],
+   [
+    41.878,
+    -87.659,
+    2
+   ],
+   [
+    41.877,
+    -87.652,
+    1
+   ],
+   [
+    41.89,
+    -87.658,
+    1
+   ],
+   [
+    41.882,
+    -87.655,
+    2
+   ],
+   [
+    41.882,
+    -87.654,
+    3
+   ],
+   [
+    41.881,
+    -87.647,
+    1
+   ]
+  ]
+ }
+}

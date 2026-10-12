@@ -1,4 +1,4 @@
-import {v2ServiceArea, v2ServicePage, v2SiteSettings} from './documents'
-import {objectTypes} from './objects'
+import {areaPage} from './areaPage'
+import {areaSettings} from './areaSettings'
 
-export const schemaTypes = [...objectTypes, v2SiteSettings, v2ServiceArea, v2ServicePage]
+export const schemaTypes = [areaSettings, areaPage]

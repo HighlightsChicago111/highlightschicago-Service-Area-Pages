@@ -1,5 +1,5 @@
 {
-  "name": "highlights-chicago-service-pages-v2",
+  "name": "highlights-chicago-service-areas",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@11.19.0",
@@ -11,11 +11,10 @@
     "typecheck": "tsc --noEmit",
     "studio": "sanity dev",
     "sanity:check": "tsx scripts/check-sanity.ts",
-    "workbook:template": "python -I scripts/make_workbook.py",
-    "content:extract": "python -I scripts/extract_workbook.py",
-    "content:build": "tsx scripts/build-documents.ts",
-    "content:push": "tsx scripts/push-documents.ts",
-    "test:content": "tsx scripts/test-build-documents.ts"
+    "library:export": "python -I scripts/export_area_library.py",
+    "content:build": "tsx scripts/build-area-documents.ts",
+    "content:push": "tsx scripts/push-area-documents.ts",
+    "test:content": "tsx scripts/test-area-documents.ts"
   },
   "dependencies": {
     "@sanity/vision": "6.11.0",

@@ -1,6 +1,11 @@
 import type {Metadata} from 'next'
 import Link from 'next/link'
-import {CollectionFooter, CollectionHeader} from '@/components/collection-chrome'
+import {notFound} from 'next/navigation'
+import {Button, IconBadge} from '@/components/ds/atoms'
+import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
+import {Icon} from '@/components/ds/icon'
+import {getAreaCards, getAreaSettings} from '@/lib/content'
+import {pad2, telHref} from '@/lib/ds'
 
 // A confirmation page has no value in search results, and indexing it would let
 // stray visits pad the conversion count the team tracks on this URL.
@@ -16,39 +21,32 @@ const steps = [
   {title: 'You get a clear plan', body: 'We walk through your options and provide a free estimate with a written scope.'},
 ]
 
-export default function ThankYouPage() {
+export default async function ThankYouPage() {
+  const [areas, co] = await Promise.all([getAreaCards(), getAreaSettings()])
+  if (!co) notFound()
+  const tel = telHref(co.phoneTel, co.phoneDisplay)
   return (
-    <div className="collection-page">
-      <CollectionHeader />
-      <main className="thank-you">
-        <section className="thank-you-card" aria-labelledby="thank-you-title">
-          <div className="thank-you-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="m6.8 12.3 3.3 3.3 7.1-7.2" /></svg>
-          </div>
-          <p className="thank-you-kicker">Request received</p>
-          <h1 id="thank-you-title">Thank you. Your request was sent to the team.</h1>
-          <p className="thank-you-lede">A Highlights Chicago team member will contact you shortly to discuss your service request.</p>
-          <div className="thank-you-actions">
-            <a href="tel:773-262-3333">Need us sooner? Call <span className="thank-you-nowrap">773-262-3333</span></a>
-            <Link href="/">Explore more services</Link>
-          </div>
-        </section>
-        <section className="thank-you-steps" aria-labelledby="thank-you-steps-title">
-          <h2 id="thank-you-steps-title">What happens next</h2>
-          <ol>
-            {steps.map((step, index) => (
-              <li key={step.title}>
-                <span aria-hidden="true">{index + 1}</span>
-                <div>
-                  <strong>{step.title}</strong>
-                  <p>{step.body}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </section>
+    <div className="ds">
+      <SiteHeader co={co} areas={areas} tel={tel} />
+      <main id="main" className="ds-band ds-band--grey">
+        <div className="ds-wrap ar-thanks">
+          <section className="ar-thanks-card" aria-labelledby="thank-you-title">
+            <IconBadge icon="check" tone="green" size={64} />
+            <p className="ar-kicker ar-kicker--green-ink">Request received</p>
+            <h1 className="ds-h2" id="thank-you-title">Thank you. Your request was sent to the team.</h1>
+            <p className="ds-lede">A Highlights Chicago team member will contact you shortly to discuss your service request.</p>
+            <div className="ds-cta-row">
+              <Button href={tel} icon="phone">Need us sooner? Call {co.phoneDisplay}</Button>
+              <Link className="ds-btn ds-btn--secondary" href="/"><span>Explore more service areas</span><Icon name="arrowRight" size={18} /></Link>
+            </div>
+          </section>
+          <section className="ar-thanks-steps" aria-labelledby="thank-you-steps-title">
+            <h2 className="ds-h5" id="thank-you-steps-title">What happens next</h2>
+            <ol>{steps.map((step, index) => <li key={step.title}><span>{pad2(index + 1)}</span><div><h3 className="ar-row-title">{step.title}</h3><p>{step.body}</p></div></li>)}</ol>
+          </section>
+        </div>
       </main>
-      <CollectionFooter />
+      <SiteFooter co={co} tel={tel} />
     </div>
   )
 }

@@ -1,10 +1,10 @@
 'use client'
 
 import {FormEvent, useEffect, useState} from 'react'
-import {SERVICES_PATH, THANK_YOU_PATH} from './service-urls'
+import {BASE_PATH, THANK_YOU_PATH} from './urls'
 
 // fetch() is not rewritten by basePath, so the API path is prefixed manually.
-export const LEAD_ENDPOINT = `${SERVICES_PATH}/api/lead`
+export const LEAD_ENDPOINT = `${BASE_PATH}/api/lead`
 
 type LeadStatus = 'idle' | 'sending' | 'error'
 
