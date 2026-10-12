@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react'
 import type {AreaPage} from '@/types/area'
+import {cityOf} from '@/lib/area/copy'
 
 const W = 900
 const r1 = (value: number) => Math.round(value * 10) / 10
@@ -84,7 +85,7 @@ export function DistrictMap({page}: {page: AreaPage}) {
 
   return (
     <svg viewBox={`0 0 ${W} ${H + 40}`} role="img" aria-labelledby="amap-t amap-d" className="ar-map">
-      <title id="amap-t">{`Schematic map of ${page.areaThe}, Chicago`}</title>
+      <title id="amap-t">{`Schematic map of ${page.areaThe}, ${cityOf(page)}`}</title>
       <desc id="amap-d">{page.mapDesc}</desc>
       <rect x={0} y={0} width={W} height={H} rx={8} className="mp-bg" />
       {out}

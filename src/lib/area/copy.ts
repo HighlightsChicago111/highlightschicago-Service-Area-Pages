@@ -63,10 +63,23 @@ export function mergeFaqs(area: Faq[], generic: Faq[]): Faq[] {
   return [...merged, ...queues.A, ...queues.G]
 }
 
+/** The city an area page sits in: Chicago unless the page names a suburb. */
+export const cityOf = (page: Pick<AreaPage, 'city'>) => page.city?.trim() || 'Chicago'
+export const isChicago = (page: Pick<AreaPage, 'city'>) => cityOf(page).toLowerCase() === 'chicago'
+/** "Electricians in the West Loop, Chicago" or, for a suburb, "Electricians in Evanston, IL". */
+export const defaultH1 = (page: Pick<AreaPage, 'city' | 'areaIn'>) => `Electricians ${page.areaIn}, ${isChicago(page) ? 'Chicago' : 'IL'}`
+
 export function genericFaqs(page: AreaPage, co: AreaSettings): Faq[] {
-  return [
+  const city = cityOf(page)
+  const local: Faq[] = isChicago(page) ? [
     {key: 'faq-handyman', question: 'Can a handyman do electrical work in Chicago?', answer: "Not work that needs a permit. Chicago electrical permits are issued to registered electrical contractors, so a handyman can't pull one. For anything beyond non-electrical tasks, use a registered contractor."},
     {key: 'faq-license', question: "How do I check an electrician's licence in Chicago?", answer: `Ask for their City of Chicago electrical contractor registration and check it with the Department of Buildings. Then search their name in the City's public building permits data to see the work they've actually done. Ours is ${co.licence}.`},
+  ] : [
+    {key: 'faq-handyman', question: `Can a handyman do electrical work in ${city}?`, answer: `Not work that needs a permit. ${city} requires every contractor working under a permit to be registered with the City, and an electrical contractor registers with an electrical licence. For anything beyond non-electrical tasks, use a licensed, registered electrician.`},
+    {key: 'faq-license', question: `How do I check an electrician's licence for work in ${city}?`, answer: `Ask for two things: their electrical contractor licence, and their City of ${city} contractor registration, which the City requires for permitted work. Check the licence with the city that issued it. Ours is City of Chicago electrical contractor licence ${co.licence}.`},
+  ]
+  return [
+    ...local,
     {key: 'faq-estimate', question: 'Do you charge for estimates?', answer: 'No. Estimates are free, and you get the scope in writing before any work starts.'},
     {key: 'faq-weekend', question: 'Do you work weekends or handle emergencies?', answer: `Our office hours are ${co.officeHours || 'Monday to Friday, 8am to 5pm'}. Reviewers describe same-day Saturday visits and emergency calls where we made the hazard safe, then came back with parts. [CONFIRM: emergency and weekend availability to state here.]`},
     {key: 'faq-owner', question: 'Will I deal with the owner?', answer: `Usually, yes. Boz, the founder, typically does the walkthrough and writes the quote, and more than a third of the ${co.reviewStats?.total ? `${co.reviewStats.total} ` : ''}reviews we analysed mention him by name.`},
@@ -110,7 +123,7 @@ export const COMPANY_KINDS: CompanyKind[] = [
   {title: 'National franchise brand', who: 'A call centre, then the technician dispatched', price: 'Often a flat-rate price book, sometimes with membership plans', fits: 'Standard repairs where speed of dispatch matters most', us: false},
   {title: 'Lead-generation marketplace', who: 'A website that passes your request to several contractors', price: 'Whatever each contractor who calls back quotes', fits: "You want several quotes fast and don't mind not choosing who calls", us: false},
   {title: 'Large commercial or union contractor', who: 'A project manager or estimator', price: 'Bids against drawings and specifications', fits: 'Tower base-building work and large office floors.', us: false},
-  {title: 'Handyman', who: 'The handyman', price: 'Hourly or per task', fits: "Non-electrical work. A handyman can't pull a Chicago electrical permit.", us: false},
+  {title: 'Handyman', who: 'The handyman', price: 'Hourly or per task', fits: "Non-electrical work. A handyman can't pull an electrical permit.", us: false},
 ]
 
 export type Check = {what: string; why: string; verify: string; answer: string}
@@ -120,8 +133,12 @@ export function choosingChecks(page: AreaPage, co: AreaSettings): Check[] {
   const since = hl?.firstYear || '2012'
   const stats = co.reviewStats
   return [
-    {what: 'City of Chicago registration', why: 'Only a registered electrical contractor can pull a Chicago electrical permit. Building managers ask for it before they let anyone in.', verify: 'The City of Chicago Department of Buildings contractor lookup', answer: `${co.licence}${co.licence2 ? `, also ${co.licence2}` : ''}`},
-    {what: 'Permit record in this area', why: 'Permits are public. They show the work actually done here, not the work claimed.', verify: "Search the contractor's name in the City's building permits data", answer: recN ? `${recN} permits ${page.areaIn} since ${since}; ${co.permitsCitywide} citywide since ${co.permitsSince}` : `${co.permitsCitywide} citywide since ${co.permitsSince}`},
+    isChicago(page)
+      ? {what: 'City of Chicago registration', why: 'Only a registered electrical contractor can pull a Chicago electrical permit. Building managers ask for it before they let anyone in.', verify: 'The City of Chicago Department of Buildings contractor lookup', answer: `${co.licence}${co.licence2 ? `, also ${co.licence2}` : ''}`}
+      : {what: `Licence and ${cityOf(page)} registration`, why: `${cityOf(page)} requires every contractor working under a permit to be registered with the City. An electrical contractor registers with an electrical licence from a testing city such as Chicago.`, verify: `Ask for the licence and the City of ${cityOf(page)} registration`, answer: `City of Chicago licence ${co.licence}${co.licence2 ? `, also ${co.licence2}` : ''}`},
+    isChicago(page)
+      ? {what: 'Permit record in this area', why: 'Permits are public. They show the work actually done here, not the work claimed.', verify: "Search the contractor's name in the City's building permits data", answer: recN ? `${recN} permits ${page.areaIn} since ${since}; ${co.permitsCitywide} citywide since ${co.permitsSince}` : `${co.permitsCitywide} citywide since ${co.permitsSince}`}
+      : {what: 'Permit record', why: 'Permits show the work actually done, not the work claimed.', verify: "Ask for recent permitted jobs nearby, and search Chicago work in the City of Chicago's public permits data", answer: `${co.permitsCitywide} City of Chicago permits since ${co.permitsSince}`},
     {what: 'Experience with your building type', why: page.choosingBuildingWhy || 'Different building types are different jobs: how wire is run, who approves the work and what the panel can take all change.', verify: 'Ask for examples in buildings like yours', answer: page.choosingBuildingAnswer || ''},
     {what: 'Building paperwork', why: page.choosingPaperworkWhy || 'Managed buildings often want a certificate of insurance before work is scheduled.', verify: 'Ask how fast they issue a certificate of insurance', answer: 'Reviewers describe certificates issued the same day they asked'},
     {what: 'Who you deal with', why: 'Someone has to own the quote, the schedule and the result.', verify: "Ask who walks the job, who quotes it and who's on site", answer: `The founder usually does the walkthrough; ${stats?.owner ?? 0} of ${stats?.total ?? 0} reviews we analysed name him`},

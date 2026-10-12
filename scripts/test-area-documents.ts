@@ -112,11 +112,21 @@ check('every imported value has a field in the Sanity schema, at every depth', a
 })
 check('every documented content key reaches the Sanity document', () => {
   const full: AreaSource = clone()
-  Object.assign(full.config, {h1: 'Electricians in the West Loop', form_rules_question: 'Building rules?', no_record_text: 'None yet.', team_photo: {src: 'https://example.com/team.jpg', alt: 'Team', width: 1600, height: 900}})
+  Object.assign(full.config, {city: 'Chicago', h1: 'Electricians in the West Loop', form_rules_question: 'Building rules?', no_record_text: 'None yet.', team_photo: {src: 'https://example.com/team.jpg', alt: 'Team', width: 1600, height: 900}})
   const doc = build([full]).documents.find((d) => d._type === 'areaPage') as Json
   const camel = (key: string) => key.replace(/_([a-z])/g, (_, ch: string) => ch.toUpperCase())
   const renamed: Record<string, string> = {form_buildings: 'formBuildingTypes', slug: 'slug'}
   for (const key of AREA_JSON_KEYS) assert.ok(doc[renamed[key] || camel(key)] !== undefined, `${key} -> ${renamed[key] || camel(key)} is missing`)
+})
+check('a suburb page keeps its city, and a Chicago page leaves it empty', () => {
+  const suburb = clone()
+  suburb.config.city = 'Evanston'
+  const result = build([suburb])
+  assert.deepEqual(result.errors, [])
+  const doc = result.documents.find((d) => d._type === 'areaPage') as Json
+  assert.equal(doc.city, 'Evanston')
+  const chicago = build([westLoop]).documents.find((d) => d._type === 'areaPage') as Json
+  assert.equal(chicago.city, undefined)
 })
 check('rejects a content key that has no Sanity field', () => {
   assert.match(errorsFor((c) => { c.config.brand_new_field = 'x' }), /"brand_new_field" is not mapped/)

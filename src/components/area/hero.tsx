@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {Button, Copy, Eyebrow, GoogleG, Stars} from '@/components/ds/atoms'
 import {AreaQuoteForm} from '@/components/ds/area-quote-form'
 import {Icon} from '@/components/ds/icon'
-import {capitalise} from '@/lib/area/copy'
+import {capitalise, defaultH1} from '@/lib/area/copy'
 import {focus, pad2, PHOTOS, type Photo} from '@/lib/ds'
 import type {AreaCtx} from './types'
 
@@ -34,7 +34,7 @@ export function AreaHero({ctx}: {ctx: AreaCtx}) {
             </ol>
           </nav>
           {page.eyebrow && <Eyebrow className="ds-eyebrow--light">{page.eyebrow}</Eyebrow>}
-          <h1 className="ds-h1">{page.h1 || `Electricians ${page.areaIn}, Chicago`}</h1>
+          <h1 className="ds-h1">{page.h1 || defaultH1(page)}</h1>
           <Copy value={page.heroLede} show={editorial} className="ds-hero-lede" />
           <ul className="ds-trust-chips" aria-label="Credentials">
             <li><Icon name="shieldCheck" size={16} />City of Chicago Electrical Contractor {co.licence}</li>
