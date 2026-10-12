@@ -2,10 +2,11 @@
 
 import Link from 'next/link'
 import {useMemo, useState} from 'react'
+import {Icon} from '@/components/ds/icon'
+import {BUILDING_ICON} from '@/lib/area/copy'
 import type {AreaCard} from '@/types/area'
-import {Illustration} from './art'
 
-/** Card grid of service area pages; each card opens its page. Card styles are the live collection cards. */
+/** Card grid of service area pages, with search; each card opens its page. */
 export function AreaCollection({areas}: {areas: AreaCard[]}) {
   const [query, setQuery] = useState('')
   const filtered = useMemo(() => {
@@ -14,41 +15,36 @@ export function AreaCollection({areas}: {areas: AreaCard[]}) {
   }, [areas, query])
 
   return (
-    <section className="collection-directory" aria-labelledby="area-directory-title">
-      <div className="collection-wrap">
-        <div className="collection-directory-heading">
-          <div>
-            <p className="collection-kicker">Explore service areas</p>
-            <h2 id="area-directory-title">Find your neighbourhood</h2>
-          </div>
-          <p>Each page covers the buildings, districts and permit record of one part of Chicago, and every service we offer there.</p>
-        </div>
-        {areas.length > 0 && <div className="collection-toolbar">
-          <label>
-            <span>Search areas</span>
-            <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search by neighbourhood or district" type="search" />
-          </label>
-          <p className="collection-result-count" aria-live="polite">Showing <strong>{filtered.length}</strong> of {areas.length} service areas</p>
-        </div>}
-        {areas.length === 0 && <div className="collection-empty"><h3>No published service areas yet</h3><p>Areas appear here once their pages are published in Sanity.</p></div>}
-        {areas.length > 0 && filtered.length === 0 && <div className="collection-empty"><h3>No matching areas</h3><p>Try another neighbourhood or clear the search.</p><button type="button" onClick={() => setQuery('')}>Clear search</button></div>}
-        <div className="collection-card-grid">
-          {filtered.map((card) => (
-            <Link className="collection-card area-card" href={`/${card.slug}`} key={card.slug}>
-              <span className="collection-card-media area-card-media">
-                {card.illus ? <Illustration name={card.illus} id={`card-${card.slug}`} /> : <span aria-hidden="true">HC</span>}
-              </span>
-              <span className="collection-card-arrow" aria-hidden="true">→</span>
-              <span className="collection-card-content">
-                <span className="collection-card-area">{card.eyebrow || 'Chicago'}</span>
-                <strong>Electricians {card.areaIn}</strong>
-                {card.metaDescription && <span className="collection-card-description">{card.metaDescription}</span>}
-                <span className="collection-card-volume">{[card.districtCount ? `${card.districtCount} districts` : '', card.permitCount ? `${card.permitCount} Highlights permits here` : ''].filter(Boolean).join(' · ')}</span>
-              </span>
+    <>
+      {areas.length > 0 && <div className="ar-coll-toolbar">
+        <label className="ar-coll-search">
+          <span className="ds-honeypot">Search areas</span>
+          <Icon name="search" size={18} />
+          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search by neighbourhood or district" type="search" aria-label="Search areas" />
+        </label>
+        <p aria-live="polite">Showing <b>{filtered.length}</b> of {areas.length} service area{areas.length === 1 ? '' : 's'}</p>
+      </div>}
+      {areas.length === 0 && <div className="ar-coll-empty"><h3 className="ds-h5">No published service areas yet</h3><p>Areas appear here once their pages are published in Sanity.</p></div>}
+      {areas.length > 0 && filtered.length === 0 && <div className="ar-coll-empty"><h3 className="ds-h5">No matching areas</h3><p>Try another neighbourhood or clear the search.</p><button type="button" className="ds-btn ds-btn--secondary" onClick={() => setQuery('')}><span>Clear search</span></button></div>}
+      <ul className="ar-coll-grid">
+        {filtered.map((card) => (
+          <li key={card.slug}>
+            <Link className="ar-coll-card" href={`/${card.slug}`}>
+              <div className="ar-coll-top">
+                <span className="ar-building-icon" aria-hidden="true"><Icon name={(card.illus && BUILDING_ICON[card.illus]) || 'mapPin'} size={24} /></span>
+                <span className="ar-arrow-badge"><Icon name="arrowUpRight" size={16} /></span>
+              </div>
+              {card.eyebrow && <p className="ar-mini-label">{card.eyebrow}</p>}
+              <h3 className="ar-card-title">Electricians {card.areaIn}</h3>
+              {card.metaDescription && <p className="ar-coll-desc">{card.metaDescription}</p>}
+              <ul className="ar-coll-meta">
+                {card.districtCount ? <li><Icon name="map" size={14} />{card.districtCount} districts</li> : null}
+                {card.permitCount ? <li><Icon name="fileCheck" size={14} />{card.permitCount} Highlights permits</li> : null}
+              </ul>
             </Link>
-          ))}
-        </div>
-      </div>
-    </section>
+          </li>
+        ))}
+      </ul>
+    </>
   )
 }

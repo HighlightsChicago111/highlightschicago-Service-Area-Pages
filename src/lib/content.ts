@@ -2,7 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import {contentSource} from '@/sanity/env'
 import {client, previewClient} from '@/sanity/lib/client'
-import {AREA_CARDS_QUERY, AREA_PAGE_QUERY} from '@/sanity/lib/queries'
+import {AREA_CARDS_QUERY, AREA_PAGE_QUERY, AREA_SETTINGS_QUERY} from '@/sanity/lib/queries'
 import type {AreaCard, AreaPage, AreaPageData, AreaSettings} from '@/types/area'
 
 type LocalDoc = Record<string, unknown> & {_id: string; _type: string}
@@ -43,4 +43,10 @@ export async function getAreaPage(slug: string, draft = false): Promise<AreaPage
     settings: (docs.find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || null,
     areas: pages.sort((a, b) => a.area.localeCompare(b.area)).map(toCard),
   }
+}
+
+/** Company facts shared by every page. */
+export async function getAreaSettings(draft = false): Promise<AreaSettings | null> {
+  if (contentSource === 'sanity') return (await (draft ? previewClient : client).fetch<AreaSettings | null>(AREA_SETTINGS_QUERY)) || null
+  return ((await localDocs()).find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || null
 }

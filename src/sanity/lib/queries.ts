@@ -17,3 +17,5 @@ export const AREA_PAGE_QUERY = defineQuery(`
     "areas": *[_type == "areaPage" && defined(slug.current)] | order(area asc) {${CARD}}
   }
 `)
+
+export const AREA_SETTINGS_QUERY = defineQuery(`*[_id == "area-settings"][0]`)

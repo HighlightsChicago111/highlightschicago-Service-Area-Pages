@@ -1,7 +1,7 @@
 import type {Metadata} from 'next'
 import {draftMode} from 'next/headers'
 import {notFound} from 'next/navigation'
-import {AreaLandingPage} from '@/components/area/area-landing-page'
+import {AreaLandingPage} from '@/components/area/area-page'
 import {DisableDraftMode} from '@/components/disable-draft-mode'
 import {getAreaCards, getAreaPage} from '@/lib/content'
 import {areaPageUrl} from '@/lib/urls'
@@ -33,5 +33,5 @@ export default async function AreaPageRoute({params}: Props) {
   const draft = (await draftMode()).isEnabled
   const {page, settings, areas} = await getAreaPage(areaSlug, draft)
   if (!page || !settings) notFound()
-  return <>{draft && <DisableDraftMode />}<AreaLandingPage page={page} co={settings} areas={areas} /></>
+  return <>{draft && <DisableDraftMode />}<AreaLandingPage page={page} co={settings} areas={areas} draft={draft} /></>
 }
