@@ -23,7 +23,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
       <AreaHead id="permit-record-title" layout="stack" eyebrow={chicago || permits ? 'Permit record · City of Chicago data' : `Permit record · ${city}`} title={chicago || permits ? `What the ${page.area} permit record shows` : `Permits and our record ${page.areaIn}`} lede={lede} editorial={editorial} />
       {!chicago && !permits && <div className="ar-source">
         <p className="ar-source-label"><IconBadge icon="info" tone="blue" size={32} />Data source</p>
-        <p>Our record below is City of Chicago building permit data naming Highlights, shown by block, never by address. {city} permits are kept by the City of {city} and are not published as open data.</p>
+        <p>Our Chicago record below is City of Chicago building permit data naming Highlights, shown by block, never by address. {city} permits are kept by the City of {city} and are not published as open data, so any {city} count comes from the City&apos;s own contractor register.</p>
       </div>}
       {permits && <div className="ar-source">
         <p className="ar-source-label"><IconBadge icon="info" tone="blue" size={32} />Data source</p>
@@ -41,7 +41,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
       </div>}
       <div className="ar-record">
         <div className="ar-record-own">
-          <div className="ar-record-head"><IconBadge icon="fileCheck" tone="green" size={44} /><h3 className="ds-h4">{chicago || permits ? `Our own ${page.area} record` : `Our record next to ${page.area}`}</h3></div>
+          <div className="ar-record-head"><IconBadge icon="fileCheck" tone="green" size={44} /><h3 className="ds-h4">{chicago || permits ? `Our own ${page.area} record` : `Our record in and around ${page.area}`}</h3></div>
           {hl?.count ? <>
             <p className="ar-record-lead">{`${hl.count} permits on ${hl.addresses ?? 0} addresses since ${hl.firstYear || '2012'}: ${andList((hl.byType || []).map((item) => `${item.count} ${permitTypeWords(item.type)}`))}.`}</p>
             <ul>{(page.recordBullets || []).map((bullet, index) => <li key={index}><Copy value={bullet} show={editorial} as="span" /></li>)}</ul>

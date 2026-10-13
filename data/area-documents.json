@@ -26,7 +26,6 @@
     "officeHours": "Monday to Friday, 8am to 5pm",
     "founderShort": "Boz",
     "founderLine": "Bozidar, founder. Customers call him the owner, the president and the managing director. He usually does the walkthrough and writes the quote.",
-    "founderConfirm": "spelling of surname: the template says Milosevich, City permit records say Milosevic",
     "servicesUrl": "https://www.highlightschicago.com/services/",
     "reviewStats": {
       "total": 300,
@@ -89,7 +88,7 @@
       {
         "_key": "fact-6",
         "label": "Permits",
-        "value": "City of Evanston Building and Inspection Services, with contractor registration [CONFIRM: Highlights' current City of Evanston contractor registration]"
+        "value": "City of Evanston Building and Inspection Services. We're registered with the City as an electrical contractor, 18LICL-0250."
       }
     ],
     "zips": [
@@ -499,13 +498,13 @@
       {
         "_key": "scope-10",
         "factor": "Working hours",
-        "why": "Restaurants and occupied offices often need early, late or weekend work. [CONFIRM: whether after-hours rates apply]",
+        "why": "Restaurants and occupied offices often need early, late or weekend work, so agree the hours before the job is scheduled.",
         "who": "You and us"
       }
     ],
     "hourlyAnswer": "We quote by scope, not by the hour, because the hours on an Evanston job depend on everything in the table above. A fixture under a plaster ceiling in a 1915 courtyard condo and the same fixture in a new downtown tower aren't the same job. The written quote tells you the whole price before you agree to it.",
     "choosingBuildingWhy": "Evanston changes street by street: Victorian and Prairie houses on the lakeshore, courtyard condos near Howard St and Hinman Ave, bungalows and two-flats in the west, and towers downtown.",
-    "choosingBuildingAnswer": "Service upgrades, new panels and new construction just south of Howard St in Rogers Park and West Ridge, older houses and vintage condos across Chicago's North Side, and a commercial job in neighbouring Skokie under a village permit [CONFIRM: Evanston jobs Highlights can point to]",
+    "choosingBuildingAnswer": "In Evanston, permits under our City registration since 2018 for condo units on Michigan Ave, Central Street and Judson Ave, house additions on Orrington Ave and Grant St, and a commercial interior remodel and illuminated sign on Church St; just south of Howard St, service upgrades, new panels and new construction in Rogers Park and West Ridge",
     "choosingPaperworkWhy": "Evanston wants every contractor registered with the City before a permit is issued, and towers and associations want a certificate of insurance before work is scheduled.",
     "whereWeFit": "Highlights is a family-owned Chicago contractor. In Evanston we're the right call for house and condo work: service and panel upgrades in older houses, rewiring, lighting, EV chargers and small shops. Large university and hospital projects and tower base-building work are for the big commercial firms, and we'll tell you so.",
     "recordBullets": [
@@ -515,9 +514,9 @@
       "A 1,200-amp three-phase service with 44 meters and panels for a large apartment building on the 6700 block of N Artesian Ave.",
       "A kitchen and bathroom remodel with a new electrical panel in a unit on the 1200 block of W North Shore Ave."
     ],
-    "noRecordText": "41 City of Chicago permits since 2012 in Rogers Park and West Ridge, the two Chicago neighbourhoods on Evanston's southern border: mostly service upgrades, new panels and new construction. [CONFIRM: how many Evanston jobs and permits Highlights has done]",
+    "noRecordText": "The City of Evanston's contractor register shows 26 permits issued under our registration, 18LICL-0250, from 2018 to 2026: 14 electrical permits, 8 remodels of houses, condos and commercial spaces, 2 residential additions, an accessory structure and an illuminated sign. Next door, 41 City of Chicago permits since 2012 in Rogers Park and West Ridge, mostly service upgrades, new panels and new construction.",
     "honestContext": [
-      "We're a north-side Chicago shop at 5766 N Lincoln Ave, a short drive from Howard St. Most of our 1,213 City of Chicago permits are in Wards 1, 32, 26, 47 and 27, so our public record is in Chicago, not Evanston.",
+      "We're a north-side Chicago shop at 5766 N Lincoln Ave, a short drive from Howard St. Most of our 1,213 City of Chicago permits are in Wards 1, 32, 26, 47 and 27, so most of our public record is in Chicago, and Evanston is the smaller share.",
       "Evanston's buildings are close to the ones we work on just south of Howard St: courtyard buildings, two- and three-flats and older houses. What differs is the paperwork: City of Evanston registration, its own inspectors, and historic-district review for exterior work."
     ],
     "reviewsHeading": "Reviews from older-house, vintage condo and two-flat jobs",
@@ -624,7 +623,7 @@
         "_key": "faq-1",
         "key": "faq-evanston-registration",
         "question": "Are you registered to work in Evanston?",
-        "answer": "Evanston requires every contractor working under a permit to register with the City, and electricians register with a licence from a testing city such as Chicago, which issued ours, ECC96456. [CONFIRM: Highlights' current City of Evanston contractor registration]"
+        "answer": "Yes. We're registered with the City of Evanston as an electrical contractor, registration 18LICL-0250, first issued in 2018. Evanston requires every contractor working under a permit to register with the City, and electricians register with a licence from a testing city such as Chicago, which issued ours, ECC96456."
       },
       {
         "_key": "faq-2",
@@ -1217,7 +1216,7 @@
       {
         "_key": "scope-7",
         "factor": "Working hours",
-        "why": "Restaurants and occupied offices often need early, late or weekend work. [CONFIRM: whether after-hours rates apply]",
+        "why": "Restaurants and occupied offices often need early, late or weekend work, so agree the hours before the job is scheduled.",
         "who": "You and us"
       },
       {
