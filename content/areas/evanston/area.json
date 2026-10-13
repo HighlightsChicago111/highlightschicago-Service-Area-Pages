@@ -553,5 +553,13 @@
     "New 200-amp services on the 1800 block of W Farwell Ave, the 1300 block of W Columbia Ave and the 2900 block of W Ardmore Ave.",
     "A 1,200-amp three-phase service with 44 meters and panels for a large apartment building on the 6700 block of N Artesian Ave.",
     "A kitchen and bathroom remodel with a new electrical panel in a unit on the 1200 block of W North Shore Ave."
-  ]
+  ],
+  "card_summary": "Lakefront city directly north of Chicago, with Northwestern, a downtown of towers and streets of older houses.",
+  "card_region": "North Shore city",
+  "card_image": {
+    "src": "/service-areas/images/areas/evanston.webp",
+    "alt": "Downtown Evanston from above, with Lake Michigan behind",
+    "credit": "Madcoverboy (talk) · CC BY-SA 3.0 · Wikimedia Commons",
+    "credit_url": "https://commons.wikimedia.org/wiki/User:Madcoverboy"
+  }
 }

@@ -21,6 +21,15 @@ const FEATURE_KINDS = new Set(['expressway_ns', 'expressway_ew', 'water_east', '
 const REQUIRED = ['area', 'area_the', 'area_in', 'slug', 'meta_description', 'eyebrow', 'hero_lede', 'boundary_text']
 const CONFIRM = /\[CONFIRM:[^\]]*\]/g
 
+/** Every block of the standard area template, with the item counts the design is built for. */
+export const STANDARD_COUNTS: Record<string, [number, number]> = {
+  facts: [4, 6], districts: [4, 6], buildings: [4, 6], scope_rows: [8, 11], reviews: [6, 8], nearby: [6, 8], faq: [4, 6], cta_ready: [5, 6],
+}
+export const STANDARD_TEXT = [
+  'address_placeholder', 'bbox_text', 'map_desc', 'scope_lede', 'hourly_answer', 'choosing_building_why', 'choosing_building_answer',
+  'choosing_paperwork_why', 'where_we_fit', 'reviews_heading', 'card_summary', 'card_region',
+]
+
 /** Every area.json key the skill documents (references/area-config.md), each mapped to a Sanity field below. */
 export const AREA_JSON_KEYS = [
   'area', 'area_the', 'area_in', 'city', 'slug', 'title', 'meta_description', 'eyebrow', 'h1', 'hero_lede', 'address_placeholder',
@@ -28,6 +37,7 @@ export const AREA_JSON_KEYS = [
   'map_desc', 'map', 'districts', 'buildings', 'scope_lede', 'scope_rows', 'hourly_answer', 'choosing_building_why',
   'choosing_building_answer', 'choosing_paperwork_why', 'where_we_fit', 'mix_notes', 'record_bullets', 'no_record_text',
   'honest_context', 'reviews_heading', 'reviews', 'nearby', 'faq', 'cta_ready', 'service_overrides', 'research_sources',
+  'card_summary', 'card_region', 'card_image',
 ]
 const KNOWN_KEYS = new Set(AREA_JSON_KEYS)
 
@@ -110,6 +120,19 @@ export function buildAreaDocuments({areas, company, reviews}: BuildInput): Build
     slugs.add(c.slug)
     if (!c.districts?.length) errors.push(`${where}: at least one district is required`)
     if (!c.buildings?.length) errors.push(`${where}: at least one building type is required`)
+    if (c.card_image?.src && (!opt(c.card_image.alt) || !opt(c.card_image.credit))) errors.push(`${where}: card_image needs alt text and a credit (author · licence · source)`)
+    // Standard template: every block filled, at the size the design is built for.
+    for (const field of STANDARD_TEXT) if (!opt(c[field])) warnings.push(`${where}: ${field} is empty (part of the standard template)`)
+    for (const [field, [min, max]] of Object.entries(STANDARD_COUNTS)) {
+      const n = Array.isArray(c[field]) ? c[field].length : 0
+      if (n < min || n > max) warnings.push(`${where}: ${field} has ${n} item(s) (the template expects ${min} to ${max})`)
+    }
+    if (!c.map) warnings.push(`${where}: no map (part of the standard template)`)
+    if (!c.card_image?.src) warnings.push(`${where}: no card_image, so the collection card shows a plain placeholder`)
+    if (!c.research_sources?.length) warnings.push(`${where}: no research_sources`)
+    if (!c.honest_context?.length) warnings.push(`${where}: no honest_context`)
+    if (!permits && !c.record_bullets?.length) warnings.push(`${where}: no permits.json and no record_bullets, so the record card is a single sentence`)
+    if ((c.card_summary || '').length > 130) warnings.push(`${where}: card_summary is ${c.card_summary.length} characters (aim for 70-110)`)
     if ((c.meta_description || '').length > 170) warnings.push(`${where}: meta_description is ${c.meta_description.length} characters (aim for 150-160)`)
     for (const [i, b] of (c.buildings || []).entries()) {
       if (!BUILDING_ART.has(b.illus)) errors.push(`${where}: building ${i + 1} illustration "${b.illus}" is not one of ${[...BUILDING_ART].join(', ')}`)
@@ -171,6 +194,8 @@ export function buildAreaDocuments({areas, company, reviews}: BuildInput): Build
       nearby: keyed('near', (c.nearby || []).map(([name, note]: [string, string]) => ({name, note}))),
       faq: keyed('faq', (c.faq || []).map(([key, question, answer]: [string, string, string]) => ({key, question, answer}))),
       ctaReady: c.cta_ready,
+      cardSummary: opt(c.card_summary), cardRegion: opt(c.card_region),
+      cardImage: c.card_image?.src ? {src: c.card_image.src, alt: opt(c.card_image.alt), credit: opt(c.card_image.credit), creditUrl: opt(c.card_image.credit_url)} : undefined,
       serviceOverrides: keyed('override', Object.entries(c.service_overrides || {}).map(([target, line]) => ({target, line}))),
       researchSources: keyed('source', (c.research_sources || []).map(([title, url, type]: [string, string, string]) => ({title, url, type}))),
     })

@@ -40,6 +40,7 @@ export const areaPage = defineType({
     {name: 'permits', title: 'Permit record'},
     {name: 'reviews', title: 'Reviews'},
     {name: 'close', title: 'Nearby, FAQ & CTA'},
+    {name: 'card', title: 'Collection card'},
   ],
   fields: [
     // Naming, hero & SEO
@@ -140,6 +141,17 @@ export const areaPage = defineType({
     {...objects('faq', 'Area FAQs (7 generic FAQs are added after these)', [str('key', 'Key (faq-...)'), str('question', 'Question'), text('answer', 'Answer', 4)], {title: 'question'}), group: 'close'},
     {...strings('ctaReady', 'Have these ready when you call'), group: 'close'},
     {...objects('serviceOverrides', 'Service line overrides', [str('target', 'Service name or category id'), text('line', 'Replacement line', 2)], {title: 'target', subtitle: 'line'}), group: 'close'},
+    // Collection card (/service-areas)
+    defineField({name: 'cardSummary', title: 'Card summary', type: 'string', group: 'card', description: 'One sentence, about 70 to 110 characters, e.g. "Lakefront city directly north of Chicago, with Northwestern and a downtown of towers."', validation: (rule) => rule.max(130).warning()}),
+    {...str('cardRegion', 'Card location line'), group: 'card', description: 'e.g. "Chicago · North Side" or "North Shore city".'},
+    defineField({
+      name: 'cardImage', title: 'Card photo', type: 'object', group: 'card', description: 'A real photo of the area (4:3, at least 800 px wide) with its credit. Leave empty for a plain placeholder.',
+      fields: [
+        defineField({name: 'image', title: 'Upload', type: 'image'}),
+        str('src', 'Or image URL / path'), str('alt', 'Alt text'), str('credit', 'Credit (author · licence · source)'),
+        defineField({name: 'creditUrl', title: 'Credit link', type: 'url'}),
+      ],
+    }),
     {...objects('researchSources', 'Research sources', [str('title', 'Title'), defineField({name: 'url', title: 'URL', type: 'url'}), str('type', 'Type')], {title: 'title', subtitle: 'type'}), group: 'close'},
   ],
   validation: (rule) => rule.custom((doc) => {
