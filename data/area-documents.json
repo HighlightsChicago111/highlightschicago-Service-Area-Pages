@@ -505,13 +505,20 @@
     ],
     "hourlyAnswer": "We quote by scope, not by the hour, because the hours on an Evanston job depend on everything in the table above. A fixture under a plaster ceiling in a 1915 courtyard condo and the same fixture in a new downtown tower aren't the same job. The written quote tells you the whole price before you agree to it.",
     "choosingBuildingWhy": "Evanston changes street by street: Victorian and Prairie houses on the lakeshore, courtyard condos near Howard St and Hinman Ave, bungalows and two-flats in the west, and towers downtown.",
-    "choosingBuildingAnswer": "Older houses, fuse-box and service upgrades, vintage condos and two-flats across Chicago's North Side, and a commercial job in neighbouring Skokie under a village permit [CONFIRM: Evanston jobs Highlights can point to]",
+    "choosingBuildingAnswer": "Service upgrades, new panels and new construction just south of Howard St in Rogers Park and West Ridge, older houses and vintage condos across Chicago's North Side, and a commercial job in neighbouring Skokie under a village permit [CONFIRM: Evanston jobs Highlights can point to]",
     "choosingPaperworkWhy": "Evanston wants every contractor registered with the City before a permit is issued, and towers and associations want a certificate of insurance before work is scheduled.",
     "whereWeFit": "Highlights is a family-owned Chicago contractor. In Evanston we're the right call for house and condo work: service and panel upgrades in older houses, rewiring, lighting, EV chargers and small shops. Large university and hospital projects and tower base-building work are for the big commercial firms, and we'll tell you so.",
-    "noRecordText": "We don't publish an Evanston permit count. Evanston's permits aren't open data, and our City of Chicago record doesn't include work outside the city. [CONFIRM: how many Evanston jobs and permits Highlights has done]",
+    "recordBullets": [
+      "100-amp to 200-amp service upgrades with new meters and panels for three- and four-unit buildings, including the 1400 block of W Howard St, right on the Evanston line.",
+      "Electrical for new three-unit masonry buildings on the 1400 block of W Juneway Ter and the 7700 block of N Sheridan Rd, the last blocks before Evanston.",
+      "New 200-amp services on the 1800 block of W Farwell Ave, the 1300 block of W Columbia Ave and the 2900 block of W Ardmore Ave.",
+      "A 1,200-amp three-phase service with 44 meters and panels for a large apartment building on the 6700 block of N Artesian Ave.",
+      "A kitchen and bathroom remodel with a new electrical panel in a unit on the 1200 block of W North Shore Ave."
+    ],
+    "noRecordText": "41 City of Chicago permits since 2012 in Rogers Park and West Ridge, the two Chicago neighbourhoods on Evanston's southern border: mostly service upgrades, new panels and new construction. [CONFIRM: how many Evanston jobs and permits Highlights has done]",
     "honestContext": [
       "We're a north-side Chicago shop at 5766 N Lincoln Ave, a short drive from Howard St. Most of our 1,213 City of Chicago permits are in Wards 1, 32, 26, 47 and 27, so our public record is in Chicago, not Evanston.",
-      "Evanston's buildings are close to the Chicago neighbourhoods we work in most: courtyard buildings, two-flats and older houses like Rogers Park's and Edgewater's. What differs is the paperwork: City of Evanston registration, its own inspectors, and historic-district review for exterior work."
+      "Evanston's buildings are close to the ones we work on just south of Howard St: courtyard buildings, two- and three-flats and older houses. What differs is the paperwork: City of Evanston registration, its own inspectors, and historic-district review for exterior work."
     ],
     "reviewsHeading": "Reviews from older-house, vintage condo and two-flat jobs",
     "reviews": [
