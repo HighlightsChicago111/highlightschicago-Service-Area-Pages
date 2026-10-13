@@ -36,7 +36,7 @@ export function ValueBlock({ctx}: {ctx: AreaCtx}) {
         <p className="ar-footnote"><Icon name="info" size={16} />Counted by keyword matching across the {total} reviews Google returns for Highlights (of {co.googleReviews}), so the numbers are approximate. {stats?.fiveStar ?? 0} of those {total} reviews are five stars.</p>
       </>}
       {Boolean(page.reviews?.length) && <div className="ar-reviews" id="reviews">
-        <Carousel className="ar-review-grid" headClassName="ar-reviews-head" label="Google reviews"
+        <Carousel rail className="ar-review-grid" headClassName="ar-reviews-head" label="Google reviews"
           head={<><h3 className="ds-h5">{page.reviewsHeading || 'Reviews from jobs like yours'}</h3><p><GoogleG size={24} /><b>{co.googleRating}</b><span>· {co.googleReviews} Google reviews</span></p></>}>
           {(page.reviews || []).map((review, index) => (
             <li className="ar-review" key={review._key || index}>

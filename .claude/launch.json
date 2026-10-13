@@ -6,6 +6,13 @@
       "runtimeExecutable": "node",
       "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "-p", "3008"],
       "port": 3008
+    },
+    {
+      "name": "v2-dev-local",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "-p", "3008"],
+      "env": {"AREA_CONTENT_SOURCE": "local"},
+      "port": 3008
     }
   ]
 }
