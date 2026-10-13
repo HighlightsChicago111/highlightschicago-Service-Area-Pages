@@ -257,6 +257,23 @@
 .ds .ar-record-context { display: grid; gap: 18px; padding: 36px; border-radius: var(--r-lg); background: #fff; border-left: 3px solid var(--c-blue); }
 .ds .ar-record-context p { font-size: 16px; line-height: 27px; color: var(--c-ink-soft); margin: 0; }
 
+/* Hero request form, compact on desktop so it sits level with the hero copy.
+   Every field and option stays; only spacing, input height and chip size shrink. */
+@media (min-width: 992px) {
+  .ds .ar-quote { padding: 26px 28px; }
+  .ds .ar-quote .ds-form-sub { margin-top: 4px; padding-bottom: 14px; font-size: 13px; line-height: 20px; }
+  .ds .ar-quote .ds-form-group { gap: 10px; padding: 14px 0; }
+  .ds .ar-quote .ds-field { gap: 4px; }
+  .ds .ar-quote .ds-field label, .ds .ar-quote .ds-label { font-size: 13px; line-height: 18px; }
+  .ds .ar-quote .ds-field input, .ds .ar-quote .ds-field select { height: 40px; padding: 0 12px; font-size: 15px; }
+  .ds .ar-quote .ds-field select { padding-right: 34px; text-overflow: ellipsis; }
+  .ds .ar-quote .ds-input-icon input { padding-left: 40px; }
+  .ds .ar-quote .ds-chip-options { gap: 6px; }
+  .ds .ar-quote .ds-chip-option { min-height: 28px; padding: 4px 10px; gap: 4px; font-size: 13px; line-height: 16px; }
+  .ds .ar-quote .ds-btn--block { margin-top: 16px; min-height: 48px; }
+  .ds .ar-quote .ds-form-note { margin-top: 10px; }
+}
+
 /* Phone-only helpers: the swipe counter and dots, and the accordion toggle. On wider
    screens the accordion wrappers dissolve so cards keep their grid layout. */
 .ds .ar-carousel-count, .ds .ar-dots, .ds .ar-carousel-top, .ds .ar-acc-btn, .ds .ar-ready-num { display: none; }
