@@ -3,6 +3,7 @@
  * Pure functions, no network: the build and the tests both use this.
  */
 import catalog from '../../src/lib/area/catalog.json'
+import cardLibrary from '../../src/lib/area/card-library.json'
 import illustrations from '../../src/lib/area/illustrations.json'
 
 export type SanityDoc = {_id: string; _type: string; [key: string]: unknown}
@@ -110,8 +111,16 @@ export function buildAreaDocuments({areas, company, reviews}: BuildInput): Build
   const byReviewer = new Map(reviews.map((row) => [row.reviewer, row]))
   const slugs = new Set<string>()
 
-  for (const {folder, config: c, permits} of areas) {
+  for (const {folder, config: raw, permits} of areas) {
     const where = `areas/${folder}`
+    // Areas from the approved collection template get its exact card photo (and text, if none is written).
+    const libraryCard = (cardLibrary as Record<string, {src: string; alt: string; credit: string; creditUrl: string | null; summary: string; region: string}>)[raw.slug]
+    const c: Json = libraryCard ? {
+      ...raw,
+      card_image: raw.card_image || {src: libraryCard.src, alt: libraryCard.alt, credit: libraryCard.credit, credit_url: libraryCard.creditUrl || undefined},
+      card_summary: raw.card_summary || libraryCard.summary,
+      card_region: raw.card_region || libraryCard.region,
+    } : raw
     for (const field of REQUIRED) if (!opt(c[field])) errors.push(`${where}: ${field} is required`)
     for (const key of Object.keys(c)) if (!KNOWN_KEYS.has(key)) errors.push(`${where}: "${key}" is not mapped to a Sanity field (add it to the schema and area-transform.ts)`)
     if (c.slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(c.slug)) errors.push(`${where}: slug must be lowercase words joined by hyphens`)

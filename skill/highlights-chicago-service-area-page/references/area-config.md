@@ -38,9 +38,9 @@ drafts, is hidden on the live site, and FAQ answers containing one are kept out 
 | `nearby` | yes | 6 to 8 | nearby neighbourhoods |
 | `faq` | yes | 4 to 6 (7 generic are added) | FAQ and FAQ schema |
 | `cta_ready` | yes | 5 to 6 | "Have these ready when you call" |
-| `card_summary` | yes | 70 to 110 chars, 1 sentence | collection card |
-| `card_region` | yes | e.g. "Chicago · North Side" | collection card |
-| `card_image` | yes | 800 x 600 webp + credit | collection card and photo credits |
+| `card_summary` | yes, unless in the card library | 70 to 110 chars, 1 sentence | collection card |
+| `card_region` | yes, unless in the card library | e.g. "Chicago · North Side" | collection card |
+| `card_image` | yes, unless in the card library | 800 x 600 webp + credit | collection card and photo credits |
 | `service_overrides` | no | | service catalogue lines |
 | `research_sources` | yes | every page used | Studio only |
 
@@ -144,6 +144,13 @@ The section always shows two cards: **Our record** (a lead line plus bullets) an
 - `cta_ready`: 5 to 6 things to have ready when calling, specific to the area's buildings.
 
 ## 11. Collection card (`/service-areas`)
+
+**Template areas:** if the slug is in `src/lib/area/card-library.json` (the 15 areas of the approved collection
+template), leave all three card fields out. The build fills them with the template's exact photo, alt, credit,
+summary and location line, and the collection page uses them even before Sanity has them. Write them only to replace
+the template's card on purpose.
+
+**Other areas:**
 
 - `card_summary`: one sentence, 70 to 110 characters, what the place is (e.g. "Lakefront city directly north of
   Chicago, with Northwestern, a downtown of towers and streets of older houses."). No claims needing a CONFIRM.
