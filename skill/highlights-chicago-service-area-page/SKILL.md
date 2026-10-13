@@ -48,10 +48,16 @@ python -X utf8 $SKILL_DIR/scripts/reviews.py --out reviews.json --area "<Area>" 
 Choose 6 to 8: reviews naming the area first, then reviews matching its building types. Read candidates in full;
 trim only at a sentence end with `cut_before`. Skip reviews that name a competitor.
 
-### 5. Find the collection-card photo
-A real photo of the area, free to reuse (Wikimedia Commons: CC BY, CC BY-SA or public domain). Crop to 4:3, save as
-`REPO/public/images/areas/<slug>.webp` at 800 x 600, and record the author, licence and file page in `card_image`.
-Never use stock or AI images, and never a photo without a known licence.
+### 5. Collection-card photo
+First check `REPO/src/lib/area/card-library.json`. It holds the approved collection template's card for 15 areas
+(Evanston, Lakeview, Avondale, Lincoln Square, Wicker Park, Logan Square, Lincoln Park, Oak Park, Sauganash, West Ridge,
+Edison Park, Portage Park, Glenview, Wilmette, Park Ridge): exact photo in `public/images/areas/<slug>.jpg`, alt,
+credit, summary and location line. **If the slug is there, leave `card_image`, `card_summary` and `card_region` out**:
+the build and the collection page use the template's card exactly. Use the library's slug spelling for the page.
+Only for an area not in the library: find a real photo of the area, free to reuse (Wikimedia Commons: CC BY, CC BY-SA
+or public domain), crop to 4:3, save as `REPO/public/images/areas/<slug>.webp` at 800 x 600, and record the author,
+licence and file page in `card_image`, plus `card_summary` and `card_region` in the template's style. Never use stock
+or AI images, and never a photo without a known licence.
 
 ### 6. Write `area.json`
 Copy the shape of the closest example and replace every value. Fill **every** field in `references/area-config.md`.

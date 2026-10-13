@@ -136,6 +136,21 @@ check('flags every standard-template block that is missing or the wrong size', (
   for (const expected of [/card_summary is empty/, /hourly_answer is empty/, /where_we_fit is empty/, /no card_image/, /no map/, /faq has 2 item/]) assert.ok(warnings.some((w) => expected.test(w)), `missing warning ${expected}`)
   assert.deepEqual(build([westLoop]).warnings.filter((w) => /standard template|template expects|no card_image|no map/.test(w)), [])
 })
+check('an area from the collection template gets its exact template card photo unless it has its own', () => {
+  const lakeview = clone()
+  Object.assign(lakeview.config, {slug: 'lakeview', area: 'Lakeview'})
+  lakeview.folder = 'lakeview'
+  for (const key of ['card_image', 'card_summary', 'card_region']) delete lakeview.config[key]
+  const doc = build([lakeview]).documents.find((d) => d._type === 'areaPage') as Json
+  assert.equal(doc.cardImage.src, '/service-areas/images/areas/lakeview.jpg')
+  assert.match(doc.cardImage.credit, /Ken Lund/)
+  assert.ok(doc.cardSummary && doc.cardRegion)
+  const own = clone()
+  Object.assign(own.config, {slug: 'lakeview', area: 'Lakeview'})
+  own.folder = 'lakeview'
+  const ownDoc = build([own]).documents.find((d) => d._type === 'areaPage') as Json
+  assert.equal(ownDoc.cardImage.src, westLoop.config.card_image.src)
+})
 check('rejects a content key that has no Sanity field', () => {
   assert.match(errorsFor((c) => { c.config.brand_new_field = 'x' }), /"brand_new_field" is not mapped/)
 })

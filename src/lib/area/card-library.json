@@ -1,0 +1,137 @@
+{
+  "evanston": {
+    "area": "Evanston",
+    "src": "/service-areas/images/areas/evanston.jpg",
+    "alt": "Downtown Evanston from above, with Lake Michigan behind",
+    "credit": "Madcoverboy (talk) · CC BY-SA 3.0 · Wikimedia Commons",
+    "creditUrl": null,
+    "summary": "Lakefront city directly north of Chicago, where Highlights Chicago holds electrical registration 18LICL-0250.",
+    "region": "North Shore city"
+  },
+  "lakeview": {
+    "area": "Lakeview",
+    "src": "/service-areas/images/areas/lakeview.jpg",
+    "alt": "A busy street corner in Lakeview on a sunny day",
+    "credit": "Ken Lund from Reno, Nevada, USA · CC BY-SA 2.0 · Wikimedia Commons",
+    "creditUrl": null,
+    "summary": "Lakefront North Side neighborhood where 71% of the housing was built before 1940.",
+    "region": "Chicago · North Side"
+  },
+  "avondale": {
+    "area": "Avondale",
+    "src": "/service-areas/images/areas/avondale.jpg",
+    "alt": "The towers of St. Hyacinth Basilica in Avondale against a cloudy sky",
+    "credit": "Frank Malawski · CC BY 2.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:StHyacinthChicago.jpg",
+    "summary": "Northwest Side neighborhood, home to St. Hyacinth Basilica.",
+    "region": "Chicago · Northwest Side"
+  },
+  "lincoln-square": {
+    "area": "Lincoln Square",
+    "src": "/service-areas/images/areas/lincoln-square.jpg",
+    "alt": "The neon Meyer Delicatessen sign on Lincoln Avenue in Lincoln Square",
+    "credit": "James~Quinn · CC BY-SA 2.0 · Wikimedia Commons",
+    "creditUrl": null,
+    "summary": "North Side neighborhood along Lincoln Avenue, minutes from our shop.",
+    "region": "Chicago · North Side"
+  },
+  "wicker-park": {
+    "area": "Wicker Park",
+    "src": "/service-areas/images/areas/wicker-park.jpg",
+    "alt": "A historic commercial building on a Wicker Park street corner",
+    "credit": "Warren LeMay from Chicago, IL, United States · CC BY-SA 4.0 · Wikimedia Commons",
+    "creditUrl": null,
+    "summary": "Near Northwest Side neighborhood where 83% of the housing was built before 1940.",
+    "region": "Chicago · Near Northwest Side"
+  },
+  "logan-square": {
+    "area": "Logan Square",
+    "src": "/service-areas/images/areas/logan-square.jpg",
+    "alt": "The Illinois Centennial Monument in Logan Square",
+    "credit": "Roberto Morales · CC BY-SA 4.0 · Wikimedia Commons",
+    "creditUrl": null,
+    "summary": "Northwest Side neighborhood around the Illinois Centennial Monument.",
+    "region": "Chicago · Northwest Side"
+  },
+  "lincoln-park": {
+    "area": "Lincoln Park",
+    "src": "/service-areas/images/areas/lincoln-park.jpg",
+    "alt": "The Lincoln Park Conservatory and its gardens on a summer day",
+    "credit": "Ben Schumin from Montgomery Village, Maryland, USA · CC BY-SA 2.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Lincoln_Park_Conservatory_(9719113515).jpg",
+    "summary": "North Side neighborhood around the park, the zoo and the Lincoln Park Conservatory.",
+    "region": "Chicago · North Side"
+  },
+  "oak-park": {
+    "area": "Oak Park",
+    "src": "/service-areas/images/areas/oak-park.jpg",
+    "alt": "Lake Street in Oak Park at dusk",
+    "credit": "Dennisyerger84 · CC BY-SA 4.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Lake_Street_at_dusk,_Oak_Park.jpg",
+    "summary": "Village on Chicago's western border, with its shopping district along Lake Street.",
+    "region": "Village west of Chicago"
+  },
+  "sauganash": {
+    "area": "Sauganash",
+    "src": "/service-areas/images/areas/sauganash.jpg",
+    "alt": "Brick homes in the Sauganash Historic District",
+    "credit": "Thshriver · CC BY-SA 3.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Sauganash_Historic_District_2.1.jpg",
+    "summary": "Far Northwest Side neighborhood of brick homes in the Sauganash Historic District.",
+    "region": "Chicago · Far Northwest Side"
+  },
+  "west-ridge": {
+    "area": "West Ridge",
+    "src": "/service-areas/images/areas/west-ridge.jpg",
+    "alt": "West Ridge seen from the air, block after block of homes",
+    "credit": "formulanone · CC BY-SA 2.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:West_Ridge_Neighborhood_of_Chicago_Aerial_(50560849138).jpg",
+    "summary": "Far North Side neighborhood between Lincolnwood and Rogers Park.",
+    "region": "Chicago · Far North Side"
+  },
+  "edison-park": {
+    "area": "Edison Park",
+    "src": "/service-areas/images/areas/edison-park.jpg",
+    "alt": "The Edison Park fieldhouse on a winter day",
+    "credit": "Smallbones · Public domain · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Edison_Park_Chicago.JPG",
+    "summary": "Far Northwest Side neighborhood at the city's edge, next to Park Ridge.",
+    "region": "Chicago · Far Northwest Side"
+  },
+  "portage-park": {
+    "area": "Portage Park",
+    "src": "/service-areas/images/areas/portage-park.jpg",
+    "alt": "The arched entrance gate to Portage Park",
+    "credit": "Orestek · Public domain · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Portage_Park_Chicago_Gate.JPG",
+    "summary": "Northwest Side neighborhood around Portage Park, at Irving Park Road and Central Avenue.",
+    "region": "Chicago · Northwest Side"
+  },
+  "glenview": {
+    "area": "Glenview",
+    "src": "/service-areas/images/areas/glenview.jpg",
+    "alt": "The main plaza of The Glen Town Center in Glenview",
+    "credit": "Payton Chung from DCA, USA · CC BY 2.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:The_Glen_Town_Center_(2723219030).jpg",
+    "summary": "Village north of Chicago, around The Glen Town Center.",
+    "region": "Village north of Chicago"
+  },
+  "wilmette": {
+    "area": "Wilmette",
+    "src": "/service-areas/images/areas/wilmette.jpg",
+    "alt": "The Bahá'í House of Worship in Wilmette and its gardens",
+    "credit": "Soueric · CC BY-SA 4.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Bah%C3%A1%27%C3%AD_House_of_Worship_in_Wilmette,_Illinois;_exterior_and_gardens,_photographed_on_August_10,_2021_(1558294651).jpg",
+    "summary": "North Shore village on the lake, home to the Bahá'í House of Worship.",
+    "region": "North Shore village"
+  },
+  "park-ridge": {
+    "area": "Park Ridge",
+    "src": "/service-areas/images/areas/park-ridge.jpg",
+    "alt": "The Pickwick Theatre in downtown Park Ridge",
+    "credit": "Kelly Martin · CC BY-SA 3.0 · Wikimedia Commons",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:ParkRidgePickwick.jpg",
+    "summary": "City just northwest of Chicago, with the Pickwick Theatre downtown.",
+    "region": "City northwest of Chicago"
+  }
+}

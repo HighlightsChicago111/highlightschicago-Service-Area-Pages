@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {draftMode} from 'next/headers'
 import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
 import {DisableDraftMode} from '@/components/disable-draft-mode'
+import {cardImageFor, cardRegionFor, cardSummaryFor} from '@/lib/area/card-photos'
 import {isChicago} from '@/lib/area/copy'
 import {getAreaCards, getAreaSettings} from '@/lib/content'
 import {PHOTOS, telHref} from '@/lib/ds'
@@ -20,14 +21,15 @@ export const metadata: Metadata = {
 
 const PIN = <svg className="ar-cc-pin" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" strokeWidth="2" /></svg>
 
-const regionOf = (card: AreaCard) => card.cardRegion || (isChicago(card) ? 'Chicago' : `${card.city}, IL`)
+const regionOf = (card: AreaCard) => cardRegionFor(card) || (isChicago(card) ? 'Chicago' : `${card.city}, IL`)
 
 /** /service-areas: photo hero with the area count, then one dark card per published area page. */
 export default async function ServiceAreasPage() {
   const draft = (await draftMode()).isEnabled
   const [areas, co] = await Promise.all([getAreaCards(draft), getAreaSettings(draft)])
   const tel = telHref(co.phoneTel, co.phoneDisplay)
-  const credited = areas.filter((card) => card.cardImage?.url && card.cardImage.credit)
+  const cards = areas.map((card) => ({...card, cardImage: cardImageFor(card), cardSummary: cardSummaryFor(card)}))
+  const credited = cards.filter((card) => card.cardImage?.url && card.cardImage.credit)
 
   return (
     <div className="ds">
@@ -69,7 +71,7 @@ export default async function ServiceAreasPage() {
             {areas.length === 0
               ? <p className="ar-cd-empty">No service area pages are published yet. Publish one in the Studio and it appears here within a minute.</p>
               : <ul className="ar-cc-grid">
-                {areas.map((card) => (
+                {cards.map((card) => (
                   <li key={card.slug}>
                     <Link className="ar-cc" href={`/${card.slug}`} aria-label={`Electricians ${card.areaIn}`}>
                       <span className={card.cardImage?.url ? 'ar-cc-media' : 'ar-cc-media ar-cc-media--empty'}>
@@ -78,7 +80,7 @@ export default async function ServiceAreasPage() {
                       <span className="ar-cc-body">
                         <span className="ar-cc-label">Service area</span>
                         <strong>{card.area}</strong>
-                        <span className="ar-cc-desc">{card.cardSummary || card.eyebrow}</span>
+                        <span className="ar-cc-desc">{card.cardSummary}</span>
                         <span className="ar-cc-region">{PIN}{regionOf(card)}</span>
                       </span>
                     </Link>
