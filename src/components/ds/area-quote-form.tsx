@@ -28,7 +28,7 @@ export function AreaQuoteForm({area, areaIn, districts, buildings, addressPlaceh
   const [need, setNeed] = useState(NEEDS[0])
 
   return (
-    <aside className="ds-form-card" id="quote" aria-labelledby={`${id}-title`}>
+    <aside className="ds-form-card ar-quote" id="quote" aria-labelledby={`${id}-title`}>
       <h2 className="ds-form-title" id={`${id}-title`}>Book an electrician {areaIn}</h2>
       <p className="ds-form-sub">Free estimate. The person who walks your space is the person who writes the quote.</p>
       <form onSubmit={submit}>
@@ -50,8 +50,10 @@ export function AreaQuoteForm({area, areaIn, districts, buildings, addressPlaceh
 
         <div className="ds-form-group" role="group" aria-labelledby={`${id}-g2`}>
           <p className="ds-form-group-title" id={`${id}-g2`}><span className="ds-step-dot">2</span>Your {area} job</p>
-          <Select id={`${id}-district`} name="district" label={`Where ${areaIn}?`} options={[...districts, 'Not sure']} />
-          <Select id={`${id}-building`} name="buildingType" label="Building type" options={[...buildings, 'Not sure']} />
+          <div className="ds-form-row">
+            <Select id={`${id}-district`} name="district" label={`Where ${areaIn}?`} options={[...districts, 'Not sure']} />
+            <Select id={`${id}-building`} name="buildingType" label="Building type" options={[...buildings, 'Not sure']} />
+          </div>
           <div className="ds-field" role="radiogroup" aria-labelledby={`${id}-need`}>
             <span className="ds-label" id={`${id}-need`}>What do you need?</span>
             <div className="ds-chip-options">
