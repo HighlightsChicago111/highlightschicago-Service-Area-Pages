@@ -17,3 +17,6 @@ Thumbs.db
 
 # Python
 __pycache__/
+
+# Packaged skill for upload to claude.ai (built from skill/)
+skill/*.skill

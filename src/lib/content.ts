@@ -27,6 +27,8 @@ function fromLocal(doc: LocalDoc): AreaPage {
 const toCard = (page: AreaPage): AreaCard => ({
   slug: page.slug, area: page.area, areaIn: page.areaIn, eyebrow: page.eyebrow, metaDescription: page.metaDescription,
   permitCount: page.permits?.highlights?.count, illus: page.buildings?.[0]?.illus, districtCount: page.districts?.length,
+  city: page.city, cardSummary: page.cardSummary, cardRegion: page.cardRegion,
+  cardImage: page.cardImage ? {url: page.cardImage.src, alt: page.cardImage.alt, credit: page.cardImage.credit, creditUrl: page.cardImage.creditUrl} : undefined,
 })
 
 /** Published area pages; in preview (draft) mode, drafts as well. */

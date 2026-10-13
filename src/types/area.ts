@@ -37,6 +37,9 @@ export type AreaPage = {
   areaIn: string
   /** Empty for a Chicago neighbourhood; the city for a suburb (e.g. Evanston). */
   city?: string
+  cardSummary?: string
+  cardRegion?: string
+  cardImage?: {image?: unknown; src?: string; alt?: string; credit?: string; creditUrl?: string}
   slug: string
   title?: string
   metaDescription?: string
@@ -102,6 +105,10 @@ export type AreaSettings = {
   reviewStats?: {total: number; fiveStar: number; owner: number; punctual: number; fairPrice: number; clean: number}
 }
 
-export type AreaCard = {slug: string; area: string; areaIn: string; eyebrow?: string; metaDescription?: string; permitCount?: number; illus?: string; districtCount?: number}
+export type CardImage = {url?: string; alt?: string; credit?: string; creditUrl?: string}
+export type AreaCard = {
+  slug: string; area: string; areaIn: string; city?: string; eyebrow?: string; metaDescription?: string; permitCount?: number; illus?: string; districtCount?: number
+  cardSummary?: string; cardRegion?: string; cardImage?: CardImage
+}
 
 export type AreaPageData = {page: AreaPage | null; settings: AreaSettings | null; areas: AreaCard[]}

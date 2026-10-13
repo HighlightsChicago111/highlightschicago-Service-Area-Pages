@@ -128,6 +128,14 @@ check('a suburb page keeps its city, and a Chicago page leaves it empty', () => 
   const chicago = build([westLoop]).documents.find((d) => d._type === 'areaPage') as Json
   assert.equal(chicago.city, undefined)
 })
+check('flags every standard-template block that is missing or the wrong size', () => {
+  const thin = clone()
+  for (const key of ['card_summary', 'hourly_answer', 'where_we_fit', 'card_image', 'map']) delete thin.config[key]
+  thin.config.faq = thin.config.faq.slice(0, 2)
+  const {warnings} = build([thin])
+  for (const expected of [/card_summary is empty/, /hourly_answer is empty/, /where_we_fit is empty/, /no card_image/, /no map/, /faq has 2 item/]) assert.ok(warnings.some((w) => expected.test(w)), `missing warning ${expected}`)
+  assert.deepEqual(build([westLoop]).warnings.filter((w) => /standard template|template expects|no card_image|no map/.test(w)), [])
+})
 check('rejects a content key that has no Sanity field', () => {
   assert.match(errorsFor((c) => { c.config.brand_new_field = 'x' }), /"brand_new_field" is not mapped/)
 })

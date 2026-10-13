@@ -665,6 +665,14 @@
       "Photos of the room, ceiling or garage where the work goes",
       "For a shop or restaurant: drawings if you have them, and your opening hours"
     ],
+    "cardSummary": "Lakefront city directly north of Chicago, with Northwestern, a downtown of towers and streets of older houses.",
+    "cardRegion": "North Shore city",
+    "cardImage": {
+      "src": "/service-areas/images/areas/evanston.webp",
+      "alt": "Downtown Evanston from above, with Lake Michigan behind",
+      "credit": "Madcoverboy (talk) · CC BY-SA 3.0 · Wikimedia Commons",
+      "creditUrl": "https://commons.wikimedia.org/wiki/User:Madcoverboy"
+    },
     "researchSources": [
       {
         "_key": "source-1",
@@ -1741,6 +1749,14 @@
       "For a condo: whether the board needs to approve the work",
       "For a restaurant or office: drawings, if you have them, and the hours you can't be disturbed"
     ],
+    "cardSummary": "Warehouse lofts, Restaurant Row and new towers between the Loop and Ashland Avenue.",
+    "cardRegion": "Chicago · Near West Side",
+    "cardImage": {
+      "src": "/service-areas/images/areas/west-loop.webp",
+      "alt": "The Fulton Market District sign over a street of brick warehouse buildings in the West Loop",
+      "credit": "Bex Walton from London, England · CC BY 2.0 · Wikimedia Commons",
+      "creditUrl": "https://commons.wikimedia.org/wiki/File:Fulton_Market,_West_Loop_(47090474824).jpg"
+    },
     "serviceOverrides": [
       {
         "_key": "override-1",

@@ -1,47 +1,106 @@
+/* eslint-disable @next/next/no-img-element -- Hero and card photos are plain images from /public or Sanity. */
 import type {Metadata} from 'next'
 import Link from 'next/link'
 import {draftMode} from 'next/headers'
 import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
-import {Icon} from '@/components/ds/icon'
 import {DisableDraftMode} from '@/components/disable-draft-mode'
+import {isChicago} from '@/lib/area/copy'
 import {getAreaCards, getAreaSettings} from '@/lib/content'
-import {telHref} from '@/lib/ds'
+import {PHOTOS, telHref} from '@/lib/ds'
+import {PUBLIC_SITE_ORIGIN} from '@/lib/urls'
+import type {AreaCard} from '@/types/area'
 
 export const revalidate = 60
 export const metadata: Metadata = {
-  title: 'Service areas',
-  description: 'Highlights Chicago service area pages.',
+  title: 'Electrician service areas in Chicago',
+  description: 'The Chicago neighbourhoods and nearby suburbs Highlights Chicago electricians serve, each with its own page.',
   // Test project: keep it out of search until the pages go live on the main domain.
   robots: {index: false, follow: false},
 }
 
-/** Plain list of published service area pages, one card each. The designed collection page comes later. */
+const PIN = <svg className="ar-cc-pin" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" strokeWidth="2" /></svg>
+
+const regionOf = (card: AreaCard) => card.cardRegion || (isChicago(card) ? 'Chicago' : `${card.city}, IL`)
+
+/** /service-areas: photo hero with the area count, then one dark card per published area page. */
 export default async function ServiceAreasPage() {
   const draft = (await draftMode()).isEnabled
   const [areas, co] = await Promise.all([getAreaCards(draft), getAreaSettings(draft)])
   const tel = telHref(co.phoneTel, co.phoneDisplay)
+  const credited = areas.filter((card) => card.cardImage?.url && card.cardImage.credit)
 
   return (
     <div className="ds">
       {draft && <DisableDraftMode />}
-      <SiteHeader co={co} areas={areas} tel={tel} />
-      <main id="main" className="ds-band ds-band--grey">
-        <div className="ds-wrap ar-coll">
-          <h1 className="ds-h2">Service areas</h1>
-          {areas.length === 0
-            ? <p className="ar-coll-empty">No service area pages are published yet. Publish one in the Studio and it appears here within a minute.</p>
-            : <ul className="ar-coll-grid">
-              {areas.map((card) => (
-                <li key={card.slug}>
-                  <Link className="ar-coll-card" href={`/${card.slug}`}>
-                    <h2 className="ar-card-title">{card.area}</h2>
-                    {card.eyebrow && <p className="ar-coll-desc">{card.eyebrow}</p>}
-                    <span className="ar-coll-link">View page<Icon name="arrowRight" size={16} /></span>
-                  </Link>
-                </li>
-              ))}
-            </ul>}
-        </div>
+      <SiteHeader co={co} areas={areas} tel={tel} current="areas" />
+      <main id="main">
+        <section className="ar-ch" aria-labelledby="areas-hero-title">
+          <img className="ar-ch-bg" src={PHOTOS.van.src} alt="" fetchPriority="high" decoding="async" />
+          <div className="ds-wrap ar-ch-inner">
+            <nav className="ar-ch-crumbs" aria-label="Breadcrumb">
+              <ol><li><a href={co.site || PUBLIC_SITE_ORIGIN}>Home</a></li><li aria-current="page">Service areas</li></ol>
+            </nav>
+            <div className="ar-ch-grid">
+              <div>
+                <p className="ar-ch-kicker">Licensed Chicago electricians</p>
+                <h1 id="areas-hero-title">Service areas across Chicago and nearby suburbs</h1>
+                <p className="ar-ch-lede">From our shop at {co.address?.street || '5766 N Lincoln Ave'}, Highlights Chicago electricians work across the North and Northwest Sides and the suburbs around the city. Find your area below.</p>
+                <div className="ar-ch-actions">
+                  <a href="#service-areas-title">See service areas</a>
+                  <a href={`${PUBLIC_SITE_ORIGIN}/contact-us`}>Contact us</a>
+                </div>
+              </div>
+              <div className="ar-ch-panel">
+                <span>Service areas</span>
+                <strong>{areas.length}</strong>
+                <p>{areas.length === 1 ? 'Area' : 'Chicago neighbourhoods and nearby suburbs'} with a page of its own</p>
+                <a href={tel}>Talk with an electrician <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="ar-cd" aria-labelledby="service-areas-title">
+          <div className="ds-wrap">
+            <div className="ar-cd-head">
+              <div><p className="ar-cd-kicker">Where we work</p><h2 id="service-areas-title">Find your area</h2></div>
+              <p>Our licensed electricians cover every area below, for the full range of electrical services, from panel upgrades to lighting and EV chargers.</p>
+            </div>
+            {areas.length === 0
+              ? <p className="ar-cd-empty">No service area pages are published yet. Publish one in the Studio and it appears here within a minute.</p>
+              : <ul className="ar-cc-grid">
+                {areas.map((card) => (
+                  <li key={card.slug}>
+                    <Link className="ar-cc" href={`/${card.slug}`} aria-label={`Electricians ${card.areaIn}`}>
+                      <span className={card.cardImage?.url ? 'ar-cc-media' : 'ar-cc-media ar-cc-media--empty'}>
+                        {card.cardImage?.url ? <img src={card.cardImage.url} alt={card.cardImage.alt || ''} loading="lazy" decoding="async" /> : <span aria-hidden="true">{card.area.charAt(0)}</span>}
+                      </span>
+                      <span className="ar-cc-body">
+                        <span className="ar-cc-label">Service area</span>
+                        <strong>{card.area}</strong>
+                        <span className="ar-cc-desc">{card.cardSummary || card.eyebrow}</span>
+                        <span className="ar-cc-region">{PIN}{regionOf(card)}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>}
+            {credited.length > 0 && <details className="ar-cd-credits">
+              <summary>Photo credits</summary>
+              <ul>{credited.map((card) => <li key={card.slug}>{card.area}: {card.cardImage?.creditUrl ? <a href={card.cardImage.creditUrl}>{card.cardImage.credit}</a> : card.cardImage?.credit}</li>)}</ul>
+            </details>}
+          </div>
+        </section>
+
+        <section className="ar-ct" aria-label="Why Highlights Chicago">
+          <div className="ds-wrap">
+            <p>Why Highlights Chicago</p>
+            <div><strong>12+</strong><span>Years serving Chicagoland</span></div>
+            <div><strong>{co.permitsCitywide}</strong><span>City of Chicago permits since {co.permitsSince}</span></div>
+            <div><strong>{co.googleRating}</strong><span>From {co.googleReviews} Google reviews</span></div>
+            <a href={`${PUBLIC_SITE_ORIGIN}/about-us`}>Meet the company <span aria-hidden="true">→</span></a>
+          </div>
+        </section>
       </main>
       <SiteFooter co={co} tel={tel} />
     </div>

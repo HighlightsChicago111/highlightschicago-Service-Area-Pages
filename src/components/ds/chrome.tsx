@@ -12,7 +12,8 @@ const SHOP_MAPS_URL = 'https://www.google.com/maps/place/Highlights+Chicago+Elec
 const NAV = [
   {label: 'Home', href: `${PUBLIC_SITE_ORIGIN}/`},
   {label: 'About us', href: `${PUBLIC_SITE_ORIGIN}/about-us`},
-  {label: 'Services', href: `${PUBLIC_SITE_ORIGIN}/services`, current: true},
+  {label: 'Services', href: `${PUBLIC_SITE_ORIGIN}/services`, menu: true},
+  {label: 'Service areas', href: '/', internal: true},
   {label: 'Blog', href: `${PUBLIC_SITE_ORIGIN}/blog`},
   {label: 'Learning center', href: `${PUBLIC_SITE_ORIGIN}/learning-center`},
 ]
@@ -22,8 +23,8 @@ function addressLine(co: AreaSettings) {
   return address ? `${address.street}, ${address.city}, ${address.region} ${address.zip}` : ''
 }
 
-/** Navy utility bar and the white main nav (global blocks). */
-export function SiteHeader({co, areas, tel}: {co: AreaSettings; areas: AreaCard[]; tel: string}) {
+/** Navy utility bar and the white main nav (global blocks). Every page of this app sits under "Service areas". */
+export function SiteHeader({co, areas, tel, current = 'areas'}: {co: AreaSettings; areas: AreaCard[]; tel: string; current?: 'areas' | 'none'}) {
   return (
     <>
       <div className="ds-utility" aria-label="Business contact information">
@@ -41,16 +42,18 @@ export function SiteHeader({co, areas, tel}: {co: AreaSettings; areas: AreaCard[
         <div className="ds-wrap ds-nav-inner">
           <a className="ds-nav-logo" href={`${PUBLIC_SITE_ORIGIN}/`} aria-label={`${co.name} home`}><img src={LOGO} alt="Highlights Chicago Electrical Services" width={180} height={44} /></a>
           <nav className="ds-nav-links" aria-label="Primary navigation">
-            {NAV.map((item) => item.current
+            {NAV.map((item) => item.menu
               ? <details className="ds-nav-menu" key={item.label}>
-                  <summary aria-current="page">{item.label}<Icon name="chevronDown" size={16} /></summary>
+                  <summary>{item.label}<Icon name="chevronDown" size={16} /></summary>
                   <div className="ds-nav-menu-panel">
                     <a href={item.href}>All services</a>
                     <Link href="/">All service areas</Link>
                     {areas.map((area) => <Link href={`/${area.slug}`} key={area.slug}>Electricians {area.areaIn}</Link>)}
                   </div>
                 </details>
-              : <a href={item.href} key={item.label}>{item.label}</a>)}
+              : item.internal
+                ? <Link href={item.href} key={item.label} aria-current={current === 'areas' ? 'page' : undefined}>{item.label}</Link>
+                : <a href={item.href} key={item.label}>{item.label}</a>)}
           </nav>
           <a className="ds-nav-phone" href={tel}><Icon name="phone" size={18} />{co.phoneDisplay}</a>
           <a className="ds-btn ds-btn--primary ds-btn--m ds-nav-cta" href={`${PUBLIC_SITE_ORIGIN}/contact-us`}><span>Contact us</span></a>
@@ -58,8 +61,9 @@ export function SiteHeader({co, areas, tel}: {co: AreaSettings; areas: AreaCard[
           <details className="ds-nav-mobile">
             <summary aria-label="Open navigation menu"><span /><span /><span /></summary>
             <nav aria-label="Mobile navigation">
-              {NAV.map((item) => <a href={item.href} key={item.label} aria-current={item.current ? 'page' : undefined}>{item.label}</a>)}
-              <Link href="/">Service areas</Link>
+              {NAV.map((item) => item.internal
+                ? <Link href={item.href} key={item.label} aria-current={current === 'areas' ? 'page' : undefined}>{item.label}</Link>
+                : <a href={item.href} key={item.label}>{item.label}</a>)}
               <a className="ds-btn ds-btn--primary ds-btn--block" href={`${PUBLIC_SITE_ORIGIN}/contact-us`}><span>Contact us</span></a>
             </nav>
           </details>

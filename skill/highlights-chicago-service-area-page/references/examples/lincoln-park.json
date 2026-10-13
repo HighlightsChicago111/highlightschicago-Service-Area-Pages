@@ -1,0 +1,541 @@
+{
+ "area": "Lincoln Park",
+ "area_the": "Lincoln Park",
+ "area_in": "in Lincoln Park",
+ "slug": "lincoln-park",
+ "meta_description": "Family-owned, City-registered electricians for Lincoln Park greystones, two-flats and vintage condos. 49 permits in the area since 2013. Call (773) 262-3333.",
+ "eyebrow": "Lincoln Park · Old Town Triangle · DePaul · Park West",
+ "hero_lede": "Panel and service upgrades, lighting, EV chargers, repairs and full renovations, for Lincoln Park greystones, two-flats, cottages, vintage condos and lakefront high-rises. A family-owned, founder-led contractor registered with the City of Chicago, quoting every job in writing.",
+ "address_placeholder": "e.g. 2400 N Racine, or your building's name",
+ "boundary_text": "Bounded by Diversey Parkway to the north, North Avenue to the south, Lake Michigan to the east and the Chicago River to the west. Most of it is 19th- and early-20th-century houses, greystones and two-flats, with lakefront high-rises along the park and shops on Lincoln, Halsted, Armitage and Clybourn.",
+ "bbox": {
+  "north": 41.9325,
+  "south": 41.9106,
+  "west": -87.675,
+  "east": -87.6295
+ },
+ "bbox_text": "Diversey Pkwy, North Ave, the lakefront and the Chicago River (community area 7)",
+ "facts": [
+  [
+   "Community area",
+   "Lincoln Park (7)"
+  ],
+  [
+   "ZIP codes",
+   "Mostly 60614 [CONFIRM: edge ZIP codes]"
+  ],
+  [
+   "City wards",
+   "Mostly the 43rd, with parts of the 32nd and 2nd"
+  ],
+  [
+   "Transit",
+   "Fullerton, Armitage and Diversey 'L' stations, North/Clybourn (Red Line)"
+  ],
+  [
+   "Utility",
+   "ComEd"
+  ],
+  [
+   "Permits",
+   "City of Chicago Department of Buildings"
+  ]
+ ],
+ "zips": [
+  "60614"
+ ],
+ "map_desc": "Lincoln Park runs from North Avenue north to Diversey Parkway, and from the Chicago River east to the lakefront. Districts shown: Old Town Triangle, Mid-North, Park West, Sheffield and DePaul, RANCH Triangle, and the Clybourn Corridor. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+ "map": {
+  "bbox": {
+   "north": 41.933,
+   "south": 41.91,
+   "west": -87.6705,
+   "east": -87.63
+  },
+  "height": 680,
+  "ew_streets": [
+   [
+    "W Diversey Pkwy",
+    41.9324
+   ],
+   [
+    "W Wrightwood Ave",
+    41.9288
+   ],
+   [
+    "W Fullerton Ave",
+    41.9254
+   ],
+   [
+    "W Belden Ave",
+    41.9235
+   ],
+   [
+    "W Webster Ave",
+    41.9216
+   ],
+   [
+    "W Armitage Ave",
+    41.9179
+   ],
+   [
+    "W North Ave",
+    41.9105
+   ]
+  ],
+  "ns_streets": [
+   [
+    "N Ashland Ave",
+    -87.668
+   ],
+   [
+    "N Racine Ave",
+    -87.6585
+   ],
+   [
+    "N Sheffield Ave",
+    -87.6537
+   ],
+   [
+    "N Halsted St",
+    -87.6488
+   ],
+   [
+    "N Larrabee St",
+    -87.643
+   ],
+   [
+    "N Sedgwick St",
+    -87.6385
+   ]
+  ],
+  "districts": [
+   [
+    "Old Town Triangle",
+    41.9179,
+    41.9106,
+    -87.643,
+    -87.6365
+   ],
+   [
+    "Mid-North",
+    41.9254,
+    41.9179,
+    -87.646,
+    -87.6365
+   ],
+   [
+    "Park West",
+    41.9325,
+    41.9254,
+    -87.646,
+    -87.6365
+   ],
+   [
+    "Sheffield and DePaul",
+    41.9325,
+    41.9179,
+    -87.6585,
+    -87.646
+   ],
+   [
+    "RANCH Triangle",
+    41.9179,
+    41.9106,
+    -87.6585,
+    -87.643
+   ],
+   [
+    "Clybourn Corridor",
+    41.9325,
+    41.9106,
+    -87.67,
+    -87.6585
+   ]
+  ],
+  "landmarks": [
+   [
+    "Armitage station",
+    41.9182,
+    -87.6528
+   ],
+   [
+    "Oz Park",
+    41.9205,
+    -87.6455
+   ],
+   [
+    "Biograph Theater",
+    41.9264,
+    -87.6496
+   ],
+   [
+    "Lincoln Park Zoo",
+    41.921,
+    -87.634
+   ]
+  ],
+  "features": [
+   {
+    "kind": "water_east",
+    "lon": -87.6305,
+    "label": "Lakefront and Lincoln Park"
+   }
+  ]
+ },
+ "districts": [
+  {
+   "name": "Old Town Triangle",
+   "intro": "The south-east corner around Crilly Court, Menomonee and Wisconsin streets: a City landmark district of 1870s and 1880s cottages and rowhouses.",
+   "work": "Kitchen and bath remodels in small, old houses, panel replacements, and exterior work that has to respect landmark rules."
+  },
+  {
+   "name": "Mid-North",
+   "intro": "Between Armitage and Fullerton, east of Halsted: Victorian rowhouses, greystones and some of the neighbourhood's grandest single-family houses.",
+   "work": "Whole-house renovations, de-conversions from two or three units to one house, and service upgrades to 200 amps."
+  },
+  {
+   "name": "Park West",
+   "intro": "The lakefront strip along Lincoln Park West, Lakeview Ave and Pine Grove, up to Diversey: vintage courtyard buildings and high-rises facing the park.",
+   "work": "Condo unit work under board and management rules: panels, lighting, laundry circuits and EV charging in shared garages."
+  },
+  {
+   "name": "Sheffield and DePaul",
+   "intro": "Around DePaul University, Fullerton and Sheffield: brick two- and three-flats, student apartments and renovated single-family houses.",
+   "work": "Service upgrades for multi-unit buildings, meter stacks, basement laundry and outlets, and lighting in renovated flats."
+  },
+  {
+   "name": "RANCH Triangle",
+   "intro": "Between Racine, Armitage, North Ave, Clybourn and Halsted: 19th-century cottages mixed with newer townhomes.",
+   "work": "Additions and gut rehabs of frame cottages, new townhome construction, and garage feeds for EV chargers."
+  },
+  {
+   "name": "Clybourn Corridor",
+   "intro": "Along Clybourn toward the river, including West DePaul: big-box retail, newer townhome developments and the remaining industrial lots.",
+   "work": "Retail and restaurant fit-outs, new-construction townhomes, and commercial service work."
+  }
+ ],
+ "buildings": [
+  {
+   "illus": "b-twoflat",
+   "title": "Greystone two- or three-flat",
+   "where": "Mid-North, Sheffield and DePaul, Wrightwood, many with a coach house on the alley",
+   "changes": "Services are often still 60 or 100 amps, with a meter for each unit in the basement and a separate house panel for the common areas. Older units may hide knob-and-tube or cloth wiring behind later remodels, and coach houses need their own feed.",
+   "services": [
+    [
+     "Service and panel upgrades",
+     "svc-panels"
+    ],
+    [
+     "Rewiring and circuits",
+     "svc-wiring"
+    ],
+    [
+     "Basement lighting",
+     "svc-lighting"
+    ]
+   ]
+  },
+  {
+   "illus": "b-cottage",
+   "title": "Workers' cottage or Victorian frame house",
+   "where": "Old Town Triangle, RANCH Triangle and side streets east of Halsted",
+   "changes": "Plaster and lath walls, low basements and small original services. In landmark districts, anything visible from the street, like a service mast or meter, may need review. [CONFIRM: which exterior electrical work needs landmark review]",
+   "services": [
+    [
+     "Panel and fuse box replacement",
+     "svc-panels"
+    ],
+    [
+     "Outlets and circuits",
+     "svc-wiring"
+    ],
+    [
+     "Inspections",
+     "svc-safety"
+    ]
+   ]
+  },
+  {
+   "illus": "b-townhome",
+   "title": "Rowhouse or newer townhome",
+   "where": "Old Town Triangle, RANCH Triangle, Clybourn Corridor, West DePaul",
+   "changes": "Your own service and panel, roof decks and attached or detached garages. Newer townhomes usually have 200 amps; older rowhouses often don't.",
+   "services": [
+    [
+     "Roof-deck and outdoor lighting",
+     "svc-lighting"
+    ],
+    [
+     "EV chargers",
+     "svc-energy"
+    ],
+    [
+     "Surge protection",
+     "svc-panels"
+    ]
+   ]
+  },
+  {
+   "illus": "b-courtyard",
+   "title": "Vintage courtyard building or condo conversion",
+   "where": "Park West, along Fullerton, Diversey and Lincoln Park West",
+   "changes": "Plaster walls and old conduit or BX cable, unit panels in kitchens or hallways, and condo boards that approve work in risers, basements and common areas.",
+   "services": [
+    [
+     "Laundry and kitchen circuits",
+     "svc-wiring"
+    ],
+    [
+     "Lighting",
+     "svc-lighting"
+    ],
+    [
+     "Unit panel replacement",
+     "svc-panels"
+    ]
+   ]
+  },
+  {
+   "illus": "b-highrise",
+   "title": "Lakefront high-rise",
+   "where": "Park West, along Lincoln Park West, Lakeview Ave and Diversey",
+   "changes": "Concrete slabs limit where boxes can go. Management approval, a certificate of insurance, an elevator booking and set working hours come first.",
+   "services": [
+    [
+     "Recessed lighting and fixtures",
+     "svc-lighting"
+    ],
+    [
+     "Panel replacement",
+     "svc-panels"
+    ],
+    [
+     "EV charging in the garage",
+     "svc-energy"
+    ]
+   ]
+  },
+  {
+   "illus": "b-restaurant",
+   "title": "Shop, restaurant or bar",
+   "where": "Lincoln Ave, Halsted, Armitage, Clybourn and Webster",
+   "changes": "Older storefronts with apartments above, shared services, signage, and kitchens that need dedicated circuits. Work is scheduled around opening hours.",
+   "services": [
+    [
+     "Shop and restaurant fit-outs",
+     "svc-commercial"
+    ],
+    [
+     "Emergency and exit lighting",
+     "svc-lighting"
+    ],
+    [
+     "Service upgrades",
+     "svc-panels"
+    ]
+   ]
+  }
+ ],
+ "scope_lede": "The same job on paper can cost very differently in a landmark cottage, a greystone two-flat and a lakefront high-rise. These are the things that change it, and most are settled at the walkthrough.",
+ "scope_rows": [
+  [
+   "Age of the wiring",
+   "Knob-and-tube, cloth-wrapped cable or old BX in pre-1940 buildings decides whether a circuit can be extended or has to be replaced.",
+   "Us, at the walkthrough"
+  ],
+  [
+   "Plaster and lath walls",
+   "Fishing wire through plaster takes longer, and openings are kept small so patching stays minimal.",
+   "Us"
+  ],
+  [
+   "Service size",
+   "Many houses and two-flats still run 60 or 100 amps. Adding an EV charger, central air or an induction range often means a 200-amp upgrade.",
+   "Us, with ComEd"
+  ],
+  [
+   "Meters, risers and the service mast",
+   "Older risers and weatherheads, on the front house and the coach house, have to meet ComEd's rules before a service change.",
+   "ComEd, with us"
+  ],
+  [
+   "Landmark districts",
+   "In Old Town Triangle and Mid-North, exterior changes visible from the street may need Commission on Chicago Landmarks review. [CONFIRM: which exterior electrical work needs review]",
+   "The City"
+  ],
+  [
+   "Coach houses and detached garages",
+   "Power to a coach house or garage means an underground or overhead feed from the main building.",
+   "You and us"
+  ],
+  [
+   "Condo board or association",
+   "Vintage condo boards approve work in common areas, risers and basements, often from a written proposal.",
+   "Your board, with our proposal"
+  ],
+  [
+   "Parking and alley access",
+   "Permit parking zones and narrow alleys decide how close the van gets and how long a day takes.",
+   "Us, at the walkthrough"
+  ],
+  [
+   "Permit route",
+   "Many jobs go through the City's Express Permit Program. Renovations and de-conversions need plans and a standard review.",
+   "Us"
+  ],
+  [
+   "Working hours",
+   "Shops and restaurants on Lincoln, Halsted and Armitage often need early or late work. [CONFIRM: whether after-hours rates apply]",
+   "You and us"
+  ]
+ ],
+ "hourly_answer": "We quote by scope, not by the hour, because the hours on a Lincoln Park job depend on everything in the table above. Adding a circuit in a gutted townhome and in a plastered 1890s greystone aren't the same job. The written quote tells you the whole price before you agree to it.",
+ "choosing_building_why": "A greystone two-flat on a 60-amp service, a landmark-district cottage and a lakefront high-rise unit are three different jobs.",
+ "choosing_building_answer": "Greystone and three-flat renovations, panel and service upgrades in vintage units and houses, new townhomes, and shop fit-outs on Lincoln and Clark",
+ "choosing_paperwork_why": "Lakefront high-rises want a certificate of insurance; houses and two-flats need a permit and ComEd coordination for any service change.",
+ "where_we_fit": "Highlights is a family-owned contractor. In Lincoln Park we're the right call for greystones, two-flats, cottages, vintage condos, panel and service upgrades, EV chargers in garages, and shop fit-outs. Base-building work on a lakefront high-rise is a job for the large commercial firms, and we'll tell you so.",
+ "mix_notes": {
+  "Work inside a specific unit or condo": "Vintage condos and apartments being updated one unit at a time.",
+  "Lighting": "The most common hands-on job.",
+  "Outlets and receptacles": "Kitchen, bathroom and basement remodels.",
+  "Interior build-outs and alterations": "Shop fit-outs on the commercial streets, plus house renovations.",
+  "Electrical service": "Older houses and two-flats moving to bigger services.",
+  "Low voltage, data and communications": "Data, security and AV in renovated homes and shops.",
+  "EV charging": "Chargers in garages and coach houses off the alleys.",
+  "Panels": "Fuse boxes and undersized panels being replaced.",
+  "Fire alarm": "Courtyard and high-rise buildings, plus commercial spaces."
+ },
+ "record_bullets": [
+  "Panel replacements in vintage units on the 1600 and 2000 blocks of N Larrabee and the 2700 block of N Pine Grove, and a rusted panel replaced on the 2600 block of N Greenview.",
+  "New 200-amp services on the 1900 block of N Fremont, the 2400 block of N Racine and the 1800 block of N Clark, and 400-amp services on the 800 block of W Wrightwood and the 1200 block of W Webster.",
+  "Renovations and de-conversions of three-storey masonry buildings on the 600 block of W Arlington Pl, the 2500 block of N Seminary, the 2100 block of N Hudson, the 300 block of W Belden and the 1900 block of N Clark.",
+  "New construction: houses on the 2600 block of N Wilton and the 1900 block of N Sedgwick, a three-flat on the 2000 block of N Bissell and six units on the 2600 block of N Bosworth.",
+  "Old Town Triangle alterations on the 1800 block of N Mohawk and the 1700 block of N Crilly Ct.",
+  "Commercial work on Clark and Lincoln: daycare build-outs, a shop fit-out with signs, and emergency lighting."
+ ],
+ "honest_context": [
+  "Lincoln Park is one of our closer neighbourhoods. Our 1,213 Chicago permits are concentrated in Wards 1, 32, 26, 47 and 27, and the 32nd covers the western side of Lincoln Park. Our 49 permits here run steadily from 2013 to 2026, with more of them in the last three years.",
+  "Most of Lincoln Park's electrical permits are unit work, lighting, outlets and service upgrades in older buildings, which is our everyday work. Large lakefront high-rise projects go to the big commercial firms."
+ ],
+ "nearby": [
+  [
+   "Lakeview",
+   "North of Diversey: more two-flats and courtyard buildings, with similar service-upgrade work."
+  ],
+  [
+   "Old Town",
+   "South of North Ave: rowhouses, cottages and the Sandburg Village towers."
+  ],
+  [
+   "Gold Coast",
+   "Mansions, vintage co-ops and high-rises along the lake."
+  ],
+  [
+   "Bucktown",
+   "West across the river: frame houses and a lot of new construction."
+  ],
+  [
+   "Wicker Park",
+   "Greystones, two-flats and shops along Milwaukee and Division."
+  ],
+  [
+   "Roscoe Village",
+   "Brick two-flats and bungalows north-west of Lincoln Park."
+  ],
+  [
+   "Goose Island",
+   "Industrial and commercial buildings on the river."
+  ]
+ ],
+ "faq": [
+  [
+   "faq-service",
+   "Can you upgrade the electrical service in my Lincoln Park greystone or two-flat?",
+   "Yes. Most move from 60 or 100 amps to 200, which usually means a new meter stack and risers that meet ComEd's rules. We pull the permit and deal with ComEd. Reviewers describe us handling ComEd for a house and its coach house."
+  ],
+  [
+   "faq-knob",
+   "Do Lincoln Park's older houses still have knob-and-tube wiring?",
+   "Some do, usually hidden behind later remodels. We check at the walkthrough. We don't extend knob-and-tube circuits; where it's still live, we replace the circuits you're touching and tell you what else we found."
+  ],
+  [
+   "faq-landmark",
+   "Does a landmark district change electrical work in Old Town Triangle or Mid-North?",
+   "Inside the house, no. Exterior changes visible from the street, like a new service mast, meter location or exterior lighting, may need review by the Commission on Chicago Landmarks. [CONFIRM: which exterior electrical work needs landmark review.]"
+  ],
+  [
+   "faq-coach",
+   "Can you run power to a coach house or detached garage?",
+   "Yes. We run a feeder from the main building, underground or overhead, sized for what you'll use, including an EV charger. A reviewer had a Tesla charger and a panel upgrade done in one day for a detached garage."
+  ],
+  [
+   "faq-zip",
+   "Which Lincoln Park ZIP code do you cover?",
+   "All of Lincoln Park, which is mostly 60614, and every other Chicago neighbourhood."
+  ]
+ ],
+ "cta_ready": [
+  "A photo of your electrical panel with the door open, and of the meters if they're in the basement",
+  "Roughly how old the building is, and when it was last rewired if you know",
+  "Whether there's a coach house or garage that needs power",
+  "For a condo: whether the board needs to approve the work",
+  "For a high-rise: management's contractor requirements and elevator booking",
+  "Photos of the room or ceiling, and of any fixture you've bought"
+ ],
+ "reviews_heading": "Reviews from vintage homes, two-flats and condos",
+ "reviews": [
+  {
+   "reviewer": "Kelly Luchtman",
+   "label": "Service upgrade for a house and its coach house"
+  },
+  {
+   "reviewer": "Beth Spargo",
+   "label": "Panel grounding during a home remodel"
+  },
+  {
+   "reviewer": "Brenda D",
+   "label": "Lighting in a vintage home"
+  },
+  {
+   "reviewer": "Thomas Hayes",
+   "label": "Laundry circuit in a vintage condo"
+  },
+  {
+   "reviewer": "Ryan Pyka",
+   "label": "Basement outlets in a two-flat"
+  },
+  {
+   "reviewer": "Camille Medina",
+   "label": "EV charger and panel upgrade, detached garage"
+  },
+  {
+   "reviewer": "Syed H",
+   "label": "Townhouse"
+  },
+  {
+   "reviewer": "Olha Rossokhata",
+   "label": "Panel update in a new home"
+  }
+ ],
+ "service_overrides": {
+  "Fuse box replacement and fuse-to-breaker conversion": "Still turns up in Lincoln Park's older houses, two-flats and vintage condo units."
+ },
+ "research_sources": [
+  [
+   "HotPads: Lincoln Park neighbourhood guide",
+   "https://hotpads.com/lincoln-park-chicago-il/sublets",
+   "Neighbourhood guide"
+  ],
+  [
+   "Lincoln Park, Chicago (Wikipedia mirror)",
+   "https://ipfs.aleph.im/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/60614.html",
+   "Encyclopedia"
+  ],
+  [
+   "City of Chicago building permits",
+   "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+   "Public data"
+  ]
+ ]
+}
