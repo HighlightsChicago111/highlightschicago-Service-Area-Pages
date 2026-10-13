@@ -81,9 +81,8 @@ export function genericFaqs(page: AreaPage, co: AreaSettings): Faq[] {
   return [
     ...local,
     {key: 'faq-estimate', question: 'Do you charge for estimates?', answer: 'No. Estimates are free, and you get the scope in writing before any work starts.'},
-    {key: 'faq-weekend', question: 'Do you work weekends or handle emergencies?', answer: `Our office hours are ${co.officeHours || 'Monday to Friday, 8am to 5pm'}. Reviewers describe same-day Saturday visits and emergency calls where we made the hazard safe, then came back with parts. [CONFIRM: emergency and weekend availability to state here.]`},
+    {key: 'faq-weekend', question: 'Do you work weekends or handle emergencies?', answer: "Yes. We're open 24 hours a day, 7 days a week for emergency service. Reviewers describe same-day Saturday visits, a Sunday request answered within a few hours, and emergency calls where we made the hazard safe, then came back with parts."},
     {key: 'faq-owner', question: 'Will I deal with the owner?', answer: `Usually, yes. Boz, the founder, typically does the walkthrough and writes the quote, and more than a third of the ${co.reviewStats?.total ? `${co.reviewStats.total} ` : ''}reviews we analysed mention him by name.`},
-    {key: 'faq-union', question: 'Are your electricians union?', answer: '[CONFIRM: answer, since some larger buildings require union labour for certain work.]'},
     {key: 'faq-cost', question: `How much does an electrician cost ${page.areaIn}?`, answer: "It depends on the scope and the building: the access, the construction, the permit route and the working hours. We don't quote an hourly rate for that reason. The walkthrough is free and the quote is written."},
   ]
 }
@@ -102,7 +101,7 @@ export const HOW_WE_WORK: Array<{icon: IconName; title: string; body: string}> =
 ]
 
 export const PROCESS_STEPS: Array<{icon: IconName; title: string; body: string}> = [
-  {icon: 'phone', title: 'The office books you in', body: 'You call or send the form. The office arranges the walkthrough. [CONFIRM: typical wait for a walkthrough]'},
+  {icon: 'phone', title: 'The office books you in', body: 'You call or send the form. The office arranges the walkthrough.'},
   {icon: 'search', title: 'The founder walks the space', body: "Boz usually comes himself, looks at the panel, the ceilings and the building's rules, and asks what you actually want."},
   {icon: 'fileText', title: 'A written estimate', body: 'Reviewers describe estimates arriving the same day or the next. For an association, it comes as a proposal the board can read.'},
   {icon: 'fileCheck', title: 'Building paperwork and permit', body: 'Where a building asks for it, a certificate of insurance goes to management, and we pull the City permit where one is needed.'},

@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import {ConfirmNotes} from '@/components/ds/atoms'
 import {Icon} from '@/components/ds/icon'
 import {isChicago} from '@/lib/area/copy'
 import {AreaHead} from './head'
@@ -10,7 +9,6 @@ export function NearbyBlock({ctx}: {ctx: AreaCtx}) {
   const {page, areas, editorial} = ctx
   const nearby = page.nearby || []
   const links = new Map(areas.filter((item) => item.slug !== page.slug).map((item) => [item.area.toLowerCase(), item.slug]))
-  const unlinked = nearby.some((item) => !links.has(item.name.toLowerCase()))
   return (
     <div className="ds-wrap">
       <AreaHead id="nearby-title" eyebrow={`Nearby · ${nearby.length} neighbourhoods`} title={`Neighbourhoods next to ${page.areaThe}`} editorial={editorial}
@@ -22,7 +20,6 @@ export function NearbyBlock({ctx}: {ctx: AreaCtx}) {
           return <li key={item._key || index}>{slug ? <Link className="ar-nearby-card" href={`/${slug}`}>{body}</Link> : <div className="ar-nearby-card">{body}</div>}</li>
         })}
       </ul>
-      {unlinked && <p className="ar-editorial-note"><ConfirmNotes notes={['[CONFIRM: link each neighbourhood to its area page once those pages exist]']} show={editorial} /></p>}
     </div>
   )
 }

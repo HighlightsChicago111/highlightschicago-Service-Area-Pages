@@ -74,7 +74,11 @@ check('review figures are counted from the pack', () => {
   assert.equal(settings.reviewStats.total, reviews.length)
   assert.ok(settings.reviewStats.owner > 0 && settings.reviewStats.fiveStar > 0)
 })
-check('[CONFIRM] placeholders are reported', () => assert.ok(base.placeholders.length >= 1))
+check('[CONFIRM] placeholders are reported', () => {
+  const copy = clone()
+  copy.config.where_we_fit = `${copy.config.where_we_fit} [CONFIRM: a test question]`
+  assert.ok(build([copy]).placeholders.some((note: string) => note.includes('[CONFIRM: a test question]')))
+})
 
 // ---- Field coverage: every content key has a Sanity field, and every imported value lands in one.
 type SchemaField = {name: string; type: string; fields?: SchemaField[]; of?: Array<{type: string; fields?: SchemaField[]}>}
