@@ -43,7 +43,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
         <div className="ar-record-own">
           <div className="ar-record-head"><IconBadge icon="fileCheck" tone="green" size={44} /><h3 className="ds-h4">{chicago || permits ? `Our own ${page.area} record` : `Our record in and around ${page.area}`}</h3></div>
           {hl?.count ? <>
-            <p className="ar-record-lead">{`${hl.count} permits on ${hl.addresses ?? 0} addresses since ${hl.firstYear || '2012'}: ${andList((hl.byType || []).map((item) => `${item.count} ${permitTypeWords(item.type)}`))}.`}</p>
+            <p className="ar-record-lead">{`${hl.count} permits on ${hl.addresses ?? 0} addresses since ${hl.firstYear || '2012'}: ${andList((hl.byType || []).map((item) => `${item.count} ${permitTypeWords(item.type, item.count)}`))}.`}</p>
             <ul>{(page.recordBullets || []).map((bullet, index) => <li key={index}><Copy value={bullet} show={editorial} as="span" /></li>)}</ul>
           </> : <>
             <Copy value={page.noRecordText || 'We do not yet hold City permits inside this boundary.'} show={editorial} className="ar-record-lead" />

@@ -47,7 +47,9 @@ const PERMIT_TYPE_WORDS: Record<string, string> = {
   'easy permit process': 'through the Easy Permit Process',
   signs: 'signs',
 }
-export const permitTypeWords = (type: string) => PERMIT_TYPE_WORDS[type.toLowerCase()] || type.toLowerCase()
+const PERMIT_TYPE_WORD_ONE: Record<string, string> = {'renovation/alteration': 'renovation or alteration', signs: 'sign'}
+/** How a permit type reads after its count: "2 signs" but "1 sign". */
+export const permitTypeWords = (type: string, count = 2) => (count === 1 && PERMIT_TYPE_WORD_ONE[type.toLowerCase()]) || PERMIT_TYPE_WORDS[type.toLowerCase()] || type.toLowerCase()
 export const andList = (items: string[]) => (items.length > 1 ? `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}` : items[0] || '')
 export const capitalise = (value: string) => value.charAt(0).toUpperCase() + value.slice(1)
 
