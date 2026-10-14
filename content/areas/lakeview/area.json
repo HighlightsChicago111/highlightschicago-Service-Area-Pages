@@ -1,0 +1,339 @@
+{
+  "area": "Lakeview",
+  "area_the": "Lakeview",
+  "area_in": "in Lakeview",
+  "slug": "lakeview",
+  "meta_description": "Family-owned, licensed electricians for Lakeview two-flats, courtyard condos and lakefront high-rises, about 80 permits here since 2012. Call (773) 262-3333.",
+  "eyebrow": "Lakeview · Wrigleyville · Northalsted · Southport Corridor",
+  "hero_lede": "Panel and service upgrades, lighting, EV chargers, repairs and renovations, for Lakeview two- and three-flats, frame houses and coach houses, courtyard condos and Lake Shore Drive high-rises. A family-owned, founder-led contractor licensed by the City of Chicago (ECC96456), with free estimates and every job quoted in writing.",
+  "address_placeholder": "e.g. 1000 W Roscoe St",
+  "boundary_text": "Bounded by Diversey Parkway to the south, Irving Park Road to the north (Montrose Avenue west of Graceland Cemetery), Ravenswood Avenue to the west and Lake Michigan to the east. Frame houses and greystone two-flats in the west, Wrigley Field and three-flats in the middle, and courtyard buildings and high-rises toward the lake.",
+  "bbox": {
+    "north": 41.9617,
+    "south": 41.9322,
+    "west": -87.6741,
+    "east": -87.6303
+  },
+  "bbox_text": "Diversey Pkwy, Irving Park Rd (Montrose Ave west of Graceland Cemetery), Ravenswood Ave and the lakefront (community area 6)",
+  "facts": [
+    ["Community area", "Lake View (6)"],
+    ["ZIP codes", "60657 and 60613"],
+    ["City wards", "Mostly the 44th, with parts of the 32nd, 46th and 47th"],
+    ["Transit", "Red Line at Belmont, Addison and Sheridan; Brown Line at Wellington, Belmont, Southport and Paulina"],
+    ["Utility", "ComEd"],
+    ["Permits", "City of Chicago Department of Buildings"]
+  ],
+  "zips": ["60657", "60613"],
+  "map_desc": "Lakeview runs from Diversey Parkway north to Irving Park Road, and to Montrose Avenue west of Graceland Cemetery, and from Ravenswood Avenue east to the lakefront. Districts shown: West Lakeview and Southport, Graceland West, Wrigleyville, Central Lakeview, Northalsted and East Lakeview. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+  "map": {
+    "bbox": {
+      "north": 41.9622,
+      "south": 41.9318,
+      "west": -87.6748,
+      "east": -87.6298
+    },
+    "height": 815,
+    "ew_streets": [
+      ["W Diversey Pkwy", 41.9324],
+      ["W Wellington Ave", 41.9361],
+      ["W Belmont Ave", 41.9397],
+      ["W Roscoe St", 41.9434],
+      ["W Addison St", 41.947],
+      ["W Grace St", 41.9506],
+      ["W Irving Park Rd", 41.9543],
+      ["W Montrose Ave", 41.9616]
+    ],
+    "ns_streets": [
+      ["N Ravenswood Ave", -87.6742],
+      ["N Ashland Ave", -87.6687],
+      ["N Southport Ave", -87.6638],
+      ["N Racine Ave", -87.6589],
+      ["N Sheffield Ave", -87.6539],
+      ["N Halsted St", -87.649],
+      ["N Broadway", -87.6443]
+    ],
+    "districts": [
+      ["West Lakeview", 41.9543, 41.9323, -87.6741, -87.6589],
+      ["Graceland West", 41.9616, 41.9543, -87.6741, -87.6625],
+      ["Wrigleyville", 41.9543, 41.9455, -87.6589, -87.649],
+      ["Central Lakeview", 41.9455, 41.9323, -87.6589, -87.649],
+      ["Northalsted", 41.9543, 41.9323, -87.649, -87.6443],
+      ["East Lakeview", 41.9543, 41.9323, -87.6443, -87.6304]
+    ],
+    "landmarks": [
+      ["Wrigley Field", 41.9484, -87.6553],
+      ["Belmont (Red, Brown, Purple)", 41.9398, -87.6536],
+      ["Addison (Red)", 41.9473, -87.6536],
+      ["Southport (Brown)", 41.9437, -87.6636],
+      ["Alta Vista Terrace", 41.9516, -87.6547],
+      ["Belmont Harbor", 41.942, -87.637]
+    ],
+    "features": [
+      {
+        "kind": "water_east",
+        "lon": -87.6315,
+        "label": "LAKE MICHIGAN"
+      }
+    ]
+  },
+  "districts": [
+    {
+      "name": "West Lakeview and Southport",
+      "intro": "From Racine Ave west to Ravenswood Ave, Diversey to Irving Park: frame houses, greystone two-flats and newer four-storey condo buildings, with shops along Southport Ave and Lincoln Ave.",
+      "work": "Service and meter upgrades in two- and three-flats, de-conversions back to single-family houses, and garage EV chargers. The largest share of our Lakeview permits is here."
+    },
+    {
+      "name": "Graceland West",
+      "intro": "The blocks north of Irving Park Rd up to Montrose Ave, between Ravenswood Ave and Graceland Cemetery: Berteau, Cuyler, Belle Plaine and Hutchinson.",
+      "work": "New meter banks for apartment buildings, two-unit rehabs, house additions and garage subpanels. Our record here includes a 19-meter, 1,200-amp service on W Berteau."
+    },
+    {
+      "name": "Wrigleyville",
+      "intro": "Around Wrigley Field, Clark St and Addison St, from Cornelia up to Irving Park: brick two- and three-flats, the row houses of Alta Vista Terrace and the bars along Clark.",
+      "work": "Older multi-unit services, bar and restaurant power, and jobs planned around night games, when the streets from Belmont to Irving Park become a tow zone."
+    },
+    {
+      "name": "Central Lakeview",
+      "intro": "Diversey to Cornelia between Racine and Halsted: the Belmont 'L' station, the landmark three-flats of Newport Ave and Terra Cotta Row on Oakdale Ave.",
+      "work": "Vintage three-flats and courtyard condos, coach houses, shop and daycare build-outs on Belmont Ave, and Landmarks review for exterior changes on landmark blocks."
+    },
+    {
+      "name": "Northalsted",
+      "intro": "The Halsted St and Broadway corridor from Wellington to Irving Park, with the Rainbow Pylons on Halsted, bars and restaurants at street level and walk-ups behind.",
+      "work": "Restaurant and bar fit-outs, three-phase services, and condo buildings with garages getting EV chargers. Our record includes restaurant work on N Halsted and N Broadway."
+    },
+    {
+      "name": "East Lakeview",
+      "intro": "East of Broadway to Lake Shore Dr and Belmont Harbor: high-rise condos, 1920s courtyard buildings, and the Hawthorne Place and Surf-Pine Grove landmark districts.",
+      "work": "Unit panels, kitchen circuits and lighting in towers under building management rules, and new services and unit renovations in older apartment buildings on W Roscoe St and W Belmont Ave."
+    }
+  ],
+  "buildings": [
+    {
+      "illus": "b-twoflat",
+      "title": "Two-flat or three-flat",
+      "where": "West Lakeview, Central Lakeview, Wrigleyville and Newport Ave",
+      "changes": "Two- and three-flats here usually share one service, with the meters and panels together in the basement. Many still have 100-amp services, and laundry, air conditioning or an EV charger can mean a new service with a meter for each unit.",
+      "services": [
+        ["Service and meter upgrades", "svc-panels"],
+        ["New circuits", "svc-wiring"],
+        ["Repairs", "svc-repair"]
+      ]
+    },
+    {
+      "illus": "b-courtyard",
+      "title": "Courtyard or vintage walk-up",
+      "where": "Side streets between Broadway and Lake Shore Dr, Surf St and Pine Grove Ave, and around Northalsted",
+      "changes": "1920s buildings with small unit panels, shared basements and a condo association or landlord that approves the work. Wire is fished through plaster, not drywall.",
+      "services": [
+        ["Unit panels", "svc-panels"],
+        ["Laundry and kitchen circuits", "svc-wiring"],
+        ["Fixtures and fans", "svc-lighting"]
+      ]
+    },
+    {
+      "illus": "b-highrise",
+      "title": "Lake Shore Drive high-rise",
+      "where": "Lake Shore Dr, Sheridan Rd and Pine Grove Ave",
+      "changes": "Concrete slabs limit where boxes can go. Management approval, a certificate of insurance, an elevator booking and set working hours come before the first day.",
+      "services": [
+        ["Unit panel replacement", "svc-panels"],
+        ["Kitchen and bathroom circuits", "svc-wiring"],
+        ["Lighting", "svc-lighting"]
+      ]
+    },
+    {
+      "illus": "b-cottage",
+      "title": "Frame house, row house or coach house",
+      "where": "West Lakeview, Graceland West, Alta Vista Terrace and rear lots across the area",
+      "changes": "Older houses with plaster walls and small services, row houses on landmark blocks, and rear coach houses fed from the front building through the yard or gangway.",
+      "services": [
+        ["Service upgrades", "svc-panels"],
+        ["Rewiring", "svc-wiring"],
+        ["Garage EV chargers", "svc-energy"]
+      ]
+    },
+    {
+      "illus": "b-midrise",
+      "title": "New four-storey condo building",
+      "where": "Side streets in West Lakeview, Wrigleyville and East Lakeview, such as Wayne Ave, Wilton Ave and Melrose St",
+      "changes": "Modern wiring with a meter and panel for each unit, shared garages and rooftop decks. Good access, but association rules decide shared-garage chargers.",
+      "services": [
+        ["EV chargers", "svc-energy"],
+        ["Lighting upgrades", "svc-lighting"],
+        ["New construction", "svc-commercial"]
+      ]
+    },
+    {
+      "illus": "b-restaurant",
+      "title": "Bar, restaurant or shopfront",
+      "where": "Clark St by Wrigley Field, Halsted St, Broadway, Belmont Ave, Southport Ave and Sheridan Rd",
+      "changes": "Kitchen equipment loads, three-phase services, storefront signs under their own permit, and work scheduled before opening and around Cubs games.",
+      "services": [
+        ["Restaurant and bar electrical", "svc-commercial"],
+        ["Service upgrades", "svc-panels"],
+        ["Emergency and exit lighting", "svc-lighting"]
+      ]
+    }
+  ],
+  "scope_lede": "The same job on paper can cost very differently in a West Lakeview two-flat, a courtyard condo on Surf St and a Lake Shore Drive tower. These are the things that change it, and most are settled at the walkthrough.",
+  "scope_rows": [
+    ["Landmark district", "Alta Vista Terrace, Hawthorne Place, Newport Avenue, Surf-Pine Grove and Terra Cotta Row are Chicago Landmark districts. The Commission on Chicago Landmarks reviews permits there, mainly for street-facing changes such as a service mast, a moved meter or facade lighting.", "The City, with us"],
+    ["Meter bank and service size", "Many two-, three- and multi-flats still run on 100-amp services. A new service with a meter and panel for each unit needs a ComEd appointment as well as a City permit.", "Us and ComEd"],
+    ["Age of the wiring", "Older houses and flats can still have fuse boxes or cloth-covered wire, and opening a wall can show more original wiring than expected.", "Us, at the walkthrough"],
+    ["Plaster walls and ceilings", "Fishing wire through plaster and lath in Lakeview's frame houses and vintage walk-ups is slower than drywall and needs careful patching.", "Us, at the walkthrough"],
+    ["Condo association or board", "Courtyard buildings, walk-up condos and towers usually want a written proposal and a certificate of insurance before work in units or common areas.", "Your board, with our proposal"],
+    ["High-rise rules", "Lakefront towers book freight elevator time, set working hours and limit where boxes can go in concrete slabs.", "Your building"],
+    ["Cubs game days", "Permit Parking Zone 383, from Belmont to Irving Park and Broadway to Ashland, is a tow zone from 5pm to 10pm on night games, and Addison can close around games.", "Us, at the walkthrough"],
+    ["Coach house or detached garage", "A rear coach house or garage is fed from the front building. A new feed, subpanel or EV charger can mean new conduit along the gangway or across the yard.", "You and us"],
+    ["Permit route", "Many stand-alone electrical jobs go through the City's Express Permit Program. Renovations, de-conversions and build-outs need plans and a standard review.", "Us"],
+    ["Storefront signs", "Signs are permitted separately from the electrical work, so a bar or shop refit may need two permits.", "The City, with us"],
+    ["Working hours", "Bars and restaurants on Clark, Halsted and Broadway often need work before opening, so agree the hours before the job is scheduled.", "You and us"]
+  ],
+  "hourly_answer": "We quote by scope, not by the hour, because the hours on a Lakeview job depend on the factors below. Replacing a 100-amp service in a West Lakeview two-flat and adding a circuit in a Lake Shore Drive tower aren't the same kind of day. The written quote tells you the whole price before you agree to it.",
+  "choosing_building_why": "Lakeview changes block by block: frame houses and greystone two-flats in the west, three-flats around Wrigley Field, courtyard buildings and towers toward the lake.",
+  "choosing_building_answer": "In Lakeview, 79 City permits since 2012: meter-bank service upgrades in two-flats and apartment buildings, panels in Lake Shore Drive high-rise units, new four-storey condo buildings, restaurant and daycare build-outs, and a row house on Alta Vista Terrace",
+  "choosing_paperwork_why": "Lakefront towers and condo associations want a certificate of insurance and a written proposal, and five landmark districts add review of exterior changes.",
+  "where_we_fit": "Highlights is a family-owned contractor based up Lincoln Ave at 5766 N Lincoln. In Lakeview we're the right call for two- and three-flat service upgrades, condo and high-rise unit work, older houses and coach houses, EV chargers, and bar, restaurant and shop fit-outs. Base-building work on a lakefront tower, including its fire alarm and life-safety systems, belongs to the building's own contractors, and we'll tell you so.",
+  "mix_notes": {
+    "Work inside a specific unit or condo": "Most Lakeview homes are condos and apartments, from walk-ups to lakefront towers.",
+    "Lighting": "Remodels in vintage units and new fixtures in towers.",
+    "Outlets and receptacles": "Kitchen, bathroom and laundry updates in older units.",
+    "Interior build-outs and alterations": "Shops, bars, restaurants and offices on Clark, Halsted, Broadway, Belmont and Southport.",
+    "Signs": "Storefront and bar signs along the commercial streets, under their own permits.",
+    "Electrical service": "New and upgraded services, often a new meter bank for a two-flat or apartment building.",
+    "Low voltage, data and communications": "Data, security and intercom work in apartment buildings and shops.",
+    "EV charging": "Chargers in garages off the alley and in shared condo garages.",
+    "Panels": "Unit panel replacements in walk-ups and older high-rises.",
+    "Fire alarm": "Larger apartment buildings and commercial spaces.",
+    "Restaurants": "Clark St around Wrigley Field, Halsted, Broadway and Southport keep this steady.",
+    "Solar": "A few rooftop systems on houses and low-rise buildings.",
+    "Generators": "Rare in an area of shared, attached buildings."
+  },
+  "record_bullets": [
+    "New services with a meter and panel for each unit: 4 meters on the 3500 block of N Bosworth Ave and the 1300 block of W Eddy St, 7 on the 1400 block of W Berteau Ave, 10 on the 4100 block of N Ashland Ave, 13 on the 600 block of W Roscoe St, and 19 at 1,200 amps on the 1600 block of W Berteau Ave.",
+    "Panel replacements and new kitchen circuits in two units on the 3600 block of N Lake Shore Dr, lighting in a unit on the 3900 block, and a unit alteration in a 44-storey condo building on the 2800 block.",
+    "New construction: a four-storey, 31-unit building with a garage on the 3900 block of N Wayne Ave, four-unit buildings on the 700 block of W Melrose St and the 3500 block of N Wilton Ave, and a house on the 4100 block of N Greenview Ave.",
+    "Restaurant work on the 3300 block of N Halsted St (with a new 400-amp three-phase service), the 3100 block of N Broadway and the 3900 block of N Sheridan Rd, and daycare build-outs on the 1000 to 1200 blocks of W Belmont Ave.",
+    "Older houses: a row house renovation on Alta Vista Terrace, coach house rehabs on the 3000 block of N Racine Ave and the 800 block of W Roscoe St, and de-conversions to single-family houses on W Eddy St and W Cornelia Ave.",
+    "EV chargers in a condo garage on the 700 block of W Melrose St and in a garage on the 3500 block of N Lincoln Ave, and charger outlets for two units on the 2900 block of N Halsted St."
+  ],
+  "honest_context": [
+    "We're a north-side shop. Most of our roughly 1,200 Chicago permits are in Wards 1, 32, 26, 47 and 27. The 32nd and 47th take in parts of Lakeview, but most of it is in the 44th, so this is a steady record rather than our busiest area: about 80 permits since 2012, 11 of them in 2025 and 2026.",
+    "Lakeview's electrical work is spread thinly: about 1,170 electrical permits in the last two years among some 340 contractors. The largest categories are work inside individual units, lighting and outlets, followed by build-outs and storefront signs. Our own Lakeview record leans toward service and meter upgrades in multi-unit buildings."
+  ],
+  "reviews_heading": "Reviews from two-flat, vintage condo and high-rise jobs",
+  "reviews": [
+    {
+      "reviewer": "Kelly Luchtman",
+      "label": "New service risers for a house and coach house"
+    },
+    {
+      "reviewer": "S R",
+      "label": "New panel and basement circuits for an apartment"
+    },
+    {
+      "reviewer": "Mary Pence",
+      "label": "Service upgrade in a landmark apartment building",
+      "cut_before": " As long as they are in business"
+    },
+    {
+      "reviewer": "Thomas Hayes",
+      "label": "Laundry circuit in a vintage condo"
+    },
+    {
+      "reviewer": "Katherine Smailis",
+      "label": "Full panel replacement in a high-rise unit",
+      "cut_before": " I am so pleased"
+    },
+    {
+      "reviewer": "J Stinton",
+      "label": "EV charger approved by an HOA board"
+    },
+    {
+      "reviewer": "Katie Aquino",
+      "label": "Old house with a fuse box"
+    },
+    {
+      "reviewer": "Brenda D",
+      "label": "Recessed lighting in a vintage home"
+    }
+  ],
+  "nearby": [
+    ["Lincoln Park", "Greystones, row houses and several landmark districts south of Diversey Pkwy."],
+    ["North Center", "Frame houses, two-flats and newer single-family homes west of Ravenswood Ave."],
+    ["Roscoe Village", "Two-flats and frame houses around Roscoe St, just west of the Lakeview line."],
+    ["Uptown and Buena Park", "Courtyard buildings, lakefront high-rises and the Hutchinson Street landmark district north of Irving Park Rd."],
+    ["Lincoln Square and Ravenswood", "Two-flats, houses and the light-industrial buildings along the Metra tracks, north of Graceland West."],
+    ["Edgewater", "Lakefront high-rises and courtyard buildings further north along Sheridan Rd."]
+  ],
+  "faq": [
+    [
+      "faq-lakeview-landmark",
+      "Do I need Landmarks approval for electrical work in a Lakeview landmark district?",
+      "Lakeview has five Chicago Landmark districts: Alta Vista Terrace, Hawthorne Place, Newport Avenue, Surf-Pine Grove and Terra Cotta Row on Oakdale Ave. The Commission on Chicago Landmarks reviews permits there as part of the normal building permit, mainly for changes to street-facing elevations, such as a service mast, a moved meter or facade lighting. No separate permit is needed, and our record includes a row house renovation on Alta Vista Terrace."
+    ],
+    [
+      "faq-lakeview-flats",
+      "Can you upgrade the service in my Lakeview two-flat or apartment building?",
+      "Yes. New services with a meter and panel for each unit are a large part of our Lakeview record, from four-unit buildings on N Bosworth Ave and W Eddy St to a 19-meter, 1,200-amp service on W Berteau Ave. We pull the City permit and coordinate the ComEd work."
+    ],
+    [
+      "faq-lakeview-highrise",
+      "Do you work in Lake Shore Drive high-rises?",
+      "Yes. Our Lakeview record includes panel replacements and new kitchen circuits in units on the 3600 block of N Lake Shore Dr, lighting in a unit on the 3900 block and an alteration in a 44-storey condo building on the 2800 block. We work to the building's rules: a certificate of insurance, an elevator booking and set hours."
+    ],
+    [
+      "faq-lakeview-wrigley",
+      "Can you work in Wrigleyville on a game day?",
+      "Yes, but we plan for it. Permit Parking Zone 383, from Belmont to Irving Park and Broadway to Ashland, is a tow zone from 5pm to 10pm on night games, and Addison between Racine and Halsted can be closed around games, so we book Wrigleyville jobs around the Cubs schedule where we can."
+    ],
+    [
+      "faq-lakeview-coachhouse",
+      "Can you power a coach house or detached garage?",
+      "Yes. A coach house or garage is fed from the front building, so we check the service first, then run the feed and add a subpanel if it's needed. Our Lakeview record includes coach house rehabs on N Racine Ave and W Roscoe St, a garage subpanel on W Cuyler Ave and an EV charger in a garage on N Lincoln Ave."
+    ],
+    [
+      "faq-lakeview-zip",
+      "Which Lakeview ZIP codes do you cover?",
+      "All of Lakeview: 60657 and 60613, from Diversey Pkwy up to Irving Park Rd and Montrose Ave, along with every other Chicago neighbourhood."
+    ]
+  ],
+  "cta_ready": [
+    "Your address, and whether it's on a landmark block such as Alta Vista Terrace, Newport Ave or Hawthorne Place",
+    "For a two- or three-flat: a photo of the meters and panels in the basement",
+    "For a condo or tower: your association or management office's contact and its contractor requirements",
+    "Roughly when the building was built, and any fuse boxes or old wiring you know of",
+    "Photos of the room, ceiling, coach house or garage where the work goes",
+    "For a bar, restaurant or shop: drawings if you have them, and your opening hours"
+  ],
+  "service_overrides": {
+    "Fuse box replacement and fuse-to-breaker conversion": "Still found in Lakeview's older frame houses and two-flats, usually replaced along with a service upgrade.",
+    "Electrical riser and meter riser repair": "Meter banks and feeders in Lakeview two-flats and apartment buildings. We've replaced aluminium meter-to-panel wiring with copper on W Wolfram St.",
+    "Overhead and underground electrical service": "Service masts and risers on houses, flats and coach houses, coordinated with ComEd.",
+    "Restaurant and bar electrical": "Bars and restaurants on Clark, Halsted, Broadway and Sheridan Rd. Our Lakeview record includes restaurant work on N Halsted, N Broadway and N Sheridan Rd.",
+    "Tenant build-outs": "Shops, studios and daycare centres. We've wired several build-outs on W Belmont Ave.",
+    "Electrician for new construction": "Four-storey condo buildings and new houses. Six of our Lakeview permits are new construction, including a 31-unit building on N Wayne Ave.",
+    "Well pump wiring": "Not something Lakeview needs, but we wire pumps for clients elsewhere in Chicagoland."
+  },
+  "research_sources": [
+    ["City of Chicago Data Portal: Boundaries - Community Areas (Lake View, 6)", "https://data.cityofchicago.org/d/igwz-8jzy", "official"],
+    ["City of Chicago Data Portal: Boundaries - ZIP Codes", "https://data.cityofchicago.org/d/unjd-c2ca", "official"],
+    ["City of Chicago Data Portal: Building Permits", "https://data.cityofchicago.org/d/ydr8-5enu", "official"],
+    ["Chicago Landmarks: Alta Vista Terrace District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=1", "official"],
+    ["Chicago Landmarks: Hawthorne Place District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=11", "official"],
+    ["Chicago Landmarks: Newport Avenue District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=148", "official"],
+    ["Chicago Landmarks: Surf-Pine Grove District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=181", "official"],
+    ["City of Chicago: Surf-Pine Grove District designation report", "https://www.chicago.gov/dam/city/depts/zlup/Historic_Preservation/Publications/Surf_Pine_Grove_District.pdf", "official"],
+    ["Chicago Landmarks: Terra Cotta Row District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=145", "official"],
+    ["Chicago Landmarks: Wrigley Field", "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1520", "official"],
+    ["Chicago Landmarks: North region listing", "https://webapps1.chicago.gov/landmarksweb/web/regiondetails.htm?regId=1", "official"],
+    ["Chicago Landmarks: owners' questions and answers", "https://webapps1.chicago.gov/landmarksweb/web/ownersqanda.htm", "official"],
+    ["City of Chicago: landmark districts map", "https://Chicago.gov/content/dam/city/depts/zlup/Historic_Preservation/Publications/nps_analysis/landmark_districts_map.pdf", "official"],
+    ["City of Chicago: Express Permit Program", "https://chicago.gov/city/en/depts/bldgs/provdrs/permits/svcs/express-permits.html", "official"],
+    ["City of Chicago: Express Permit Program, electrical work", "https://chicago.gov/city/en/sites/guide-to-building-permits/home/instructions/EPP/ELECT.html", "official"],
+    ["44th Ward: landmarking", "https://www.44thward.org/development/landmarking/", "official"],
+    ["44th Ward: Chicago Cubs parking restriction reminders", "https://www.44thward.org/resources/wrigley-field-neighborhood-information/chicago-cubs-parking-restriction-reminders/", "official"],
+    ["Wikipedia: Lake View, Chicago", "https://en.wikipedia.org/wiki/Lake_View,_Chicago", "reference"]
+  ]
+}

@@ -211,15 +211,8 @@
 .ds-nav-logo { margin-right: auto; flex: none; }
 .ds-nav-logo img { height: 44px; width: auto; }
 .ds-nav-links { display: flex; align-items: center; gap: 36px; margin-right: 24px; }
-.ds-nav-links > a, .ds-nav-menu summary { font: 500 15px/1 var(--f-body); text-transform: uppercase; letter-spacing: .02em; color: var(--c-ink); text-decoration: none; transition: color var(--ease); }
-.ds-nav-links > a:hover, .ds-nav-menu summary:hover { color: var(--c-blue); }
-.ds-nav-menu { position: relative; }
-.ds-nav-menu summary { display: flex; align-items: center; gap: 6px; list-style: none; cursor: pointer; color: var(--c-blue); }
-.ds-nav-menu summary::-webkit-details-marker { display: none; }
-.ds-nav-menu[open] summary .ds-icon { transform: rotate(180deg); }
-.ds-nav-menu-panel { position: absolute; left: -20px; top: calc(100% + 30px); min-width: 300px; padding: 12px; border-radius: var(--r-md); background: var(--c-navy); display: grid; }
-.ds-nav-menu-panel a { padding: 10px 12px; border-radius: var(--r-sm); color: #fff; text-decoration: none; font-size: 15px; line-height: 20px; }
-.ds-nav-menu-panel a:hover { color: var(--c-green); background: #ffffff0d; }
+.ds-nav-links > a { font: 500 15px/1 var(--f-body); text-transform: uppercase; letter-spacing: .02em; color: var(--c-ink); text-decoration: none; transition: color var(--ease); }
+.ds-nav-links > a:hover { color: var(--c-blue); }
 .ds-nav-phone { display: inline-flex; align-items: center; gap: 10px; color: var(--c-ink); text-decoration: none; font: 500 17px/1 var(--f-body); white-space: nowrap; }
 .ds-nav-phone .ds-icon { color: var(--c-blue); }
 .ds-nav-call, .ds-nav-mobile { display: none; }

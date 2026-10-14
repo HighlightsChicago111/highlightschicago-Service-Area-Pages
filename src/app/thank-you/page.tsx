@@ -3,7 +3,7 @@ import Link from 'next/link'
 import {Button, IconBadge} from '@/components/ds/atoms'
 import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
 import {Icon} from '@/components/ds/icon'
-import {getAreaCards, getAreaSettings} from '@/lib/content'
+import {getAreaSettings} from '@/lib/content'
 import {pad2, telHref} from '@/lib/ds'
 
 // A confirmation page has no value in search results, and indexing it would let
@@ -21,11 +21,11 @@ const steps = [
 ]
 
 export default async function ThankYouPage() {
-  const [areas, co] = await Promise.all([getAreaCards(), getAreaSettings()])
+  const co = await getAreaSettings()
   const tel = telHref(co.phoneTel, co.phoneDisplay)
   return (
     <div className="ds">
-      <SiteHeader co={co} areas={areas} tel={tel} />
+      <SiteHeader co={co} tel={tel} />
       <main id="main" className="ds-band ds-band--grey">
         <div className="ds-wrap ar-thanks">
           <section className="ar-thanks-card" aria-labelledby="thank-you-title">

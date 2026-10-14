@@ -1,0 +1,721 @@
+{
+ "source": "City of Chicago building permits (data.cityofchicago.org, ydr8-5enu)",
+ "bbox": {
+  "north": 41.991,
+  "south": 41.961,
+  "west": -87.7072,
+  "east": -87.6738
+ },
+ "community_area_filter": [
+  4
+ ],
+ "window": {
+  "from": "2024-10-13",
+  "to": "2026-10-14",
+  "months": 24
+ },
+ "permits_in_window": 1021,
+ "electrical_total": 585,
+ "contractors": 208,
+ "mix": [
+  [
+   "Work inside a specific unit or condo",
+   152
+  ],
+  [
+   "Lighting",
+   124
+  ],
+  [
+   "Outlets and receptacles",
+   97
+  ],
+  [
+   "Interior build-outs and alterations",
+   86
+  ],
+  [
+   "Electrical service",
+   81
+  ],
+  [
+   "Panels",
+   78
+  ],
+  [
+   "Solar",
+   56
+  ],
+  [
+   "Signs",
+   50
+  ],
+  [
+   "Low voltage, data and communications",
+   39
+  ],
+  [
+   "Fire alarm",
+   25
+  ],
+  [
+   "EV charging",
+   20
+  ],
+  [
+   "Restaurants",
+   10
+  ],
+  [
+   "Generators",
+   1
+  ]
+ ],
+ "wards": [
+  [
+   "40",
+   555
+  ],
+  [
+   "47",
+   437
+  ],
+  [
+   "39",
+   29
+  ]
+ ],
+ "community_areas": [
+  [
+   "4",
+   1021
+  ]
+ ],
+ "highlights": {
+  "count": 52,
+  "addresses": 44,
+  "by_type": [
+   [
+    "Express Permit Program",
+    31
+   ],
+   [
+    "Renovation/Alteration",
+    15
+   ],
+   [
+    "New Construction",
+    5
+   ],
+   [
+    "Easy Permit Process",
+    1
+   ]
+  ],
+  "by_year": [
+   [
+    "2014",
+    3
+   ],
+   [
+    "2015",
+    1
+   ],
+   [
+    "2016",
+    2
+   ],
+   [
+    "2017",
+    3
+   ],
+   [
+    "2018",
+    3
+   ],
+   [
+    "2019",
+    2
+   ],
+   [
+    "2020",
+    6
+   ],
+   [
+    "2021",
+    5
+   ],
+   [
+    "2022",
+    3
+   ],
+   [
+    "2023",
+    6
+   ],
+   [
+    "2024",
+    4
+   ],
+   [
+    "2025",
+    6
+   ],
+   [
+    "2026",
+    8
+   ]
+  ],
+  "first_year": "2014",
+  "blocks": {
+   "2600 block of W WINNEMAC AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 400 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 3 . LIGHTING OUTLETS: 3. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "5300 block of N VIRGINIA AVE": [
+    {
+     "year": "2026",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 1-STORY ADDITION, DECK, AND MINOR RENOVATION AT SINGLE-FAMILY RESIDENCE. OCCUPANCY GROUP R-5, CONSTRUCTION TYPE VA."
+    }
+   ],
+   "5000 block of N WOLCOTT AVE": [
+    {
+     "year": "2026",
+     "type": "Renovation/Alteration",
+     "work": "SELF CERT 2019 CBC: INTERIOR RENOVATION OF AN EXISTING 4 STORY MASONRY BUILDING (OCCUPANCY GROUP R-2, CONSTRUCTION TYPE IIIB)"
+    },
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "UNIT #1N  RELOCATE 100 AMP PANEL BOX FROM THE BASEMENT TO THE UNIT"
+    }
+   ],
+   "2200 block of W GIDDINGS ST": [
+    {
+     "year": "2026",
+     "type": "New Construction",
+     "work": "REMOVE EXISTING DEATCHED 2 CAR GARADE AND ERECT PROPOSED 3 CAR DETACHED FRAME GARAGE WITH COACH HOUSE (PER ADU ORDINANCE) PER PLANS, NO WORK TO EXISTING 2 STORY/2 UNIT RESIDENCE **CERTIFIED PLANS CORRECTIONS: CONDITIONAL"
+    },
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 2 INCH UNDERGROUND RIGID CONDUIT AND RELOCATE EXISTING 200 AMP ELECTRICAL SERVICE"
+    },
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "ERECT NEW 2 CAR FRAME GARAGE WITH ROOF TOP DECK & ACCESS STAIRS AS PER PLANS."
+    },
+    {
+     "year": "2018",
+     "type": "Renovation/Alteration",
+     "work": "ERECT NEW 2 CAR MASONRY GARAGE WITH ROOF TOP DECK AS PER PLAN."
+    }
+   ],
+   "4400 block of N WESTERN AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 2 CIRCUITS TO EXISTING 150 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 2 . LIGHTING OUTLETS: 0. SPECIFIC LOCATION: UNIT#3S."
+    }
+   ],
+   "4900 block of N MOZART ST": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 400 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BASEMENT."
+    },
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 20 CIRCUITS TO EXISTING 200 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 40 . LIGHTING OUTLETS: 20. SPECIFIC LOCATION: 1ST FLOOR UNIT."
+    },
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 20 CIRCUITS TO EXISTING 200 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 40 . LIGHTING OUTLETS: 20. SPECIFIC LOCATION: 2ND FLOOR UNIT."
+    }
+   ],
+   "5100 block of N WOLCOTT AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "2900 block of W BALMORAL AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 20 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "2600 block of W WILSON AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 1 CIRCUITS TO EXISTING 200 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: GARAGE."
+    }
+   ],
+   "1900 block of W SUMMERDALE AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 2 CIRCUITS TO EXISTING 200 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: GARAGE."
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100AMP ELECTRICAL SERVICE WITH NEW 200AMP ELECTRICAL SERVICE AND 3 METERS.  REPLACE EXISTING LIGHT FIXTURES, SWITCHES AND OUTLETS WITH NEW ONES."
+    }
+   ],
+   "2400 block of W EASTWOOD AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 30 CIRCUITS. RECEPTACLE OUTLETS: 4 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "2700 block of W GUNNISON ST": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019CBRC: ADDITION OF SINGLE LEVEL DECK IN REAR OF EXISTING SINGLE STORY, SINGLE FAMILY RESIDENCE.  ELECTRICAL WORK FOR NEW LIGHTING. (OCCUPANCY R-5, CONST. TYPE IIIB)"
+    }
+   ],
+   "2100 block of W LAWRENCE AVE": [
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. REPAIR OR ALTER DEVICES ON EXISTING CIRCUITS. RECEPTACLE OUTLETS: 20 . LIGHTING OUTLETS: 20. SPECIFIC LOCATION: INTERIOR MAIN ROOM."
+    },
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 30 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BACK STORAGE ROOM."
+    },
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "**FIRE ALARM PERMIT**INSTALLATION OF A UL LISTED FIRELITE ES-50X FIRE ALARM SYSTEM, PER CITY OF CHICAGO BUILDING CODE SECTION 15-16-110, IN A CLASS C-3 TYPE IIIC DAYCARE OCCUPANCY BUILDING."
+    },
+    {
+     "year": "2018",
+     "type": "Renovation/Alteration",
+     "work": "DEMOLITION OF THE INTERIOR NON-LOAD BEARING WALLS IN AN EXISTING 1-STORY RETAIL BUILDING AS PER PLANS"
+    }
+   ],
+   "4800 block of N WOLCOTT AVE": [
+    {
+     "year": "2024",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATION OF SIX DWELLING UNITS WITHIN AN EXISTING THREE STORY APARTMENT BUILDING TO ADD WASHER & DRYER STACK UNITS AND HVAC SPLIT SYSTEMS PER PLANS"
+    },
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**REPLACE EXISTING 400 AMP ELECTRICAL SERVICE WITH NEW 1200 AMP 120/240 V  ELECTRICAL SERVICE ALONG WITH 26 METERS AND 26-PANEL BOXES LOCATED IN THE BUILDING BASEMENT"
+    }
+   ],
+   "2000 block of W WILSON AVE": [
+    {
+     "year": "2023",
+     "type": "Renovation/Alteration",
+     "work": "SC 2019 CBRC: RENOVATION AND REAR ADDITION AND NEW DECK TO AN EXISTING SINGLE-FAMILY RESIDENCE. V-A CONST, R-5."
+    }
+   ],
+   "2300 block of W FARRAGUT AVE": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "REPLACE 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICE ALONG WITH 3 METERS AND 3-PANEL BOXES. ADD A CIRCUIT FOR SUMP PUMP OUTLET"
+    }
+   ],
+   "5100 block of N LINCOLN AVE": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "CHANGE CONTRACTOR NAME"
+    }
+   ],
+   "2800 block of W BRYN MAWR AVE": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200 AMP 120/240V  ELECTRICAL SERVICE ALONG WITH NEW METER AND PANEL BOX. INSTALL NEW 30 AMP OUTLET AND  CIRCUIT FOR DRYER"
+    }
+   ],
+   "4700 block of N LINCOLN AVE": [
+    {
+     "year": "2023",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC - PROJECT IS A TENANT FINISH-OUT OF AN EXISTING SPACE IN A SHELL RETAIL BUILDING CONSITING OF RECEPTION, TRANSITION AREA, STORAGE, JOURNEY ROOMS (MASSAGE), VESTIBULE, RESTROOMS AND A BREAKROOM / UTILITY. TH"
+    }
+   ],
+   "2000 block of W SUMMERDALE AVE": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICE ALONG WITH NEW METER BOX AND PANEL BOX. INSTALL NEW CIRCUIT BREAKER FOR A SUMP PUMP"
+    }
+   ],
+   "4800 block of N SEELEY AVE": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "CHANGE ELECTRICAL CONTRACTOR TO HIGHLIGHTS CHICAGO INC FOR PERMIT, NO 100855849 ISSUED 07/07/2021"
+    }
+   ],
+   "2100 block of W SUMMERDALE AVE": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICES ALONG WITH 3 METERS AND 3-PANEL BOXES"
+    }
+   ],
+   "4700 block of N ARTESIAN AVE": [
+    {
+     "year": "2021",
+     "type": "Renovation/Alteration",
+     "work": "PARTIAL DEMOLITION OF AN EXISTING 2 STORY SINGLE FAMILY RESIDENCE, WITH REMODELING OF BASEMENT & FIRST FLOOR, WITH NEW REAR 2 STORY W/ BASEMENT ADDITION, NEW REAR ONE STORY OPEN DECK, AND REPAIR/REPLACEMENT OF EXISTING F"
+    }
+   ],
+   "5000 block of N LINCOLN AVE": [
+    {
+     "year": "2021",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBC, SELF CERTIFICATION PROCESS, INTERIOR AND EXTERIOR ALTERATIONS TO EXISTING 2 STORY MASONRY BUILDING TYPE 3B CONSTRUCTION AS PER PLANS ( 5009-11 N LINCOLN AVE )"
+    }
+   ],
+   "4800 block of N ROCKWELL ST": [
+    {
+     "year": "2021",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 3 STORY 3 D.U. WITH BASEMENT, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE,  REAR DECK WITH STAIR AT 1ST /2ND/3RD FLOORS, DETACHED 3 CAR GARAGE WITH ROOFTOP DECK AS PER PLAN (OCCUPAN"
+    }
+   ],
+   "2100 block of W FOSTER AVE": [
+    {
+     "year": "2021",
+     "type": "Easy Permit Process",
+     "work": "REVISION TO PERMIT # 100852215 TO CHANGE CONTRACTORS: GC TO STAR DEVELOPMENT CORP, CONCRETE TO DEMOX, INC., BRICK MASON TO R D Y CONSTRUCTION INC. VENT/REFRIG TO COMFORT CLIMATE CONTROL INC, PLUMBING TO S I A N PLUMBING "
+    }
+   ],
+   "4800 block of N HAMILTON AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICES ALONG WITH 3 METERS AND 3 PANEL BOXES"
+    }
+   ],
+   "2100 block of W WILSON AVE": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR ALTERATIONS AT BASEMENT AND REPLACEMENT OF EXISTING DECK OF AN OF EXISTING 2 STORY BRICK RESIDENCE WITH BASEMENT AS PER PLANS"
+    }
+   ],
+   "4900 block of N OAKLEY AVE": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICES, METER, AND PANEL BOX"
+    }
+   ],
+   "4800 block of N CALIFORNIA AVE": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP,120/240 3WIRE ELECTRICAL SERVICES ALONG WITH 3 METERS AND 3-PANEL BOXES"
+    }
+   ],
+   "2200 block of W BERWYN AVE": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240V  ELECTRICAL SERVICES, METER AND PANEL BOX."
+    }
+   ],
+   "2300 block of W FOSTER AVE": [
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "ERECT NEW 3-STORY, 3-DWELLING UNITS RESIDENCE WITH BASEMENT AND ROOFTOP STAIR ENCLOSURE. ERECT NEW 3-CAR GARAGE.**CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS."
+    }
+   ],
+   "2300 block of W BERWYN AVE": [
+    {
+     "year": "2018",
+     "type": "Express Permit Program",
+     "work": "ELECTRICAL SERVICE UPGRADE FROM 100 AMP TO 200 AMP"
+    }
+   ],
+   "2200 block of W FOSTER AVE": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "NEW 3 STORY , 3 DWELLING UNIT BRICK/FRAME RESIDENTIAL BUILDING WITH BASEMENT AND ROOF TOP ACCESS ENCLOSURE. NEW REAR STEEL PORCH. ALL WORK AS PER PLANS.               **CERTIFIED PLAN CORRECTIONS PROJECT - CONDITIONAL PE"
+    }
+   ],
+   "2500 block of W LAWRENCE AVE": [
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT FOR THE NEW MEDICAL OFFICE AT EXISTING COMMERCIAL SPACE"
+    },
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "OFFICE ON GROUND LEVEL AND 9 DU ABOVE: ERECT 4-STORY BUILDING WITH BASEMENT, ROOFTOP STAIRWAY AND ELEVATOR ENCLOSURES, COVERED AND OPEN PARKING LOTS AND TRASH ENCL."
+    }
+   ],
+   "2100 block of W AGATITE AVE": [
+    {
+     "year": "2017",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100AMP ELECTRICAL SERVICE WITH NEW 200AMP ELECTRICAL SERVICE AND 3 GANG METER BOX"
+    }
+   ],
+   "2000 block of W BALMORAL AVE": [
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "ADAPTIVE RE-USE OF EXISTING BEER MANUFACTURING FACILITY & OFFICE BUILDING TO INCLUDE A NEW TAP ROOM & BEER GARDEN"
+    },
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "ARCHITECTURAL INVESTIGATION. INTERIOR DEMO PERMIT ONLY TO WAREHOUSE FOR FUTURE OFFICE SPACE."
+    }
+   ],
+   "4500 block of N LEAVITT ST": [
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 1200AMP 1PHASE SERVICE WITH 15 METERS RECONNECT EXISTING WIRING AND FEEDERS TO THE NEW PANEL BOXES"
+    },
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 1200AMP 1PHASE SERVICE WITH 14 METERS RECONNECT EXISTING WIRING AND FEEDERS TO THE NEW PANEL BOXES"
+    }
+   ]
+  },
+  "points": [
+   [
+    41.973,
+    -87.695,
+    1
+   ],
+   [
+    41.978,
+    -87.704,
+    1
+   ],
+   [
+    41.975,
+    -87.676,
+    1
+   ],
+   [
+    41.968,
+    -87.684,
+    1
+   ],
+   [
+    41.962,
+    -87.689,
+    1
+   ],
+   [
+    41.972,
+    -87.7,
+    3
+   ],
+   [
+    41.976,
+    -87.677,
+    1
+   ],
+   [
+    41.979,
+    -87.702,
+    1
+   ],
+   [
+    41.965,
+    -87.695,
+    1
+   ],
+   [
+    41.979,
+    -87.678,
+    1
+   ],
+   [
+    41.966,
+    -87.69,
+    1
+   ],
+   [
+    41.97,
+    -87.698,
+    1
+   ],
+   [
+    41.969,
+    -87.682,
+    2
+   ],
+   [
+    41.97,
+    -87.676,
+    2
+   ],
+   [
+    41.965,
+    -87.68,
+    1
+   ],
+   [
+    41.977,
+    -87.687,
+    1
+   ],
+   [
+    41.975,
+    -87.692,
+    1
+   ],
+   [
+    41.983,
+    -87.7,
+    1
+   ],
+   [
+    41.967,
+    -87.687,
+    1
+   ],
+   [
+    41.979,
+    -87.681,
+    1
+   ],
+   [
+    41.973,
+    -87.676,
+    1
+   ],
+   [
+    41.97,
+    -87.68,
+    1
+   ],
+   [
+    41.979,
+    -87.682,
+    1
+   ],
+   [
+    41.968,
+    -87.69,
+    1
+   ],
+   [
+    41.972,
+    -87.691,
+    1
+   ],
+   [
+    41.969,
+    -87.694,
+    1
+   ],
+   [
+    41.976,
+    -87.684,
+    1
+   ],
+   [
+    41.969,
+    -87.683,
+    3
+   ],
+   [
+    41.965,
+    -87.682,
+    1
+   ],
+   [
+    41.972,
+    -87.687,
+    1
+   ],
+   [
+    41.969,
+    -87.699,
+    1
+   ],
+   [
+    41.968,
+    -87.686,
+    3
+   ],
+   [
+    41.978,
+    -87.685,
+    1
+   ],
+   [
+    41.976,
+    -87.688,
+    1
+   ],
+   [
+    41.978,
+    -87.688,
+    1
+   ],
+   [
+    41.976,
+    -87.687,
+    1
+   ],
+   [
+    41.968,
+    -87.692,
+    2
+   ],
+   [
+    41.962,
+    -87.684,
+    1
+   ],
+   [
+    41.979,
+    -87.679,
+    1
+   ],
+   [
+    41.98,
+    -87.682,
+    2
+   ],
+   [
+    41.964,
+    -87.684,
+    1
+   ],
+   [
+    41.965,
+    -87.684,
+    1
+   ]
+  ]
+ }
+}

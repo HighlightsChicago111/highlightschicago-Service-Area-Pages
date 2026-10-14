@@ -36,7 +36,7 @@ drafts, is hidden on the live site, and FAQ answers containing one are kept out 
 | `honest_context` | yes | 2 paragraphs | "The honest context" card |
 | `reviews_heading`, `reviews` | yes | 6 to 8 reviews | review carousel |
 | `nearby` | yes | 6 to 8 | nearby neighbourhoods |
-| `faq` | yes | 4 to 6 (7 generic are added) | FAQ and FAQ schema |
+| `faq` | yes | 4 to 6 (6 generic are added) | FAQ and FAQ schema |
 | `cta_ready` | yes | 5 to 6 | "Have these ready when you call" |
 | `card_summary` | yes, unless in the card library | 70 to 110 chars, 1 sentence | collection card |
 | `card_region` | yes, unless in the card library | e.g. "Chicago · North Side" | collection card |
@@ -104,7 +104,7 @@ electrical work looks like there. Names become the form's "Where in …?" option
 - `scope_lede`: one or two sentences naming this area's building types.
 - `scope_rows`: 8 to 11 `[factor, why it changes the work, who settles it]`. "Who" sets the chip colour: starts with
   "Us" = green, "You and us" = grey, anything else (the building, the board, the City) = blue. Mix area factors
-  with the universal ones; include working hours with `[CONFIRM: whether after-hours rates apply]`.
+  with the universal ones; include working hours ("agree the hours before the job is scheduled"), and state no after-hours rate unless the client confirms one.
 - `hourly_answer`: the "what's your hourly rate?" answer with one area example.
 
 ## 7. "How to choose" and "where we fit"
@@ -138,8 +138,8 @@ The section always shows two cards: **Our record** (a lead line plus bullets) an
 ## 10. Nearby, FAQ, call to action
 
 - `nearby`: 6 to 8 `[name, one-line difference in building stock]`.
-- `faq`: 4 to 6 area-specific `[id, question, answer]`, ids starting `faq-`. Seven generic FAQs are added
-  automatically (handyman, licence check, estimates, weekends, owner, union, cost), worded for the suburb when
+- `faq`: 4 to 6 area-specific `[id, question, answer]`, ids starting `faq-`. Six generic FAQs are added
+  automatically (handyman, licence check, estimates, weekends and emergencies, owner, cost), worded for the suburb when
   `city` is set. Don't repeat them.
 - `cta_ready`: 5 to 6 things to have ready when calling, specific to the area's buildings.
 

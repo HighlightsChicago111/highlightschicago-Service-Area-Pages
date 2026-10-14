@@ -4,6 +4,7 @@ import Link from 'next/link'
 import {draftMode} from 'next/headers'
 import {SiteFooter, SiteHeader} from '@/components/ds/chrome'
 import {DisableDraftMode} from '@/components/disable-draft-mode'
+import {Icon} from '@/components/ds/icon'
 import {cardImageFor, cardRegionFor, cardSummaryFor} from '@/lib/area/card-photos'
 import {isChicago} from '@/lib/area/copy'
 import {getAreaCards, getAreaSettings} from '@/lib/content'
@@ -34,7 +35,7 @@ export default async function ServiceAreasPage() {
   return (
     <div className="ds">
       {draft && <DisableDraftMode />}
-      <SiteHeader co={co} areas={areas} tel={tel} current="areas" />
+      <SiteHeader co={co} tel={tel} current="areas" />
       <main id="main">
         <section className="ar-ch" aria-labelledby="areas-hero-title">
           <img className="ar-ch-bg" src={PHOTOS.van.src} alt="" fetchPriority="high" decoding="async" />
@@ -81,7 +82,7 @@ export default async function ServiceAreasPage() {
                         <span className="ar-cc-label">Service area</span>
                         <strong>{card.area}</strong>
                         <span className="ar-cc-desc">{card.cardSummary}</span>
-                        <span className="ar-cc-region">{PIN}{regionOf(card)}</span>
+                        <span className="ar-cc-region">{PIN}{regionOf(card)}<span className="ar-cc-arrow"><Icon name="arrowUpRight" size={18} /></span></span>
                       </span>
                     </Link>
                   </li>
