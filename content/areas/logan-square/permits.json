@@ -1,0 +1,1394 @@
+{
+ "source": "City of Chicago building permits (data.cityofchicago.org, ydr8-5enu)",
+ "bbox": {
+  "north": 41.9362,
+  "south": 41.9134,
+  "west": -87.7316,
+  "east": -87.6635
+ },
+ "community_area_filter": [
+  22
+ ],
+ "window": {
+  "from": "2024-10-13",
+  "to": "2026-10-14",
+  "months": 24
+ },
+ "permits_in_window": 1651,
+ "electrical_total": 941,
+ "contractors": 301,
+ "mix": [
+  [
+   "Lighting",
+   271
+  ],
+  [
+   "Work inside a specific unit or condo",
+   232
+  ],
+  [
+   "Outlets and receptacles",
+   222
+  ],
+  [
+   "Electrical service",
+   185
+  ],
+  [
+   "Interior build-outs and alterations",
+   132
+  ],
+  [
+   "Signs",
+   89
+  ],
+  [
+   "Panels",
+   66
+  ],
+  [
+   "Solar",
+   52
+  ],
+  [
+   "EV charging",
+   49
+  ],
+  [
+   "Low voltage, data and communications",
+   40
+  ],
+  [
+   "Fire alarm",
+   21
+  ],
+  [
+   "Restaurants",
+   14
+  ]
+ ],
+ "wards": [
+  [
+   "1",
+   503
+  ],
+  [
+   "32",
+   488
+  ],
+  [
+   "35",
+   452
+  ],
+  [
+   "26",
+   197
+  ],
+  [
+   "31",
+   11
+  ]
+ ],
+ "community_areas": [
+  [
+   "22",
+   1651
+  ]
+ ],
+ "highlights": {
+  "count": 120,
+  "addresses": 110,
+  "by_type": [
+   [
+    "New Construction",
+    58
+   ],
+   [
+    "Express Permit Program",
+    42
+   ],
+   [
+    "Renovation/Alteration",
+    20
+   ]
+  ],
+  "by_year": [
+   [
+    "2012",
+    1
+   ],
+   [
+    "2013",
+    8
+   ],
+   [
+    "2014",
+    11
+   ],
+   [
+    "2015",
+    15
+   ],
+   [
+    "2016",
+    14
+   ],
+   [
+    "2017",
+    12
+   ],
+   [
+    "2018",
+    7
+   ],
+   [
+    "2019",
+    11
+   ],
+   [
+    "2020",
+    8
+   ],
+   [
+    "2021",
+    11
+   ],
+   [
+    "2022",
+    1
+   ],
+   [
+    "2023",
+    3
+   ],
+   [
+    "2024",
+    5
+   ],
+   [
+    "2025",
+    4
+   ],
+   [
+    "2026",
+    9
+   ]
+  ],
+  "first_year": "2012",
+  "blocks": {
+   "2500 block of N SPRINGFIELD AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "FOR PERMIT 101067557: REPLACEMENT GENERAL CONTRACTOR.  REPLACEMENT ELECTRICAL CONTRACTOR.  NEW CONTRACTOR(S) LISTED UNDER \"OTHER APPLICANTS AND CONTRACTORS\" ON PERMIT CERTIFICATE."
+    },
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: SINGLE FAMILY HOME."
+    }
+   ],
+   "2300 block of W MCLEAN AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 30 CIRCUITS. RECEPTACLE OUTLETS: 5 . LIGHTING OUTLETS: 8. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: BASEMENT,GARAG"
+    }
+   ],
+   "2000 block of W HOMER ST": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 20 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "2100 block of N BELL AVE": [
+    {
+     "year": "2026",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC REVISION TO PERMIT 101048992 INTERIOR REPAIRS TO EXISTING 2-1/2 STORY BRICK COACH HOUSE DUE TO FIRE DAMAGE (OCCUPANCY GROUP R-5, TYPE III-A CONSTRUCTION), PER PLANS CHANGE OF CONTRACTORS:MASON - MARK C  CON"
+    }
+   ],
+   "1900 block of N FAIRFIELD AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "FOR PERMIT 101074964: REPLACEMENT ELECTRICAL CONTRACTOR.  NEW CONTRACTOR(S) LISTED UNDER \"OTHER APPLICANTS AND CONTRACTORS\" ON PERMIT CERTIFICATE."
+    },
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. REPAIR OR ALTER DEVICES ON EXISTING CIRCUITS. RECEPTACLE OUTLETS: 10 . LIGHTING OUTLETS: 7. SPECIFIC LOCATION: UNIT 305- DINNING ROOM,OFFICE."
+    }
+   ],
+   "2000 block of N SPAULDING AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 1 CIRCUITS TO EXISTING 125 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: GARAGE."
+    }
+   ],
+   "3600 block of W PALMER ST": [
+    {
+     "year": "2026",
+     "type": "Renovation/Alteration",
+     "work": "SPR - 2019 CBC - INTERIOR RENOVATION OF EXISTING 3 DWELLING UNITS AT EXISTING 3 DWELLING UNITS 2-STORY BRICK & FRAME BUILDING W/ BASEMENT(OCCUPANCY CLASS R-5, CONSTRUCTION TYPE VA)**CONDITIONAL PERMIT SUBJECT TO FIELD IN"
+    }
+   ],
+   "2600 block of N MILWAUKEE AVE": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBRC: ALTERATION OF FLOOR 1 VACANT TENANT SPACE IN TWO-STORY BUILDING WITH 1 DWELLING UNIT ABOVE TO YOGA STUDIO INCLUDING WAITING AREA, STUDIO, TWO RESTROOMS, AND WASHER/DRYER AND MOP SINK IN BASEMENT. NO "
+    }
+   ],
+   "1800 block of N MILWAUKEE AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 1 CIRCUITS TO EXISTING 100 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: ELECTRICAL ROOM,GA"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "REVISE EXISTING PERMIT 100615631 INSTALL NEW 800AMP 120/240V SINGLE PHASE 3WIRE ELECTRICAL SERVICE WITH 2 @400AMP MAIN DISCONNECTS"
+    },
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "TENANT BUILD -OUT OF AN EXISTING 1ST FLOOR COMMERCIAL SPACE AND BASEMENT IN 3 STORY MASONRY BUILDING FOR NEW COFFEE SHOP AS PER PLANS."
+    }
+   ],
+   "2700 block of N DRAKE AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 1 CIRCUITS TO EXISTING 200 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: GARAGE."
+    }
+   ],
+   "2600 block of N SAWYER AVE": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERTIFICATION PROJECT WITH A STRUCTURAL PEER REVIEW. RENOVATION OF AN EXISTING MASONRY 2-STORY SINGLE-FAMILY DWELLING WITH A BASEMENT. SCOPE INCLUDES DEMOLITION OF AN EXISTING REAR ENCLOSED PORCH, INTERIOR RENOVATIO"
+    }
+   ],
+   "2100 block of N SAWYER AVE": [
+    {
+     "year": "2024",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC:ERECT NEW DETACHED MASONRY GARAGE WITH ROOF TOP DECK AS PER PLAN."
+    }
+   ],
+   "2600 block of N ST LOUIS AVE": [
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 400 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 3 . LIGHTING OUTLETS: 2. SPECIFIC LOCATION: BASEMENT ELECTRICAL ROOM."
+    }
+   ],
+   "3200 block of W WRIGHTWOOD AVE": [
+    {
+     "year": "2024",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC: ADD A CONVERSION UNIT WITHIN AN A.D.U. ALLOWED AREA PER 17-2-0207-A(7) AT THE BASEMENT OF AN EXISTING TWO-FLAT PER 17-2-0207-A(3). (OCC. GRP: R-5; CONST. TYPE IIIA)"
+    }
+   ],
+   "3400 block of W CORTLAND ST": [
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 35 CIRCUITS. RECEPTACLE OUTLETS: 10 . LIGHTING OUTLETS: 6. SPECIFIC LOCATION: BASEMENT,BACK PORCH,BATHROOM, GARAGE."
+    }
+   ],
+   "2700 block of N FAIRFIELD AVE": [
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 1 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "2700 block of W FRANCIS PL": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "REPLACE 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240V ELECTRICAL SERVICE ALONG WITH 3 METERS AND 3-PANEL BOXES"
+    }
+   ],
+   "2500 block of W LOGAN BLVD": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW WIRING AND 20 AMP DEDICATED CIRCUIT FOR RADON"
+    }
+   ],
+   "2500 block of N HARDING AVE": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW UNISTRUT AND STRAPS TO SECURE EXISTING  200 AMP  RISER"
+    }
+   ],
+   "2400 block of N RIDGEWAY AVE": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "REPLACE 100 AMP ELECTRICAL PANEL BOX.ADD CIRCUITS FOR BASEMENT OUTLETS"
+    }
+   ],
+   "2400 block of N MONTICELLO AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICES ALONG WITH 4 METERS AND 4-PANEL BOXES"
+    }
+   ],
+   "2500 block of N MOZART ST": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "PERMIT NO 100840291 CHANGE ELECTRICAL CONTRACTOR TO HIGHLIGHTS CHICAGO INC"
+    },
+    {
+     "year": "2017",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100AMP ELECTRICAL SERVICE WITH NEW 200AMP ELECTRICAL SERVICE AND 3GANG METER BOX"
+    }
+   ],
+   "2500 block of N HAMLIN AVE": [
+    {
+     "year": "2021",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBC: INTERIOR REHAB. TO EXISTING 2 RESIDENTIAL UNITS AND REAR ENCLOSED PORCH REPAIRS  IN EXISTING 2  STORY WITH BASEMENT BRICK BUILDING AS PER ARCHITECT'S PLANS. THE SCOPE OF WORK INCLUDES: ARCHITECTURE, P"
+    }
+   ],
+   "2000 block of N WOLCOTT AVE": [
+    {
+     "year": "2021",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 2 STORY SINGLE FAMILY RESIDENCE WITH BASEMENT, DETACHED 2 CAR GARAGE WITH ROOFTOP DECK, 6' HIGH 54' LONG WOOD FENCE AS PER PLAN (OCCUPANCY GROUP R-5, TYPE VA CONSTRUCTION)."
+    },
+    {
+     "year": "2021",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 2 STORY SINGLE FAMILY RESIDENCE WITH BASEMENT, ROOFTOP DECK, TRELLIS, ROOFTOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE WITH ROOFTOP DECK, 6' HIGH 58' LONG WOOD FENCE AS PER PLAN"
+    },
+    {
+     "year": "2021",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 2 STORY SINGLE FAMILY RESIDENCE WITH BASEMENT, DETACHED 2 CAR GARAGE WITH ROOFTOP DECK, 6' HIGH 59' LONG WOOD FENCE AS PER PLAN (OCCUPANCY GROUP R-5, TYPE VA CONSTRUCTION)."
+    }
+   ],
+   "2500 block of N CAMPBELL AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "CHANGE ELECTRICAL CONTRACTOR  TO HIGHLIGHTS CHICAGO INC. FOR  PERMIT NO: 100878254 ISSUED 12/14/20"
+    }
+   ],
+   "2200 block of N HAMLIN AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "NEW CIRCUIT FOR ELECTRIC CAR CHARGER"
+    }
+   ],
+   "1900 block of N DRAKE AVE": [
+    {
+     "year": "2021",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 3 STORY 4 D.U. WITH BASEMENT, ROOFTOP DECK, WOOD TRELLIS, ROOFTOP STAIR ENCLOSURES, FRONT & REAR DECKS AT 1ST/2ND/3RD FLOORS, A CAR PORT FOR 4 EXTERIOR PARKING SPACES ON CONCR"
+    }
+   ],
+   "2300 block of N SPAULDING AVE": [
+    {
+     "year": "2021",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 2 STORY SINGLE FAMILY RESIDENCE WITH BASEMENT, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE WITH ROOFTOP DECK AS PER PLAN (OCCUPANCY GROUP R-5, TYPE VA CONSTRU"
+    }
+   ],
+   "2100 block of N HOYNE AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICES, METER, AND PANEL BOX"
+    }
+   ],
+   "3500 block of W DICKENS AVE": [
+    {
+     "year": "2020",
+     "type": "New Construction",
+     "work": "SPR 2019 CBC - REMOVE AND REPLACE EXISTING GARAGE WITH NEW (2) CAR MASONRY GARAGE AT EXISTING 3 STORY MASONRY BUILDING W/ BASEMENT AS PER PLANS"
+    }
+   ],
+   "3300 block of W FULLERTON AVE": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**INSTALL NEW 1600 AMP 120/240V ELECTRICAL SERVICE TO REPLACE EXISTING 400 AMP ELECTRICAL SERVICE"
+    }
+   ],
+   "2000 block of N SAWYER AVE": [
+    {
+     "year": "2020",
+     "type": "New Construction",
+     "work": "REMOVE AND REPLACE EXISTING GARAGE WITH NEW (2) CAR MASONRY GARAGE  WITH ROOFTOP DECK AT EXISTING 2 STORY MASONRY BUILDING W/ BASEMENT"
+    },
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "INSTALL A NEW OUTLET FOR AN ELECTRIC CAR IN THE GARAGE. INSTALL NEW EXHAUST FAN IN THE 2ND-FLOOR BATHROOM"
+    }
+   ],
+   "1900 block of N SAWYER AVE": [
+    {
+     "year": "2020",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 2 STORY SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH BASEMENT, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) WITH ROOFTOP DECK AS PER PLAN."
+    }
+   ],
+   "1900 block of W FULLERTON AVE": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR DEMOLITION OF NON-LOAD BEARING WALLS, BASEMENT CONCRETE FLOOR SLAB, FIXTURES, CABINETS AND APPLIANCES PER PLANS. DEMOLITION OF EXISTING FRAME GARAGE. NO CHANGE TO CURRENT A-1 USE/OCCUPANCY."
+    },
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "DISCONNECTING / DEMO EXISTING ELECTRICAL SERVICE"
+    }
+   ],
+   "2400 block of W FULLERTON AVE": [
+    {
+     "year": "2020",
+     "type": "New Construction",
+     "work": "ERECT 4 STORY 21 D.U. BUILDING (3B CONSTRUCTION), 1ST FLOOR RETAIL, 21 CAR GARAGE AT 1ST FLOOR, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURES AS PER PLAN.**CERTIFIED CORRECTIONS- - SUBJECT TO FIELD INSPECTIONS & AUDIT **"
+    }
+   ],
+   "3000 block of W LYNDALE ST": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "ELECTRIC WIRING"
+    },
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 2 DU BUILDING (3B CONSTRUCTION) WITH BASEMENT, ROOF TOP DECK, ROOF TOP STAIR ENCLOSURE, REAR DECK AT 3RD FLOOR, REAR 3 STORY STAIR, DETACHED 2 CAR GARAGE (3B CONSTRUCTION) WITH RO"
+    }
+   ],
+   "2200 block of W BELDEN AVE": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 50 AMP ELECTRICAL OUTLET FOR ELECTRIC CAR CHARGER"
+    }
+   ],
+   "2900 block of W LYNDALE ST": [
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "REAR ADDITION AT GARDEN/1ST/2ND FLOORS AND REHAB (4A CONSTRUCTION), EXTERIOR 3 PARKING SPACES ON CONCRETE PAD, FRONT & REAR DECKS AT 1ST/2ND FLOORS, REPAIR EXISTING FRONT DECK AND STAIR AT EXISTING 3 D.U. BUILDING AS PER"
+    },
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT 3 STORY 4 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 5 CAR GARAGE (3B CONSTRUCTION), 6' HIGH 8' BY 3.5' MASONRY TRASH ENCLOSURE  AS PER PLAN."
+    },
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 2 D.U. MASONRY BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 2 CAR MASONRY GARAGE (3B CONSTRUCTION) WITH ROOF TOP DECK AS PER PLAN."
+    }
+   ],
+   "2400 block of N AVERS AVE": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "REPLACE 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 3 WIRE ELECTRICAL SERVICES ALONG WITH 4 METERS AND 4 PANEL BOXES"
+    }
+   ],
+   "2400 block of N ALBANY AVE": [
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERTIFICATION REVIEW: CONVERT EXISTING 2 STORY 3 D.U. WITH BASEMENT TO 2 D.U. (3B CONSTRUCTION) & REHAB, REAR 3 STORY 3 D.U. ADDITION (3B CONSTRUCTION) WITH ROOFTOP DECK, 5 EXTERIOR PARKING SPACES ON CONCRETE PAD, 6"
+    }
+   ],
+   "1800 block of N KEDZIE AVE": [
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 4 D.U. BUILDING (3B CONSTRUCTION) WITH BASEMENT, ROOFTOP DECK WITH TRELLIS, ROOFTOP STAIR ENCLOSURE, 4 EXTERIOR PARKING SPACES ON CONCRETE PAD, 6' HIGH 3.5' BY 8' MASONRY TRASH EN"
+    }
+   ],
+   "2300 block of N ELSTON AVE": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "INSTALL 14 CAN LIGHTS IN BASEMENT REPLACE WIRING AS NEEDED REPLACE ALL OUTLET AND SWITCH COVERS."
+    }
+   ],
+   "2400 block of N TALMAN AVE": [
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 2 STORY SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH BASEMENT, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2100 block of N POINT ST": [
+    {
+     "year": "2019",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 2 STORY SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH BASEMENT, REAR DECK AT 1ST FLOOR, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT 2 STORY WITH BASEMENT SINGLE FAMILY RESIDENCE (4A CONSTRUCTION), REAR DECK AT 1ST FLOOR, ROOF TOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN.         **CERTIFIED PLAN CORRECTIONS PROJECT -"
+    },
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    }
+   ],
+   "2400 block of N MILWAUKEE AVE": [
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "SELF CERTIFICATION- INTERIOR RENOVATION OF 1ST FLOOR WITH BASEMENT NEW RESTAURANT IN EXISTING 2 STORY MASONRY BUILDING WITH NEW REAR EXTERIOR SPIRAL STAIRS ONLY TO 2ND FLOOR (NO WORK ON 2ND FLOOR UNIT)"
+    },
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "SELF CERTIFICATION- INTERIOR AND EXTERIOR RENOVATION OF EXISTING ONE STORY MASONRY BUILDING WITH BASEMENT FOR A NEW GENERAL RESTAURANT PER PLANS."
+    }
+   ],
+   "2600 block of N MOZART ST": [
+    {
+     "year": "2018",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP ELECTRICAL SERVICES ALONG WITH 4 METERS AND 4 PANEL BOXES. PANEL BOXES LOCATED IN THE BASEMENT UTILITY ROOM"
+    }
+   ],
+   "1800 block of W ARMITAGE AVE": [
+    {
+     "year": "2018",
+     "type": "Express Permit Program",
+     "work": "CHANGE ELECTRICAL CONTRACTOR"
+    },
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 2 D.U. BUILDING (3B CONSTRUCTION) WITH DETACHED 2 CAR MASONRY GARAGE (3B CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 3-STORY WITH BASEMENT AND ROOFTOP STAIR ENCLOSURE MASONRY 2 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK AND ERECT REAR DETACHED 2 CAR MASONRY GARAGE (3B CONSTRUCTION) AS PER PLANS."
+    }
+   ],
+   "1900 block of W CORTLAND ST": [
+    {
+     "year": "2018",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 100AMP SUB PANEL ELECTRICAL BOX. INSTALL NEW 240V 30 AMP CIRCUIT BREAKER FOR OVEN. INSTALL PENDANT LIGHT FIXTURE"
+    }
+   ],
+   "2200 block of N ROCKWELL ST": [
+    {
+     "year": "2018",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW BOXES, WIRING AND CONNECTION FOR OUTLETS, SWITCHES AND LIGHTS ON LOWER LEVEL OF SINGLE FAMILY HOME."
+    }
+   ],
+   "1800 block of N WASHTENAW AVE": [
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 2 STORY SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH BASEMENT, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 2-STORY WITH BASEMENT SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH ROOFTOP STAIR ENCLOSURE AND ERECT REAR DETACHED 2 CAR PRIVATE GARAGE (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200AMP ELECTRICAL SERVICE 120/240V SINGLE PHASE WITH 3 METERS"
+    }
+   ],
+   "1800 block of N FAIRFIELD AVE": [
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 2 STORY SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH BASEMENT, REAR OPEN PORCH AT 1ST FLOOR, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2600 block of W HOMER ST": [
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 2 STORY SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH BASEMENT, ROOF TOP DECK, ROOF TOP STAIR ENCLOSURE, REAR DECK AT 1ST FLOOR, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2400 block of W CORTLAND ST": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 3 D.U. (3B CONSTRUCTION) WITH BASEMENT, ROOF TOP DECK, TRELLIS, ROOF TOP STAIR ENCLOSURE, REAR 2 STORY DECK, REAR 4 STORY STAIR, DETACHED 3 CAR GARAGE (3B CONSTRUCTION) AS PER PLA"
+    },
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN"
+    }
+   ],
+   "2300 block of W BELDEN AVE": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 2 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 2 CAR GARAGE (3B CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    }
+   ],
+   "1800 block of N CALIFORNIA AVE": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT 3 STORY 4 D.U. BUILDING WITH ROOF TOP DECK (3B CONSTRUCTION), ROOF TOP STAIR ENCLOSURE, FRONT STEEL/MASONRY PORCHES AT 2ND & 3RD FLOORS, STEEL STAIR TO ROOF, ONE STORY TERRACE AT FRONT & REAR, DETACHED 4 CAR GARAGE"
+    }
+   ],
+   "3100 block of W LYNDALE ST": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 2 D.U. BUILDING WITH BASEMENT, ROOF TOP DECK (3B CONSTRUCTION), REAR DECK AT 3RD FLOOR, REAR 3 STORY STAIR, ROOF TOP STAIR ENCLOSURE, DETACHED 2 CAR GARAGE (3B CONSTRUCTION) WITH "
+    }
+   ],
+   "2100 block of N BINGHAM ST": [
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "ERECT  A DETACHED 2 CAR GARAGE WITH ROOF TOP DECK (4A CONSTRUCTION) IN EXISTING SINGLE FAMILY RESIDENCE AS PER PLAN (PREVIOUS PERMIT 100689754).CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS)"
+    },
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT 2 STORY SINGLE FAMILY RESIDENCE WITH BASEMENT (4A CONSTRUCTION), STAIR PENTHOUSE ENCLOUSURE,  REAR DECK AT 1ST FLOOR AS PER PLAN. **CERTIFIED PLANS CORRECTIONS: CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS **"
+    }
+   ],
+   "2200 block of W SHAKESPEARE AVE": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT 2 STORY WITH BASEMENT SINGLE FAMILY RESIDENCE (4A CONSTRUCTION), ROOF TOP DECK, ROOF TOP STAIR ENCLOSURE, REAR DECK AT 1ST FLOOR, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "ERECT 2 STORY WITH BASEMENT SINGLE FAMILY RESIDENCE (4A CONSTRUCTION), ROOF TOP DECK, ROOF TOP STAIR ENCLOSURE, REAR DECK AT 1ST FLOOR, DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN.**CERTIFIED CORRECTIONS- - SUBJE"
+    }
+   ],
+   "2900 block of W ARMITAGE AVE": [
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "RENOVATION AND ADDITION TO AN EXISTING RESTAURANT IN A LANDMARK DISTRICT. BUILDING IS TYPE II CONSTRUCTION AND WORK INCLUDES AND NEW KITCHEN, BAR AND INTERIOR / EXTERIOR SEATING PER PLANS **CERTIFIED PLANS CORRECTIONS: C"
+    }
+   ],
+   "1900 block of N ST LOUIS AVE": [
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    }
+   ],
+   "2500 block of W CORTLAND ST": [
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR GARAGE (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    }
+   ],
+   "1900 block of N LAWNDALE AVE": [
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 60AMP ELECTRICAL SERVICE WITH NEW 200AMP ELECTRICAL SERVICE WITH 4 METERS AND  4 PANEL BOXES"
+    }
+   ],
+   "2100 block of W LYNDALE ST": [
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "RELOCATE ELECTRIC MITER TO NEW LOCATION"
+    },
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "2ND FLOOR MASTER BEDROOM ADDITION OVER EXISTING 1ST FLOOR KITCHEN."
+    },
+    {
+     "year": "2013",
+     "type": "Express Permit Program",
+     "work": "SECOND FLOOR BEDROOM REMODELING ACCORDING THE BLUEPRINT"
+    }
+   ],
+   "1900 block of N CAMPBELL AVE": [
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "INSTALLATION OF TEMPORARY LEASING OFFICE TRAILER FOR MAXIMUM 18 MONTHS FROM THE DATE OF THIS PERMIT AS PER PLANS"
+    }
+   ],
+   "2000 block of N HOYNE AVE": [
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "ROOF TOP DECK ADDITION (4A CONSTRUCTION) TO EXISTING GARAGE IN SINGLE FAMILY RESIDENCE AS PER PLAN (PREVIOUS PERMIT # 100593423)"
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2500 block of W HOMER ST": [
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL TEMP POLE AND 100AMP TEMP SERVICE"
+    }
+   ],
+   "3500 block of W CORTLAND ST": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "ERECT FRAME TWO STORY S.F.R. W/ BASEMENT AND DECK. ERECT FRAME DETACHED FRAME GARAGE PER PLAN."
+    }
+   ],
+   "2100 block of N MOZART ST": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 3 D.U. BUILDING (3B CONSTRUCTION) WITH DETACHED 3 CAR MASONRY GARAGE (3B CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 3 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 3 CAR MASONRY GARAGE (3B CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 3 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK AND DETATCHED MASONRY 3 CAR GARAGE (3B CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 3 D.U. MASONRY BUILDING WITH ROOF TOP DECK (3B CONSTRUCTION), DETACHED 3 CAR MASONRY GARAGE WITH ROOF TOP DECK (3B CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2200 block of W LYNDALE ST": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "NEW 3 STORY MASONRY SINGLE FAMILY RESIDENCE WITH BASEMENT AND ATTACHED GARAGE"
+    }
+   ],
+   "3500 block of W MCLEAN AVE": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2300 block of W MONTANA ST": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    }
+   ],
+   "2500 block of W FULLERTON AVE": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "ERECT 4-STORY MASONRY 15 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, 1ST FLOOR OFFICE SPACES, INTERIOR 15 CAR MASONRY GARAGE WITH ROOF TOP DECK (3B CONSTRUCTION), 6' HIGH 27' BY 5'-4\" WOOD FENCED TRASH ENCLOSURE "
+    }
+   ],
+   "2000 block of N MOZART ST": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 3 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 3 CAR MASONRY GARAGE (3B CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 3 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK AND DETACHED MASONRY 3 CAR GARAGE (3B CONSTRUCTION) AS PER PLAN.   **SELF-CERTIFICATION PROJECT  -  CONDITIONAL PERMIT: SUBJEC"
+    }
+   ],
+   "2800 block of W LOGAN BLVD": [
+    {
+     "year": "2015",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 400AMP 120/240V SINGLE PHASE ELECTRICAL SERVICE WITH 4 METER. THIS PERMIT IS TO CORRECT PERMIT #100575360"
+    },
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 400AMP 120/240V SINGLE PHASE ELECTRICAL SERVICE WITH 4 METERS"
+    },
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "REVISION TO PERMIT 100480840 TO CHANGE ELECTRICAL CONTRACTOR, AL WORK REMAINS THE SAME"
+    }
+   ],
+   "2700 block of N RICHMOND ST": [
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "NEW 2ND STORY AND REAR 2 STORY ADDITION TO EXISTING 1 1/2 FRAME AND MASONRY BUILDING WITH BASEMENT AND NEW DETACHED  2 CAR FRAME PRIVATE GARAGE"
+    }
+   ],
+   "2800 block of W BELDEN AVE": [
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) WITH ROOF TOP DECK AS PER PLAN.**SELF-CERTIFICATION - CONDITIONAL PERMIT: SUBJECT TO FIELD INSPECTIONS & AUDIT**"
+    }
+   ],
+   "1900 block of N ROCKWELL ST": [
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH INTERIOR 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN.**SELF-CERTIFICATION - CONDITIONAL PERMIT: SUBJECT TO FIELD INSPECTIONS & AUDIT**"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH ATTACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN.   **SELF CERT CONDITIONAL PERMIT: SUBJECT TO FIELD INSPECTIONS **"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE WITH ROOF TOP DECK (4A CONSTRUCTION) AS PER PLAN. CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION."
+    }
+   ],
+   "2100 block of W SHAKESPEARE AVE": [
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR ALTERATIONS TO EXISTING 1-1/2 STORY MASONRY SFR WITH BASEMENT."
+    }
+   ],
+   "2700 block of N LAWNDALE AVE": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "** SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN.  (SUBJECT TO AUDIT & FIELD INSPECTION)"
+    }
+   ],
+   "2800 block of W DICKENS AVE": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "1900 block of N ALBANY AVE": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "1900 block of W ARMITAGE AVE": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "STANDARD PLAN REVIEW: ERECT 6 D.U. MASONRY BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 2 CAR MASONRY GARAGES (3B CONSTRUCTION), ATTACHED 2 CAR MASONEY GARAGE, 6' HIGH 15'-10\" BY 3' WOOD FENCED TRASH ENCLOSURE"
+    }
+   ],
+   "1900 block of N RICHMOND ST": [
+    {
+     "year": "2012",
+     "type": "New Construction",
+     "work": "ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ]
+  },
+  "points": [
+   [
+    41.928,
+    -87.725,
+    2
+   ],
+   [
+    41.918,
+    -87.686,
+    1
+   ],
+   [
+    41.917,
+    -87.678,
+    1
+   ],
+   [
+    41.921,
+    -87.684,
+    3
+   ],
+   [
+    41.917,
+    -87.696,
+    2
+   ],
+   [
+    41.918,
+    -87.71,
+    1
+   ],
+   [
+    41.921,
+    -87.719,
+    1
+   ],
+   [
+    41.93,
+    -87.709,
+    1
+   ],
+   [
+    41.916,
+    -87.686,
+    1
+   ],
+   [
+    41.93,
+    -87.716,
+    1
+   ],
+   [
+    41.929,
+    -87.71,
+    1
+   ],
+   [
+    41.92,
+    -87.709,
+    1
+   ],
+   [
+    41.93,
+    -87.715,
+    1
+   ],
+   [
+    41.928,
+    -87.71,
+    1
+   ],
+   [
+    41.916,
+    -87.713,
+    1
+   ],
+   [
+    41.931,
+    -87.697,
+    1
+   ],
+   [
+    41.919,
+    -87.694,
+    1
+   ],
+   [
+    41.928,
+    -87.692,
+    1
+   ],
+   [
+    41.928,
+    -87.726,
+    1
+   ],
+   [
+    41.925,
+    -87.721,
+    1
+   ],
+   [
+    41.926,
+    -87.718,
+    1
+   ],
+   [
+    41.927,
+    -87.699,
+    1
+   ],
+   [
+    41.927,
+    -87.722,
+    1
+   ],
+   [
+    41.919,
+    -87.675,
+    3
+   ],
+   [
+    41.928,
+    -87.69,
+    1
+   ],
+   [
+    41.922,
+    -87.722,
+    1
+   ],
+   [
+    41.916,
+    -87.715,
+    1
+   ],
+   [
+    41.924,
+    -87.71,
+    1
+   ],
+   [
+    41.921,
+    -87.68,
+    1
+   ],
+   [
+    41.919,
+    -87.716,
+    1
+   ],
+   [
+    41.925,
+    -87.71,
+    1
+   ],
+   [
+    41.918,
+    -87.709,
+    1
+   ],
+   [
+    41.916,
+    -87.709,
+    1
+   ],
+   [
+    41.919,
+    -87.709,
+    1
+   ],
+   [
+    41.925,
+    -87.676,
+    2
+   ],
+   [
+    41.925,
+    -87.689,
+    1
+   ],
+   [
+    41.922,
+    -87.703,
+    1
+   ],
+   [
+    41.924,
+    -87.684,
+    1
+   ],
+   [
+    41.923,
+    -87.702,
+    1
+   ],
+   [
+    41.925,
+    -87.723,
+    1
+   ],
+   [
+    41.926,
+    -87.706,
+    1
+   ],
+   [
+    41.915,
+    -87.707,
+    1
+   ],
+   [
+    41.925,
+    -87.677,
+    1
+   ],
+   [
+    41.925,
+    -87.694,
+    1
+   ],
+   [
+    41.919,
+    -87.697,
+    1
+   ],
+   [
+    41.925,
+    -87.701,
+    2
+   ],
+   [
+    41.93,
+    -87.699,
+    1
+   ],
+   [
+    41.918,
+    -87.674,
+    3
+   ],
+   [
+    41.916,
+    -87.676,
+    1
+   ],
+   [
+    41.922,
+    -87.693,
+    1
+   ],
+   [
+    41.915,
+    -87.695,
+    2
+   ],
+   [
+    41.915,
+    -87.696,
+    2
+   ],
+   [
+    41.917,
+    -87.693,
+    1
+   ],
+   [
+    41.916,
+    -87.688,
+    1
+   ],
+   [
+    41.923,
+    -87.687,
+    1
+   ],
+   [
+    41.914,
+    -87.697,
+    1
+   ],
+   [
+    41.922,
+    -87.704,
+    1
+   ],
+   [
+    41.922,
+    -87.705,
+    1
+   ],
+   [
+    41.919,
+    -87.693,
+    2
+   ],
+   [
+    41.919,
+    -87.696,
+    3
+   ],
+   [
+    41.928,
+    -87.699,
+    1
+   ],
+   [
+    41.923,
+    -87.701,
+    2
+   ],
+   [
+    41.918,
+    -87.701,
+    1
+   ],
+   [
+    41.916,
+    -87.714,
+    1
+   ],
+   [
+    41.916,
+    -87.692,
+    3
+   ],
+   [
+    41.916,
+    -87.719,
+    1
+   ],
+   [
+    41.914,
+    -87.695,
+    1
+   ],
+   [
+    41.914,
+    -87.683,
+    2
+   ],
+   [
+    41.916,
+    -87.689,
+    2
+   ],
+   [
+    41.923,
+    -87.682,
+    3
+   ],
+   [
+    41.916,
+    -87.69,
+    1
+   ],
+   [
+    41.918,
+    -87.68,
+    2
+   ],
+   [
+    41.917,
+    -87.69,
+    1
+   ],
+   [
+    41.915,
+    -87.716,
+    1
+   ],
+   [
+    41.92,
+    -87.699,
+    4
+   ],
+   [
+    41.923,
+    -87.684,
+    1
+   ],
+   [
+    41.918,
+    -87.714,
+    1
+   ],
+   [
+    41.926,
+    -87.687,
+    2
+   ],
+   [
+    41.925,
+    -87.692,
+    1
+   ],
+   [
+    41.919,
+    -87.699,
+    3
+   ],
+   [
+    41.929,
+    -87.698,
+    3
+   ],
+   [
+    41.931,
+    -87.701,
+    1
+   ],
+   [
+    41.923,
+    -87.7,
+    1
+   ],
+   [
+    41.917,
+    -87.692,
+    1
+   ],
+   [
+    41.921,
+    -87.682,
+    1
+   ],
+   [
+    41.931,
+    -87.719,
+    1
+   ],
+   [
+    41.916,
+    -87.705,
+    1
+   ],
+   [
+    41.918,
+    -87.675,
+    1
+   ],
+   [
+    41.916,
+    -87.7,
+    1
+   ]
+  ]
+ }
+}
