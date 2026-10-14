@@ -93,7 +93,7 @@ export function AreaLandingPage({page, co, areas, draft}: {page: AreaPage; co: A
   return (
     <div className="ds">
       <a className="ds-skip" href="#main">Skip to content</a>
-      <SiteHeader co={co} areas={areas} tel={ctx.tel} />
+      <SiteHeader co={co} tel={ctx.tel} />
       <main id="main">
         <AreaHero ctx={ctx} />
         {BLOCKS.map(({id, band, Block}) => (
