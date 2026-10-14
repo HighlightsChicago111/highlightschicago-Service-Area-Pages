@@ -1,0 +1,260 @@
+{
+  "area": "Logan Square",
+  "area_the": "Logan Square",
+  "area_in": "in Logan Square",
+  "slug": "logan-square",
+  "meta_description": "Family-owned, licensed electricians for Logan Square two-flats, boulevard greystones and new Bucktown houses, with about 120 permits here. Call (773) 262-3333.",
+  "eyebrow": "Logan Square · Bucktown · Palmer Square · The boulevards",
+  "hero_lede": "Service upgrades, panels, lighting, EV chargers, repairs and new-construction wiring for Logan Square and Bucktown two-flats, boulevard greystones, coach houses, new houses and Milwaukee Avenue storefronts. A family-owned, founder-led contractor licensed by the City of Chicago, quoting every job in writing.",
+  "address_placeholder": "e.g. 2400 N Sawyer Ave",
+  "boundary_text": "Bounded by Diversey Avenue to the north, the Bloomingdale Trail (The 606) to the south, the Metra Milwaukee District North tracks near Pulaski Road to the west and the North Branch of the Chicago River to the east. It takes in Bucktown and Palmer Square as well as the landmark boulevards around the square, so blocks of new houses sit a few streets from greystones built before 1930.",
+  "bbox": {
+    "north": 41.9362,
+    "south": 41.9134,
+    "west": -87.7316,
+    "east": -87.6635
+  },
+  "bbox_text": "Diversey Ave, The 606, the Metra tracks near Pulaski Rd and the Chicago River",
+  "facts": [
+    ["Community area", "Logan Square (22), which includes Bucktown and Palmer Square"],
+    ["ZIP codes", "Mostly 60647, with edges in 60614, 60618, 60622 and 60639"],
+    ["City wards", "Mostly the 1st, 32nd and 35th, with part of the 26th"],
+    ["Transit", "CTA Blue Line: Logan Square, California and Western stations"],
+    ["Utility", "ComEd"],
+    ["Permits", "City of Chicago Department of Buildings, with landmark review in the boulevards district"]
+  ],
+  "zips": ["60647", "60614", "60618", "60622", "60639"],
+  "map_desc": "Schematic map of Logan Square from Diversey Avenue south to The 606 and from the Metra tracks near Pulaski Road east to the Chicago River, showing five districts, the three Blue Line stations, the Illinois Centennial Monument, Palmer Square Park and Kosciuszko Park. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+  "map": {
+    "height": 405,
+    "ew_streets": [
+      ["W Diversey Ave", 41.9322],
+      ["W Logan Blvd", 41.9285],
+      ["W Fullerton Ave", 41.9249],
+      ["W Palmer St", 41.9208],
+      ["W Armitage Ave", 41.9176],
+      ["The 606 (Bloomingdale)", 41.9138]
+    ],
+    "ns_streets": [
+      ["N Pulaski Rd", -87.7267],
+      ["N Central Park Ave", -87.7166],
+      ["N Kedzie Ave", -87.7069],
+      ["N California Ave", -87.697],
+      ["N Western Ave", -87.6873],
+      ["N Damen Ave", -87.6778]
+    ],
+    "districts": [
+      ["West of Kedzie", 41.9322, 41.9137, -87.7315, -87.7085],
+      ["The square and Milwaukee Ave", 41.9322, 41.9249, -87.7085, -87.6873],
+      ["The boulevards and Palmer Square", 41.9249, 41.9137, -87.7085, -87.7015],
+      ["California and The 606", 41.9249, 41.9137, -87.7015, -87.6873],
+      ["Bucktown", 41.9249, 41.9137, -87.6873, -87.6636]
+    ],
+    "landmarks": [
+      ["Logan Square (Blue)", 41.9297, -87.7085],
+      ["California (Blue)", 41.9219, -87.6969],
+      ["Western (Blue)", 41.9162, -87.6874],
+      ["Illinois Centennial Monument", 41.9287, -87.7069],
+      ["Palmer Square Park", 41.9211, -87.7047],
+      ["Kosciuszko Park", 41.9309, -87.7245]
+    ],
+    "features": [
+      {"kind": "water_east", "lon": -87.6645, "label": "N Branch, Chicago River"}
+    ]
+  },
+  "districts": [
+    {
+      "name": "The square and Milwaukee Ave",
+      "intro": "The Illinois Centennial Monument circle, where Logan and Kedzie boulevards meet Milwaukee Ave by the Logan Square Blue Line station, and the storefront buildings with flats above that line Milwaukee.",
+      "work": "Restaurant, café and studio fit-outs, services for mixed-use buildings and work in the flats upstairs, scheduled around opening hours. Our record includes two restaurant renovations and a yoga studio on Milwaukee."
+    },
+    {
+      "name": "The boulevards and Palmer Square",
+      "intro": "Logan, Kedzie, Palmer and Humboldt boulevards and Palmer Square Park: the Logan Square Boulevards District, a Chicago Landmark district since 2005, with greystones, large houses, apartment buildings and churches built from about 1880 to 1930.",
+      "work": "Service and panel upgrades in big older buildings, rewiring behind plaster and new lighting, with the City's landmark permit review for work on the buildings."
+    },
+    {
+      "name": "California and The 606",
+      "intro": "Between Humboldt Blvd and Western Ave south of Fullerton, around the California Blue Line station and the Bloomingdale Trail: older flats side by side with new single-family houses and three-unit masonry buildings.",
+      "work": "New-construction wiring and service upgrades with new meters in the older flats. Many of our new-construction permits are on N Point St, N Mozart St, N Fairfield Ave and N Washtenaw Ave."
+    },
+    {
+      "name": "Bucktown",
+      "intro": "Fullerton Ave south to The 606, between Western Ave and the Kennedy: older frame and brick houses mixed with new houses and small masonry buildings, with shops along Milwaukee and Armitage.",
+      "work": "New houses wired from plans, roof-deck and garage circuits, additions to older houses and EV chargers, on blocks such as N Wolcott Ave, W Lyndale St and W Shakespeare Ave."
+    },
+    {
+      "name": "West of Kedzie",
+      "intro": "From Kedzie Ave west to the Metra tracks near Pulaski Rd, around Kosciuszko Park: streets of brick and frame two-flats, single-family houses and small apartment buildings.",
+      "work": "60- and 100-amp services replaced with 200 amps and a new meter for each unit, basement and laundry circuits, and basement conversion units."
+    }
+  ],
+  "buildings": [
+    {
+      "illus": "b-twoflat",
+      "title": "Two-, three- or four-flat",
+      "where": "Throughout, especially west of Kedzie and around the boulevards",
+      "changes": "The service is usually split between the units at a meter bank in the basement. Many still have 60- or 100-amp services, so an upgrade means 200 amps and a new meter and panel for every unit.",
+      "services": [
+        ["Service and panel upgrades", "svc-panels"],
+        ["Basement and laundry circuits", "svc-wiring"],
+        ["Repairs", "svc-repair"]
+      ]
+    },
+    {
+      "illus": "b-courtyard",
+      "title": "Boulevard greystone or large older house",
+      "where": "Logan, Kedzie, Palmer and Humboldt boulevards and Palmer Square",
+      "changes": "Buildings from about 1880 to 1930 with plaster walls, high ceilings and wiring that may date from several eras. They sit in a Chicago Landmark district, so permit applications also go through the City's Historic Preservation Division.",
+      "services": [
+        ["Rewiring older homes", "svc-wiring"],
+        ["Chandeliers and fixtures", "svc-lighting"],
+        ["Panel upgrades", "svc-panels"]
+      ]
+    },
+    {
+      "illus": "b-townhome",
+      "title": "New single-family house",
+      "where": "Bucktown and the blocks around The 606",
+      "changes": "Built from plans, usually with a basement, a rooftop deck and stair enclosure, and a detached two-car garage off the alley that needs its own feed.",
+      "services": [
+        ["New construction", "svc-commercial"],
+        ["Roof-deck and outdoor lighting", "svc-lighting"],
+        ["EV chargers in the garage", "svc-energy"]
+      ]
+    },
+    {
+      "illus": "b-midrise",
+      "title": "New two- to four-unit building",
+      "where": "N Mozart St, W Lyndale St, N Kedzie Ave, N California Ave and W Armitage Ave",
+      "changes": "Three-storey masonry buildings with a meter and panel for each unit, a house panel for the common areas, and roof decks and garages to wire.",
+      "services": [
+        ["New construction", "svc-commercial"],
+        ["Meters and services", "svc-panels"],
+        ["Smoke and CO alarms", "svc-safety"]
+      ]
+    },
+    {
+      "illus": "b-restaurant",
+      "title": "Storefront, restaurant or studio",
+      "where": "Milwaukee Ave, Armitage Ave and Fullerton Ave",
+      "changes": "Often a two- or three-storey building with flats above, so a fit-out has to be powered without disturbing the tenants upstairs, and kitchens need heavy circuits.",
+      "services": [
+        ["Restaurant electrical", "svc-commercial"],
+        ["Lighting and signs", "svc-lighting"],
+        ["Service upgrades", "svc-panels"]
+      ]
+    },
+    {
+      "illus": "b-cottage",
+      "title": "Coach house or basement unit",
+      "where": "Behind houses and two-flats across the area",
+      "changes": "A coach house may be fed from the front building or need its own service, risers and weatherhead. A new basement conversion unit needs circuits of its own, and the City's ADU rules decide whether the unit is allowed.",
+      "services": [
+        ["Risers and services", "svc-panels"],
+        ["Wiring a new unit", "svc-wiring"],
+        ["Smoke and CO alarms", "svc-safety"]
+      ]
+    }
+  ],
+  "scope_lede": "The same job on paper can cost very differently in a boulevard greystone, a four-flat on 100 amps and a new Bucktown house. These are the things that change it, and most are settled at the walkthrough.",
+  "scope_rows": [
+    ["Landmark district review", "Permit applications for buildings in the Logan Square Boulevards District go through the City's Historic Preservation Division, so plan exterior changes such as a moved meter, a new service mast or façade lighting around that review.", "The City, with us"],
+    ["Size of the service", "Many two- and three-flats still run on 60- or 100-amp services. An EV charger, central air or a new basement unit can mean a 200-amp service, a meter for each unit and a ComEd appointment.", "Us and ComEd"],
+    ["Number of units and meters", "A service upgrade on a two-, three- or four-flat replaces every unit's meter and panel, so the unit count sets much of the scope.", "Us, at the walkthrough"],
+    ["Age of the wiring", "Buildings from the 1880s to the 1920s can still hide fuse boxes, cloth-covered wire and old DIY repairs behind the walls.", "Us, at the walkthrough"],
+    ["Plaster walls and ceilings", "Fishing wire through plaster and lath in a greystone or two-flat is slower than drywall and needs careful patching.", "Us, at the walkthrough"],
+    ["Coach house or rear unit", "A coach house can run from the front building or need its own service, risers and weatherhead, which ComEd can ask for before it upgrades a service.", "You and us"],
+    ["Detached garage", "Many houses have a garage off the alley. A feed for an EV charger can mean trenching and new conduit from the house panel.", "You and us"],
+    ["New-construction plans", "A new house or small building is wired from the architect's drawings, with roof-deck, garage and unit-meter details settled before rough-in.", "Your architect or builder, with us"],
+    ["Shops with flats above", "On Milwaukee Ave a shop or restaurant often shares its building with the flats upstairs, which shapes how a fit-out is powered and when the work can happen.", "Your landlord, with us"],
+    ["Working hours", "Restaurants and occupied flats often need work planned around service hours or tenants, so agree the hours before the job is booked.", "You and us"],
+    ["Permit route", "Service upgrades, EV circuits and unit work usually go through the City's Express Permit Program. New buildings and fit-outs need plans and a fuller review.", "Us"]
+  ],
+  "hourly_answer": "We quote by scope, not by the hour, because the hours on a Logan Square job depend on the factors below. A new circuit in a Bucktown house built ten years ago and the same circuit behind the plaster of a boulevard greystone aren't the same job. The written quote tells you the whole price before you agree to it.",
+  "choosing_building_why": "A boulevard greystone, an older two-flat on 60 amps, a new Bucktown house with a roof deck and a Milwaukee Ave storefront are four different jobs.",
+  "choosing_building_answer": "About 120 City of Chicago permits in Logan Square since 2012: new houses and two- to four-unit buildings in Bucktown and around The 606, service upgrades with new meters in two-, three- and four-flats west of the boulevards, and restaurant and studio fit-outs on Milwaukee Ave",
+  "choosing_paperwork_why": "Buildings on the boulevards go through the City's landmark permit review, and new houses and fit-outs need plans approved before the permit is issued.",
+  "where_we_fit": "Highlights is a family-owned contractor. In Logan Square we're the right call for two-flats, greystones, coach houses, new houses and small buildings: service upgrades, panels, rewiring, lighting, EV chargers, and restaurant and shop fit-outs on Milwaukee Ave. Base-building work for the large retail stores on Elston Ave is a job for the big commercial firms, and we'll tell you so.",
+  "mix_notes": {
+    "Lighting": "The biggest category: fixtures and recessed lights in flats and houses being renovated.",
+    "Work inside a specific unit or condo": "Much of the housing is two- to four-flats, so a lot of the work is done unit by unit.",
+    "Outlets and receptacles": "Kitchen, laundry and basement circuits in renovations.",
+    "Electrical service": "Service upgrades in older flats and new services for new buildings, most of them through the Express Permit Program.",
+    "Interior build-outs and alterations": "Renovations of flats and houses, and shop and restaurant fit-outs, many on Milwaukee Ave and Elston Ave.",
+    "Signs": "Illuminated signs, most of them for shops on Elston, Milwaukee and Fullerton.",
+    "Panels": "Panel replacements, often alongside a service upgrade.",
+    "Solar": "Rooftop arrays, almost all through the Express Permit Program.",
+    "EV charging": "Most add one circuit to the existing service for a single charger.",
+    "Low voltage, data and communications": "Cabling and low-voltage work for shops, offices and new buildings.",
+    "Fire alarm": "A small share of the permits here.",
+    "Restaurants": "About half of them on Milwaukee Ave."
+  },
+  "record_bullets": [
+    "New single-family houses, most with basements, rooftop decks and detached garages, on the 2100 block of N Point St, the 1800 block of N Washtenaw Ave, the 1900 block of N Rockwell St and the 2000 block of N Wolcott Ave.",
+    "New two- to four-unit masonry buildings on the 2000 and 2100 blocks of N Mozart St, the 2900 to 3100 blocks of W Lyndale St and the 1800 block of W Armitage Ave.",
+    "100-amp to 200-amp service upgrades with three or four meters on N Avers Ave, N Monticello Ave, N Mozart St and W Francis Pl, and a 60-amp service replaced with 200 amps and four meters on the 1900 block of N Lawndale Ave.",
+    "Restaurant and shop work: two restaurant renovations on the 2400 block of N Milwaukee Ave, a coffee-shop build-out and an 800-amp service on the 1800 block, a yoga studio on the 2600 block, and a restaurant renovation in the landmark district on the 2900 block of W Armitage Ave.",
+    "Since 2024, new 200-amp services on N Springfield Ave, W McLean Ave, W Homer St, W Cortland St and N Fairfield Ave, and EV charger circuits on N Milwaukee Ave, N Drake Ave and N Spaulding Ave.",
+    "A basement conversion unit in a two-flat on the 3200 block of W Wrightwood Ave, and fire-damage repairs to a brick coach house on the 2100 block of N Bell Ave."
+  ],
+  "honest_context": [
+    "Logan Square is one of the areas we work in most. Most of our roughly 1,200 Chicago permits are in Wards 1, 32, 26, 47 and 27, and Logan Square is mostly the 1st and 32nd, so about 120 of them, roughly one in ten, are here. Most came from the run of new houses and two- to four-unit buildings in Bucktown and around The 606 from 2013 to 2021. Since then the work has been service upgrades, EV chargers, renovations and fit-outs.",
+    "Logan Square is busy: about 940 permits with electrical work in the last two years, naming about 300 electrical contractors. Much of it is the same kind of work as ours, in the same older flats and houses. The mix also includes illuminated signs for shops on Elston Ave and rooftop solar, and our own Logan Square record has no sign or solar permits."
+  ],
+  "reviews_heading": "Reviews from two-flat, coach house and older-house jobs",
+  "reviews": [
+    {"reviewer": "katherine lehman", "label": "New wiring and chandeliers in a two-flat renovation"},
+    {"reviewer": "Kelly Luchtman", "label": "New service risers on a house and coach house"},
+    {"reviewer": "Ria Hirsch", "label": "Bringing a 100-year-old two-flat up to code"},
+    {"reviewer": "Ryan Pyka", "label": "Laundry outlets in a two-flat basement"},
+    {"reviewer": "Michelle Liu", "label": "Panel, meter and radon fan circuit"},
+    {"reviewer": "S R", "label": "New unit panel and basement circuits, with the permit"},
+    {"reviewer": "John Sisson", "label": "New service and panel in a fixer-upper house"},
+    {"reviewer": "Billy Kuczek", "label": "EV charger in a garage, trench dug by hand"}
+  ],
+  "nearby": [
+    ["Avondale", "North across Diversey Ave, including the part of the Kosciuszko Park neighbourhood north of Diversey."],
+    ["Hermosa", "West across the Metra tracks, a smaller-scale neighbourhood of houses and flats."],
+    ["Humboldt Park", "South across Bloomingdale Ave, where Humboldt Blvd carries the boulevard system on to the park."],
+    ["Wicker Park", "South of Bucktown across The 606: worker cottages and large Victorian houses in the Wicker Park landmark district, and Milwaukee Ave storefronts around the Damen station."],
+    ["Lincoln Park", "East across the river and the Kennedy: greystones and rowhouses on streets with fewer two-flats."],
+    ["North Center and Roscoe Village", "Northeast across the river: houses, two-flats and small apartment buildings."]
+  ],
+  "faq": [
+    ["faq-logan-landmark", "Do I need landmark approval for electrical work on a Logan Square boulevard?", "If your building is in the Logan Square Boulevards District, a Chicago Landmark district since 2005 along Logan, Kedzie, Palmer and Humboldt boulevards, the City's Historic Preservation Division reviews permit applications for work on it. The review checks that the work won't harm the building's historic features, so exterior changes such as moving a meter, a new service mast or façade lighting are the ones to plan around. Our own record includes a restaurant renovation in the district on W Armitage Ave."],
+    ["faq-logan-twoflat", "Can you upgrade the electrical service on my two-flat or three-flat?", "Yes. It's one of our most common Logan Square jobs: replacing a 60- or 100-amp service with 200 amps and a new meter and panel for each unit. Our permits here include four-meter upgrades on N Avers Ave, N Monticello Ave and N Mozart St, and we arrange the ComEd side of the job."],
+    ["faq-logan-coach-house", "Can you wire a coach house or a basement conversion unit?", "Yes, including a conversion unit in a two-flat on W Wrightwood Ave. The first question is whether the existing service can carry another unit or needs to be upgraded. The City's Additional Dwelling Unit rules decide whether the unit itself is allowed on your lot."],
+    ["faq-logan-new-construction", "Do you wire new houses and small buildings in Bucktown and Logan Square?", "Yes. About half of our Logan Square permits are new construction: single-family houses and two- to four-unit masonry buildings, many with rooftop decks and detached garages. We work from the architect's drawings, pull the electrical permit and see it through inspection."],
+    ["faq-logan-ev", "Can you put an EV charger in my garage off the alley?", "Usually, yes. Most chargers need one new circuit. If the garage is detached, the feed runs from the house panel, which can mean trenching, and if the service can't carry the charger the upgrade comes first. Our Logan Square record includes charger circuits on N Milwaukee Ave, N Drake Ave and N Spaulding Ave."],
+    ["faq-logan-zip", "Which Logan Square ZIP codes do you cover?", "All of them. Most of Logan Square is 60647, and its edges fall in 60614, 60618, 60622 and 60639. We cover every other Chicago neighbourhood too."]
+  ],
+  "cta_ready": [
+    "Your address, and whether the building faces one of the boulevards in the landmark district",
+    "How many units the building has, and how many electric meters",
+    "A photo of your electrical panel with the door open, and of the meters",
+    "For a coach house or basement unit: how it's powered now, if you know",
+    "For new construction: the architect's drawings and where the permit stands",
+    "For a shop or restaurant: your landlord's contact, any drawings and your opening hours"
+  ],
+  "service_overrides": {
+    "Electrician for new construction": "New houses and two- to four-unit buildings. 58 of our Logan Square permits are new construction.",
+    "Electrical riser and meter riser repair": "Risers, weatherheads and meter stacks on two-flats and coach houses, sometimes needed before ComEd will upgrade a service.",
+    "Restaurant and bar electrical": "Restaurant renovations on Milwaukee Ave and W Armitage Ave, scheduled around service.",
+    "Temporary construction power": "Temporary poles and services for new builds. We've set one on W Homer St."
+  },
+  "research_sources": [
+    ["City of Chicago: community area boundaries (Logan Square, 22)", "https://data.cityofchicago.org/resource/igwz-8jzy.json?area_numbe=22", "official"],
+    ["City of Chicago: ZIP code boundaries", "https://data.cityofchicago.org/resource/unjd-c2ca.json", "official"],
+    ["City of Chicago: building permits (ydr8-5enu)", "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu", "official"],
+    ["City of Chicago: CTA L stops", "https://data.cityofchicago.org/resource/8pix-ypme.json", "official"],
+    ["Chicago Park District: park boundaries", "https://data.cityofchicago.org/resource/ejsh-fztr.json", "official"],
+    ["Chicago Landmarks: Logan Square Boulevards District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=146", "official"],
+    ["City of Chicago: Landmark Permit Review", "https://www.chicago.gov/city/en/depts/dcd/provdrs/hist/svcs/permit_review.html", "official"],
+    ["City of Chicago: Additional Dwelling Units (ADU) Ordinance", "https://chicago.gov/city/en/depts/doh/provdrs/homeowners/svcs/adu-ordinance.html", "official"],
+    ["Chicago Landmarks: Wicker Park District", "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=36", "official"],
+    ["Wikipedia: Logan Square, Chicago", "https://en.wikipedia.org/wiki/Logan_Square,_Chicago", "reference"],
+    ["Wikipedia: Logan Square Boulevards Historic District", "https://en.wikipedia.org/wiki/Logan_Square_Boulevards_Historic_District", "reference"],
+    ["Wikipedia: Palmer Square, Chicago", "https://en.wikipedia.org/wiki/Palmer_Square,_Chicago", "reference"]
+  ]
+}
