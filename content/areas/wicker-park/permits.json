@@ -1,0 +1,521 @@
+{
+ "source": "City of Chicago building permits (data.cityofchicago.org, ydr8-5enu)",
+ "bbox": {
+  "north": 41.9147,
+  "south": 41.903,
+  "west": -87.6922,
+  "east": -87.6675
+ },
+ "community_area_filter": [
+  24
+ ],
+ "window": {
+  "from": "2024-10-13",
+  "to": "2026-10-14",
+  "months": 24
+ },
+ "permits_in_window": 853,
+ "electrical_total": 412,
+ "contractors": 186,
+ "mix": [
+  [
+   "Work inside a specific unit or condo",
+   96
+  ],
+  [
+   "Lighting",
+   91
+  ],
+  [
+   "Signs",
+   88
+  ],
+  [
+   "Interior build-outs and alterations",
+   72
+  ],
+  [
+   "Outlets and receptacles",
+   62
+  ],
+  [
+   "Electrical service",
+   52
+  ],
+  [
+   "Panels",
+   31
+  ],
+  [
+   "Low voltage, data and communications",
+   25
+  ],
+  [
+   "Restaurants",
+   19
+  ],
+  [
+   "EV charging",
+   16
+  ],
+  [
+   "Solar",
+   14
+  ],
+  [
+   "Fire alarm",
+   12
+  ]
+ ],
+ "wards": [
+  [
+   "1",
+   531
+  ],
+  [
+   "32",
+   274
+  ],
+  [
+   "26",
+   46
+  ],
+  [
+   "2",
+   2
+  ]
+ ],
+ "community_areas": [
+  [
+   "24",
+   853
+  ]
+ ],
+ "highlights": {
+  "count": 34,
+  "addresses": 33,
+  "by_type": [
+   [
+    "New Construction",
+    17
+   ],
+   [
+    "Renovation/Alteration",
+    10
+   ],
+   [
+    "Express Permit Program",
+    6
+   ],
+   [
+    "Signs",
+    1
+   ]
+  ],
+  "by_year": [
+   [
+    "2012",
+    1
+   ],
+   [
+    "2013",
+    3
+   ],
+   [
+    "2014",
+    6
+   ],
+   [
+    "2015",
+    3
+   ],
+   [
+    "2016",
+    1
+   ],
+   [
+    "2017",
+    3
+   ],
+   [
+    "2018",
+    4
+   ],
+   [
+    "2019",
+    2
+   ],
+   [
+    "2020",
+    3
+   ],
+   [
+    "2022",
+    4
+   ],
+   [
+    "2023",
+    1
+   ],
+   [
+    "2024",
+    1
+   ],
+   [
+    "2025",
+    2
+   ]
+  ],
+  "first_year": "2012",
+  "blocks": {
+   "1700 block of N ARTESIAN AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 200 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 8 . LIGHTING OUTLETS: 8. SPECIFIC LOCATION: BASEMENT, BACK STAIRS."
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF-CERT: RESIDENTIAL NEW CONSTRUCTION 2-STORY SINGLE FAMLY RESIDENCE WITH BASEMENT AND DETACHED GARAGE(CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS)"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF-CERT: RESIDENTIAL NEW CONSTRUCTION 2-STORY SINGLE FAMILY RESIDENCE WITH BASEMENT AND DETACHED GARAGE (CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS)"
+    }
+   ],
+   "1300 block of N CAMPBELL AVE": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBRC; RENOVATE 2ND FLOOR APARTMENT UNIT OF 2-STORY, 2-UNIT, TYPE IIIB BRICK BUILDING. THE WORK IS TO INCLUDE ALTERATIONS FOR OPEN PLAN UNIT WITH ONE BEDROOM & ONE BATHROOM. NEW FIXTURES, FINISHES & REBUILT"
+    }
+   ],
+   "1700 block of W NORTH AVE": [
+    {
+     "year": "2024",
+     "type": "New Construction",
+     "work": "SC 2019 CBC ERECT A 4 STORY TYPE IIIA  FULLY SPRINKLERED MIXED USE MASONRY BUILDING WITH AN ELEVATIOR. GROUND FLOOR AND SECOND FLOOR DENTAL OFFICE WITH TWO DWELLING UNITS LOCATED ON THE 3RD & 4TH FLOORS. A 6' HIGH PRIVAC"
+    }
+   ],
+   "1200 block of N MARION CT": [
+    {
+     "year": "2023",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 2 STORY SINGLE FAMILY RESIDENCE WITH BASEMENT, ROOFTOP DECK, TRELLIS, ROOFTOP STAIR ENCLOSURE, FRONT TERRACE AT 1ST STORY, FRONT BALCONY AT 2ND STORY, ATTACHED 2 CAR GARAGE WI"
+    }
+   ],
+   "1300 block of N MILWAUKEE AVE": [
+    {
+     "year": "2022",
+     "type": "Signs",
+     "work": "OIA '1348 N MILWAUKEE AVE' ONE (1) SET OF TRIMLESS CHANNEL LETTERS RACEWAY MOUNTED TO BRICK BUILDING FASCIA"
+    },
+    {
+     "year": "2022",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBRC: THE WORK CONSISTS OF INTERIOR ALTERATIONS OF AN EXISTING 2,525 SQ. FT. TENANT SPACE CONVERTED TO & MASSAGE ESTABLISHMENT. WORK TO INCLUDE ARCHITECTURAL, MECHANICAL, PLUMBING, ELECTRICAL AND FIRE PREV"
+    }
+   ],
+   "1300 block of N WOLCOTT AVE": [
+    {
+     "year": "2022",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR REMODEL OF EXISTING 3-STORY, 4-UNIT RESIDENTIAL BUILDING INCLUDING BASEMENT DIG DOWN AND NEW EXTERIOR STAIR ON EXISTING 1-STORY WOOD DECK."
+    }
+   ],
+   "1500 block of N ARTESIAN AVE": [
+    {
+     "year": "2022",
+     "type": "New Construction",
+     "work": "SELF-CERT 2019 CBC: FULL BUILDING PERMIT FOR 3 STORY 3 D.U. WITH BASEMENT, REAR DECK WITH STAIR AT 1ST/2ND/3RD STORIES  , ROOFTOP DECK, ROOFTOP STAIR ENCLOSURE, DETACHED 3 CAR GARAGE WITH ROOFTOP DECK (OCCUPANCY GROUP R-"
+    }
+   ],
+   "1300 block of N OAKLEY BLVD": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 3 WIRE ELECTRICAL SERVICES ALONG WITH 3 METERS AND 3-PANEL BOXES"
+    }
+   ],
+   "1400 block of N PAULINA ST": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "SELF CERTIFICATION: REMODELING OF BASEMENT & SECOND FLOOR PER PLANS OF AN EXISTING 2 STORY SINGLE FAMILY RESIDENCE AS PER PLANS"
+    }
+   ],
+   "1500 block of N HOYNE AVE": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "REMOVE DRYWALL THROUGHT TO REPLACE WIRING SWITCHES AND OUTLETS."
+    }
+   ],
+   "1500 block of N OAKLEY BLVD": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "REPLACE 100AMP ELECTRICAL SERVICE WITH NEW 200 AMP, 120/240 3 WIRE ELECTRICAL SERVICES ALONG WITH 4 METERS AND 4 PANEL BOXES."
+    }
+   ],
+   "1700 block of W DIVISION ST": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "REPAIRS TO EXISTING ELECTRICAL WORK.  INCLUDES NEW LIGHTS AND DEVICES ON EXISTING CIRCUITS."
+    }
+   ],
+   "1700 block of N CAMPBELL AVE": [
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 4 STORY 3 D.U. BUILDING (3B CONSTRUCTION) WITH BASEMENT, ROOFTOP DECK, ROOFTOP STAIR ENCLOSURES, A CARPORT (1C CONSTRUCTION) FOR 3 EXTERIOR PARKING SPACES ON CONCRETE PAD AS PER PLAN."
+    },
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2300 block of W NORTH AVE": [
+    {
+     "year": "2018",
+     "type": "Renovation/Alteration",
+     "work": "GROUND FLOOR INTERIOR BUILDOUT FOR DAYCARE IN EXISTING 4 STORY MASONRY BUILDING PER PLANS **CERTIFIED PLANS CORRECTIONS: CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTIONS **"
+    }
+   ],
+   "1300 block of N CLAREMONT AVE": [
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "ERECT 3 STORY 6 D.U. BUILDING (3B CONSTRUCTION) WITH BASEMENT, REAR THREE STORY DECK WITH STAIR, ROOF TOP STAIR ENCLOSURES, DETACHED 4 CAR AND 2 CAR GARAGES (3B CONSTRUCTION) WITH ROOF TOP DECK, 6' HIGH 3' BY 7'-6\" MASON"
+    },
+    {
+     "year": "2018",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 3 D.U. BUILDING (3B CONSTRUCTION) WITH BASEMENT, ROOF TOP DECK, ROOF TOP STAIR ENCLOSURE, REAR 4 STORY OPEN PORCH, / DECKS, DETACHED 4 CAR GARAGE (3B CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "2000 block of W DIVISION ST": [
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT OF EXISTING MERCANTILE SPACE FOR USE AS DAYCARE/NURSERY. PER PLANS.EXISTING 4-STORY BLDG. 3 DU'S (N.I.C) INTERIOR BUILDOUT OF 1ST FLOOR ONLY."
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT OF EXISTING DENTAL OFFICE FOR USE AS DAYCARE CENTER AT FIRST FLOOR. PER PLANS."
+    },
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "NEW MASONRY GARAGE AND NEW METAL STAIRS AS PER ARCHITECTURAL PLANS."
+    },
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT OF EXISTING COMMERCIAL RETAIL SPACE AT FIRST FLOOR FOR USE AS DAYCARE CENTER, INCLUDING MECHANICAL, ELECTRICAL AND PLUMBING WORK. PER PLANS(CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTION)"
+    }
+   ],
+   "1200 block of N PAULINA ST": [
+    {
+     "year": "2017",
+     "type": "New Construction",
+     "work": "SELF-CERTIFICATION REVIEW: ERECT 3 STORY 3 DU BUILDING WITH BASEMENT (3B CONSTRUCTION), ROOF TOP DECK, ROOF TOP STAIR ENCLOSURE, REAR 3 STORY DECK, 4 STORY STAIR TO ROOF, DETACHED 3 CAR GARAGE (3B CONSTRUCTION) WITH ROOF"
+    }
+   ],
+   "1500 block of N WOOD ST": [
+    {
+     "year": "2016",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT 2 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 2 CAR GARAGE (3B CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "1200 block of N HOYNE AVE": [
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "REVISION TO PERMIT #100553120REMOVE EXISTING BASEMENT DOOR AND AREA WELL AND REPLACE WITH DOUBLE HUNG WINDOW TO MATCH ADJACENT EXISTING WINDOW IN EXISTING RESIDENTIAL OCCUPANCY"
+    },
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "DECONVERSION OF 3 RESIDENTIAL UNITS TO 1 UNIT, NEW 2 STORY MASONRY & FRAME ADDITION, INTERIOR DEMOLITION W/ NEW FINISHES,CABINETRY, APPLIANCES AND PLUMBING FIXTURES. RELOCATION & REPLACEMENT OF ELECTRICAL WIRING & FIXTUR"
+    }
+   ],
+   "1700 block of N HOYNE AVE": [
+    {
+     "year": "2015",
+     "type": "Express Permit Program",
+     "work": "ADD RECEPTACLE OUTLET IN THE KITCHEN AND ADD 6 RECESSED CAN LIGHTS IN THE LIVING ROOM."
+    }
+   ],
+   "1200 block of N CAMPBELL AVE": [
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN. **SELF CERT CONDITIONAL PERMIT: SUBJECT TO FIELD INSPECTIONS & AUDIT **"
+    },
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    }
+   ],
+   "1500 block of N HONORE ST": [
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT MASONRY 2 D.U. BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK, DETACHED 2 CAR MASONRY GARAGE (3B CONSTRUCTION) WITH ROOF TOP DECK AS PER PLAN."
+    }
+   ],
+   "1600 block of N WOOD ST": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "SELF CERTIFICATION REVIEW: ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) AS PER PLAN."
+    },
+    {
+     "year": "2012",
+     "type": "New Construction",
+     "work": "ERECT FRAME SINGLE FAMILY RESIDENCE (4A CONSTRUCTION) WITH DETACHED 2 CAR FRAME GARAGE (4A CONSTRUCTION) WITH ROOF TOP DECK AS PER PLAN."
+    }
+   ]
+  },
+  "points": [
+   [
+    41.913,
+    -87.689,
+    1
+   ],
+   [
+    41.906,
+    -87.689,
+    1
+   ],
+   [
+    41.911,
+    -87.672,
+    2
+   ],
+   [
+    41.904,
+    -87.674,
+    1
+   ],
+   [
+    41.906,
+    -87.671,
+    2
+   ],
+   [
+    41.906,
+    -87.674,
+    1
+   ],
+   [
+    41.91,
+    -87.688,
+    1
+   ],
+   [
+    41.906,
+    -87.685,
+    1
+   ],
+   [
+    41.908,
+    -87.67,
+    1
+   ],
+   [
+    41.909,
+    -87.68,
+    1
+   ],
+   [
+    41.909,
+    -87.685,
+    1
+   ],
+   [
+    41.903,
+    -87.672,
+    1
+   ],
+   [
+    41.914,
+    -87.69,
+    1
+   ],
+   [
+    41.91,
+    -87.687,
+    1
+   ],
+   [
+    41.906,
+    -87.686,
+    2
+   ],
+   [
+    41.903,
+    -87.679,
+    3
+   ],
+   [
+    41.904,
+    -87.671,
+    1
+   ],
+   [
+    41.91,
+    -87.672,
+    1
+   ],
+   [
+    41.905,
+    -87.68,
+    2
+   ],
+   [
+    41.913,
+    -87.68,
+    1
+   ],
+   [
+    41.903,
+    -87.678,
+    1
+   ],
+   [
+    41.914,
+    -87.689,
+    2
+   ],
+   [
+    41.904,
+    -87.69,
+    2
+   ],
+   [
+    41.91,
+    -87.674,
+    1
+   ],
+   [
+    41.913,
+    -87.69,
+    1
+   ],
+   [
+    41.912,
+    -87.672,
+    1
+   ]
+  ]
+ }
+}
