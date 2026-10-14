@@ -1,0 +1,970 @@
+{
+ "source": "City of Chicago building permits (data.cityofchicago.org, ydr8-5enu)",
+ "bbox": {
+  "north": 41.9617,
+  "south": 41.9322,
+  "west": -87.6741,
+  "east": -87.6303
+ },
+ "community_area_filter": [
+  6
+ ],
+ "window": {
+  "from": "2024-10-13",
+  "to": "2026-10-14",
+  "months": 24
+ },
+ "permits_in_window": 2277,
+ "electrical_total": 1170,
+ "contractors": 341,
+ "mix": [
+  [
+   "Work inside a specific unit or condo",
+   385
+  ],
+  [
+   "Lighting",
+   319
+  ],
+  [
+   "Outlets and receptacles",
+   243
+  ],
+  [
+   "Interior build-outs and alterations",
+   162
+  ],
+  [
+   "Signs",
+   162
+  ],
+  [
+   "Electrical service",
+   156
+  ],
+  [
+   "Low voltage, data and communications",
+   74
+  ],
+  [
+   "EV charging",
+   52
+  ],
+  [
+   "Panels",
+   39
+  ],
+  [
+   "Fire alarm",
+   38
+  ],
+  [
+   "Restaurants",
+   34
+  ],
+  [
+   "Solar",
+   15
+  ],
+  [
+   "Generators",
+   4
+  ]
+ ],
+ "wards": [
+  [
+   "44",
+   1301
+  ],
+  [
+   "32",
+   390
+  ],
+  [
+   "46",
+   317
+  ],
+  [
+   "47",
+   269
+  ]
+ ],
+ "community_areas": [
+  [
+   "6",
+   2277
+  ]
+ ],
+ "highlights": {
+  "count": 79,
+  "addresses": 63,
+  "by_type": [
+   [
+    "Express Permit Program",
+    38
+   ],
+   [
+    "Renovation/Alteration",
+    35
+   ],
+   [
+    "New Construction",
+    6
+   ]
+  ],
+  "by_year": [
+   [
+    "2012",
+    2
+   ],
+   [
+    "2013",
+    5
+   ],
+   [
+    "2014",
+    7
+   ],
+   [
+    "2015",
+    6
+   ],
+   [
+    "2016",
+    9
+   ],
+   [
+    "2017",
+    6
+   ],
+   [
+    "2018",
+    2
+   ],
+   [
+    "2019",
+    5
+   ],
+   [
+    "2020",
+    6
+   ],
+   [
+    "2021",
+    3
+   ],
+   [
+    "2022",
+    6
+   ],
+   [
+    "2023",
+    5
+   ],
+   [
+    "2024",
+    6
+   ],
+   [
+    "2025",
+    7
+   ],
+   [
+    "2026",
+    4
+   ]
+  ],
+  "first_year": "2012",
+  "blocks": {
+   "500 block of W ROSCOE ST": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 600 AMP SERVICE DISCONNECTING MEANS WITH 60 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BASEMENT."
+    }
+   ],
+   "1700 block of W FLETCHER ST": [
+    {
+     "year": "2026",
+     "type": "Renovation/Alteration",
+     "work": "RS-3 2-FLAT IS TO REMAIN A 2-FLAT WITH A PARTITION REMOVED ON THE FIRST FLOOR AND A NEW BEAM INSTALLED ALONG WITH NEW OUTLETS, LIGHTS AND GYPSUM BOARD."
+    }
+   ],
+   "3800 block of N ALTA VISTA TER": [
+    {
+     "year": "2026",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERTIFICATION PROJECT 2019 CBRC.FULL BUILDING PERMIT FOR 2 STORY + BASEMENT SINGLE-FAMILY ROW HOUSE. NEW WINDOWS TO MATCH EXISTING AND NEW PAINT AT CORNICE AND FRONT DOOR ARE PROPOSED FOR THE STREET FACING ELEVATION"
+    }
+   ],
+   "2800 block of N CAMBRIDGE AVE": [
+    {
+     "year": "2026",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 100 AMP SERVICE DISCONNECTING MEANS WITH 20 CIRCUITS. RECEPTACLE OUTLETS: 6 . LIGHTING OUTLETS: 0. SPECIFIC LOCATION: BASEMENT, UNIT#1."
+    }
+   ],
+   "700 block of W WAVELAND AVE": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBRC: PARTIAL INTERIOR REMODEL OF EXISTING 2-STORY, TYPE VA FRAME, 26' HT., SINGLE-FAMILY TOWNHOUSE UNIT D (INTERIOR WORK ONLY) (OCCUPANCY GROUP R-5; TYPE VA CONSTRUCTION)."
+    }
+   ],
+   "2800 block of N SOUTHPORT AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 400 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 2 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: BACK OF THE HOUSE, 1ST FLOOR AND 2ND FLOOR."
+    }
+   ],
+   "3900 block of N LAKE SHORE DR": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. REPAIR OR ALTER DEVICES ON EXISTING CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 20. SPECIFIC LOCATION: UNIT#1728."
+    }
+   ],
+   "3500 block of N LINCOLN AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. ADD 1 CIRCUITS TO EXISTING 100 AMP SERVICE DISCONNECTING MEANS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 0. ELECTRIC VEHICLE SUPPLY EQUIPMENT:1 SPACES. SPECIFIC LOCATION: GARAGE."
+    }
+   ],
+   "3000 block of N CLIFTON AVE": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC - LEGALIZE THE EXISTING 3RD FLOOR ASSEMBLY, DORMERS AND 2 STORY REAR ADDITION, INCLUDING REPLACEMENT OF THE EXISTING 2 STORY REAR WOOD PORCH WITH A NEW 3 STORY NON-COMBUSTILBE REAR PORCH. PERFORM INTERIOR A"
+    },
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240V  ELECTRICAL SERVICE ALONG WITH 4 NEW METERS. RECONNECT 3-PANEL BOXES FROM 3 UNITS TO THE NEW METER BOX. INSTALL A NEW 100 AMP PUBLIC PANEL BOX WITH CI"
+    }
+   ],
+   "1300 block of W BELMONT AVE": [
+    {
+     "year": "2025",
+     "type": "Express Permit Program",
+     "work": "LINE VOLTAGE ELECTRICAL WORK. NEW PERMANENT 400 AMP SERVICE DISCONNECTING MEANS WITH 40 CIRCUITS. RECEPTACLE OUTLETS: 1 . LIGHTING OUTLETS: 1. SPECIFIC LOCATION: 1ST FOOR COMERCIAL SPACE, BACK ROOM."
+    }
+   ],
+   "3700 block of N MAGNOLIA AVE": [
+    {
+     "year": "2025",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC: INTERIOR ALTERATION TO FLOOR 3 OF EXISTING EXISTING 3 STORY RESIDENTIAL BUILDING.  OCCUPANCY GROUP R-5, TYPE IIIB CONSTRUCTION."
+    }
+   ],
+   "4100 block of N ASHLAND AVE": [
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**REPLACE EXISTING 200 AMP ELECTRICAL SERVICE WITH NEW 400 AMP 120/240 V ELECTRICAL SERVICE WITH 10 NEW METERS AND 10-PANEL BOXES LOCATED IN THE BUILDING BASEMENT"
+    }
+   ],
+   "2800 block of N LAKE SHORE DR": [
+    {
+     "year": "2024",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC: ALTERATION TO UNIT #713 ON FLOOR 7 OF EXISTING 44 STORY RESIDENTIAL CONDO BUILDING."
+    }
+   ],
+   "3900 block of N WAYNE AVE": [
+    {
+     "year": "2024",
+     "type": "New Construction",
+     "work": "DIRECT DEVELOPER SERVICES - ERECT NEW (4) STORY RESIDENTIAL BUILDING WITH ROOFTOP ACCESS, ROOF DECK, (31) CAR PRIVATE GARAGE AS PER PLANS.  (31) UNITS, TYPE IIIB CONSTRUCTION, BUILDING TO BE FULLY SPRINKLERED.   (CONSULT"
+    }
+   ],
+   "3600 block of N LAKE SHORE DR": [
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "UNIT #1607 REPLACE THE ELECTRICAL PANEL BOX. REPLACE OUTLET IN KITCHEN AREA WITH NEW GFCI OUTLET. INSTALL NEW GFCI OUTLET IN BATHROOM .REPLACE LIGHT FIXTURE"
+    },
+    {
+     "year": "2024",
+     "type": "Express Permit Program",
+     "work": "UNIT # 907 REPLACE THE ELECTRICAL PANEL BOX. ADD NEW CIRCUITS FOR KITCHEN APPLIANCES. INSTALL NEW GFCI OUTLET IN THE BATHROOM. REPLACE OUTLETS AND LIGHT FIXTURES"
+    }
+   ],
+   "700 block of W MELROSE ST": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "INSTALL A WALL CHARGER FOR AN ELECTRIC CAR IN THE GARAGE AT THE PARKING SPOT BELONGING TO UNIT 3W"
+    },
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "INSTALL A WALL CHARGER FOR AN ELECTRIC CAR IN THE GARAGE AT THE PARKING SPOT BELONGING TO UNIT 4E"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 800AMP SINGLE PHASE ELECTRICAL SERVICE WITH 5 METERS"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200AMP SINGLE PHASE ELECTRICAL SERVICE FOR FIRE PUMP"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200AMP 3PHASE ELECTRICAL SERVICE FOR ELEVATOR"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200AMP 3PHASE ELECTRICAL SERVICE FOR ELEVATOR"
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200AMP SINGLE PHASE ELECTRICAL SERVICE FOR FIRE PUMP"
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "NEW 4-STORY AND BASEMENT MULTI-DWELLING 4-UNIT RESIDENTIAL BUILDING, WITH NEW DETACHED 4-CAR GARAGES. TYPE IIIB CONSTRUCTION PER PLANS."
+    }
+   ],
+   "1400 block of W HUTCHINSON ST": [
+    {
+     "year": "2023",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT 2019 CBRC: PROPOSED REAR 2 STORY ADDITION W/BASEMENT, INTERIOR ALTERATIONS TO AN EXISTING 2 STORY SFR W/BASEMENT, PER PLANS."
+    }
+   ],
+   "1400 block of W BELMONT AVE": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 200 AMP 120/240 V ELECTRICAL SERVICE ALONG WITH 4 METERS AND 4-PANEL BOXES .INSTALL NEW BACK PORCH LIGHTS. SUPPORT LOOSE FIXTURES IN COMMERCIAL SPACE. REPLACE DEFECTIV"
+    },
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR ALTERATIONS AND REMODELING OF 1ST FLOOR COMMERCIAL UNIT IN A 4 STORY MASONRY BUILDING AS PER PLANS."
+    }
+   ],
+   "800 block of W WOLFRAM ST": [
+    {
+     "year": "2023",
+     "type": "Express Permit Program",
+     "work": "UNIT 305: REPLACE WIRING, OUTLETS, SWITCHES, AND LIGHT FIXTURES DAMAGED BY FIRE AND WATER"
+    }
+   ],
+   "1300 block of W EDDY ST": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200 AMP 120/240 V ELECTRICAL SERVICE ALONG WITH 4 METERS AND 4-PANEL BOXES"
+    }
+   ],
+   "500 block of W BELMONT AVE": [
+    {
+     "year": "2022",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC: INTERIOR RENOVATIONS TO (54) OUT OF (101) DU TO ADD DW, WINDOW HEAT/COOL UNITS & INT. COSMETIC RENO. ON 7-STORY MASONRY BLDG, PER PLANS."
+    }
+   ],
+   "2900 block of N HALSTED ST": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "INSTALL A NEW OUTLET FOR CAR CHARGER FOR UNIT #203"
+    },
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "INSTALL A NEW OUTLET FOR CAR CHARGER FOR UNIT # 403"
+    }
+   ],
+   "3100 block of N BROADWAY": [
+    {
+     "year": "2022",
+     "type": "Renovation/Alteration",
+     "work": "SELF CERT 2019 CBRC: THE WORK CONSISTS OF INTERIOR ALTERATIONS OF 2,251 SQ. FT. TENANT SPACE CONVERTED TO NEW SPA & MASSAGE PARLOR. WORK TO INCLUDE ARCHITECTURAL, MECHANICAL, PLUMBING, ELECTRICAL & FIRE PREVENTION. REZON"
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT PROJECT FOR INTERIOR RENOVATION OF AN EXISTING RESTAURANT IN A ONE STORY BUILDING - CONSTRUCTION OF INTERIOR PARTITIONS AND ASSOCIATED ELECTRICAL, MECHANICAL, AND PLUMBING WORK. CURRENT USE: RESTAURANT / PROPOS"
+    }
+   ],
+   "3200 block of N CLARK ST": [
+    {
+     "year": "2022",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**INSTALL NEW 400 AMP ELECTRICAL SERVICE 120/240 V SINGLE PHASE WITH 4 METERS AND  PANEL BOXES"
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT INTERIOR ALTERATIONS TO EXISTING 1ST FLOOR MERCANTILE TENANT SPACE FOR NEW MERCANTILE COFFEE SHOP IN EXISTING 3-STORY W/BASEMENT MIXED USE 3B BUILDING."
+    }
+   ],
+   "3700 block of N PINE GROVE AVE": [
+    {
+     "year": "2022",
+     "type": "Renovation/Alteration",
+     "work": "SPR 2019 CBRC: INTERIOR RENOVATIONS & ROOF REPAIR TO UNIT 3W ONLY (FIRE-DAMAGED) ON 3-STORY MASONRY (45) D.U. BUILDING WITH BASEMENT, PER PLANS."
+    }
+   ],
+   "3500 block of N BOSWORTH AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 200 AMP ELECTRICAL SERVICE 120/240V ALONG WITH 4 METERS AND 4 PANEL BOXES"
+    }
+   ],
+   "3900 block of N PINE GROVE AVE": [
+    {
+     "year": "2021",
+     "type": "Express Permit Program",
+     "work": "REPLACE WIRING BETWEEN METER BOX AND  PANEL BOX IN UNIT #906"
+    }
+   ],
+   "3900 block of N SHERIDAN RD": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "REVISION TO PERMIT NUMBER 100862781, TO REPLACE EXISTING KITCHEN HOOD SYSTEM, SAME SIZE AND LOCATION. FROM EXISTING GENERAL RESTAURANT, AS PER PLANS."
+    },
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATIONS AND EXPANSION TO AN EXISTING GENERAL RESTAURANT LOCATED ON THE GROUND FLOOR, TO INCLUDE MEP WORK, AS PER ARCHITECT'S PLANS. **CERTIFIED PLANS CORRECTIONS: CONDITIONAL PERMIT SUBJECT TO FIELD INSPECTI"
+    }
+   ],
+   "1400 block of W CUYLER AVE": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 100 AMP 120/240  SUB ELECTRICAL PANEL BOX IN GARAGE"
+    }
+   ],
+   "600 block of W ROSCOE ST": [
+    {
+     "year": "2020",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**REPLACE EXISTING 400 AMP ELECTRICAL SERVICE WITH NEW 800 AMP 120/240 3WIRE ALONG WITH 13 METERS."
+    }
+   ],
+   "1700 block of W CORNELIA AVE": [
+    {
+     "year": "2020",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATION AND DE-CONVERSION TO SINGLE FAMILY RESIDENCE"
+    }
+   ],
+   "1400 block of W BERTEAU AVE": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**REPLACE EXISTING 100 AMP ELECTRICAL SERVICE WITH NEW 400 AMP 120/240 3 WIRE ELECTRICAL SERVICES ALONG WITH 7 METERS AND 7 PANEL BOXES. ALL METERS AND PANEL BOXES TO BE INSTALLED IN BASEMENT AREA"
+    }
+   ],
+   "1400 block of W WOLFRAM ST": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "**ELECTRICAL ONLY PERMIT**REPLACE EXISTING ALUMINUM WIRING BETWEEN METER BOX AND PANEL BOX  WITH NEW 500 MCM COOPER WIRING"
+    }
+   ],
+   "3000 block of N RACINE AVE": [
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT: INTERIOR RENOVATION TO EXISTING 2 1/2 STORY FRAME COACH HOUSE AS PER PLANS"
+    }
+   ],
+   "1000 block of W DAKIN ST": [
+    {
+     "year": "2019",
+     "type": "Express Permit Program",
+     "work": "CHANGE ELECTRICAL CONTRACTOR PERMIT NO 100795154  ISSUED ON 04/03/2019 TO HIGHLIGHTS CHICAGO INC"
+    }
+   ],
+   "3700 block of N LAKEWOOD AVE": [
+    {
+     "year": "2019",
+     "type": "Renovation/Alteration",
+     "work": "SELF-CERT: ROOFTOP DECK AND STAIR ADDITION TO AN EXISTING TYPE III-B DETACHED GARAGE AT A SINGLE FAMILY RESIDENCE TYPE A1 OCCUPANCY INCLUDING NEW ELECTRICAL WORK PER PLANS."
+    }
+   ],
+   "1600 block of W BELLE PLAINE AVE": [
+    {
+     "year": "2018",
+     "type": "Renovation/Alteration",
+     "work": "REHAB OF EXISTING IV-A, TWO UNIT APARTMENT BUILDING WITHIN THE EXISTING BUILDING FOOTPRINT. NEW WOOD DECK AND STAIR TO REPLACE EXISTING."
+    }
+   ],
+   "1600 block of W MELROSE ST": [
+    {
+     "year": "2018",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 400AMP ELECTRICAL METER BOX"
+    }
+   ],
+   "3600 block of N SHEFFIELD AVE": [
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATION FOR NEW TOILET ROOMS AND NEW EGRESS CORRIDOR AT FIRST FLOOR, REMOVE PLUMBING FIXTURES IN BASEMENT, INSTALL NEW WASHER/DRYER AT 2ND FLOOR APT, AND REINFORCE EXISTING WOOD FRAME PORCH AT FIRST AND SECON"
+    },
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR RENOVATION TO EXISTING MEN'S AND WOMEN'S TOILET ROOMS.  EXISTING ONE STORY BUILDING AND NO CHANGE OF USE.  NO STRUCTURAL OR EXTERIOR WORK."
+    }
+   ],
+   "1000 block of W BELMONT AVE": [
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT OF EXISTING RESTAURANT FOR USE AS DAYCARE/NURSERY AT FIRST FLOOR. PER PLANS.PLC"
+    }
+   ],
+   "1200 block of W BELMONT AVE": [
+    {
+     "year": "2017",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT OF EXISTING MEDICAL OFFICE FOR USE AS C-3, TYPE III SCHOOL DAYCARE CENTER. PER PLANS."
+    }
+   ],
+   "900 block of W ADDISON ST": [
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "REMOVE DEFECTIVE ARMORED CABLE, STRAP AND SECURE RACEWAY IN THE BASEMENT, INSTALL COVER ON JUNCTION BOXES THROUGH THE BASEMENT AREA, SUPPORT LOOSE LIGHT FIXTURE IN THE BASEMENT AREA"
+    }
+   ],
+   "3800 block of N BROADWAY": [
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "EXISTING MIXED USE BUILDING 3820-38 N BROADWAY - 6 STORY BRICK BUILDING W/GROUND COMMERCIAL UNITS - WORK TO BE DONE IN COMMERCIAL GROUND UNIT #3832 - INTERIOR ALTERATIONS TO CONVERT EXISTING RETAIL SPACE TO A NEW CHIROPR"
+    }
+   ],
+   "3300 block of N HALSTED ST": [
+    {
+     "year": "2016",
+     "type": "Renovation/Alteration",
+     "work": "C1-2 - SELF CERT - INTERIOR REMODELING OF AN EXISTING ONE STORY MERCANTILE RESTAURANT AS PER PLANS. SCOPE - 1847 S.F."
+    },
+    {
+     "year": "2016",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING 200AMP ELECTRICAL SERVICE WITH NEW 400AMP 3PHASE ELECTRICAL SERVICE"
+    }
+   ],
+   "300 block of W OAKDALE AVE": [
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "LIFE SAFETY EVALUATION CORRECTION"
+    }
+   ],
+   "3400 block of N BROADWAY": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "ERECT 3 D.U. MASONRY MIXED USE BUILDING (3B CONSTRUCTION) WITH ROOF TOP DECK & 1ST FLOOR OFFICE, ATTACHED 4 CAR MASONRY GARAGE (3B CONSTRUCTION) AS PER PLAN.*******THIS PERMIT IS VOIDED IF THE WRECKING PERMIT IS NOT OBTA"
+    }
+   ],
+   "800 block of W ROSCOE ST": [
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR REHAB OF REAR DETACHED SINGLE FAMILY RESIDENCE KNOWN AS UNIT 1S WITH DORMERS"
+    }
+   ],
+   "1100 block of W BELMONT AVE": [
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR EXPANSION  OF PREVIOUSLY APPROVED DAYCARE CENTER UNDER PERMIT 100544463. INCLUDING MECHANICAL, PLUMBING, AND ELECTRICAL WORK. PER PLANS.   **CERTIFIED PLAN CORRECTIONS PROJECT - CONDITIONAL PERMIT: SUBJECT TO FI"
+    },
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILDOUT OF EXISTING RETAIL SPACE FOR USE AS DAYCARE CENTER. REPLACE EXISTING BRICKED UP OPENINGS WITH WINDOWS. PER PLANS**CERTIFIED CORRECTIONS- - SUBJECT TO FIELD INSPECTIONS & AUDIT **"
+    }
+   ],
+   "4100 block of N GREENVIEW AVE": [
+    {
+     "year": "2015",
+     "type": "New Construction",
+     "work": "REVISION TO PERMIT #100547762 TO REDUCE LENGTH OF BUILDING TO CONFORM TO 40-0 FRONT YARD.  NEW 4-B 2 STORY WITH BASEMENT SFR WITH DETACHED GARAGE AS PER PLANS."
+    },
+    {
+     "year": "2014",
+     "type": "New Construction",
+     "work": "IV-B NEW 2-STORY + BASEMENT SINGLE FAMILY HOME WITH DETACHED 3-CAR GARAGE."
+    }
+   ],
+   "3000 block of N GREENVIEW AVE": [
+    {
+     "year": "2015",
+     "type": "Renovation/Alteration",
+     "work": "SELF CERT.  INTERIOR RENOVATION TO EXISTING GROUND FLOOR RETAIL TENANT SPACE AT 3054 N GREENVIEW AVE.  WORK INCLUDES ARCHITECTURAL, MECHANICAL, ELECTRICAL, PLUMBING. NO STRUCTURAL WORK."
+    }
+   ],
+   "1600 block of W BERTEAU AVE": [
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING SERVICE WITH NEW 1200AMP 1PHASE WITH 19 METERS AND PANEL BOXES. RECONNECT EXISTING WIRING AND FEEDERS TO THE NEW PANEL BOXES"
+    }
+   ],
+   "3000 block of N CLARK ST": [
+    {
+     "year": "2014",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR ALTERATIONS TO EXISTING 3 STORY COMMERCIAL BUILDING  WITH BASEMENT (12,786 SQ. FT.), INCLUDING NEW ENCLOSED STAIRWELL AND NEW ROOF DECK (3347 SQ. FT.)"
+    },
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "REMOVE ALL EXISTING OUTLETS, SWITCHES AND LIGHT FIXTURES"
+    }
+   ],
+   "800 block of W BELMONT AVE": [
+    {
+     "year": "2014",
+     "type": "Express Permit Program",
+     "work": "INSTALL NEW 2500AMP 120/240V  3PHASE 4WIRE DELTA BO HILEG ELECTRICAL SERVICE WITH 1 @ 1000 AMP AND 4 @400AMP BREAKERS"
+    },
+    {
+     "year": "2013",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR BUILD OUT OF EXISTING SECOND FLOOR TENANT SPACE FOR NEW THEATER AND BAR PER PLANS."
+    },
+    {
+     "year": "2013",
+     "type": "Renovation/Alteration",
+     "work": "INTERIOR COMMERCIAL REMODEL TO CORE AND SHELL PER PLANS."
+    }
+   ],
+   "3700 block of N WAYNE AVE": [
+    {
+     "year": "2013",
+     "type": "Renovation/Alteration",
+     "work": "INSTALL NEW ENCLOSED BREEZEWAY TO AN EXISITNG SINGLE FAMILY HOME"
+    },
+    {
+     "year": "2013",
+     "type": "Express Permit Program",
+     "work": "CHANGE CONTRACTOR PERMIT #100493799"
+    }
+   ],
+   "3500 block of N WILTON AVE": [
+    {
+     "year": "2013",
+     "type": "New Construction",
+     "work": "ERECT 4 DU BUILDING PER PLANS. 4 STORY WITH BASEMENT. ERECT TRASH ENCLOSURE & 170 L.F. OF 6' HIGH WOOD FENCE. 3 INDOOR PARKING SPACE 1 EXTERIOR."
+    }
+   ],
+   "1200 block of W EDDY ST": [
+    {
+     "year": "2012",
+     "type": "Renovation/Alteration",
+     "work": "SELF- CERT   DECONVERT 2 DU TO SFR AND INTERIOR ALTERATIONS AS PER PLANS"
+    },
+    {
+     "year": "2012",
+     "type": "Express Permit Program",
+     "work": "REPLACE EXISTING WIRING"
+    }
+   ]
+  },
+  "points": [
+   [
+    41.943,
+    -87.644,
+    1
+   ],
+   [
+    41.939,
+    -87.672,
+    1
+   ],
+   [
+    41.951,
+    -87.656,
+    1
+   ],
+   [
+    41.933,
+    -87.643,
+    1
+   ],
+   [
+    41.949,
+    -87.648,
+    1
+   ],
+   [
+    41.933,
+    -87.664,
+    1
+   ],
+   [
+    41.954,
+    -87.645,
+    1
+   ],
+   [
+    41.946,
+    -87.673,
+    1
+   ],
+   [
+    41.938,
+    -87.658,
+    1
+   ],
+   [
+    41.94,
+    -87.664,
+    1
+   ],
+   [
+    41.95,
+    -87.66,
+    1
+   ],
+   [
+    41.958,
+    -87.669,
+    2
+   ],
+   [
+    41.937,
+    -87.658,
+    1
+   ],
+   [
+    41.933,
+    -87.636,
+    1
+   ],
+   [
+    41.954,
+    -87.663,
+    1
+   ],
+   [
+    41.949,
+    -87.644,
+    2
+   ],
+   [
+    41.941,
+    -87.648,
+    8
+   ],
+   [
+    41.959,
+    -87.666,
+    1
+   ],
+   [
+    41.94,
+    -87.665,
+    2
+   ],
+   [
+    41.933,
+    -87.651,
+    1
+   ],
+   [
+    41.946,
+    -87.663,
+    1
+   ],
+   [
+    41.94,
+    -87.642,
+    1
+   ],
+   [
+    41.935,
+    -87.649,
+    2
+   ],
+   [
+    41.938,
+    -87.644,
+    2
+   ],
+   [
+    41.941,
+    -87.652,
+    1
+   ],
+   [
+    41.951,
+    -87.647,
+    1
+   ],
+   [
+    41.946,
+    -87.668,
+    1
+   ],
+   [
+    41.953,
+    -87.648,
+    1
+   ],
+   [
+    41.954,
+    -87.655,
+    3
+   ],
+   [
+    41.955,
+    -87.665,
+    1
+   ],
+   [
+    41.944,
+    -87.646,
+    1
+   ],
+   [
+    41.945,
+    -87.673,
+    1
+   ],
+   [
+    41.958,
+    -87.667,
+    1
+   ],
+   [
+    41.933,
+    -87.665,
+    1
+   ],
+   [
+    41.938,
+    -87.659,
+    1
+   ],
+   [
+    41.95,
+    -87.662,
+    1
+   ],
+   [
+    41.956,
+    -87.67,
+    1
+   ],
+   [
+    41.941,
+    -87.671,
+    1
+   ],
+   [
+    41.941,
+    -87.651,
+    1
+   ],
+   [
+    41.949,
+    -87.654,
+    2
+   ],
+   [
+    41.94,
+    -87.656,
+    1
+   ],
+   [
+    41.94,
+    -87.66,
+    1
+   ],
+   [
+    41.947,
+    -87.652,
+    1
+   ],
+   [
+    41.952,
+    -87.65,
+    1
+   ],
+   [
+    41.943,
+    -87.649,
+    2
+   ],
+   [
+    41.936,
+    -87.638,
+    1
+   ],
+   [
+    41.944,
+    -87.645,
+    1
+   ],
+   [
+    41.943,
+    -87.65,
+    1
+   ],
+   [
+    41.94,
+    -87.659,
+    2
+   ],
+   [
+    41.957,
+    -87.668,
+    2
+   ],
+   [
+    41.938,
+    -87.666,
+    1
+   ],
+   [
+    41.937,
+    -87.648,
+    2
+   ],
+   [
+    41.94,
+    -87.651,
+    3
+   ],
+   [
+    41.95,
+    -87.663,
+    2
+   ],
+   [
+    41.946,
+    -87.653,
+    1
+   ],
+   [
+    41.946,
+    -87.66,
+    2
+   ]
+  ]
+ }
+}
