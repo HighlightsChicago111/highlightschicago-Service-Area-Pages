@@ -19,3 +19,7 @@ export const AREA_PAGE_QUERY = defineQuery(`
 `)
 
 export const AREA_SETTINGS_QUERY = defineQuery(`*[_id == "area-settings"][0]`)
+
+export const AREA_SITEMAP_QUERY = defineQuery(`
+  *[_type == "areaPage" && defined(slug.current)] | order(area asc) {"slug": slug.current, _updatedAt}
+`)

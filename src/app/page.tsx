@@ -9,15 +9,21 @@ import {cardImageFor, cardRegionFor, cardSummaryFor} from '@/lib/area/card-photo
 import {isChicago} from '@/lib/area/copy'
 import {getAreaCards, getAreaSettings} from '@/lib/content'
 import {PHOTOS, telHref} from '@/lib/ds'
-import {PUBLIC_SITE_ORIGIN} from '@/lib/urls'
+import {BASE_PATH, PUBLIC_SITE_ORIGIN, absoluteUrl} from '@/lib/urls'
 import type {AreaCard} from '@/types/area'
 
 export const revalidate = 60
+const TITLE = 'Electrician service areas in Chicago'
+const DESCRIPTION = 'The Chicago neighbourhoods and nearby suburbs Highlights Chicago electricians serve, each with its own page.'
 export const metadata: Metadata = {
-  title: 'Electrician service areas in Chicago',
-  description: 'The Chicago neighbourhoods and nearby suburbs Highlights Chicago electricians serve, each with its own page.',
-  // Test project: keep it out of search until the pages go live on the main domain.
-  robots: {index: false, follow: false},
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {canonical: `${PUBLIC_SITE_ORIGIN}${BASE_PATH}`},
+  openGraph: {
+    type: 'website', locale: 'en_US', siteName: 'Highlights Chicago', url: `${PUBLIC_SITE_ORIGIN}${BASE_PATH}`, title: TITLE, description: DESCRIPTION,
+    images: [{url: absoluteUrl(PHOTOS.van.src), alt: PHOTOS.van.alt}],
+  },
+  twitter: {card: 'summary_large_image'},
 }
 
 const PIN = <svg className="ar-cc-pin" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" strokeWidth="2" /></svg>

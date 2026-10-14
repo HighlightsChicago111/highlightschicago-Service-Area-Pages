@@ -3,7 +3,7 @@ import path from 'node:path'
 import {BUNDLED_SETTINGS} from '@/lib/area/company-fallback'
 import {contentSource} from '@/sanity/env'
 import {client, previewClient} from '@/sanity/lib/client'
-import {AREA_CARDS_QUERY, AREA_PAGE_QUERY, AREA_SETTINGS_QUERY} from '@/sanity/lib/queries'
+import {AREA_CARDS_QUERY, AREA_PAGE_QUERY, AREA_SETTINGS_QUERY, AREA_SITEMAP_QUERY} from '@/sanity/lib/queries'
 import type {AreaCard, AreaPage, AreaPageData, AreaSettings} from '@/types/area'
 
 type LocalDoc = Record<string, unknown> & {_id: string; _type: string}
@@ -49,6 +49,12 @@ export async function getAreaPage(slug: string, draft = false): Promise<AreaPage
     settings: (docs.find((doc) => doc._type === 'areaSettings') as unknown as AreaSettings) || BUNDLED_SETTINGS,
     areas: pages.sort((a, b) => a.area.localeCompare(b.area)).map(toCard),
   }
+}
+
+/** Published area slugs with their last edit, for the sitemap. Never includes drafts. */
+export async function getSitemapAreas(): Promise<Array<{slug: string; _updatedAt?: string}>> {
+  if (contentSource === 'sanity') return (await client.fetch<Array<{slug: string; _updatedAt?: string}>>(AREA_SITEMAP_QUERY)) || []
+  return (await localDocs()).filter((doc) => doc._type === 'areaPage').map(fromLocal).map((page) => ({slug: page.slug}))
 }
 
 /** Company facts shared by every page: the published Sanity document, else the facts bundled with the build. */

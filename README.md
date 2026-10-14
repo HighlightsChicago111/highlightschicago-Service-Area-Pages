@@ -197,10 +197,22 @@ gh pr create --base main --fill
 3. Open the **Live page** tab and press **Reload** after about a minute. The area also gets its card on
    `/service-areas`.
 
-> **Live address today.** Published pages are live at service-new-pages.vercel.app/service-areas and are marked
-> "noindex" (kept out of Google). Serving them at www.highlightschicago.com/service-areas, the way /services is served,
-> is a separate one-time step for the owner: a Cloudflare route plus removing the noindex. Until then, "publish" means
-> live on the Vercel address.
+> **Live address.** Pages are served at www.highlightschicago.com/service-areas by the Cloudflare Worker in
+> [`cloudflare/service-areas-worker.js`](cloudflare/service-areas-worker.js), the same way /services is served. The
+> direct address service-new-pages.vercel.app/service-areas still works but sends `X-Robots-Tag: noindex`, so only the
+> main domain is indexed. The sitemap is www.highlightschicago.com/service-areas/sitemap.xml (published pages only);
+> it is submitted in Google Search Console and picks up newly published areas within an hour.
+
+### One-time Cloudflare setup (owner)
+
+1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Create Worker**, name it `service-areas-proxy`,
+   **Deploy**, then **Edit code**, replace everything with `cloudflare/service-areas-worker.js` and **Deploy**.
+2. Zone **highlightschicago.com** → **Workers Routes** → **Add route**: `www.highlightschicago.com/service-areas*`,
+   worker `service-areas-proxy`. (It doesn't overlap the existing `/services*` route.)
+3. sanity.io/manage → `hzu8fe77` → **API** → **CORS origins** → add `https://www.highlightschicago.com` with
+   credentials allowed, so the Studio also works at www.highlightschicago.com/service-areas/studio.
+4. Check: `https://www.highlightschicago.com/service-areas/west-loop` loads, the response has no `X-Robots-Tag`, and
+   `/service-areas/sitemap.xml` lists every published area on www.highlightschicago.com.
 
 ## 9. Rules
 

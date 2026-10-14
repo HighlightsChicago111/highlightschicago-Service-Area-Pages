@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
   env: browserConfig,
   poweredByHeader: false,
   reactStrictMode: true,
+  // The direct Vercel URL must stay out of search. The Cloudflare worker that serves this app on
+  // www.highlightschicago.com/service-areas strips this header, so only the public domain is indexed.
+  async headers() {
+    return [{source: '/:path*', headers: [{key: 'X-Robots-Tag', value: 'noindex, nofollow'}]}]
+  },
   async redirects() {
     return [{source: '/', destination: '/service-areas', permanent: false, basePath: false}]
   },

@@ -11,3 +11,8 @@ export function areaPagePath(slug: string): string {
 export function areaPageUrl(slug: string): string {
   return `${PUBLIC_SITE_ORIGIN}${areaPagePath(slug)}`
 }
+
+/** A root-relative path (e.g. /service-areas/images/…) on the public domain; absolute URLs pass through. */
+export function absoluteUrl(src: string): string {
+  return src.startsWith('/') ? `${PUBLIC_SITE_ORIGIN}${src}` : src
+}
