@@ -5,7 +5,8 @@ import {AreaLandingPage} from '@/components/area/area-page'
 import {DisableDraftMode} from '@/components/disable-draft-mode'
 import {defaultH1} from '@/lib/area/copy'
 import {getAreaCards, getAreaPage} from '@/lib/content'
-import {areaPageUrl} from '@/lib/urls'
+import {cardImageFor} from '@/lib/area/card-photos'
+import {absoluteUrl, areaPageUrl} from '@/lib/urls'
 
 type Props = {params: Promise<{areaSlug: string}>}
 
@@ -17,15 +18,22 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const {areaSlug} = await params
-  const {page} = await getAreaPage(areaSlug, (await draftMode()).isEnabled)
+  const {page, areas} = await getAreaPage(areaSlug, (await draftMode()).isEnabled)
   if (!page) return {}
+  // The root layout adds "| Highlights Chicago"; strip it from a stored full title.
+  const title = (page.title || defaultH1(page)).replace(/\s*\|\s*Highlights Chicago\s*$/i, '')
+  const url = areaPageUrl(page.slug)
+  const card = areas.find((area) => area.slug === page.slug)
+  const image = card && cardImageFor(card)
   return {
-    // The root layout adds "| Highlights Chicago"; strip it from a stored full title.
-    title: (page.title || defaultH1(page)).replace(/\s*\|\s*Highlights Chicago\s*$/i, ''),
+    title,
     description: page.metaDescription,
-    alternates: {canonical: areaPageUrl(page.slug)},
-    // Test project: keep it out of search until the pages go live on the main domain.
-    robots: {index: false, follow: false},
+    alternates: {canonical: url},
+    openGraph: {
+      type: 'website', locale: 'en_US', siteName: 'Highlights Chicago', url, title, description: page.metaDescription,
+      images: image?.url ? [{url: absoluteUrl(image.url), alt: image.alt}] : undefined,
+    },
+    twitter: {card: image?.url ? 'summary_large_image' : 'summary'},
   }
 }
 
