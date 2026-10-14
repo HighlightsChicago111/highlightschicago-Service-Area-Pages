@@ -1,0 +1,591 @@
+{
+  "area": "Wicker Park",
+  "area_the": "Wicker Park",
+  "area_in": "in Wicker Park",
+  "slug": "wicker-park",
+  "meta_description": "Family-owned, City-licensed electricians for Wicker Park Victorians, two- and three-flats and new builds, about 35 permits here since 2012. Call (773) 262-3333.",
+  "eyebrow": "Wicker Park · Milwaukee Avenue · Division Street · The 606",
+  "hero_lede": "Panel and service upgrades, rewiring, lighting, EV chargers, repairs and new-construction wiring, for Wicker Park's Victorian houses, brick two- and three-flats, new three-unit buildings and the storefronts on Milwaukee, Division and North Ave. Family-owned and founder-led, licensed by the City of Chicago, and working these blocks since 2012, with every quote in writing.",
+  "address_placeholder": "e.g. 1500 N Hoyne Ave",
+  "boundary_text": "The City's neighbourhood map draws Wicker Park from the 606 trail (Bloomingdale Ave) south to Division Street, and from Ashland Avenue west to Rockwell Street, just past Western Avenue; many people put the northern edge at North Avenue. It's a neighbourhood of 1870s to 1920s houses and flats around a small park, cut through diagonally by the Milwaukee Avenue shopping street.",
+  "bbox": {
+    "north": 41.9147,
+    "south": 41.903,
+    "west": -87.6922,
+    "east": -87.6675
+  },
+  "bbox_text": "The 606 (Bloomingdale Ave), Division St, Ashland Ave and Rockwell St, as drawn on the City's neighbourhood map, inside West Town (community area 24)",
+  "facts": [
+    [
+      "Community area",
+      "West Town (24)"
+    ],
+    [
+      "ZIP codes",
+      "Mostly 60622, with 60647 north of North Ave and west of Damen"
+    ],
+    [
+      "City wards",
+      "Mostly the 1st, with the 32nd north of North Ave east of Western, and the 26th in the south-west corner"
+    ],
+    [
+      "Transit",
+      "Damen and Division stations on the CTA Blue Line"
+    ],
+    [
+      "Utility",
+      "ComEd"
+    ],
+    [
+      "Permits",
+      "City of Chicago Department of Buildings, with Commission on Chicago Landmarks review in the Wicker Park and Milwaukee Avenue districts"
+    ]
+  ],
+  "zips": [
+    "60622",
+    "60647"
+  ],
+  "map_desc": "Wicker Park runs from the 606 trail south to Division Street, and from Rockwell Street east to Ashland Avenue. Districts shown: the strip from North Avenue to the 606, the Wicker Park landmark district, Milwaukee Avenue, the blocks toward Western and Rockwell, and Division Street. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+  "map": {
+    "bbox": {
+      "north": 41.9152,
+      "south": 41.9025,
+      "west": -87.6925,
+      "east": -87.666
+    },
+    "height": 580,
+    "ew_streets": [
+      [
+        "W Wabansia Ave",
+        41.9124
+      ],
+      [
+        "W North Ave",
+        41.9104
+      ],
+      [
+        "W Le Moyne St",
+        41.9086
+      ],
+      [
+        "W Schiller St",
+        41.9071
+      ],
+      [
+        "W Potomac Ave",
+        41.9049
+      ],
+      [
+        "W Division St",
+        41.9032
+      ]
+    ],
+    "ns_streets": [
+      [
+        "N Rockwell St",
+        -87.692
+      ],
+      [
+        "N Western Ave",
+        -87.6872
+      ],
+      [
+        "N Leavitt St",
+        -87.6824
+      ],
+      [
+        "N Hoyne Ave",
+        -87.6799
+      ],
+      [
+        "N Damen Ave",
+        -87.6775
+      ],
+      [
+        "N Wood St",
+        -87.6725
+      ],
+      [
+        "N Ashland Ave",
+        -87.6677
+      ]
+    ],
+    "districts": [
+      [
+        "North Ave to the 606",
+        41.9147,
+        41.9118,
+        -87.6922,
+        -87.6675
+      ],
+      [
+        "Toward Western and Rockwell",
+        41.9118,
+        41.9049,
+        -87.6922,
+        -87.6835
+      ],
+      [
+        "Wicker Park District",
+        41.9118,
+        41.9049,
+        -87.6835,
+        -87.6772
+      ],
+      [
+        "Milwaukee Avenue",
+        41.9118,
+        41.903,
+        -87.6772,
+        -87.6675
+      ],
+      [
+        "Division Street",
+        41.9049,
+        41.903,
+        -87.6922,
+        -87.6772
+      ]
+    ],
+    "landmarks": [
+      [
+        "Damen (Blue Line)",
+        41.9097,
+        -87.6777
+      ],
+      [
+        "Northwest Tower",
+        41.9106,
+        -87.6781
+      ],
+      [
+        "Division (Blue Line)",
+        41.9035,
+        -87.6668
+      ]
+    ],
+    "features": [
+      {
+        "kind": "expressway_ew",
+        "lat": 41.9141,
+        "label": "The 606 (Bloomingdale Trail)"
+      },
+      {
+        "kind": "park",
+        "north": 41.9084,
+        "south": 41.9071,
+        "west": -87.6798,
+        "east": -87.6778,
+        "label": "Wicker Park"
+      }
+    ]
+  },
+  "districts": [
+    {
+      "name": "Wicker Park District",
+      "intro": "The City landmark district around the park itself, from Potomac Ave up to Caton St and from Bell Ave east to the 'L': houses built from 1870 to 1930, with some of Chicago's largest Victorians on Pierce Ave and on Hoyne Ave, once called Beer Baron Row.",
+      "work": "Whole-house work in big old houses: 200-amp services, new panels and rewiring behind plaster. Exterior changes go through landmark permit review."
+    },
+    {
+      "name": "Milwaukee Avenue",
+      "intro": "The diagonal shopping street from Division and Ashland up to North and Damen, a City landmark district of storefront buildings from 1870 to 1929, including the Art Deco Northwest Tower at Damen and North, plus the side streets east of Damen: Wood, Wolcott, Paulina and Honore.",
+      "work": "Shop, salon, bar and restaurant fit-outs, storefront signs and the flats above the shops. On the side streets, renovations and new three-unit buildings."
+    },
+    {
+      "name": "Division Street",
+      "intro": "Bars, restaurants, shops and daycares along Division from Ashland to Rockwell, with brick flats on the blocks just north.",
+      "work": "Restaurant and shop work, build-outs in ground-floor commercial spaces, and repairs and new lighting in the flats above."
+    },
+    {
+      "name": "Toward Western and Rockwell",
+      "intro": "The blocks of Oakley, Claremont, Artesian and Campbell west of the landmark district, where older brick two- and three-flats sit next to new houses and three-unit buildings.",
+      "work": "Wiring for new houses and three-flats, 100-to-200-amp service upgrades with new meters, and EV chargers in garages off the alleys."
+    },
+    {
+      "name": "North Ave to the 606",
+      "intro": "The strip between North Ave and the elevated 606 trail, around Wabansia Ave, Wood St, Hoyne Ave and Artesian Ave.",
+      "work": "New houses with detached garages, kitchen circuits and recessed lighting in renovated houses, and service upgrades."
+    }
+  ],
+  "buildings": [
+    {
+      "illus": "b-cottage",
+      "title": "Victorian house",
+      "where": "Hoyne Ave, Pierce Ave and the streets around the park, in the Wicker Park District",
+      "changes": "Large houses from the 1870s to the early 1900s: plaster walls, high ceilings and original wiring in places. Exterior changes, like a new service mast or meter location, go through landmark permit review.",
+      "services": [
+        [
+          "Panel and service upgrades",
+          "svc-panels"
+        ],
+        [
+          "Rewiring older homes",
+          "svc-wiring"
+        ],
+        [
+          "Chandeliers and sconces",
+          "svc-lighting"
+        ]
+      ]
+    },
+    {
+      "illus": "b-twoflat",
+      "title": "Brick two- or three-flat",
+      "where": "Side streets throughout: Oakley, Wolcott, Campbell, Leavitt and Bell",
+      "changes": "A meter and panel for each unit, often in the basement, and services often still at 100 amps. Many are condos or rentals, and some are being turned back into one house.",
+      "services": [
+        [
+          "Service and meter upgrades",
+          "svc-panels"
+        ],
+        [
+          "Kitchen and laundry circuits",
+          "svc-wiring"
+        ],
+        [
+          "Smoke and CO alarms",
+          "svc-safety"
+        ]
+      ]
+    },
+    {
+      "illus": "b-townhome",
+      "title": "New house or three-unit building",
+      "where": "Artesian, Campbell and Claremont west of Damen; Paulina, Wood and Honore east of it",
+      "changes": "Built from scratch with roof decks, rooftop stair enclosures and detached garages off the alley. The electrical is planned from the architect's drawings and inspected under the building permit.",
+      "services": [
+        [
+          "New construction",
+          "svc-commercial"
+        ],
+        [
+          "Roof-deck and outdoor lighting",
+          "svc-lighting"
+        ],
+        [
+          "EV chargers in the garage",
+          "svc-energy"
+        ]
+      ]
+    },
+    {
+      "illus": "b-restaurant",
+      "title": "Restaurant or bar",
+      "where": "Division St, Milwaukee Ave and North Ave",
+      "changes": "Kitchen equipment circuits, lighting and signs in older storefront buildings, often with apartments upstairs, scheduled around service.",
+      "services": [
+        [
+          "Restaurant electrical",
+          "svc-commercial"
+        ],
+        [
+          "Emergency and exit lighting",
+          "svc-lighting"
+        ],
+        [
+          "Service upgrades",
+          "svc-panels"
+        ]
+      ]
+    },
+    {
+      "illus": "b-office",
+      "title": "Shop, daycare or office",
+      "where": "Milwaukee Ave, Division St and North Ave",
+      "changes": "Build-outs under a permit with plans, a separate sign permit for the storefront, and on Milwaukee Ave, landmark review for changes to the front.",
+      "services": [
+        [
+          "Tenant build-outs",
+          "svc-commercial"
+        ],
+        [
+          "LED lighting",
+          "svc-lighting"
+        ],
+        [
+          "Data cabling",
+          "svc-lowvoltage"
+        ]
+      ]
+    }
+  ],
+  "scope_lede": "The same job on paper can cost very differently in a Victorian on Hoyne, a brick three-flat on Oakley and a storefront on Milwaukee. These are the things that change it, and most are settled at the walkthrough.",
+  "scope_rows": [
+    [
+      "Landmark districts",
+      "In the Wicker Park District and the Milwaukee Avenue District, the Commission on Chicago Landmarks reviews alterations to buildings, so exterior electrical work such as a service mast, a meter move, exterior lighting or a sign can need its sign-off before the permit is issued.",
+      "The City, with us"
+    ],
+    [
+      "Age of the wiring",
+      "Houses and flats built between the 1870s and the 1920s can still hide knob-and-tube, cloth-covered cable or a fuse box behind later remodels.",
+      "Us, at the walkthrough"
+    ],
+    [
+      "Service size and meters",
+      "Two- and three-flats often still share a 100-amp service. Our upgrades on N Oakley Blvd moved buildings to 200 amps with three or four new meters and panels.",
+      "Us, with ComEd"
+    ],
+    [
+      "Plaster and lath walls",
+      "Fishing wire through plaster is slower than drywall, and openings are kept small so patching stays small.",
+      "Us"
+    ],
+    [
+      "De-conversion or gut rehab",
+      "Turning a three-flat back into one house, or digging out a basement, means a new service and every circuit redesigned from the architect's plans.",
+      "You and us, with your architect"
+    ],
+    [
+      "Detached garage off the alley",
+      "Power for a garage or an EV charger means a feed from the house, sometimes underground, sized for what you'll run.",
+      "You and us"
+    ],
+    [
+      "Storefront signs",
+      "A new business sign needs its own sign permit, separate from the electrical permit.",
+      "Us"
+    ],
+    [
+      "Condo association",
+      "In flats that are now condos, the association approves work in the basement, on the meters and in common areas, usually from a written proposal.",
+      "Your association, with our proposal"
+    ],
+    [
+      "Parking and access",
+      "Parking near the door is scarce on Milwaukee, Division and North Ave, so on many jobs materials come in from the alley.",
+      "Us, at the walkthrough"
+    ],
+    [
+      "Permit route",
+      "Stand-alone electrical jobs usually go through the City's Express Permit Program. New buildings, renovations and build-outs need plans and a full permit.",
+      "Us"
+    ],
+    [
+      "Working hours",
+      "Bars, restaurants, shops and daycares often need work before opening or after closing, so agree the hours before the job is scheduled.",
+      "You and us"
+    ]
+  ],
+  "hourly_answer": "We quote by scope, not by the hour, because the hours on a Wicker Park job depend on the factors below. A new circuit in a gutted three-flat on Campbell and the same circuit fished through the plaster of a Victorian on Hoyne aren't the same job. The written quote tells you the whole price before you agree to it.",
+  "choosing_building_why": "A Victorian in a landmark district, a three-flat on a 100-amp service and a storefront with flats upstairs are three different jobs.",
+  "choosing_building_answer": "In Wicker Park: new houses and three-unit buildings west and east of Damen, 200-amp service upgrades with new meters on N Oakley Blvd, a three-to-one de-conversion on N Hoyne, and daycare build-outs on W Division and W North Ave",
+  "choosing_paperwork_why": "Exterior work in the Wicker Park and Milwaukee Avenue landmark districts goes through landmark review, and storefront signs need their own permit.",
+  "where_we_fit": "Highlights is a family-owned contractor. In Wicker Park we're the right call for Victorian houses, two- and three-flats, de-conversions, new houses and three-unit buildings, service upgrades, EV chargers in alley garages, and fit-outs for shops, daycares and restaurants. Large apartment developments and big commercial projects are a job for the large commercial firms, and we'll tell you so.",
+  "mix_notes": {
+    "Work inside a specific unit or condo": "Condos and apartments in two- and three-flats, updated one unit at a time.",
+    "Lighting": "The most common hands-on job, in houses, flats and storefronts.",
+    "Signs": "A large share, from the storefronts on Milwaukee, Division and North Ave.",
+    "Interior build-outs and alterations": "Shop, restaurant and office fit-outs, plus house renovations.",
+    "Outlets and receptacles": "Kitchen, bathroom and basement remodels.",
+    "Electrical service": "Older flats moving to bigger services, and services for new buildings.",
+    "Panels": "Fuse boxes and old panels being replaced.",
+    "Low voltage, data and communications": "Data and security wiring in shops, offices and renovated homes.",
+    "Restaurants": "Division St and Milwaukee Ave keep this steady.",
+    "EV charging": "Chargers in garages off the alleys and in building garages.",
+    "Solar": "Rooftop systems on houses and small buildings.",
+    "Fire alarm": "Commercial spaces and larger residential buildings."
+  },
+  "record_bullets": [
+    "New houses with detached garages on the 1200 and 1700 blocks of N Campbell, the 1700 block of N Artesian, the 1600 block of N Wood and the 1200 block of N Marion Ct.",
+    "New buildings of two to six units on the 1200 block of N Paulina, the 1300 block of N Claremont, the 1500 block of N Artesian, the 1700 block of N Campbell, and the 1500 blocks of N Wood and N Honore, and a four-storey mixed-use building on the 1700 block of W North Ave.",
+    "100-amp services replaced with 200 amps and new meters and panels on the 1300 and 1500 blocks of N Oakley Blvd, and a new 200-amp service on the 1700 block of N Artesian.",
+    "A three-unit building turned back into one house, with an addition, on the 1200 block of N Hoyne; a four-unit remodel with a basement dig-down on the 1300 block of N Wolcott; and an apartment renovation in a brick two-flat on the 1300 block of N Campbell.",
+    "Rewiring behind opened drywall on the 1500 block of N Hoyne, and recessed lights and a kitchen outlet on the 1700 block of N Hoyne.",
+    "Daycare build-outs on the 2000 block of W Division and the 2300 block of W North Ave, and a tenant space and its channel-letter sign on the 1300 block of N Milwaukee."
+  ],
+  "honest_context": [
+    "Wicker Park sits in the middle of our work. Most of our roughly 1,200 Chicago permits are in Wards 1, 32, 26, 47 and 27, and the first three of those are the wards that split Wicker Park. Our permits here, about 35, run from 2012 to 2025, with the busiest years from 2013 to 2018, when we wired new houses and three-unit buildings. Since then the work has been more mixed: service upgrades, renovations, a few new buildings and commercial spaces.",
+    "Wicker Park is a busy permit area: about 410 permits with electrical work in the last 24 months, naming about 190 different electrical contractors. Most of it is the work we do every day, in units, lighting and services. Signs are a large share too, from the storefronts on the shopping streets; we hold one sign permit here, on N Milwaukee."
+  ],
+  "reviews_heading": "Reviews from two-flat, rehab and new-house jobs",
+  "reviews": [
+    {
+      "reviewer": "Haris Jasarevic",
+      "label": "Properties in Wicker Park and Hyde Park"
+    },
+    {
+      "reviewer": "Nate Grabner",
+      "label": "New service and rewiring in a 100-year-old two-flat"
+    },
+    {
+      "reviewer": "katherine lehman",
+      "label": "Two-flat renovation, chandeliers and sconces"
+    },
+    {
+      "reviewer": "Francisco Moya",
+      "label": "Wiring a new house",
+      "cut_before": " That kind of third-party"
+    },
+    {
+      "reviewer": "John Sisson",
+      "label": "New panel and service line in a fixer-upper"
+    },
+    {
+      "reviewer": "Andrew OMalley",
+      "label": "Panel and wiring for a basement and kitchen remodel"
+    },
+    {
+      "reviewer": "Billy Kuczek",
+      "label": "EV charger in a garage, trench dug by hand"
+    },
+    {
+      "reviewer": "S R",
+      "label": "New apartment panel and circuits, with permits"
+    }
+  ],
+  "nearby": [
+    [
+      "Bucktown",
+      "North across the 606: older frame houses and two-flats among many new single-family houses."
+    ],
+    [
+      "Ukrainian Village",
+      "South of Division and west of Damen: brick two- and three-flats, with its own City landmark district."
+    ],
+    [
+      "East Village",
+      "South of Division and east of Damen: workers' cottages, flats on narrow lots and newer infill."
+    ],
+    [
+      "Noble Square",
+      "East of Ashland toward the Kennedy: older flats, churches and newer townhomes."
+    ],
+    [
+      "Humboldt Park",
+      "West past Rockwell: greystones and brick two-flats around the park and its boulevards."
+    ],
+    [
+      "Logan Square",
+      "North-west across the 606: greystones, bungalows and large houses on the boulevards."
+    ]
+  ],
+  "faq": [
+    [
+      "faq-wp-landmark",
+      "Does the Wicker Park landmark district change electrical work?",
+      "It can, if the work changes the outside. The Wicker Park District, around the park from Potomac Ave to Caton St, and the Milwaukee Avenue District are City landmark districts, and the Commission on Chicago Landmarks reviews alterations there as part of the permit. A new service mast, a moved meter, exterior lighting or a sign can need its sign-off, and we check at the walkthrough whether yours does."
+    ],
+    [
+      "faq-wp-service",
+      "Can you upgrade the service in my Wicker Park two- or three-flat?",
+      "Yes. Our Wicker Park record includes two buildings on N Oakley Blvd moved from 100-amp to 200-amp services, with three and four new meters and panels. We pull the permit, usually through the City's Express Permit Program, and work with ComEd on the service change."
+    ],
+    [
+      "faq-wp-deconversion",
+      "Do you wire de-conversions and gut rehabs?",
+      "Yes. On the 1200 block of N Hoyne we did the electrical for a three-unit building turned back into one house with a two-storey addition, and on the 1300 block of N Wolcott an interior remodel of a four-unit building with a basement dig-down. These run under a permit with plans, and we work from your architect's drawings."
+    ],
+    [
+      "faq-wp-new-construction",
+      "Do you do the electrical for new houses and three-flats in Wicker Park?",
+      "Yes. Half our Wicker Park permits, 17 of 34, are new construction: houses with detached garages on N Campbell, N Artesian, N Wood and N Marion Ct, buildings of two to six units on N Paulina, N Claremont, N Artesian, N Campbell, N Wood and N Honore, and a four-storey mixed-use building on W North Ave."
+    ],
+    [
+      "faq-wp-storefront",
+      "Can you work on a storefront on Milwaukee Ave, Division St or North Ave?",
+      "Yes: build-outs, lighting, signs and service work, scheduled around your hours. Our record includes daycare build-outs on W Division and W North Ave, and a tenant space and its sign on N Milwaukee. A new sign needs its own sign permit, and on Milwaukee Ave it can also need landmark review."
+    ],
+    [
+      "faq-wp-zip",
+      "Which Wicker Park ZIP codes do you cover?",
+      "Both: 60622, which covers most of Wicker Park, and 60647, which covers the blocks north of North Ave and west of Damen. We cover every other Chicago neighbourhood too."
+    ]
+  ],
+  "cta_ready": [
+    "Your address, and whether it's in the Wicker Park District or on Milwaukee Ave",
+    "A photo of your electrical panel with the door open, and of the meters if they're in the basement",
+    "Roughly when the building was built, how many units it has, and whether it's a condo",
+    "For a renovation, de-conversion or new build: your architect's drawings",
+    "Whether a garage off the alley needs power, for example for an EV charger",
+    "For a shop, bar or daycare: your opening hours and any sign you plan to put up"
+  ],
+  "service_overrides": {
+    "Fuse box replacement and fuse-to-breaker conversion": "Still found in Wicker Park's older houses and two- and three-flats.",
+    "Electrician for new construction": "New houses and buildings of two to six units. 17 of our 34 Wicker Park permits are new construction.",
+    "Tenant build-outs": "Daycare build-outs on W Division and W North Ave, and a tenant space on N Milwaukee.",
+    "Electrical riser and meter riser repair": "Meter and riser work for two- to four-unit buildings, including new meter banks on N Oakley Blvd."
+  },
+  "research_sources": [
+    [
+      "Chicago Landmarks: Wicker Park District",
+      "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=36",
+      "official"
+    ],
+    [
+      "Chicago Landmarks: Milwaukee Avenue District",
+      "https://webapps1.chicago.gov/landmarksweb/web/districtdetails.htm?disId=221",
+      "official"
+    ],
+    [
+      "Chicago Landmarks: general information (permit review)",
+      "https://webapps1.chicago.gov/landmarksweb/web/generalinformation.htm",
+      "official"
+    ],
+    [
+      "Commission on Chicago Landmarks: permit application submission requirements",
+      "https://www.chicago.gov/content/dam/city/depts/zlup/Historic_Preservation/Publications/Permit_Application_Submission_Requirements_2024.pdf",
+      "official"
+    ],
+    [
+      "City of Chicago data portal: Boundaries - Neighborhoods",
+      "https://data.cityofchicago.org/d/y6yq-dbs2",
+      "official data"
+    ],
+    [
+      "City of Chicago data portal: Boundaries - Wards (2023-)",
+      "https://data.cityofchicago.org/d/p293-wvbd",
+      "official data"
+    ],
+    [
+      "City of Chicago data portal: Boundaries - ZIP Codes",
+      "https://data.cityofchicago.org/d/unjd-c2ca",
+      "official data"
+    ],
+    [
+      "City of Chicago data portal: Building Permits",
+      "https://data.cityofchicago.org/Buildings/Building-Permits/ydr8-5enu",
+      "official data"
+    ],
+    [
+      "City of Chicago: Express Permit Program",
+      "https://chicago.gov/city/en/depts/bldgs/provdrs/permits/svcs/express-permits.html",
+      "official"
+    ],
+    [
+      "City of Chicago: Express Permit Program, electrical work",
+      "https://chicago.gov/city/en/sites/guide-to-building-permits/home/instructions/EPP/ELECT.html",
+      "official"
+    ],
+    [
+      "Chicago Park District: Wicker (Charles, Joel) Park",
+      "https://www.chicagoparkdistrict.com/parks-facilities/wicker-charles-joel-park",
+      "official"
+    ],
+    [
+      "City of Chicago: The 606 park and trail to open on 6/06 (2015)",
+      "https://chicago.gov/city/en/depts/mayor/press_room/press_releases/2015/april/mayor-emanuel-announces-the-606-park-and-trail-to-open-on--6-06-.html",
+      "official"
+    ],
+    [
+      "Wikipedia: Wicker Park, Chicago",
+      "https://en.wikipedia.org/wiki/Wicker_Park,_Chicago",
+      "Encyclopedia (orientation)"
+    ],
+    [
+      "Wikipedia: Wicker Park District",
+      "https://en.wikipedia.org/wiki/Wicker_Park_District",
+      "Encyclopedia (orientation)"
+    ],
+    [
+      "Wikipedia: Damen station (CTA Blue Line)",
+      "https://en.wikipedia.org/wiki/Damen_station_(CTA_Blue_Line)",
+      "Encyclopedia (orientation)"
+    ],
+    [
+      "Wikipedia: The Robey (Northwest Tower)",
+      "https://en.wikipedia.org/wiki/The_Robey",
+      "Encyclopedia (orientation)"
+    ]
+  ]
+}
