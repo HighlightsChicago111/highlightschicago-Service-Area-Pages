@@ -1,6 +1,6 @@
 import {Copy, IconBadge} from '@/components/ds/atoms'
 import {Icon} from '@/components/ds/icon'
-import {andList, cityOf, DEFAULT_MIX_NOTES, isChicago, monthYear, permitTypeWords} from '@/lib/area/copy'
+import {andList, cityOf, DEFAULT_MIX_NOTES, isChicago, monthYear, municipalityKind, permitTypeWords} from '@/lib/area/copy'
 import {AreaHead} from './head'
 import type {AreaCtx} from './types'
 
@@ -15,6 +15,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
   const chicago = isChicago(page)
   // Suburbs run their own permit systems, and most do not publish them as open data.
   const city = cityOf(page)
+  const kind = municipalityKind(page)
   const suburbLede = `${city} doesn't publish its building permits as open data, so the permit mix we show for Chicago neighbourhoods isn't available here. This is the record we can show, and where it comes from.`
   const lede = !chicago && !permits ? suburbLede : permits ? `The City of Chicago publishes every building permit. We pulled ${page.areaThe}'s for the ${permits.months} months to ${monthYear(permits.windowTo)}: about ${permits.electricalTotal.toLocaleString('en-US')} permits involved electrical work, and ${permits.contractors} different electrical contractors were named on them.` : undefined
 
@@ -23,7 +24,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
       <AreaHead id="permit-record-title" layout="stack" eyebrow={chicago || permits ? 'Permit record · City of Chicago data' : `Permit record · ${city}`} title={chicago || permits ? `What the ${page.area} permit record shows` : `Permits and our record ${page.areaIn}`} lede={lede} editorial={editorial} />
       {!chicago && !permits && <div className="ar-source">
         <p className="ar-source-label"><IconBadge icon="info" tone="blue" size={32} />Data source</p>
-        <p>Our Chicago record below is City of Chicago building permit data naming Highlights, shown by block, never by address. {city} permits are kept by the City of {city} and are not published as open data, so any {city} count comes from the City&apos;s own contractor register.</p>
+        <p>Our Chicago record below is City of Chicago building permit data naming Highlights, shown by block, never by address. {city} permits are kept by the {kind} of {city} and are not published as open data, so any {city} count comes from the {kind}&apos;s own contractor register.</p>
       </div>}
       {permits && <div className="ar-source">
         <p className="ar-source-label"><IconBadge icon="info" tone="blue" size={32} />Data source</p>
