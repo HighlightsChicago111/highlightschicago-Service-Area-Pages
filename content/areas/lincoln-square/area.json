@@ -1,0 +1,670 @@
+{
+  "area": "Lincoln Square",
+  "area_the": "Lincoln Square",
+  "area_in": "in Lincoln Square",
+  "slug": "lincoln-square",
+  "meta_description": "Family-owned, licensed electricians for Lincoln Square two- and three-flats, houses and walk-ups, with about 50 permits here since 2014. Call (773) 262-3333.",
+  "eyebrow": "Lincoln Square · Ravenswood · Bowmanville · Budlong Woods",
+  "hero_lede": "Service and panel upgrades, EV chargers, lighting, repairs and rewiring for Lincoln Square's two- and three-flats, older houses, walk-up apartment buildings, coach houses and Lincoln Avenue shopfronts. A family-owned, founder-led contractor licensed by the City of Chicago, with our shop a few minutes up Lincoln Ave, quoting every job in writing.",
+  "address_placeholder": "e.g. 4900 N Leavitt St",
+  "boundary_text": "Lincoln Square is Chicago community area 4: Montrose Ave to the south, Ravenswood Ave and the Metra tracks to the east, Bryn Mawr and Peterson Aves to the north, and the North Branch of the Chicago River to the west. It's a mostly residential North Side area of flats, houses and small apartment buildings, with shops along Lincoln, Lawrence and Western and a strip of old factory buildings beside the tracks.",
+  "bbox": {
+    "north": 41.991,
+    "south": 41.961,
+    "west": -87.7072,
+    "east": -87.6738
+  },
+  "bbox_text": "the Lincoln Square community area (Montrose Ave, Ravenswood Ave, Bryn Mawr and Peterson Aves, and the Chicago River)",
+  "facts": [
+    [
+      "Community area",
+      "Lincoln Square (4)"
+    ],
+    [
+      "ZIP codes",
+      "Mostly 60625, with 60640 on the Ravenswood side and 60659 and 60660 north of Bryn Mawr"
+    ],
+    [
+      "City wards",
+      "Mostly the 40th and 47th, with an edge in the 39th"
+    ],
+    [
+      "Transit",
+      "Brown Line at Rockwell, Western, Damen and Montrose; Metra Union Pacific North at Ravenswood"
+    ],
+    [
+      "Utility",
+      "ComEd"
+    ],
+    [
+      "Permits",
+      "City of Chicago Department of Buildings"
+    ]
+  ],
+  "zips": [
+    "60625",
+    "60640",
+    "60659",
+    "60660"
+  ],
+  "map_desc": "Lincoln Square runs from Montrose Avenue north to Bryn Mawr and Peterson Avenues, and from the North Branch of the Chicago River east to Ravenswood Avenue. Districts shown: Lincoln Avenue, Ravenswood, Ravenswood Gardens, Winnemac Park, the blocks west of Western toward the river, and Bowmanville up to Rosehill Cemetery. Dots mark blocks where Highlights Chicago holds City of Chicago permits.",
+  "map": {
+    "bbox": {
+      "north": 41.991,
+      "south": 41.961,
+      "west": -87.7072,
+      "east": -87.6738
+    },
+    "height": 1080,
+    "ew_streets": [
+      [
+        "W Montrose Ave",
+        41.9613
+      ],
+      [
+        "W Wilson Ave",
+        41.965
+      ],
+      [
+        "W Lawrence Ave",
+        41.9686
+      ],
+      [
+        "W Argyle St",
+        41.9722
+      ],
+      [
+        "W Foster Ave",
+        41.9758
+      ],
+      [
+        "W Balmoral Ave",
+        41.9794
+      ],
+      [
+        "W Bryn Mawr Ave",
+        41.9831
+      ],
+      [
+        "W Peterson Ave",
+        41.9904
+      ]
+    ],
+    "ns_streets": [
+      [
+        "N California Ave",
+        -87.6988
+      ],
+      [
+        "N Rockwell St",
+        -87.6938
+      ],
+      [
+        "N Western Ave",
+        -87.6888
+      ],
+      [
+        "N Leavitt St",
+        -87.6837
+      ],
+      [
+        "N Damen Ave",
+        -87.6787
+      ],
+      [
+        "N Ravenswood Ave",
+        -87.6743
+      ]
+    ],
+    "districts": [
+      [
+        "Lincoln Avenue",
+        41.9686,
+        41.9613,
+        -87.6888,
+        -87.6787
+      ],
+      [
+        "Ravenswood",
+        41.9758,
+        41.9613,
+        -87.6787,
+        -87.6738
+      ],
+      [
+        "Ravenswood Gardens",
+        41.9686,
+        41.9613,
+        -87.7015,
+        -87.6888
+      ],
+      [
+        "Winnemac Park",
+        41.9758,
+        41.9686,
+        -87.6888,
+        -87.6787
+      ],
+      [
+        "West of Western, toward the river",
+        41.9831,
+        41.9686,
+        -87.7055,
+        -87.6888
+      ],
+      [
+        "Bowmanville and Rosehill",
+        41.9906,
+        41.9758,
+        -87.6888,
+        -87.6738
+      ]
+    ],
+    "landmarks": [
+      [
+        "Western (Brown)",
+        41.9662,
+        -87.6885
+      ],
+      [
+        "Rockwell (Brown)",
+        41.9661,
+        -87.6939
+      ],
+      [
+        "Damen (Brown)",
+        41.9663,
+        -87.6786
+      ],
+      [
+        "Ravenswood (Metra)",
+        41.9687,
+        -87.6742
+      ],
+      [
+        "Krause Music Store",
+        41.9654,
+        -87.6852
+      ],
+      [
+        "Rosehill Cemetery gate",
+        41.9867,
+        -87.6745
+      ]
+    ],
+    "features": [
+      {
+        "kind": "water_west",
+        "lon": -87.7055,
+        "label": "North Branch, Chicago River"
+      },
+      {
+        "kind": "park",
+        "north": 41.99,
+        "south": 41.984,
+        "west": -87.688,
+        "east": -87.6752,
+        "label": "Rosehill Cemetery"
+      }
+    ]
+  },
+  "districts": [
+    {
+      "name": "Lincoln Avenue",
+      "intro": "Lincoln Ave from Montrose to Lawrence, around Giddings Plaza and the Western Brown Line stop: older commercial buildings with flats above shops, the Old Town School of Folk Music, the Sulzer Regional Library and Louis Sullivan's 1922 Krause Music Store, a Chicago Landmark.",
+      "work": "Storefront finish-outs and services for mixed-use buildings on Lincoln, and two- and three-flats, houses and coach houses on side streets such as Giddings, Wilson and Agatite."
+    },
+    {
+      "name": "Ravenswood",
+      "intro": "The blocks between Damen Ave and the Metra tracks on Ravenswood Ave, from Montrose up to Foster, with the Ravenswood Metra station at Lawrence and the Ravenswood Industrial Corridor's old factory buildings along the tracks.",
+      "work": "Large services, meter banks and unit panels for walk-up apartment buildings on Wolcott, and power for studios, offices and tap rooms in converted industrial buildings."
+    },
+    {
+      "name": "Ravenswood Gardens",
+      "intro": "West of Western Ave between Montrose and Lawrence, out toward the river: residential blocks on Artesian, Rockwell and Talman around the Rockwell Brown Line stop.",
+      "work": "100- to 200-amp service upgrades, garage EV chargers and the electrical for rear additions and basement remodels."
+    },
+    {
+      "name": "Winnemac Park",
+      "intro": "Between Lawrence and Foster, from Western Ave to Damen Ave, around Winnemac Park's 40-plus acres and Amundsen High School.",
+      "work": "Two- and three-flats on blocks such as Hamilton and Oakley, where an old 100-amp service becomes a 200-amp service with a meter and panel for each unit."
+    },
+    {
+      "name": "West of Western, toward the river",
+      "intro": "North of Lawrence and west of Western, including Budlong Woods: Lincoln Ave's northern stretch and side streets such as Rockwell, California and Mozart, out to Bryn Mawr and Legion Park on the river.",
+      "work": "200- and 400-amp services for houses and flats, new three-unit buildings, and additions and decks under full building permits."
+    },
+    {
+      "name": "Bowmanville and Rosehill",
+      "intro": "North of Foster between Western Ave and Ravenswood Ave, up to Rosehill Cemetery, whose 1864 castellated Gothic gate on Ravenswood Ave is a Chicago Landmark.",
+      "work": "Service upgrades for flats and houses on Summerdale, Farragut and Berwyn, and EV chargers in garages off the alley."
+    }
+  ],
+  "buildings": [
+    {
+      "illus": "b-twoflat",
+      "title": "Two-flat or three-flat",
+      "where": "Winnemac Park, Bowmanville, Ravenswood Gardens and west of Western",
+      "changes": "One building service split between units, with a meter and panel for each unit in the basement. Laundry, kitchens and air conditioning outgrow the old 100-amp service, so an upgrade replaces the whole meter bank.",
+      "services": [
+        [
+          "Service and panel upgrades",
+          "svc-panels"
+        ],
+        [
+          "laundry and kitchen circuits",
+          "svc-wiring"
+        ],
+        [
+          "repairs",
+          "svc-repair"
+        ]
+      ]
+    },
+    {
+      "illus": "b-cottage",
+      "title": "Older single-family house",
+      "where": "Ravenswood Gardens, the side streets off Lincoln Ave and west of Western",
+      "changes": "Rear additions, decks and basement remodels that go under a full building permit with plans, and older wiring that turns up once walls are opened.",
+      "services": [
+        [
+          "Rewiring and new circuits",
+          "svc-wiring"
+        ],
+        [
+          "service upgrades",
+          "svc-panels"
+        ],
+        [
+          "lighting",
+          "svc-lighting"
+        ]
+      ]
+    },
+    {
+      "illus": "b-midrise",
+      "title": "Larger apartment building",
+      "where": "Ravenswood along Wolcott, and near Lincoln Ave and Leavitt",
+      "changes": "Buildings with 14 to 26 meters need a large main service, a meter bank and a panel for every unit, planned with ComEd and the owner so tenants lose power for as short a time as possible.",
+      "services": [
+        [
+          "Main services and meter banks",
+          "svc-panels"
+        ],
+        [
+          "fire alarm and smoke detectors",
+          "svc-safety"
+        ],
+        [
+          "unit circuits",
+          "svc-wiring"
+        ]
+      ]
+    },
+    {
+      "illus": "b-townhome",
+      "title": "New three-unit building",
+      "where": "Foster Ave, Rockwell St and other infill lots",
+      "changes": "New three-storey, three-unit buildings with rooftop decks and detached three-car garages: a meter and panel for each unit, deck and garage lighting, and garage feeds, wired to the architect's plans.",
+      "services": [
+        [
+          "New construction electrical",
+          "svc-commercial"
+        ],
+        [
+          "EV-ready garages",
+          "svc-energy"
+        ],
+        [
+          "outdoor and deck lighting",
+          "svc-lighting"
+        ]
+      ]
+    },
+    {
+      "illus": "b-cottage",
+      "title": "Garage or coach house",
+      "where": "Alleys behind houses and flats across the area",
+      "changes": "A charger, a workshop or a new coach house needs a feed from the house, which can mean trenching and underground conduit. A coach house is new construction under the City's ADU rules.",
+      "services": [
+        [
+          "EV chargers",
+          "svc-energy"
+        ],
+        [
+          "garage feeds and underground service",
+          "svc-panels"
+        ],
+        [
+          "coach house electrical",
+          "svc-commercial"
+        ]
+      ]
+    },
+    {
+      "illus": "b-office",
+      "title": "Shopfront or small business",
+      "where": "Lincoln Ave, Lawrence Ave and Western Ave",
+      "changes": "Tenant finish-outs with plans, fire alarm systems for uses such as daycares, and new services in older commercial buildings. Exterior work on a landmarked facade is reviewed by the City's landmarks staff.",
+      "services": [
+        [
+          "Tenant build-outs",
+          "svc-commercial"
+        ],
+        [
+          "fire alarm",
+          "svc-safety"
+        ],
+        [
+          "lighting and signage circuits",
+          "svc-lighting"
+        ]
+      ]
+    }
+  ],
+  "scope_lede": "The same job on paper can cost very differently in a three-flat with a meter for every unit, an older house with a garage off the alley and an apartment building with 26 meters. These are the things that change it, and most are settled at the walkthrough.",
+  "scope_rows": [
+    [
+      "Size of the existing service",
+      "Many older flats and houses here still have 100-amp services. An EV charger, central air or a kitchen remodel can mean a 200-amp service first.",
+      "Us, at the walkthrough"
+    ],
+    [
+      "Meters for each unit",
+      "In a two- or three-flat, an upgrade usually replaces a bank of meters and a panel for each unit, not one panel.",
+      "Us, at the walkthrough"
+    ],
+    [
+      "ComEd and the service drop",
+      "ComEd won't upgrade the service drop until the riser and weatherhead meet its rules, and its appointment sets the cut-over date.",
+      "ComEd, with us"
+    ],
+    [
+      "Detached garage or coach house",
+      "Many lots have a garage off the alley. A charger or coach-house feed can mean trenching and underground conduit from the house.",
+      "You and us"
+    ],
+    [
+      "Age of the wiring",
+      "Fuse boxes, cloth-covered wire and earlier owners' do-it-yourself work turn up in older houses and flats, and opening walls changes the scope.",
+      "Us, at the walkthrough"
+    ],
+    [
+      "Additions, decks and renovations",
+      "These go under a full building permit with plans, not the Express Permit Program, and the electrical follows the architect's drawings and the builder's schedule.",
+      "Your architect, with us"
+    ],
+    [
+      "Larger apartment buildings",
+      "A building with 15 to 26 meters needs a new main service, a meter bank and a panel per unit, scheduled with the owner around tenants.",
+      "Your building owner, with us"
+    ],
+    [
+      "Landmarks and storefronts",
+      "Lincoln Ave shopfronts need tenant permits with plans, and work on a Chicago Landmark such as the Krause Music Store's facade is reviewed by the City's landmarks staff.",
+      "The City, with us"
+    ],
+    [
+      "Parking",
+      "Parking near Lincoln Ave and the Brown Line stops is tight, which changes how materials and crews get in.",
+      "Us, at the walkthrough"
+    ],
+    [
+      "Working hours",
+      "Shops and occupied buildings may need early or late work, and tenants in flats need notice before the power goes off. Agree the hours before the job is scheduled.",
+      "You and us"
+    ],
+    [
+      "Permit route",
+      "Service upgrades, new circuits and charger installs usually go through the City's Express Permit Program. 31 of our 52 Lincoln Square permits did.",
+      "Us"
+    ]
+  ],
+  "hourly_answer": "We quote by scope, not by the hour, because the hours on a Lincoln Square job depend on the factors below. Replacing a 100-amp service on a three-flat means three meters, three panels and a ComEd appointment, while adding one circuit in a house is a much smaller job. The written quote tells you the whole price before you agree to it.",
+  "choosing_building_why": "A three-flat with a meter for each unit, an older house with a garage off the alley and an apartment building with 26 meters on Wolcott are three different jobs.",
+  "choosing_building_answer": "In Lincoln Square, 52 City permits since 2014: 100- to 200-amp upgrades in two- and three-flats, 1,200-amp services for apartment buildings on Wolcott and Leavitt, new three-unit buildings on Foster and Rockwell, garage EV chargers and a coach house on Giddings St",
+  "choosing_paperwork_why": "Additions, decks and coach houses need a full City building permit with plans, and work on a Chicago Landmark such as the Krause Music Store's facade is reviewed by the City's landmarks staff.",
+  "where_we_fit": "Highlights is a family-owned contractor with its shop a few minutes up Lincoln Ave. In Lincoln Square we're the right call for two- and three-flats, houses, walk-up apartment buildings, garages and coach houses, EV chargers and Lincoln Ave shopfronts. Large commercial and institutional projects are for the big commercial firms, and we'll tell you so.",
+  "mix_notes": {
+    "Work inside a specific unit or condo": "Flats and condos make up much of the work here, one unit at a time.",
+    "Lighting": "Many permits list new lighting outlets alongside new circuits.",
+    "Outlets and receptacles": "Kitchen, basement and laundry remodels in flats and houses.",
+    "Interior build-outs and alterations": "Interior renovations of flats and houses, plus shopfront finish-outs.",
+    "Electrical service": "Service upgrades for flats and houses, often from 100 to 200 amps.",
+    "Panels": "New panels go in with most service upgrades, one for each unit in a flat building.",
+    "Solar": "Solar shows up on about one in ten electrical permits here.",
+    "Low voltage, data and communications": "Data, security and low-voltage wiring in homes, shops and offices.",
+    "Fire alarm": "Apartment buildings and businesses, such as daycares and shops.",
+    "EV charging": "Mostly single chargers in garages, added to an existing service."
+  },
+  "record_bullets": [
+    "100-amp to 200-amp service upgrades with three meters and three panels for three-unit buildings on the 1900 and 2100 blocks of W Summerdale, the 2300 block of W Farragut and the 4800 blocks of N Hamilton and N California.",
+    "A 400-amp service replaced with a 1,200-amp service, 26 meters and 26 panels in an apartment building on the 4800 block of N Wolcott (2024), and 1,200-amp services with 15 and 14 meters on the 4500 block of N Leavitt (2014).",
+    "Electrical for new three-storey, three-unit buildings on the 2200 and 2300 blocks of W Foster and the 4800 block of N Rockwell, and for a new four-storey building with an office and nine flats on the 2500 block of W Lawrence.",
+    "A detached three-car garage with a coach house under the City's ADU ordinance on the 2200 block of W Giddings (2026), and 400-amp services on the 2600 block of W Winnemac and the 4900 block of N Mozart (2026).",
+    "EV charger circuits in garages on the 2600 block of W Wilson and the 1900 block of W Summerdale (2025).",
+    "Business work: a tenant finish-out on the 4700 block of N Lincoln, a medical office build-out on the 2500 block of W Lawrence, and a daycare fire alarm system on the 2100 block of W Lawrence."
+  ],
+  "honest_context": [
+    "We're a north-side shop at 5766 N Lincoln Ave in West Ridge, a few minutes up Lincoln Ave from Lincoln Square. Most of our roughly 1,200 City of Chicago permits since 2012 are in Wards 1, 32, 26, 47 and 27, and the 47th covers a large part of Lincoln Square. Our permits here, about 50 since 2014, are mostly residential: service upgrades for flats and houses, new circuits, and the electrical for additions and new three-unit buildings.",
+    "In the 24 months to October 2026, about 15 Lincoln Square permits named us, and only three of the electrical contractors on the area's permits were named more often. The rest of the record is spread across about 200 contractors, and solar appears on about 55 of the electrical permits, none of them ours."
+  ],
+  "reviews_heading": "Reviews from two-flat, older-house and garage jobs",
+  "reviews": [
+    {
+      "reviewer": "katherine lehman",
+      "label": "New electric and fixtures in a 2-flat renovation"
+    },
+    {
+      "reviewer": "Kelly Luchtman",
+      "label": "Service risers on a house and coach house"
+    },
+    {
+      "reviewer": "Charlie Goss",
+      "label": "100 to 400 amps for a six-unit building"
+    },
+    {
+      "reviewer": "Ryan Pyka",
+      "label": "Laundry outlets in a two-flat basement"
+    },
+    {
+      "reviewer": "Van Nguyen",
+      "label": "Cloth wiring replaced in a bungalow"
+    },
+    {
+      "reviewer": "Billy Kuczek",
+      "label": "EV charger in a garage, trenched by hand"
+    },
+    {
+      "reviewer": "Ryan Friedman",
+      "label": "100 to 200 amps, then new lighting"
+    },
+    {
+      "reviewer": "Linda Masini",
+      "label": "Ceiling fan on old wiring in a condo"
+    }
+  ],
+  "nearby": [
+    [
+      "North Center",
+      "South of Montrose: more flats and houses, and the southern end of the Ravenswood rail corridor toward Irving Park Rd."
+    ],
+    [
+      "Uptown and East Ravenswood",
+      "Across the Metra tracks: the East Ravenswood Historic District, a National Register district of mostly residential blocks."
+    ],
+    [
+      "Andersonville and Edgewater",
+      "East of Ravenswood Ave between Foster and Bryn Mawr, around the Clark St shopping strip."
+    ],
+    [
+      "West Ridge",
+      "North of Bryn Mawr and Peterson, where our shop is: the Talman West Ridge bungalow district, flats and apartment buildings."
+    ],
+    [
+      "Albany Park and Ravenswood Manor",
+      "Across the river: the Ravenswood Manor Historic District, with bungalows and riverside houses, some with their own docks."
+    ],
+    [
+      "North Park",
+      "Northwest across the river: quieter residential blocks around North Park University."
+    ]
+  ],
+  "faq": [
+    [
+      "faq-ls-flats",
+      "Can you upgrade the service on my Lincoln Square two- or three-flat?",
+      "Yes. It's the most common job in our Lincoln Square record: a 100-amp service replaced with a 200-amp service and a meter and panel for each unit, on blocks such as W Summerdale, W Farragut, N Hamilton and N California. We pull the City permit and coordinate the ComEd work."
+    ],
+    [
+      "faq-ls-coach-house",
+      "Can you wire a new coach house or garage in Lincoln Square?",
+      "Yes. Our record includes a 2026 permit for a new three-car garage with a coach house under the City's ADU ordinance on the 2200 block of W Giddings St. Whether your lot can take a coach house is a zoning question for the City; once it can, we design the feed from the house, often underground, and handle the electrical permit."
+    ],
+    [
+      "faq-ls-ev",
+      "Can you install an EV charger in my garage off the alley?",
+      "Yes. In 2025 we added garage charger circuits on the 2600 block of W Wilson and the 1900 block of W Summerdale, both on existing 200-amp services. If your service is smaller, the upgrade usually comes first, and a detached garage can need a trench and new conduit."
+    ],
+    [
+      "faq-ls-apartment",
+      "Do you work on larger apartment buildings in Lincoln Square?",
+      "Yes. In 2024 we replaced a 400-amp service with a 1,200-amp service, 26 meters and 26 panels in a building on the 4800 block of N Wolcott, and in 2014 we installed 1,200-amp services with 15 and 14 meters on the 4500 block of N Leavitt. We plan the cut-over with the owner and ComEd."
+    ],
+    [
+      "faq-ls-landmark",
+      "Do I need landmark approval for electrical work on Lincoln Ave?",
+      "Only on a designated Chicago Landmark. In Lincoln Square those are the Krause Music Store's facade on the 4600 block of N Lincoln Ave and the Rosehill Cemetery entrance, and permit work on them is reviewed by the City's landmarks staff. Most shopfronts on Lincoln Ave need an ordinary City permit."
+    ],
+    [
+      "faq-ls-zip",
+      "Which Lincoln Square ZIP codes do you cover?",
+      "All of them: 60625 for most of the area, 60640 on the Ravenswood side, and 60659 and 60660 north of Bryn Mawr, along with every other Chicago neighbourhood."
+    ]
+  ],
+  "cta_ready": [
+    "Your address, and whether it's a house, a two- or three-flat or a larger walk-up",
+    "A photo of your electrical panel with the door open, and of the meters in the basement",
+    "Your service size if you know it: the number on the main breaker, such as 100 or 200",
+    "For a garage charger or coach house: photos of the garage and the path from the house",
+    "For an addition, deck or renovation: your architect's drawings and where the permit stands",
+    "For a shopfront: the landlord's contact, any drawings and your opening hours"
+  ],
+  "service_overrides": {
+    "Electrician for new construction": "New three-unit buildings, a mixed-use building and a coach house. Five of our Lincoln Square permits are new construction.",
+    "Electrical riser and meter riser repair": "Risers, weatherheads and meter banks for Lincoln Square two- and three-flats, coordinated with ComEd.",
+    "Tenant build-outs": "Shopfronts and offices on Lincoln Ave and Lawrence Ave, including a medical office and a retail finish-out."
+  },
+  "research_sources": [
+    [
+      "City of Chicago Data Portal: Boundaries, Community Areas (Lincoln Square, 4)",
+      "https://data.cityofchicago.org/d/igwz-8jzy",
+      "official"
+    ],
+    [
+      "City of Chicago Data Portal: Boundaries, ZIP Codes",
+      "https://data.cityofchicago.org/d/unjd-c2ca",
+      "official"
+    ],
+    [
+      "City of Chicago Data Portal: Boundaries, Neighborhoods",
+      "https://data.cityofchicago.org/d/y6yq-dbs2",
+      "official"
+    ],
+    [
+      "City of Chicago Data Portal: Building Permits",
+      "https://data.cityofchicago.org/d/ydr8-5enu",
+      "official"
+    ],
+    [
+      "Chicago Landmarks: Krause Music Store",
+      "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1350",
+      "official"
+    ],
+    [
+      "Chicago Landmarks: Rosehill Cemetery Entrance",
+      "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1416",
+      "official"
+    ],
+    [
+      "Chicago Landmarks: North Side landmarks and districts",
+      "https://webapps1.chicago.gov/landmarksweb/web/regiondetails.htm?regId=1",
+      "official"
+    ],
+    [
+      "City of Chicago Historic Preservation: permit application submission requirements (2025)",
+      "https://www.chicago.gov/content/dam/city/depts/zlup/Historic_Preservation/Publications/Permit_Application_Submission_Requirements_2025.pdf",
+      "official"
+    ],
+    [
+      "City of Chicago: Express Permit Program, electrical work",
+      "https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/instructions/EPP/ELECT.html",
+      "official"
+    ],
+    [
+      "City of Chicago: Ravenswood Industrial Corridor framework plan",
+      "https://chicago.gov/city/en/depts/dcd/supp_info/ravenswood-framework-plan-and-design-guidelines.html",
+      "official"
+    ],
+    [
+      "City of Chicago: Ravenswood TIF",
+      "https://www.chicago.gov/city/en/depts/dcd/supp_info/tif/ravenswood_tif.html",
+      "official"
+    ],
+    [
+      "National Park Service: Ravenswood Manor Historic District (NRIS 08000836)",
+      "https://npgallery.nps.gov/AssetDetail/NRIS/08000836",
+      "official"
+    ],
+    [
+      "Wikipedia: Lincoln Square, Chicago",
+      "https://en.wikipedia.org/wiki/Lincoln_Square,_Chicago",
+      "reference"
+    ],
+    [
+      "Wikipedia: Ravenswood, Chicago",
+      "https://en.wikipedia.org/wiki/Ravenswood,_Chicago",
+      "reference"
+    ],
+    [
+      "Wikipedia: Krause Music Store",
+      "https://en.wikipedia.org/wiki/Krause_Music_Store",
+      "reference"
+    ],
+    [
+      "Wikipedia: Ravenswood Manor Historic District",
+      "https://en.wikipedia.org/wiki/Ravenswood_Manor_Historic_District",
+      "reference"
+    ],
+    [
+      "Wikipedia: East Ravenswood Historic District",
+      "https://en.wikipedia.org/wiki/East_Ravenswood_Historic_District",
+      "reference"
+    ],
+    [
+      "WTTW: Malt Row brewing on the North Side (2017)",
+      "https://news.wttw.com/2017/06/05/perfect-storm-brewing-chicago-s-north-side",
+      "reference"
+    ],
+    [
+      "WTTW: Coach house ordinance takes effect in Chicago (2026)",
+      "https://news.wttw.com/2026/04/09/coach-house-ordinance-aimed-housing-affordability-crisis-takes-effect-chicago",
+      "reference"
+    ],
+    [
+      "YoChicago: Bowmanville",
+      "https://yochicago.com/neighborhoods-for-the-rest-of-us-bowmanville/",
+      "reference"
+    ],
+    [
+      "Baird & Warner: Budlong Woods neighbourhood information",
+      "https://bairdwarner.com/our-neighborhoods/budlong-woods",
+      "reference"
+    ],
+    [
+      "Chicago Bungalow Association: historic bungalow districts",
+      "https://www.chicagobungalow.org/historic-districts",
+      "reference"
+    ]
+  ]
+}
