@@ -14,6 +14,7 @@ const NAV = [
   {label: 'About us', href: `${PUBLIC_SITE_ORIGIN}/about-us`},
   {label: 'Services', href: `${PUBLIC_SITE_ORIGIN}/services`},
   {label: 'Service areas', href: '/', internal: true},
+  {label: 'Reviews', href: `${PUBLIC_SITE_ORIGIN}/reviews`},
   {label: 'Blog', href: `${PUBLIC_SITE_ORIGIN}/blog`},
   {label: 'Learning center', href: `${PUBLIC_SITE_ORIGIN}/learning-center`},
 ]
