@@ -68,17 +68,22 @@ export function mergeFaqs(area: Faq[], generic: Faq[]): Faq[] {
 /** The city an area page sits in: Chicago unless the page names a suburb. */
 export const cityOf = (page: Pick<AreaPage, 'city'>) => page.city?.trim() || 'Chicago'
 export const isChicago = (page: Pick<AreaPage, 'city'>) => cityOf(page).toLowerCase() === 'chicago'
+/** Suburbs incorporated as villages; any other suburb reads as a city (Evanston, Park Ridge, Des Plaines). */
+const VILLAGES = new Set(['oak park', 'river forest', 'forest park', 'elmwood park', 'wilmette', 'kenilworth', 'winnetka', 'glencoe', 'glenview', 'northbrook', 'skokie', 'lincolnwood', 'niles', 'morton grove', 'harwood heights', 'norridge', 'arlington heights', 'mount prospect', 'palatine', 'schaumburg'])
+/** "Village" or "City": how a suburb's own government is named on the page. */
+export const municipalityKind = (page: Pick<AreaPage, 'city'>) => (VILLAGES.has(cityOf(page).toLowerCase()) ? 'Village' : 'City')
 /** "Electricians in the West Loop, Chicago" or, for a suburb, "Electricians in Evanston, IL". */
 export const defaultH1 = (page: Pick<AreaPage, 'city' | 'areaIn'>) => `Electricians ${page.areaIn}, ${isChicago(page) ? 'Chicago' : 'IL'}`
 
 export function genericFaqs(page: AreaPage, co: AreaSettings): Faq[] {
   const city = cityOf(page)
+  const kind = municipalityKind(page)
   const local: Faq[] = isChicago(page) ? [
     {key: 'faq-handyman', question: 'Can a handyman do electrical work in Chicago?', answer: "Not work that needs a permit. Chicago electrical permits are issued to registered electrical contractors, so a handyman can't pull one. For anything beyond non-electrical tasks, use a registered contractor."},
     {key: 'faq-license', question: "How do I check an electrician's licence in Chicago?", answer: `Ask for their City of Chicago electrical contractor registration and check it with the Department of Buildings. Then search their name in the City's public building permits data to see the work they've actually done. Ours is ${co.licence}.`},
   ] : [
-    {key: 'faq-handyman', question: `Can a handyman do electrical work in ${city}?`, answer: `Not work that needs a permit. ${city} requires every contractor working under a permit to be registered with the City, and an electrical contractor registers with an electrical licence. For anything beyond non-electrical tasks, use a licensed, registered electrician.`},
-    {key: 'faq-license', question: `How do I check an electrician's licence for work in ${city}?`, answer: `Ask for two things: their electrical contractor licence, and their City of ${city} contractor registration, which the City requires for permitted work. Check the licence with the city that issued it. Ours is City of Chicago electrical contractor licence ${co.licence}.`},
+    {key: 'faq-handyman', question: `Can a handyman do electrical work in ${city}?`, answer: `Not work that needs a permit. Permitted electrical work in ${city} goes through the ${kind}'s building department, which checks the contractor named on the permit. For anything beyond non-electrical tasks, use a licensed electrician who meets the ${kind}'s rules.`},
+    {key: 'faq-license', question: `How do I check an electrician's licence for work in ${city}?`, answer: `Ask for their electrical contractor licence and check it with the city or village that issued it, then ask the ${kind} of ${city} building department what it needs from a contractor before a permit is issued. Ours is City of Chicago electrical contractor licence ${co.licence}.`},
   ]
   return [
     ...local,
@@ -136,7 +141,7 @@ export function choosingChecks(page: AreaPage, co: AreaSettings): Check[] {
   return [
     isChicago(page)
       ? {what: 'City of Chicago registration', why: 'Only a registered electrical contractor can pull a Chicago electrical permit. Building managers ask for it before they let anyone in.', verify: 'The City of Chicago Department of Buildings contractor lookup', answer: `${co.licence}${co.licence2 ? `, also ${co.licence2}` : ''}`}
-      : {what: `Licence and ${cityOf(page)} registration`, why: `${cityOf(page)} requires every contractor working under a permit to be registered with the City. An electrical contractor registers with an electrical licence from a testing city such as Chicago.`, verify: `Ask for the licence and the City of ${cityOf(page)} registration`, answer: `City of Chicago licence ${co.licence}${co.licence2 ? `, also ${co.licence2}` : ''}`},
+      : {what: `Licence and ${cityOf(page)} paperwork`, why: `Permitted work in ${cityOf(page)} goes through the ${municipalityKind(page)}'s building department, which checks the contractor named on the permit.`, verify: `Ask for the licence, and ask the ${municipalityKind(page)} of ${cityOf(page)} what it needs from a contractor`, answer: `City of Chicago licence ${co.licence}${co.licence2 ? `, also ${co.licence2}` : ''}`},
     isChicago(page)
       ? {what: 'Permit record in this area', why: 'Permits are public. They show the work actually done here, not the work claimed.', verify: "Search the contractor's name in the City's building permits data", answer: recN ? `${recN} permits ${page.areaIn} since ${since}; ${co.permitsCitywide} citywide since ${co.permitsSince}` : `${co.permitsCitywide} citywide since ${co.permitsSince}`}
       : {what: 'Permit record', why: 'Permits show the work actually done, not the work claimed.', verify: "Ask for recent permitted jobs nearby, and search Chicago work in the City of Chicago's public permits data", answer: `${co.permitsCitywide} City of Chicago permits since ${co.permitsSince}`},
