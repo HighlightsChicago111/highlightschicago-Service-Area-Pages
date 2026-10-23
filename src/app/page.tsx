@@ -11,6 +11,7 @@ import {getAreaCards, getAreaSettings} from '@/lib/content'
 import {PHOTOS, telHref} from '@/lib/ds'
 import {BASE_PATH, PUBLIC_SITE_ORIGIN, absoluteUrl} from '@/lib/urls'
 import type {AreaCard} from '@/types/area'
+import {ReviewRatings} from '@/components/ds/review-ratings'
 
 export const revalidate = 60
 const TITLE = 'Electrician service areas in Chicago'
@@ -52,6 +53,7 @@ export default async function ServiceAreasPage() {
             <div className="ar-ch-grid">
               <div>
                 <p className="ar-ch-kicker">Licensed Chicago electricians</p>
+                <ReviewRatings googleRating={co.googleRating} googleCount={co.googleReviews} />
                 <h1 id="areas-hero-title">Service areas across Chicago and nearby suburbs</h1>
                 <p className="ar-ch-lede">From our shop at {co.address?.street || '5766 N Lincoln Ave'}, Highlights Chicago electricians work across the North and Northwest Sides and the suburbs around the city. Find your area below.</p>
                 <div className="ar-ch-actions">
