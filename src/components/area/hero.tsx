@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Full-bleed hero photo; native img keeps it crawlable and lets it load eagerly. */
 import Link from 'next/link'
-import {Button, Copy, Eyebrow, GoogleG, Stars} from '@/components/ds/atoms'
+import {Button, Copy, Eyebrow} from '@/components/ds/atoms'
+import {ReviewRatings} from '@/components/ds/review-ratings'
 import {AreaQuoteForm} from '@/components/ds/area-quote-form'
 import {Icon} from '@/components/ds/icon'
 import {capitalise, defaultH1} from '@/lib/area/copy'
@@ -34,13 +35,13 @@ export function AreaHero({ctx}: {ctx: AreaCtx}) {
             </ol>
           </nav>
           {page.eyebrow && <Eyebrow className="ds-eyebrow--light">{page.eyebrow}</Eyebrow>}
+          <ReviewRatings googleRating={co.googleRating} googleCount={co.googleReviews} />
           <h1 className="ds-h1">{page.h1 || defaultH1(page)}</h1>
           <Copy value={page.heroLede} show={editorial} className="ds-hero-lede" />
           <ul className="ds-trust-chips" aria-label="Credentials">
             <li><Icon name="shieldCheck" size={16} />City of Chicago Electrical Contractor {co.licence}</li>
             <li><Icon name="users" size={16} />Family-owned, founder-led</li>
             <li><Icon name="fileCheck" size={16} />{permitLine}</li>
-            <li className="ds-trust-chip--google"><GoogleG size={20} /><b>{co.googleRating}</b><span className="ds-out">/5</span><Stars size={14} /><span>{co.googleReviews} Google reviews</span></li>
           </ul>
           <div className="ds-cta-row">
             <Button href={tel} tone="light" icon="phone">Call {co.phoneDisplay}</Button>

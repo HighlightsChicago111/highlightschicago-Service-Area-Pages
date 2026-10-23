@@ -788,3 +788,22 @@
   .ds .ar-thanks-card .ds-cta-row { width: 100%; }
   .ds .ar-thanks-card .ds-btn { white-space: normal; text-align: center; }
 }
+}
+
+/* Hero ratings: Google and Yelp, each linking to its reviews (components/review-ratings.tsx). */
+.hc-ratings{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin:4px 0 18px}
+.hc-rating{display:inline-flex;align-items:center;gap:10px;color:inherit;text-decoration:none}
+.hc-rating-mark{flex:none;width:34px;height:34px}
+.hc-rating-num{font-size:30px;line-height:1;font-weight:700;letter-spacing:-.01em}
+.hc-rating-num--google{color:#FBBC04}
+.hc-stars-google{display:inline-flex;gap:1px;color:#FBBC04}
+.hc-stars-yelp{display:inline-flex;gap:3px}
+.hc-stars-yelp>span{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:3px;background:#E00707}
+.hc-rating-count{font-size:16px;font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.hc-rating:hover .hc-rating-count,.hc-rating:focus-visible .hc-rating-count{text-decoration-thickness:2px}
+.hc-rating:focus-visible{outline:2px solid currentColor;outline-offset:4px;border-radius:4px}
+.hc-rating-sep{width:1px;align-self:stretch;min-height:34px}
+.hc-ratings--dark{color:#fff}.hc-ratings--dark .hc-rating-sep{background:#ffffff40}
+.hc-ratings--light{color:var(--ink,#0f172a)}.hc-ratings--light .hc-rating-sep{background:var(--line,#d6dbe3)}
+.hc-ratings--light .hc-rating-num--google{color:#B07D00}.hc-ratings--light .hc-stars-google{color:#E8A600}
+@media(max-width:560px){.hc-ratings{gap:10px 16px}.hc-rating-num{font-size:24px}.hc-rating-mark{width:28px;height:28px}.hc-rating-count{font-size:14px}.hc-rating-sep{display:none}}
