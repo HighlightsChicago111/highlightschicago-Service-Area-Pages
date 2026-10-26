@@ -1,5 +1,6 @@
 import type {Metadata} from 'next'
 import localFont from 'next/font/local'
+import {GoogleTagManager, GoogleTagManagerNoScript} from '@/components/google-tag-manager'
 import {siteUrl} from '@/sanity/env'
 import './globals.css'
 import './design-system-v3.css'
@@ -26,11 +27,16 @@ export const metadata: Metadata = {
   },
 }
 
+// Tags fire only on the live site: not locally and not on preview deployments.
+const gtm = process.env.VERCEL_ENV === 'production'
+
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+        {gtm && <GoogleTagManagerNoScript />}
         {children}
+        {gtm && <GoogleTagManager />}
       </body>
     </html>
   )
