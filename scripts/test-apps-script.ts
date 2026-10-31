@@ -88,7 +88,9 @@ async function check(name: string, body: () => void | Promise<void>) {
 
 async function main() {
   await check('the committed ServiceAreaPages.gs matches the current schema and code (run pnpm apps-script:build)', async () => {
-    assert.equal(fs.readFileSync(OUT_FILE, 'utf8'), await buildAppsScript())
+    // Line endings ignored: git may check the file out with CRLF on Windows.
+    const lf = (text: string) => text.replace(/\r\n/g, '\n')
+    assert.equal(lf(fs.readFileSync(OUT_FILE, 'utf8')), lf(await buildAppsScript()))
   })
   await check('the menu only adds this tab\'s actions, and Menu.gs calls it by name', () => {
     const world = makeWorld()
