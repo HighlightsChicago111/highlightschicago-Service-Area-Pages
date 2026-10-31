@@ -22,10 +22,8 @@ const FEATURE_KINDS = new Set(['expressway_ns', 'expressway_ew', 'water_east', '
 const REQUIRED = ['area', 'area_the', 'area_in', 'slug', 'meta_description', 'eyebrow', 'hero_lede', 'boundary_text']
 const CONFIRM = /\[CONFIRM:[^\]]*\]/g
 
-/** Every block of the standard area template, with the item counts the design is built for. */
-export const STANDARD_COUNTS: Record<string, [number, number]> = {
-  facts: [4, 6], districts: [4, 6], buildings: [4, 6], scope_rows: [8, 11], reviews: [6, 8], nearby: [6, 8], faq: [4, 6], cta_ready: [5, 6],
-}
+export {STANDARD_COUNTS} from './sheet-rules'
+import {STANDARD_COUNTS} from './sheet-rules'
 export const STANDARD_TEXT = [
   'address_placeholder', 'bbox_text', 'map_desc', 'scope_lede', 'hourly_answer', 'choosing_building_why', 'choosing_building_answer',
   'choosing_paperwork_why', 'where_we_fit', 'reviews_heading', 'card_summary', 'card_region',

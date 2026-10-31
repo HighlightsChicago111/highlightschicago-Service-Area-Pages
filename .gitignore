@@ -20,3 +20,6 @@ __pycache__/
 
 # Packaged skill for upload to claude.ai (built from skill/)
 skill/*.skill
+
+# Sheet exports of area pages (copies of Sanity; regenerate with pnpm sheet:export)
+exports/
