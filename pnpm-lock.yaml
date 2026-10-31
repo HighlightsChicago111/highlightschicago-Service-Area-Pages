@@ -42,6 +42,9 @@ importers:
       '@types/react-dom':
         specifier: 19.2.5
         version: 19.2.5(@types/react@19.2.18)
+      esbuild:
+        specifier: 0.28.2
+        version: 0.28.2
       eslint:
         specifier: 9.39.5
         version: 9.39.5(jiti@2.7.0)(supports-color@8.1.1)
@@ -2018,6 +2021,10 @@ packages:
     resolution: {integrity: sha512-4JMs6p0uUJjtU7hbHDZxCpx/4xEnbEpuBR/0vccE+BlOZYBZaH3MvV7+llV6+OYH5ANh3pvvMM+CEy5BPdf2KA==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
+  '@sanity-labs/design-tokens@0.0.2-alpha.9':
+    resolution: {integrity: sha512-ptkJsn9NXkll4GnZV1e3Mmm05oeE2diih9+5wuDijrYkjrLJcCXX3zUZ8RrhG5RkRiIJZ1OA79ukv7VnWwR+BQ==}
+    engines: {node: '>=20.19 <22 || >=22.12'}
+
   '@sanity-labs/oclif-plugin-skills-flag@0.2.1':
     resolution: {integrity: sha512-DCuefzB+ZcI7pc68up/T0TExeS98MAA2Rcy6vEwQLv86XCku3KHm7v2NNNLQ65PYqNVOil6kPIUefi/6pxQf+w==}
     engines: {node: '>=22'}
@@ -2269,13 +2276,14 @@ packages:
   '@sanity/ui@4.0.6':
     resolution: {integrity: sha512-iPtHRtnwcwq2ePHVrXsmTCFLNkEYfXL0kSavY4gnfkrbCPOmMD4iMe5MKcRtQ2YrJug6K70c6JQRCB+gN8kNaA==}
     engines: {node: '>=22.12'}
+    deprecated: Class names collide with @sanity/ui 4.4.4 (shipped in sanity@6.19.0) when both load on one page, breaking styles. Upgrade to @sanity/ui@^4.4.4.
     peerDependencies:
       react: ^19.2
       react-dom: ^19.2
       styled-components: ^6.1
 
-  '@sanity/ui@5.0.0-alpha.14':
-    resolution: {integrity: sha512-h+IdfVMoDpnwYxk1Z+RFal7yRKgukWHY3QQtf2P9dKTIFCSzKr4CIGyKuBfFFTe58cUBRMfHllRU2b/hlhHF6A==}
+  '@sanity/ui@5.0.0-alpha.19':
+    resolution: {integrity: sha512-2Q3bPNCbY5jkLEVK6G+8ctd/Ffp5c+iXC9DsVzX1H8fF5+Tu8HnsBsfWnFy8/WixpKBXhtVj/7OJVoFTRLhhUA==}
     engines: {node: '>=20.19 <22 || >=22.12'}
     hasBin: true
     peerDependencies:
@@ -7787,6 +7795,8 @@ snapshots:
 
   '@sanity-labs/design-tokens@0.0.2-alpha.6': {}
 
+  '@sanity-labs/design-tokens@0.0.2-alpha.9': {}
+
   '@sanity-labs/oclif-plugin-skills-flag@0.2.1(@oclif/core@4.14.0)':
     dependencies:
       '@oclif/core': 4.14.0
@@ -7797,7 +7807,7 @@ snapshots:
       '@sanity/icons': 5.2.1(react@19.2.8)
       '@sanity/ui': 4.0.6(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(styled-components@6.5.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       react: 19.2.8
-      ui5: '@sanity/ui@5.0.0-alpha.14(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
+      ui5: '@sanity/ui@5.0.0-alpha.19(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
     transitivePeerDependencies:
       - react-dom
       - styled-components
@@ -8405,9 +8415,9 @@ snapshots:
       styled-components: 6.5.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       use-effect-event: 2.0.3(react@19.2.8)
 
-  '@sanity/ui@5.0.0-alpha.14(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@sanity/ui@5.0.0-alpha.19(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
-      '@sanity-labs/design-tokens': 0.0.2-alpha.6
+      '@sanity-labs/design-tokens': 0.0.2-alpha.9
       '@sanity/icons': 5.2.1(react@19.2.8)
       clsx: 2.1.1
       comment-json: 5.0.0
@@ -8462,7 +8472,7 @@ snapshots:
       react-rx: 6.0.0(react@19.2.8)(rxjs@7.8.2)
       rxjs: 7.8.2
       sanity: 6.11.0(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(@noble/hashes@2.3.0)(@rolldown/plugin-babel@0.2.3(@babel/core@7.29.7(supports-color@8.1.1))(@babel/runtime@7.29.7)(rolldown@1.2.5)(vite@8.2.2(@types/node@26.4.0)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.12)(yaml@2.9.0)))(@sanity/sdk@3.0.0-rc.2(@types/react@19.2.18)(react@19.2.8)(use-sync-external-store@1.6.0(react@19.2.8))(xstate@5.32.6))(@types/node@26.4.0)(@types/react-dom@19.2.5(@types/react@19.2.18))(@types/react@19.2.18)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(rolldown@1.2.5)(styled-components@6.5.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)
-      ui5: '@sanity/ui@5.0.0-alpha.14(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
+      ui5: '@sanity/ui@5.0.0-alpha.19(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
       use-effect-event: 2.0.3(react@19.2.8)
     transitivePeerDependencies:
       - '@babel/runtime'
@@ -11450,7 +11460,7 @@ snapshots:
       speakingurl: 14.0.1
       styled-components: 6.5.3(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       swr: 2.5.1(react@19.2.8)
-      ui5: '@sanity/ui@5.0.0-alpha.14(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
+      ui5: '@sanity/ui@5.0.0-alpha.19(react-dom@19.2.8(react@19.2.8))(react@19.2.8)'
       urlpattern-polyfill: 10.1.0
       use-device-pixel-ratio: 1.1.2(react@19.2.8)
       use-effect-event: 2.0.3(react@19.2.8)

@@ -170,6 +170,53 @@ exactly what would be written. Drafts never go live by themselves.
 Answer the **[CONFIRM]** items the skill lists (licences, registrations, hours) with the owner before publishing. On
 the live site they are hidden, not answered.
 
+### The Google Sheet copy of every page
+
+Every published area page is also kept as one row of the team's Google Sheet, in the tab **Service area pages**
+(the **Service pages** tab belongs to the service pages project; never use "Replace spreadsheet"). The headings are the exact Sanity field names, so
+each cell maps to one field:
+
+| Heading | Means |
+|---|---|
+| `area`, `heroLede`, `slug` | a single field |
+| `bbox.north`, `cardImage.credit` | a part of a field |
+| `zips[1]`, `ctaReady[3]` | item 1, item 3 of a list of text |
+| `districts[2].name`, `faq[4].answer` | a part of item 2, item 4 of a list |
+| `buildings[1].services[2].label` | a list inside a list item |
+| `map`, `permits` | generated data, kept as one JSON cell; don't hand-edit |
+| `_id`, `_status`, `_updatedAt` | bookkeeping, ignored on import |
+
+The columns come from the Sanity schema, so a field added later gets its columns automatically (export a fresh sheet).
+
+**Straight from the sheet:** the tab has an Apps Script menu, **Service area pages → Sanity**, that checks the
+selected rows and pushes them to Sanity as drafts after you confirm. Set-up and daily use: `apps-script/README.md`.
+The commands below do the same from a computer with this repo.
+
+**Sanity to sheet** (after writing or publishing pages):
+
+```powershell
+corepack pnpm sheet:export                     # published pages -> exports/service-area-pages.csv
+corepack pnpm sheet:export -- --include-drafts  # also pages not published yet
+```
+
+Then open the **Service area pages** tab and use **File → Import → Upload**, "Replace current sheet" (or let Claude
+write the rows when a Google Sheets connector is connected). Each row is the page as it is live; unpublished draft
+changes are left out. The export stops if any value would be lost.
+
+**Sheet to Sanity** (after editing cells in the sheet):
+
+```powershell
+# In Google Sheets: File -> Download -> Comma-separated values (.csv)
+corepack pnpm sheet:import -- --file "$HOME\Downloads\service-area-pages.csv"                          # dry run
+corepack pnpm sheet:import -- --file "$HOME\Downloads\service-area-pages.csv" --only evanston --yes    # write drafts
+```
+
+The dry run checks every row (misspelled headings, bad numbers, broken JSON, missing required fields, an `_id` that
+does not match the slug, template gaps) and lists which fields differ from Sanity. A row is refused when its page was
+edited in Sanity after the sheet was exported (its `_updatedAt` is older): export a fresh sheet and redo the edit. A
+new page's row needs no `_id` or `_updatedAt`. `--yes` writes only the changed
+pages, as **drafts** of the existing pages (never duplicates, never published). Review and publish them in the Studio.
+
 ## 7. Make a design change
 
 ```powershell
@@ -269,6 +316,7 @@ In C:\work\service-areas, use the highlights-chicago-service-area-page skill to 
 - Preview /service-areas/[slug] and /service-areas at desktop and phone width and show me screenshots.
 - Before writing to Sanity: run `corepack pnpm sanity:check`, show me the target (project hzu8fe77, dataset production), run the dry run `corepack pnpm content:push --only [slug]`, and wait for my clear yes. Write drafts only, never publish.
 - Then create a branch, commit the new area files, push and open a pull request.
+- After I publish it, run `corepack pnpm sheet:export` and update the "Service area pages" tab of the team's Google Sheet (or tell me to import the CSV there).
 - Finish with what is specific to the area and every [CONFIRM] question I need answered before publishing.
 ```
 
@@ -297,6 +345,7 @@ In C:\work\service-areas, make this design change to the service area pages: [DE
 | Studio setup | `sanity.config.ts`, `src/sanity/structure.ts` (incl. the "Live page" tab), `src/sanity/presentation.ts` |
 | Content | `content/areas/<slug>/area.json` (+ `permits.json` for Chicago areas), `content/company.json`, `content/highlights-reviews.csv` |
 | Import pipeline | `scripts/build-area-documents.ts`, `scripts/push-area-documents.ts`, `scripts/lib/area-transform.ts`, tests in `scripts/test-area-documents.ts` |
+| Google Sheet sync | `scripts/area-sheet.ts` (`sheet:export`, `sheet:import`), `scripts/lib/sheet.ts`, `scripts/lib/sheet-rules.ts`; the sheet's Apps Script in `apps-script/` (`apps-script:build`); tests in `scripts/test-area-sheet.ts` and `scripts/test-apps-script.ts` |
 | Writing skill | `skill/highlights-chicago-service-area-page/` |
 
 Vercel environment variables: `NEXT_SANITY_PROJECT_ID`, `NEXT_SANITY_DATASET`, `NEXT_SANITY_API_VERSION`,

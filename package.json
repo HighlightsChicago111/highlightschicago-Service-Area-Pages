@@ -14,8 +14,11 @@
     "library:export": "python -I scripts/export_area_library.py",
     "content:build": "tsx scripts/build-area-documents.ts",
     "content:push": "tsx scripts/push-area-documents.ts",
-    "test:content": "tsx scripts/test-area-documents.ts",
-    "test:footer-legal": "tsx scripts/test-footer-legal-links.tsx"
+    "test:content": "tsx scripts/test-area-documents.ts && tsx scripts/test-area-sheet.ts && tsx scripts/test-apps-script.ts",
+    "test:footer-legal": "tsx scripts/test-footer-legal-links.tsx",
+    "sheet:export": "tsx scripts/area-sheet.ts export",
+    "sheet:import": "tsx scripts/area-sheet.ts import",
+    "apps-script:build": "tsx scripts/build-apps-script.ts"
   },
   "dependencies": {
     "@sanity/preview-url-secret": "4.1.5",
@@ -31,6 +34,7 @@
     "@types/node": "26.4.0",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
+    "esbuild": "0.28.2",
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.3",
     "tsx": "4.23.12",

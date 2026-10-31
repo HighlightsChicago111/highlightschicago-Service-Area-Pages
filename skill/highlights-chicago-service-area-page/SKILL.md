@@ -85,7 +85,15 @@ wait for a clear yes. Then `corepack pnpm run content:push --only <slug> --yes` 
 publishes in the Studio (`/service-areas/studio`, "Live page" tab shows the result). Never use `--publish` unless
 asked.
 
-### 9. Hand over
+### 9. Update the Google Sheet copy
+Every published area page is also a row of the team's Google Sheet, tab "Service area pages" (headings = exact Sanity
+field paths, e.g. `districts[2].name`). After the user publishes, run `corepack pnpm sheet:export` and update that tab with
+`exports/service-area-pages.csv` (write the page's row through a Google Sheets connector if one is connected, otherwise
+tell the user to import the file on that tab: File → Import → Replace current sheet, never Replace spreadsheet). When the user edits pages in the sheet, they
+download it as CSV and `corepack pnpm sheet:import -- --file <csv>` dry-runs it; writing (`--yes`) needs the same
+target proof and clear yes as step 8, writes drafts only, and refuses rows for pages edited in Sanity after the export.
+
+### 10. Hand over
 Say what is specific to the area (districts, building types, the permit mix or neighbouring record in one line),
 list every `[CONFIRM: …]` item for the client, mention a thin or missing Highlights record, and give the preview link.
 
