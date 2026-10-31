@@ -237,7 +237,7 @@ var ServiceAreaPagesLib = (() => {
     if (status >= 300) throw new Error(`Sanity answered ${status}: ${body.error?.description || body.message || "unknown error"}`);
     return body;
   }
-  var query = (groq, params, withToken) => sanity(`query/${CONFIG.dataset}?${Object.entries({ query: groq, ...Object.fromEntries(Object.entries(params).map(([k, v]) => [`$${k}`, JSON.stringify(v)])) }).map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(String(v))}`).join("&")}`, void 0, withToken).result;
+  var query = (groq, params, withToken) => sanity(`query/${CONFIG.dataset}?${Object.entries({ query: groq, perspective: "raw", ...Object.fromEntries(Object.entries(params).map(([k, v]) => [`$${k}`, JSON.stringify(v)])) }).map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(String(v))}`).join("&")}`, void 0, withToken).result;
   function cellText(value) {
     if (Object.prototype.toString.call(value) === "[object Date]") return value.toISOString();
     if (value === null || value === void 0) return "";
