@@ -20,20 +20,23 @@ in the Studio.
 
 ## One-time set-up (owner)
 
-1. **Put the pages in the tab.** Run `corepack pnpm sheet:export`. In the spreadsheet, add a tab named exactly
-   `Service area pages`, open it, then **File → Import → Upload** `exports/service-area-pages.csv` with:
-   - Import location: **Replace current sheet** (never "Replace spreadsheet": it would wipe the other tabs)
-   - **Untick "Convert text to numbers, dates, and formulas"**, so ZIP codes, times and text stay exactly as exported
-2. **Add the script.** In the spreadsheet, **Extensions → Apps Script**.
+1. **Add the script.** In the spreadsheet, **Extensions → Apps Script**.
    The project is already there: the Service pages tab's script (`Code.gs`, project "Highlights page sheet") lives in
    it. Leave that file alone and add two **new** files with the **+** next to "Files":
    - `Menu`: paste `apps-script/Menu.gs` (if a `Menu.gs` already exists, check it lists `'serviceAreaPagesMenu'`).
    - `ServiceAreaPages`: paste all of `apps-script/ServiceAreaPages.gs`.
    - Save. Don't add another `function onOpen` anywhere. The Service pages menu comes from its own trigger and is
      deliberately not listed in `Menu.gs`.
-3. Reload the spreadsheet. The menu **Service area pages → Sanity** appears (it may take a few seconds). The first
+2. Reload the spreadsheet. The menu **Service area pages → Sanity** appears (it may take a few seconds). The first
    time you use it, Google asks you to authorise the script (it needs: this spreadsheet, and external requests to
    Sanity).
+3. **Set my Sanity token** (below), then **Load published pages from Sanity**. It creates the `Service area pages`
+   tab if needed and fills it with every published page, one row each, row 1 holding the exact field names, all
+   cells as plain text. It only reads Sanity. Use it again any time to refresh the tab; it first lists any rows
+   whose edits are not in Sanity yet, because those would be replaced.
+
+(Instead of the Load action, `corepack pnpm sheet:export` writes the same rows to a CSV you can import into the tab
+with **File → Import → Replace current sheet**, unticking "Convert text to numbers, dates, and formulas".)
 
 ## Each person, once
 

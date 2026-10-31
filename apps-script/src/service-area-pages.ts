@@ -9,7 +9,7 @@
  * The other tabs (service pages, brand service pages) belong to other projects and are never read or written.
  * Writes are drafts only, after a confirmation that names the Sanity project; nothing is ever published.
  */
-import {META_COLUMNS, staleReason, unflatten, unknownColumns, type Column} from '../../scripts/lib/sheet'
+import {flatten, META_COLUMNS, overflow, staleReason, unflatten, unknownColumns, type Column} from '../../scripts/lib/sheet'
 import {changedFields, checkRow, idForSlug} from '../../scripts/lib/sheet-rules'
 
 type Json = Record<string, any> // eslint-disable-line @typescript-eslint/no-explicit-any -- free-form Sanity documents
@@ -133,6 +133,7 @@ export function menu() {
     .addItem('Check selected rows', 'serviceAreaPagesCheck')
     .addItem('Push selected rows to Sanity as drafts', 'serviceAreaPagesPush')
     .addSeparator()
+    .addItem('Load published pages from Sanity', 'serviceAreaPagesLoad')
     .addItem('Set my Sanity token', 'serviceAreaPagesSetToken')
     .addToUi()
 }
@@ -173,6 +174,70 @@ export function push() {
       sheet.getRange(c.rowNumber, col('_updatedAt')).setNumberFormat('@').setValue(updatedAt)
     }
     show('Drafts written', `Transaction ${result.transactionId}. ${ready.length} draft(s) in project ${CONFIG.projectId}:\n\n${ready.map((c) => `${c.id}: ${CONFIG.studioUrl}`).join('\n')}\n\nReview each one in the Studio and press Publish.`)
+  })
+}
+
+/**
+ * Fills the "Service area pages" tab from Sanity: every published page as it is live, one row each, headings
+ * from the schema. Replaces the tab's contents after a confirmation that lists any rows whose edits are not in
+ * Sanity yet (they would be lost). Reads Sanity only; never writes it. The tab is created if it doesn't exist.
+ */
+export function load() {
+  guarded(() => {
+    const spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+    const docs: Json[] = query('*[_type == "areaPage"] | order(area asc)', {})
+    const versions = new Map<string, {published?: Json; draft?: Json}>()
+    for (const doc of docs) {
+      const draft = doc._id.startsWith('drafts.')
+      const id = draft ? doc._id.slice('drafts.'.length) : doc._id
+      versions.set(id, {...versions.get(id), [draft ? 'draft' : 'published']: doc})
+    }
+    const headers = [...META_COLUMNS, ...COLUMNS.map((column) => column.path)]
+    const rows: string[][] = []
+    const lost: string[] = []
+    for (const [id, v] of versions) {
+      if (!v.published) continue
+      for (const problem of overflow(v.published, COLUMNS)) lost.push(`${id}: ${problem}`)
+      const updatedAt = [v.draft?._updatedAt, v.published._updatedAt].filter(Boolean).sort().pop() || ''
+      const status = v.draft ? 'published (unpublished draft changes not in this row)' : 'published'
+      const cells: Record<string, string> = {_id: id, _status: status, _updatedAt: updatedAt, ...flatten(v.published, COLUMNS)}
+      rows.push(headers.map((header) => cells[header] ?? ''))
+    }
+    if (lost.length) throw new Error(`Not loaded: these pages have more items than the sheet has columns, so data would be lost:\n${lost.join('\n')}`)
+
+    let sheet = spreadsheet.getSheetByName(CONFIG.tab)
+    // Rows edited in the sheet but not pushed would be overwritten: name them before asking.
+    const unpushed: string[] = []
+    if (sheet && sheet.getLastRow() > 1) {
+      const existing = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn()).getValues().map((r: unknown[]) => r.map(cellText))
+      const [head, ...body] = existing
+      if (!unknownColumns(head, COLUMNS).length) {
+        for (const values of body) {
+          const record = Object.fromEntries(head.map((h: string, i: number) => [h, values[i]]))
+          const {doc} = unflatten(record, COLUMNS)
+          const id = doc.slug?.current ? idForSlug(doc.slug.current) : ''
+          const current = id ? versions.get(id) : undefined
+          if (!id) { if (Object.values(record).some(Boolean)) unpushed.push('a row with no slug'); continue }
+          if (!current || changedFields(doc, current.draft || current.published).length) unpushed.push(id)
+        }
+      }
+    }
+    const answer = ui().alert(
+      'Load published pages from Sanity?',
+      `This replaces everything in the "${CONFIG.tab}" tab with the ${rows.length} published page(s) from Sanity project ${CONFIG.projectId}.` +
+        (unpushed.length ? `\n\nThese rows have content that is not in Sanity and will be LOST (push them first or copy them elsewhere):\n${unpushed.join('\n')}` : '\n\nNo unpushed edits in the tab.') +
+        '\n\nSanity is only read, never changed.',
+      ui().ButtonSet.YES_NO,
+    )
+    if (answer !== ui().Button.YES) return
+    if (!sheet) sheet = spreadsheet.insertSheet(CONFIG.tab)
+    sheet.clearContents()
+    // Plain text everywhere, so Sheets never turns ZIP codes, times or JSON into numbers or dates.
+    const range = sheet.getRange(1, 1, rows.length + 1, headers.length)
+    range.setNumberFormat('@')
+    range.setValues([headers, ...rows])
+    sheet.setFrozenRows(1)
+    show('Loaded', `${rows.length} published page(s) loaded into "${CONFIG.tab}", ${headers.length} columns. Row 1 holds the exact Sanity field names.`)
   })
 }
 
