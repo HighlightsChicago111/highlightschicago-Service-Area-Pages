@@ -1,7 +1,7 @@
 # Area content file (area.json): every field of the standard template
 
-One JSON file per area at `content/areas/<slug>/area.json`. `corepack pnpm run content:build` turns it into the Sanity
-documents; the app renders every area with the same template. Open `examples/west-loop.json` (Chicago) or
+One JSON file per area (`area.json`). The sheet's **Add a page from Claude** runs the website's build on it and turns it
+into the Sanity page; the app renders every area with the same template. Open `examples/west-loop.json` (Chicago) or
 `examples/evanston.json` (suburb) alongside this file and copy its shape.
 
 Anywhere a string can't be verified, write `[CONFIRM: what needs checking]` inside it. It shows as a yellow chip in
@@ -44,7 +44,7 @@ drafts, is hidden on the live site, and FAQ answers containing one are kept out 
 | `service_overrides` | no | | service catalogue lines |
 | `research_sources` | yes | every page used | Studio only |
 
-`content:build` checks all of this: unknown keys and invalid values are errors; any empty standard field, wrong
+The sheet's **Check only** (Add a page from Claude) checks all of this: unknown keys and invalid values are errors; any empty standard field, wrong
 count, missing photo or missing record is a warning. Hand over only when there are no errors and no template warnings.
 
 ---
