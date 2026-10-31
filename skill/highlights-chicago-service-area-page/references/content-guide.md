@@ -72,7 +72,7 @@ Do these before writing the content file. Note every source URL for `research_so
 
 ## Quality bar before handing over
 
-- `content:build` shows no errors and no "standard template" warnings: every field in `area-config.md` is filled, at
+- The sheet's **Check only** shows no errors and no "standard template" warnings: every field in `area-config.md` is filled, at
   the size the design expects.
 - Every district, building type, scope row and FAQ is specific to this area (would be wrong if pasted onto another
   area page).
