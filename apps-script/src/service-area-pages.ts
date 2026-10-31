@@ -9,6 +9,7 @@
  * The other tabs (service pages, brand service pages) belong to other projects and are never read or written.
  * Writes are drafts only, after a confirmation that names the Sanity project; nothing is ever published.
  */
+import {buildAreaDocuments} from '../../scripts/lib/area-transform'
 import {flatten, META_COLUMNS, overflow, staleReason, unflatten, unknownColumns, type Column} from '../../scripts/lib/sheet'
 import {changedFields, checkRow, idForSlug} from '../../scripts/lib/sheet-rules'
 
@@ -17,6 +18,9 @@ type Json = Record<string, any> // eslint-disable-line @typescript-eslint/no-exp
 // Injected at build time from the Sanity schema and this project's settings.
 declare const __COLUMNS__: Column[]
 declare const __CONFIG__: {projectId: string; dataset: string; apiVersion: string; tab: string; studioUrl: string}
+// The company facts and the Google review pack the build reads (content/company.json, content/highlights-reviews.csv).
+declare const __COMPANY__: Json
+declare const __REVIEWS__: Array<Record<string, string>>
 
 // Apps Script globals (no type package needed for the few calls used here).
 declare const SpreadsheetApp: any // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -89,14 +93,19 @@ function selection(): {sheet: any; headers: string[]; rows: Array<{rowNumber: nu
 }
 
 function checkRows(rows: Array<{rowNumber: number; record: Record<string, string>}>): RowCheck[] {
+  const ids = rows.map(({record}) => unflatten(record, COLUMNS).doc.slug?.current).filter(Boolean).map((slug: string) => idForSlug(slug))
+  const docs: Json[] = ids.length ? query('*[_id in $ids || _id in $drafts]', {ids, drafts: ids.map((id) => `drafts.${id}`)}) : []
+  return checkRowsAgainst(rows, docs)
+}
+
+/** The row checks against the given Sanity versions (published and draft) of the pages. */
+export function checkRowsAgainst(rows: Array<{rowNumber: number; record: Record<string, string>}>, docs: Json[]): RowCheck[] {
   const parsed = rows.map(({rowNumber, record}) => {
     const {doc, errors} = unflatten(record, COLUMNS)
     const slug: string = doc.slug?.current || ''
     const check = checkRow(doc, (record._id || '').trim())
     return {rowNumber, record, doc, slug, id: slug ? idForSlug(slug) : '', errors: [...errors, ...check.errors], warnings: check.warnings}
   })
-  const ids = parsed.filter((p) => p.id).map((p) => p.id)
-  const docs: Json[] = ids.length ? query('*[_id in $ids || _id in $drafts]', {ids, drafts: ids.map((id) => `drafts.${id}`)}) : []
   const seen = new Map<string, number>()
   return parsed.map((p) => {
     const published = docs.find((d) => d._id === p.id)
@@ -133,6 +142,9 @@ export function menu() {
   ui().createMenu(MENU)
     .addItem('Check selected rows', 'serviceAreaPagesCheck')
     .addItem('Push selected rows to Sanity as drafts', 'serviceAreaPagesPush')
+    .addSeparator()
+    .addItem('Add a page from Claude', 'serviceAreaPagesAdd')
+    .addItem('Get a page for Claude', 'serviceAreaPagesGet')
     .addSeparator()
     .addItem('Load published pages from Sanity', 'serviceAreaPagesLoad')
     .addItem('Set my Sanity token', 'serviceAreaPagesSetToken')
@@ -253,4 +265,190 @@ export function setToken() {
     PropertiesService.getUserProperties().setProperty(TOKEN_KEY, value)
     ui().alert(MENU, `Token saved and accepted by project ${CONFIG.projectId}.`, ui().ButtonSet.OK)
   })
+}
+
+// ---------- Add a page from Claude, Get a page for Claude ----------
+
+const COMPANY = __COMPANY__
+const REVIEWS = __REVIEWS__
+
+export type PreparedPage = {
+  errors: string[]; warnings: string[]; placeholders: string[]; id: string; slug: string
+  record: Record<string, string>; index: number; changes: string[]
+}
+
+/**
+ * Everything "Add a page from Claude" decides, without Google services. The input is either the skill's area.json
+ * (optionally wrapped as {"area": {...}, "permits": {...}}), which goes through the same build as
+ * `pnpm content:build`, or an areaPage document from "Get a page for Claude".
+ */
+export function prepareAreaPage(input: unknown, headers: string[], records: Array<Record<string, string>>, docs: Json[]): PreparedPage {
+  const result: PreparedPage = {errors: [], warnings: [], placeholders: [], id: '', slug: '', record: {}, index: -1, changes: []}
+  if (!input || typeof input !== 'object' || Array.isArray(input)) { result.errors.push('Expected one page: a JSON object { ... }.'); return result }
+  const given = input as Json
+  let page: Json | undefined
+  const fromBuild = !given._type
+  if (given._type === 'areaPage') page = given
+  else if (given._type) { result.errors.push(`This is a ${given._type}, not an areaPage (service area page).`); return result }
+  else {
+    const wrapped = given.area && typeof given.area === 'object'
+    const config: Json = wrapped ? given.area : given
+    const built = buildAreaDocuments({areas: [{folder: String(config.slug || ''), config, permits: wrapped ? given.permits : undefined}], company: COMPANY, reviews: REVIEWS})
+    result.errors.push(...built.errors)
+    result.warnings.push(...built.warnings)
+    result.placeholders.push(...built.placeholders)
+    page = built.documents.find((doc) => doc._type === 'areaPage')
+    if (!page) { if (!result.errors.length) result.errors.push('The build made no area page from this file.'); return result }
+  }
+
+  // Every value must survive the trip into cells and back.
+  result.errors.push(...overflow(page, COLUMNS))
+  const cells = flatten(page, COLUMNS)
+  const back = unflatten(cells, COLUMNS)
+  result.errors.push(...back.errors)
+  for (const field of changedFields(back.doc, page)) if (field !== '(new page)') result.errors.push(`${field}: not a field of the page, or a value the sheet cannot hold, so it would be lost`)
+
+  result.slug = back.doc.slug?.current || ''
+  const id = result.slug ? idForSlug(result.slug) : ''
+  const givenId = String(given._id || '').replace(/^drafts\./, '')
+  result.index = records.findIndex((row) => (givenId || id) && row._id === (givenId || id))
+  if (result.index < 0 && result.slug) result.index = records.findIndex((row) => row.slug === result.slug)
+  const existing: Record<string, string> = result.index >= 0 ? records[result.index] : {}
+  result.record = {
+    ...Object.fromEntries(headers.map((header) => [header, existing[header] || ''])),
+    ...cells,
+    _id: givenId || existing._id || '',
+    _status: existing._status || '',
+    _updatedAt: String(given._updatedAt || existing._updatedAt || ''),
+  }
+  const check = checkRowsAgainst([{rowNumber: result.index >= 0 ? result.index + 2 : records.length + 2, record: result.record}], docs)[0]
+  result.id = check.id
+  result.errors.push(...check.errors)
+  // A file from the skill was already checked by the build, which warns about the same gaps in its own words.
+  if (!fromBuild) {
+    result.warnings.push(...check.warnings)
+    result.placeholders.push(...(JSON.stringify(page).match(/\[CONFIRM:[^\]]*\]/g) || []))
+  }
+  result.changes = check.changes
+  return result
+}
+
+export function addReport(result: PreparedPage, write: boolean): string {
+  const name = `${result.id || 'new page'}${result.slug ? ` (/service-areas/${result.slug})` : ''}`
+  const lines: string[] = []
+  if (result.errors.length) lines.push(`Not ${write ? 'added' : 'ready'}: ${name}. Fix these:\n  - ${result.errors.join('\n  - ')}`)
+  else if (!write) lines.push(`Ready to add: ${name}. Nothing was written (Check only).`)
+  else lines.push(`Added: ${name}, ${result.index >= 0 ? `replacing row ${result.index + 2}` : 'as a new row at the bottom'} of the "${CONFIG.tab}" tab.`)
+  if (result.warnings.length) lines.push(`Warnings:\n  - ${result.warnings.join('\n  - ')}`)
+  if (result.placeholders.length) lines.push(`[CONFIRM] placeholders (${result.placeholders.length}), to answer before publishing:\n  - ${result.placeholders.join('\n  - ')}`)
+  if (!result.errors.length) {
+    lines.push(result.changes[0] === '(new page)' ? 'Sanity: a new page.' : result.changes.length ? `Sanity: ${result.changes.length} field(s) differ: ${result.changes.join(', ')}` : 'Sanity: the same as the page already there.')
+    if (write) lines.push(`Next: select the row, ${MENU} → Check selected rows, then Push selected rows to Sanity as drafts (project ${CONFIG.projectId}).`)
+  }
+  return lines.join('\n\n')
+}
+
+/** Called by the Add box with the pasted text. Returns the report; never throws to the browser. */
+export function addFromClaude(text: string, write: boolean): string {
+  try {
+    let input: unknown
+    try { input = JSON.parse(String(text || '').trim()) } catch {
+      return 'Not added: this is not valid JSON. Paste the whole file Claude wrote, from the first { to the last }.'
+    }
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(CONFIG.tab)
+    if (!sheet) return `Not added: there is no "${CONFIG.tab}" tab. Use Load published pages from Sanity first.`
+    const values: string[][] = sheet.getRange(1, 1, Math.max(sheet.getLastRow(), 1), Math.max(sheet.getLastColumn(), 1)).getValues().map((row: unknown[]) => row.map(cellText))
+    const [headers = [], ...body] = values
+    const unknown = unknownColumns(headers, COLUMNS)
+    if (unknown.length) return `Not added: these headings in the tab are not Sanity fields: ${unknown.join(', ')}. Fix them first.`
+    const records = body.map((cells) => Object.fromEntries(headers.map((header, i) => [header, cells[i] || ''])))
+    const given = input && typeof input === 'object' ? (input as Json) : {}
+    const slug = String(given.slug?.current || given.slug || given.area?.slug || '')
+    const id = slug ? idForSlug(slug) : ''
+    const docs: Json[] = id ? query('*[_id in $ids]', {ids: [id, `drafts.${id}`]}) : []
+    const result = prepareAreaPage(input, headers, records, docs)
+    const report = addReport(result, write)
+    if (!write || result.errors.length) return report
+    const stamp = new Date().toISOString().slice(0, 16).replace('T', ' ')
+    const record: Record<string, string> = {...result.record, _status: `added from Claude ${stamp} UTC, not pushed yet`}
+    const rowNumber = result.index >= 0 ? result.index + 2 : values.length + 1
+    sheet.getRange(rowNumber, 1, 1, headers.length).setNumberFormat('@').setValues([headers.map((header) => record[header] || '')])
+    return report
+  } catch (error) {
+    return `Not added: ${error instanceof Error ? error.message : String(error)}`
+  }
+}
+
+export function add() {
+  guarded(() => {
+    ui().showModalDialog(HtmlService.createHtmlOutput(pasteHtml('serviceAreaPagesAddFromClaude')).setWidth(900).setHeight(640), 'Add a page from Claude')
+  })
+}
+
+/** Shows a page as JSON for Claude: the selected row as written, or (given a slug) Sanity's latest version, a draft first. */
+export function get() {
+  guarded(() => {
+    const answer = ui().prompt('Get a page for Claude', 'Slug of a page in Sanity (its latest draft, or the published page), e.g. west-loop. Leave empty to use the selected row of this tab as written.', ui().ButtonSet.OK_CANCEL)
+    if (answer.getSelectedButton() !== ui().Button.OK) return
+    const slug = String(answer.getResponseText() || '').trim()
+    let doc: Json
+    let from: string
+    if (!slug) {
+      const {rows} = selection()
+      if (rows.length !== 1) throw new Error('Select one page row (or type a slug).')
+      const {rowNumber, record} = rows[0]
+      doc = {_id: record._id || '', _updatedAt: record._updatedAt || '', _type: 'areaPage', ...unflatten(record, COLUMNS).doc}
+      from = `row ${rowNumber} of the "${CONFIG.tab}" tab, as written in the sheet`
+    } else {
+      const id = idForSlug(slug)
+      const found: Json[] = query('*[_id in $ids]', {ids: [id, `drafts.${id}`]})
+      const draft = found.find((d) => d._id.startsWith('drafts.'))
+      const published = found.find((d) => !d._id.startsWith('drafts.'))
+      const latest = draft || published
+      if (!latest) throw new Error(`No area page with slug "${slug}" in Sanity.`)
+      doc = {...latest, _id: id}
+      delete doc._rev
+      delete doc._createdAt
+      from = draft ? `Sanity, the unpublished draft (${draft._updatedAt})` : `Sanity, the published page (${published?._updatedAt})`
+    }
+    const note = `From ${from}. Copy it to Claude; after editing, use "Add a page from Claude".`
+    ui().showModalDialog(HtmlService.createHtmlOutput(copyHtml(JSON.stringify(doc, null, 2), note)).setWidth(900).setHeight(640), 'Get a page for Claude')
+  })
+}
+
+const escapeHtml = (text: string) => text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+
+/** The paste box: a text area, a file picker, and Check only / Add buttons that call `serverFn(text, write)`. */
+function pasteHtml(serverFn: string): string {
+  return `<style>body{font:13px Arial,sans-serif;margin:0}textarea{width:100%;height:330px;font:12px monospace;box-sizing:border-box}pre{white-space:pre-wrap;font:12px/1.45 monospace;max-height:170px;overflow:auto;margin:8px 0 0}button{margin:8px 8px 0 0;padding:6px 12px}</style>
+<div>Paste the area.json Claude wrote (or a page from Get), or choose its .json file: <input type="file" id="file" accept=".json,application/json"></div>
+<textarea id="text" spellcheck="false" placeholder="{ ... }"></textarea>
+<div><button id="check">Check only</button><button id="add">Add to the sheet</button></div>
+<pre id="out"></pre>
+<script>
+var out = document.getElementById('out'), text = document.getElementById('text'), buttons = document.querySelectorAll('button')
+document.getElementById('file').onchange = function (event) { var file = event.target.files[0]; if (file) file.text().then(function (value) { text.value = value }) }
+function run(write) {
+  out.textContent = write ? 'Adding...' : 'Checking...'
+  buttons.forEach(function (b) { b.disabled = true })
+  var done = function (message) { out.textContent = message; buttons.forEach(function (b) { b.disabled = false }) }
+  google.script.run.withSuccessHandler(done).withFailureHandler(function (error) { done('Error: ' + error.message) }).${serverFn}(text.value, write)
+}
+document.getElementById('check').onclick = function () { run(false) }
+document.getElementById('add').onclick = function () { run(true) }
+</script>`
+}
+
+/** A read-only text area with a Copy button. */
+function copyHtml(json: string, note: string): string {
+  return `<style>body{font:13px Arial,sans-serif;margin:0}textarea{width:100%;height:520px;font:12px monospace;box-sizing:border-box}button{margin:8px 8px 0 0;padding:6px 12px}</style>
+<div>${escapeHtml(note)}</div>
+<textarea id="json" readonly spellcheck="false">${escapeHtml(json)}</textarea>
+<div><button id="copy">Copy</button><span id="done"></span></div>
+<script>
+document.getElementById('copy').onclick = function () {
+  var area = document.getElementById('json'); area.select(); document.execCommand('copy')
+  document.getElementById('done').textContent = 'Copied.'
+}
+</script>`
 }

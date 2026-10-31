@@ -11,6 +11,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import {build} from 'esbuild'
 import {areaPage} from '../src/sanity/schemaTypes/areaPage'
+import {parseCsv} from './lib/csv'
 import {sheetColumns, type SchemaField} from './lib/sheet'
 
 export const OUT_FILE = path.resolve('apps-script/ServiceAreaPages.gs')
@@ -18,6 +19,9 @@ export const OUT_FILE = path.resolve('apps-script/ServiceAreaPages.gs')
 export async function buildAppsScript(): Promise<string> {
   const columns = sheetColumns((areaPage as unknown as {fields: SchemaField[]}).fields)
   const config = JSON.parse(fs.readFileSync(path.resolve('apps-script/config.json'), 'utf8'))
+  // The build inputs a pasted area.json needs, the same files `pnpm content:build` reads.
+  const company = JSON.parse(fs.readFileSync(path.resolve('content/company.json'), 'utf8'))
+  const reviews = parseCsv(fs.readFileSync(path.resolve('content/highlights-reviews.csv'), 'utf8'))
   const result = await build({
     entryPoints: [path.resolve('apps-script/src/service-area-pages.ts')],
     bundle: true,
@@ -28,7 +32,7 @@ export async function buildAppsScript(): Promise<string> {
     platform: 'neutral',
     charset: 'utf8',
     legalComments: 'none',
-    define: {__COLUMNS__: JSON.stringify(columns), __CONFIG__: JSON.stringify(config)},
+    define: {__COLUMNS__: JSON.stringify(columns), __CONFIG__: JSON.stringify(config), __COMPANY__: JSON.stringify(company), __REVIEWS__: JSON.stringify(reviews)},
   })
   const header = [
     '// Service area pages -> Sanity (tab "Service area pages" only).',
@@ -45,6 +49,10 @@ export async function buildAppsScript(): Promise<string> {
     'function serviceAreaPagesPush() { ServiceAreaPagesLib.push() }',
     'function serviceAreaPagesSetToken() { ServiceAreaPagesLib.setToken() }',
     'function serviceAreaPagesLoad() { ServiceAreaPagesLib.load() }',
+    'function serviceAreaPagesAdd() { ServiceAreaPagesLib.add() }',
+    'function serviceAreaPagesGet() { ServiceAreaPagesLib.get() }',
+    '// Called from the Add box in the browser (google.script.run), so it returns the report.',
+    'function serviceAreaPagesAddFromClaude(text, write) { return ServiceAreaPagesLib.addFromClaude(text, write) }',
     '',
   ].join('\n')
   return header + result.outputFiles[0].text + entryPoints
