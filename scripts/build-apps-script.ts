@@ -44,6 +44,7 @@ export async function buildAppsScript(): Promise<string> {
     'function serviceAreaPagesCheck() { ServiceAreaPagesLib.check() }',
     'function serviceAreaPagesPush() { ServiceAreaPagesLib.push() }',
     'function serviceAreaPagesSetToken() { ServiceAreaPagesLib.setToken() }',
+    'function serviceAreaPagesLoad() { ServiceAreaPagesLib.load() }',
     '',
   ].join('\n')
   return header + result.outputFiles[0].text + entryPoints

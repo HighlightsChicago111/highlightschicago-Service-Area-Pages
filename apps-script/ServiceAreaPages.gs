@@ -26,6 +26,7 @@ var ServiceAreaPagesLib = (() => {
   var service_area_pages_exports = {};
   __export(service_area_pages_exports, {
     check: () => check,
+    load: () => load,
     menu: () => menu,
     push: () => push,
     setToken: () => setToken
@@ -38,6 +39,7 @@ var ServiceAreaPagesLib = (() => {
   var define_CONFIG_default = { projectId: "hzu8fe77", dataset: "production", apiVersion: "2025-02-19", tab: "Service area pages", studioUrl: "https://service-new-pages.vercel.app/service-areas/studio" };
 
   // scripts/lib/sheet.ts
+  var JSON_FIELDS = /* @__PURE__ */ new Set(["map", "permits"]);
   var META_COLUMNS = ["_id", "_status", "_updatedAt"];
   function segments(path) {
     const out = [];
@@ -48,6 +50,14 @@ var ServiceAreaPagesLib = (() => {
       for (const index of match[2].matchAll(/\[(\d+)\]/g)) out.push(Number(index[1]) - 1);
     }
     return out;
+  }
+  function getAt(doc, path) {
+    let value = doc;
+    for (const segment of segments(path)) {
+      if (value == null || typeof value !== "object") return void 0;
+      value = value[segment];
+    }
+    return value;
   }
   function setAt(doc, path, value) {
     const parts = segments(path);
@@ -60,6 +70,34 @@ var ServiceAreaPagesLib = (() => {
       if (node[segment] == null) node[segment] = typeof parts[i + 1] === "number" ? [] : {};
       node = node[segment];
     });
+  }
+  function cellOf(value, kind) {
+    if (value === void 0 || value === null || value === "") return "";
+    if (kind === "json") return JSON.stringify(value);
+    if (kind === "slug") return typeof value === "object" ? String(value.current ?? "") : String(value);
+    return String(value);
+  }
+  function overflow(doc, columns) {
+    const listPaths = /* @__PURE__ */ new Map();
+    for (const column of columns) {
+      const match = column.path.match(/^(.*?)\[(\d+)\](?!.*\[)/);
+      if (match) listPaths.set(match[1].replace(/\[\d+\]/g, "[]"), Math.max(listPaths.get(match[1].replace(/\[\d+\]/g, "[]")) || 0, Number(match[2])));
+    }
+    const problems = [];
+    const visit = (value, path) => {
+      if (Array.isArray(value)) {
+        const capacity = listPaths.get(path);
+        if (capacity !== void 0 && value.length > capacity) problems.push(`${path} (${value.length} items, ${capacity} columns)`);
+        value.forEach((item) => visit(item, `${path}[]`));
+      } else if (value && typeof value === "object") {
+        for (const [key, child] of Object.entries(value)) if (!key.startsWith("_") && !JSON_FIELDS.has(key)) visit(child, path ? `${path}.${key}` : key);
+      }
+    };
+    visit(doc, "");
+    return problems;
+  }
+  function flatten(doc, columns) {
+    return Object.fromEntries(columns.map((column) => [column.path, cellOf(getAt(doc, column.path), column.kind)]));
   }
   function tidy(value, name = "") {
     if (Array.isArray(value)) {
@@ -269,7 +307,7 @@ ${unknown.join("\n")}`);
     }
   }
   function menu() {
-    ui().createMenu(MENU).addItem("Check selected rows", "serviceAreaPagesCheck").addItem("Push selected rows to Sanity as drafts", "serviceAreaPagesPush").addSeparator().addItem("Set my Sanity token", "serviceAreaPagesSetToken").addToUi();
+    ui().createMenu(MENU).addItem("Check selected rows", "serviceAreaPagesCheck").addItem("Push selected rows to Sanity as drafts", "serviceAreaPagesPush").addSeparator().addItem("Load published pages from Sanity", "serviceAreaPagesLoad").addItem("Set my Sanity token", "serviceAreaPagesSetToken").addToUi();
   }
   function check() {
     guarded(() => {
@@ -323,6 +361,66 @@ ${ready.map((c) => `${c.id}: ${CONFIG.studioUrl}`).join("\n")}
 Review each one in the Studio and press Publish.`);
     });
   }
+  function load() {
+    guarded(() => {
+      const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+      const docs = query('*[_type == "areaPage"] | order(area asc)', {});
+      const versions = /* @__PURE__ */ new Map();
+      for (const doc of docs) {
+        const draft = doc._id.startsWith("drafts.");
+        const id = draft ? doc._id.slice("drafts.".length) : doc._id;
+        versions.set(id, { ...versions.get(id), [draft ? "draft" : "published"]: doc });
+      }
+      const headers = [...META_COLUMNS, ...COLUMNS.map((column) => column.path)];
+      const rows = [];
+      const lost = [];
+      for (const [id, v] of versions) {
+        if (!v.published) continue;
+        for (const problem of overflow(v.published, COLUMNS)) lost.push(`${id}: ${problem}`);
+        const updatedAt = [v.draft?._updatedAt, v.published._updatedAt].filter(Boolean).sort().pop() || "";
+        const status = v.draft ? "published (unpublished draft changes not in this row)" : "published";
+        const cells = { _id: id, _status: status, _updatedAt: updatedAt, ...flatten(v.published, COLUMNS) };
+        rows.push(headers.map((header) => cells[header] ?? ""));
+      }
+      if (lost.length) throw new Error(`Not loaded: these pages have more items than the sheet has columns, so data would be lost:
+${lost.join("\n")}`);
+      let sheet = spreadsheet.getSheetByName(CONFIG.tab);
+      const unpushed = [];
+      if (sheet && sheet.getLastRow() > 1) {
+        const existing = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn()).getValues().map((r) => r.map(cellText));
+        const [head, ...body] = existing;
+        if (!unknownColumns(head, COLUMNS).length) {
+          for (const values of body) {
+            const record = Object.fromEntries(head.map((h, i) => [h, values[i]]));
+            const { doc } = unflatten(record, COLUMNS);
+            const id = doc.slug?.current ? idForSlug(doc.slug.current) : "";
+            const current = id ? versions.get(id) : void 0;
+            if (!id) {
+              if (Object.values(record).some(Boolean)) unpushed.push("a row with no slug");
+              continue;
+            }
+            if (!current || changedFields(doc, current.draft || current.published).length) unpushed.push(id);
+          }
+        }
+      }
+      const answer = ui().alert(
+        "Load published pages from Sanity?",
+        `This replaces everything in the "${CONFIG.tab}" tab with the ${rows.length} published page(s) from Sanity project ${CONFIG.projectId}.` + (unpushed.length ? `
+
+These rows have content that is not in Sanity and will be LOST (push them first or copy them elsewhere):
+${unpushed.join("\n")}` : "\n\nNo unpushed edits in the tab.") + "\n\nSanity is only read, never changed.",
+        ui().ButtonSet.YES_NO
+      );
+      if (answer !== ui().Button.YES) return;
+      if (!sheet) sheet = spreadsheet.insertSheet(CONFIG.tab);
+      sheet.clearContents();
+      const range = sheet.getRange(1, 1, rows.length + 1, headers.length);
+      range.setNumberFormat("@");
+      range.setValues([headers, ...rows]);
+      sheet.setFrozenRows(1);
+      show("Loaded", `${rows.length} published page(s) loaded into "${CONFIG.tab}", ${headers.length} columns. Row 1 holds the exact Sanity field names.`);
+    });
+  }
   function setToken() {
     guarded(() => {
       const answer = ui().prompt("Set my Sanity token", `Paste an Editor token for Sanity project ${CONFIG.projectId} (sanity.io/manage → API → Tokens). It is stored for your Google account only and never shown again.`, ui().ButtonSet.OK_CANCEL);
@@ -342,3 +440,4 @@ function serviceAreaPagesMenu() { ServiceAreaPagesLib.menu() }
 function serviceAreaPagesCheck() { ServiceAreaPagesLib.check() }
 function serviceAreaPagesPush() { ServiceAreaPagesLib.push() }
 function serviceAreaPagesSetToken() { ServiceAreaPagesLib.setToken() }
+function serviceAreaPagesLoad() { ServiceAreaPagesLib.load() }

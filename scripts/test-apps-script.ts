@@ -19,12 +19,13 @@ const UPDATED = '2026-10-23T07:06:59Z'
 type World = {
   tab: string; grid: unknown[][]; selected: number[]; answer: 'YES' | 'NO'; token: string | null; sanityDocs: Json[]
   alerts: string[]; dialogs: string[]; mutations: Json[]; fetches: string[]; formats: string[]; rejectNewToken: boolean
+  tabExists: boolean; frozen: number
 }
 
 function makeWorld(over: Partial<World> = {}): World {
   const rows = pages.map((page) => headers.map((h) => (h === '_id' ? page._id : h === '_status' ? 'published' : h === '_updatedAt' ? UPDATED : flatten(page, columns)[h])))
   return {
-    tab: 'Service area pages', grid: [[...headers], ...rows], selected: [2], answer: 'YES', token: 'sk-test', alerts: [], dialogs: [], mutations: [], fetches: [], formats: [], rejectNewToken: false,
+    tab: 'Service area pages', grid: [[...headers], ...rows], selected: [2], answer: 'YES', token: 'sk-test', alerts: [], dialogs: [], mutations: [], fetches: [], formats: [], rejectNewToken: false, tabExists: true, frozen: 0,
     sanityDocs: pages.map((page) => ({...page, _updatedAt: UPDATED})), ...over,
   }
 }
@@ -33,12 +34,15 @@ function run(world: World, action: string) {
   const range = (row: number, col: number, nRows = 1, nCols = 1) => ({
     getValues: () => world.grid.slice(row - 1, row - 1 + nRows).map((r) => Array.from({length: nCols}, (_, i) => r[col - 1 + i] ?? '')),
     setValue: (value: unknown) => { world.grid[row - 1][col - 1] = value; return range(row, col) },
-    setNumberFormat: (format: string) => { world.formats.push(`${row}:${col}:${format}`); return range(row, col) },
+    setNumberFormat: (format: string) => { world.formats.push(nRows > 1 || nCols > 1 ? `${row}:${col}:${nRows}x${nCols}:${format}` : `${row}:${col}:${format}`); return range(row, col, nRows, nCols) },
+    setValues: (values: unknown[][]) => { values.forEach((cells, i) => { world.grid[row - 1 + i] = [...cells] }); return range(row, col, nRows, nCols) },
     getRow: () => row, getNumRows: () => nRows,
   })
   const sheet = {
     getName: () => world.tab,
-    getLastColumn: () => world.grid[0].length,
+    getLastColumn: () => world.grid[0]?.length || 0,
+    clearContents: () => { world.grid = [] },
+    setFrozenRows: (n: number) => { world.frozen = n },
     getLastRow: () => world.grid.length,
     getRange: range,
     getActiveRangeList: () => ({getRanges: () => world.selected.map((r) => range(r, 1))}),
@@ -65,13 +69,21 @@ function run(world: World, action: string) {
       }
       const params = Object.fromEntries(new URL(url).searchParams)
       if (params.query.startsWith('count(')) return respond(200, {result: world.sanityDocs.length})
+      if (!params.$ids) return respond(200, {result: world.sanityDocs})
       const ids: string[] = JSON.parse(params.$ids)
       const drafts: string[] = params.$drafts ? JSON.parse(params.$drafts) : []
       return respond(200, {result: world.sanityDocs.filter((d) => ids.includes(d._id) || drafts.includes(d._id))})
     },
   }
   const context = vm.createContext({
-    SpreadsheetApp: {getUi: () => ui, getActiveSheet: () => sheet},
+    SpreadsheetApp: {
+      getUi: () => ui,
+      getActiveSheet: () => sheet,
+      getActiveSpreadsheet: () => ({
+        getSheetByName: (name: string) => (name === 'Service area pages' && world.tabExists ? sheet : null),
+        insertSheet: (name: string) => { world.tab = name; world.tabExists = true; world.grid = []; return sheet },
+      }),
+    },
     UrlFetchApp,
     PropertiesService: {getUserProperties: () => ({getProperty: () => world.token, setProperty: (_k: string, v: string) => { world.token = v }})},
     HtmlService: {createHtmlOutput: (text: string) => ({text, setWidth() { return this }, setHeight() { return this }})},
@@ -193,6 +205,40 @@ async function main() {
     run(rejected, 'serviceAreaPagesSetToken')
     assert.equal(rejected.token, 'sk-old')
     assert.match(rejected.alerts.at(-1) || '', /refused the token/)
+  })
+  await check('load creates the tab and fills one row per published page, headed by the exact field names', () => {
+    const world = makeWorld({tab: 'Service pages', tabExists: false})
+    world.sanityDocs = [...world.sanityDocs, {...pages[0], _id: `drafts.${pages[0]._id}`, _updatedAt: '2026-10-30T00:00:00Z', heroLede: 'Draft only text'}]
+    run(world, 'serviceAreaPagesLoad')
+    assert.equal(world.tab, 'Service area pages')
+    assert.deepEqual(world.grid[0], headers)
+    assert.equal(world.grid.length, pages.length + 1)
+    assert.equal(world.frozen, 1)
+    assert.ok(world.formats.some((f) => f.endsWith(`:${pages.length + 1}x${headers.length}:@`)), 'whole range set to plain text')
+    const row = world.grid.find((r) => r[col('_id')] === pages[0]._id) as string[]
+    assert.equal(row[col('heroLede')], pages[0].heroLede, 'the row is the published page, not the draft')
+    assert.equal(row[col('_updatedAt')], '2026-10-30T00:00:00Z', 'the time is the latest edit, draft included')
+    assert.match(row[col('_status')], /unpublished draft changes/)
+    for (const page of pages) {
+      const cells = world.grid.find((r) => r[col('_id')] === page._id) as string[]
+      assert.deepEqual(cells.slice(META_COLUMNS.length), headers.slice(META_COLUMNS.length).map((h) => flatten(page, columns)[h]))
+    }
+    assert.equal(world.mutations.length, 0)
+    assert.ok(world.fetches.every((url) => url.includes('/data/query/')), 'Sanity is only read')
+  })
+  await check('load names rows with edits not in Sanity and changes nothing on No', () => {
+    const world = makeWorld({answer: 'NO'})
+    world.grid[1][col('heroLede')] = 'Edited in the sheet, not pushed.'
+    const before = JSON.stringify(world.grid)
+    run(world, 'serviceAreaPagesLoad')
+    assert.match(world.alerts[0], new RegExp(`will be LOST[\\s\\S]*${pages[0]._id}`))
+    assert.doesNotMatch(world.alerts[0], new RegExp(pages[1]._id))
+    assert.equal(JSON.stringify(world.grid), before)
+  })
+  await check('load with nothing unpushed says so', () => {
+    const world = makeWorld({answer: 'NO'})
+    run(world, 'serviceAreaPagesLoad')
+    assert.match(world.alerts[0], /No unpushed edits/)
   })
   console.log(`\n${passed} Apps Script checks passed`)
 }
