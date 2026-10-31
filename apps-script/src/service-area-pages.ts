@@ -55,8 +55,9 @@ function sanity(path: string, payload?: Json, withToken = token()): Json {
   return body
 }
 
+/** A GROQ query that sees drafts too: since API 2025-02-19 Sanity hides them unless perspective=raw. */
 const query = (groq: string, params: Json, withToken?: string) =>
-  sanity(`query/${CONFIG.dataset}?${Object.entries({query: groq, ...Object.fromEntries(Object.entries(params).map(([k, v]) => [`$${k}`, JSON.stringify(v)]))})
+  sanity(`query/${CONFIG.dataset}?${Object.entries({query: groq, perspective: 'raw', ...Object.fromEntries(Object.entries(params).map(([k, v]) => [`$${k}`, JSON.stringify(v)]))})
     .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(String(v))}`).join('&')}`, undefined, withToken).result
 
 /** A cell as text: dates become ISO times (Sheets turns imported times into dates), numbers keep every digit. */

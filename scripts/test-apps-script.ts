@@ -68,11 +68,13 @@ function run(world: World, action: string) {
         return respond(200, {transactionId: 'tx-1'})
       }
       const params = Object.fromEntries(new URL(url).searchParams)
-      if (params.query.startsWith('count(')) return respond(200, {result: world.sanityDocs.length})
-      if (!params.$ids) return respond(200, {result: world.sanityDocs})
+      // Like Sanity since API 2025-02-19: without perspective=raw, drafts are hidden.
+      const visible = world.sanityDocs.filter((d) => params.perspective === 'raw' || !d._id.startsWith('drafts.'))
+      if (params.query.startsWith('count(')) return respond(200, {result: visible.length})
+      if (!params.$ids) return respond(200, {result: visible})
       const ids: string[] = JSON.parse(params.$ids)
       const drafts: string[] = params.$drafts ? JSON.parse(params.$drafts) : []
-      return respond(200, {result: world.sanityDocs.filter((d) => ids.includes(d._id) || drafts.includes(d._id))})
+      return respond(200, {result: visible.filter((d) => ids.includes(d._id) || drafts.includes(d._id))})
     },
   }
   const context = vm.createContext({
