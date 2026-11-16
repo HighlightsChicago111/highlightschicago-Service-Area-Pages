@@ -67,10 +67,11 @@ export function SiteNavbar({current}: {current?: NavSection}) {
 
             <MegaMenu name="services" label="Services" open={menu === 'services'} current={current === 'services'} onToggle={toggleMenu}
               groups={SERVICE_GROUPS} allHref={ALL_SERVICES_HREF} allLabel="View all services" callPrompt="Not sure what you need?" />
+            {/* The phone number sits in the Services panel only: each menu link appears once in the page. */}
             <MegaMenu name="brands" label="Brands" open={menu === 'brands'} current={current === 'brands'} onToggle={toggleMenu}
-              groups={BRAND_GROUPS} allHref={ALL_BRANDS_HREF} allLabel="View all brands" callPrompt="Don't see your brand?" />
+              groups={BRAND_GROUPS} allHref={ALL_BRANDS_HREF} allLabel="View all brands" />
             <MegaMenu name="areas" label="Service Areas" open={menu === 'areas'} current={current === 'service-areas'} onToggle={toggleMenu}
-              groups={AREA_GROUPS} allHref={ALL_AREAS_HREF} allLabel="View all service areas" callPrompt="Not sure if we cover you?" />
+              groups={AREA_GROUPS} allHref={ALL_AREAS_HREF} allLabel="View all service areas" />
 
             <a className="snav-link" href={LINKS.reviews} aria-current={currentPage('reviews')}>Reviews</a>
 
@@ -113,7 +114,7 @@ export function SiteNavbar({current}: {current?: NavSection}) {
   )
 }
 
-/** A full-width dropdown: one column per group, then a "View all" link and the phone number. */
+/** A full-width dropdown: one column per group, then a "View all" link and, if `callPrompt` is given, the phone number. */
 function MegaMenu({name, label, open, current, onToggle, groups, allHref, allLabel, callPrompt}: {
   name: Menu
   label: string
@@ -123,7 +124,7 @@ function MegaMenu({name, label, open, current, onToggle, groups, allHref, allLab
   groups: NavGroup[]
   allHref: string
   allLabel: string
-  callPrompt: string
+  callPrompt?: string
 }) {
   return (
     <div className={`snav-dd${open ? ' is-open' : ''}`}>
@@ -144,10 +145,10 @@ function MegaMenu({name, label, open, current, onToggle, groups, allHref, allLab
             <span>{allLabel}</span>
             <Svg size={16} className="snav-accent"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></Svg>
           </a>
-          <p className="snav-foot-call">
+          {callPrompt && <p className="snav-foot-call">
             <span>{callPrompt}</span>
             <a className="snav-phone" href={PHONE_TEL}><PhoneIcon size={16} />{PHONE_DISPLAY}</a>
-          </p>
+          </p>}
         </div>
       </div>
     </div>
