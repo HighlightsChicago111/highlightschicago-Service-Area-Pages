@@ -1,10 +1,10 @@
 /**
  * The site-wide navbar menu. The same folder (site-navbar/) is copied into the services,
- * service-areas and reviews apps, and the Webflow "Site Navbar" component carries the same
- * items, so a menu change is made in all four places.
+ * service-areas, reviews and brands apps, and the Webflow "Site Navbar" component carries the
+ * same items, so a menu change is made in all five places.
  *
- * Every link is absolute: the three apps and Webflow sit under one domain behind the
- * Cloudflare Worker, so an absolute URL works the same from any of them.
+ * Every link is absolute: the four apps and Webflow sit under one domain behind the
+ * Cloudflare Workers, so an absolute URL works the same from any of them.
  */
 export const SITE = 'https://www.highlightschicago.com'
 
@@ -17,7 +17,9 @@ export type NavSection = 'home' | 'services' | 'brands' | 'service-areas' | 'rev
 
 export type NavLink = {label: string; href: string}
 
-export const SERVICE_GROUPS: Array<{name: string; links: NavLink[]}> = [
+export type NavGroup = {name: string; links: NavLink[]}
+
+export const SERVICE_GROUPS: NavGroup[] = [
   {
     name: 'Electrical',
     links: [
@@ -63,6 +65,60 @@ export const SERVICE_GROUPS: Array<{name: string; links: NavLink[]}> = [
 ]
 
 export const ALL_SERVICES_HREF = `${SITE}/services`
+
+const area = (label: string, slug: string): NavLink => ({label, href: `${SITE}/service-areas/${slug}`})
+
+/** Every live service area page, grouped by where it is. */
+export const AREA_GROUPS: NavGroup[] = [
+  {
+    name: 'Chicago · North Side',
+    links: [area('Lakeview', 'lakeview'), area('Lincoln Park', 'lincoln-park'), area('Lincoln Square', 'lincoln-square'), area('West Ridge', 'west-ridge')],
+  },
+  {
+    name: 'Chicago · Northwest Side',
+    links: [area('Avondale', 'avondale'), area('Edison Park', 'edison-park'), area('Logan Square', 'logan-square'), area('Portage Park', 'portage-park'), area('Sauganash', 'sauganash'), area('Wicker Park', 'wicker-park')],
+  },
+  {
+    name: 'Suburbs',
+    links: [area('Evanston', 'evanston'), area('Glenview', 'glenview'), area('Oak Park', 'oak-park'), area('Park Ridge', 'park-ridge'), area('Wilmette', 'wilmette')],
+  },
+]
+
+export const ALL_AREAS_HREF = `${SITE}/service-areas`
+
+/** Every live brand: its brand page, then its main service page. */
+export const BRAND_GROUPS: NavGroup[] = [
+  {
+    name: 'Kohler',
+    links: [
+      {label: 'Kohler services', href: `${SITE}/brands/kohler`},
+      {label: 'Generator installation & repair', href: `${SITE}/brands/kohler/kohler-generator-installation-repair`},
+    ],
+  },
+  {
+    name: 'Briggs & Stratton',
+    links: [
+      {label: 'Briggs & Stratton services', href: `${SITE}/brands/briggs-and-stratton`},
+      {label: 'Generator installation & repair', href: `${SITE}/brands/briggs-and-stratton/briggs-stratton-generator-installation-repair`},
+    ],
+  },
+  {
+    name: 'Tesla',
+    links: [
+      {label: 'Tesla services', href: `${SITE}/brands/tesla`},
+      {label: 'Powerwall home battery', href: `${SITE}/brands/tesla/tesla-home-battery-installation-repair`},
+    ],
+  },
+  {
+    name: 'Nest',
+    links: [
+      {label: 'Nest services', href: `${SITE}/brands/nest`},
+      {label: 'Doorbell & camera installation', href: `${SITE}/brands/nest/nest-video-doorbell-installation-repair`},
+    ],
+  },
+]
+
+export const ALL_BRANDS_HREF = `${SITE}/brands`
 
 export const RESOURCES: Array<NavLink & {description: string; icon: 'blog' | 'learn'}> = [
   {label: 'Blog', href: `${SITE}/blog`, description: 'Tips, news and project stories', icon: 'blog'},
