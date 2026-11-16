@@ -1035,3 +1035,34 @@
 .ds-form-card .ds-btn--primary:hover { background: #8cb52b; }
 .ds-form-card .ds-form-note { color: #ffffffb8; }
 .ds-form-card .ds-form-note .ds-icon { color: #9ec837; }
+
+/* --- Multi-select dropdown (quote form "What do you need?") ---------------
+   Looks like the form's other selects; opening it shows a checklist inside the form (in the page
+   flow, so a hero or card that clips its overflow can never cut the list off). */
+.ds-multi { position: relative; }
+.ds-multi-trigger { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; height: 46px; padding: 0 14px 0 16px; border: 1px solid var(--c-line-strong); border-radius: var(--r-md); background: #fff; color: var(--c-ink); font: 400 16px/1 var(--f-body); text-align: left; cursor: pointer; transition: border-color var(--ease); }
+.ds-multi-trigger:focus-visible, .ds-multi.is-open .ds-multi-trigger { outline: 2px solid var(--c-blue); outline-offset: 0; border-color: var(--c-blue); }
+.ds-multi-value { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ds-multi-value.is-placeholder { color: #8a8a8a; }
+.ds-multi-trigger .ds-icon { flex: none; transition: rotate var(--ease); }
+.ds-multi.is-open .ds-multi-trigger .ds-icon { rotate: 180deg; }
+.ds-multi-panel { margin-top: 2px; max-height: 300px; overflow-y: auto; overscroll-behavior: contain; padding: 6px; border: 1px solid var(--c-line-strong); border-radius: var(--r-md); background: #fff; }
+.ds-multi-option { position: relative; display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 8px; font-size: 15px; line-height: 20px; color: var(--c-ink); cursor: pointer; }
+.ds-multi-option:hover { background: var(--c-blue-tint); }
+.ds-multi-option input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.ds-multi-option:has(input:focus-visible) { outline: 2px solid var(--c-blue); outline-offset: -2px; }
+.ds-multi-box { flex: none; display: grid; place-items: center; width: 20px; height: 20px; border: 1.5px solid var(--c-line-strong); border-radius: 5px; }
+.ds-multi-option.is-selected .ds-multi-box { border-color: var(--c-blue); background: var(--c-blue); color: #fff; }
+.ds-multi-done { display: block; width: 100%; margin-top: 6px; padding: 11px; border: 0; border-radius: 8px; background: var(--c-blue); color: #fff; font: 600 14px/1 var(--f-body); cursor: pointer; }
+.ds-form-card .ds-multi-trigger { border-color: #ffffff33; border-radius: 10px; background: transparent; color: #fff; }
+.ds-form-card .ds-multi-value.is-placeholder { color: #ffffff8c; }
+.ds-form-card .ds-multi-trigger .ds-icon { color: #ffffffb3; }
+.ds-form-card .ds-multi-trigger:focus-visible, .ds-form-card .ds-multi.is-open .ds-multi-trigger { outline: 2px solid #9ec837b3; border-color: #9ec837; }
+.ds-form-card .ds-multi-panel { border-color: #ffffff26; background: #1d2a36; }
+.ds-form-card .ds-multi-option { color: #fff; }
+.ds-form-card .ds-multi-option:hover { background: #ffffff12; }
+.ds-form-card .ds-multi-option:has(input:focus-visible) { outline-color: #9ec837; }
+.ds-form-card .ds-multi-box { border-color: #ffffff59; }
+.ds-form-card .ds-multi-option.is-selected .ds-multi-box { border-color: #9ec837; background: #9ec837; color: #181515; }
+.ds-form-card .ds-multi-done { background: #9ec837; color: #181515; }
+.ds-form-card .ds-multi-done:hover { background: #8cb52b; }

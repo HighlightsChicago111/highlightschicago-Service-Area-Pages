@@ -11,7 +11,7 @@ export function ChoosingBlock({ctx}: {ctx: AreaCtx}) {
   const checks = choosingChecks(page, co)
   return (
     <div className="ds-wrap">
-      <AreaHead id="choosing-title" layout="stack" eyebrow={`How to choose · ${checks.length} checks`} title={`Who are the best electricians ${page.areaIn}? How to tell for yourself`} editorial={editorial}
+      <AreaHead id="choosing-title" layout="stack" title={`Who are the best electricians ${page.areaIn}? How to tell for yourself`} editorial={editorial}
         lede={`There isn't one best electrician for ${page.areaThe}. There's the right one for your building and your job. These checks separate them, and every one can be verified without taking anyone's word for it, including ours.`} />
       <div className="ar-checks" role="table" aria-label="How to check an electrician">
         <div className="ar-checks-head" role="row">

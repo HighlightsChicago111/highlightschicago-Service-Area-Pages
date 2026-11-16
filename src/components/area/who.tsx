@@ -10,7 +10,7 @@ export function WhoBlock({ctx}: {ctx: AreaCtx}) {
   const {page, co, editorial} = ctx
   return (
     <div className="ds-wrap">
-      <AreaHead id="who-title" eyebrow="About Highlights Chicago" title="Who you're actually calling" editorial={editorial}
+      <AreaHead id="who-title" title="Who you're actually calling" editorial={editorial}
         lede="A family-owned Chicago electrical contracting company on N Lincoln Ave, run by its founder, with salaried electricians in named crews. Nobody sells your phone number on, and nobody earns a commission on what you're quoted." />
       <div className="ds-cred">
         <PhotoFrame photo={PHOTOS.van} pill={false} className="ds-cred-photo">
