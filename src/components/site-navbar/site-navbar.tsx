@@ -2,10 +2,10 @@
 /* eslint-disable @next/next/no-img-element -- The logo is served from the Webflow CDN, shared by every app. */
 
 import {useEffect, useRef, useState, type ReactNode} from 'react'
-import {ALL_SERVICES_HREF, LINKS, LOGO_URL, PHONE_DISPLAY, PHONE_TEL, RESOURCES, SERVICE_GROUPS, type NavSection} from './nav-data'
+import {ALL_AREAS_HREF, ALL_BRANDS_HREF, ALL_SERVICES_HREF, AREA_GROUPS, BRAND_GROUPS, LINKS, LOGO_URL, PHONE_DISPLAY, PHONE_TEL, RESOURCES, SERVICE_GROUPS, type NavGroup, type NavSection} from './nav-data'
 // Styles: site-navbar.css, imported once by the root layout (tsx tests render this file and cannot load CSS).
 
-type Menu = 'services' | 'resources'
+type Menu = 'services' | 'brands' | 'areas' | 'resources'
 
 /**
  * The site-wide navbar (Paper design "Charming umbrella", Webflow component "Site Navbar").
@@ -65,34 +65,13 @@ export function SiteNavbar({current}: {current?: NavSection}) {
           <nav className="snav-links" aria-label="Primary navigation">
             <a className="snav-link" href={LINKS.home} aria-current={currentPage('home')}>Home</a>
 
-            <div className={`snav-dd${menu === 'services' ? ' is-open' : ''}`}>
-              <button type="button" className={`snav-dd-toggle${current === 'services' ? ' is-current' : ''}`} aria-expanded={menu === 'services'} aria-controls="snav-services" onClick={() => toggleMenu('services')}>
-                <span>Services</span><Chevron />
-              </button>
-              <div className="snav-panel" id="snav-services">
-                <div className="snav-cols">
-                  {SERVICE_GROUPS.map((group) => (
-                    <div className="snav-col" key={group.name}>
-                      <p className="snav-col-head">{group.name}</p>
-                      {group.links.map((link) => <a className="snav-plink" href={link.href} key={link.href}>{link.label}</a>)}
-                    </div>
-                  ))}
-                </div>
-                <div className="snav-foot">
-                  <a className="snav-foot-link" href={ALL_SERVICES_HREF}>
-                    <span>View all services</span>
-                    <Svg size={16} className="snav-accent"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></Svg>
-                  </a>
-                  <p className="snav-foot-call">
-                    <span>Not sure what you need?</span>
-                    <a className="snav-phone" href={PHONE_TEL}><PhoneIcon size={16} />{PHONE_DISPLAY}</a>
-                  </p>
-                </div>
-              </div>
-            </div>
+            <MegaMenu name="services" label="Services" open={menu === 'services'} current={current === 'services'} onToggle={toggleMenu}
+              groups={SERVICE_GROUPS} allHref={ALL_SERVICES_HREF} allLabel="View all services" callPrompt="Not sure what you need?" />
+            <MegaMenu name="brands" label="Brands" open={menu === 'brands'} current={current === 'brands'} onToggle={toggleMenu}
+              groups={BRAND_GROUPS} allHref={ALL_BRANDS_HREF} allLabel="View all brands" callPrompt="Don't see your brand?" />
+            <MegaMenu name="areas" label="Service Areas" open={menu === 'areas'} current={current === 'service-areas'} onToggle={toggleMenu}
+              groups={AREA_GROUPS} allHref={ALL_AREAS_HREF} allLabel="View all service areas" callPrompt="Not sure if we cover you?" />
 
-            <a className="snav-link" href={LINKS.brands} aria-current={currentPage('brands')}>Brands</a>
-            <a className="snav-link" href={LINKS.serviceAreas} aria-current={currentPage('service-areas')}>Service Areas</a>
             <a className="snav-link" href={LINKS.reviews} aria-current={currentPage('reviews')}>Reviews</a>
 
             <div className={`snav-dd snav-dd--small${menu === 'resources' ? ' is-open' : ''}`}>
@@ -131,6 +110,47 @@ export function SiteNavbar({current}: {current?: NavSection}) {
         </button>
       </div>
     </header>
+  )
+}
+
+/** A full-width dropdown: one column per group, then a "View all" link and the phone number. */
+function MegaMenu({name, label, open, current, onToggle, groups, allHref, allLabel, callPrompt}: {
+  name: Menu
+  label: string
+  open: boolean
+  current: boolean
+  onToggle: (name: Menu) => void
+  groups: NavGroup[]
+  allHref: string
+  allLabel: string
+  callPrompt: string
+}) {
+  return (
+    <div className={`snav-dd${open ? ' is-open' : ''}`}>
+      <button type="button" className={`snav-dd-toggle${current ? ' is-current' : ''}`} aria-expanded={open} aria-controls={`snav-${name}`} onClick={() => onToggle(name)}>
+        <span>{label}</span><Chevron />
+      </button>
+      <div className="snav-panel" id={`snav-${name}`}>
+        <div className="snav-cols">
+          {groups.map((group) => (
+            <div className="snav-col" key={group.name}>
+              <p className="snav-col-head">{group.name}</p>
+              {group.links.map((link) => <a className="snav-plink" href={link.href} key={link.href}>{link.label}</a>)}
+            </div>
+          ))}
+        </div>
+        <div className="snav-foot">
+          <a className="snav-foot-link" href={allHref}>
+            <span>{allLabel}</span>
+            <Svg size={16} className="snav-accent"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></Svg>
+          </a>
+          <p className="snav-foot-call">
+            <span>{callPrompt}</span>
+            <a className="snav-phone" href={PHONE_TEL}><PhoneIcon size={16} />{PHONE_DISPLAY}</a>
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }
 

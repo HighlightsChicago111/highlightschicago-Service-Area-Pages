@@ -154,6 +154,13 @@
   .snav .snav-dd:hover .snav-chev { transform: rotate(180deg); color: var(--snav-brand); }
 }
 
+/* Small laptops: with four dropdown chevrons the row is ~20px too wide at 992-1010px, so tighten
+   the spacing there only. */
+@media (min-width: 992px) and (max-width: 1099px) {
+  .snav .snav-links { gap: 14px; }
+  .snav .snav-link, .snav .snav-dd-toggle { gap: 4px; }
+}
+
 @media (min-width: 1280px) {
   .snav .snav-logo { width: 181px; height: 44px; }
   .snav .snav-links { gap: 30px; }
