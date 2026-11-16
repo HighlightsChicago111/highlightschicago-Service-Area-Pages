@@ -85,7 +85,7 @@ export function Copy({value, show, as: Tag = 'p', className}: {value?: string; s
   )
 }
 
-/** A photo in a 10px-radius frame; AI or stock images carry the "Illustrative photo" pill (playbook G.2). */
+/** A photo in a 10px-radius frame; a string `pill` shows as a caption pill. */
 export function PhotoFrame({photo, className, sizes, eager, pill = true, children}: {
   photo?: Photo
   className?: string
@@ -95,7 +95,7 @@ export function PhotoFrame({photo, className, sizes, eager, pill = true, childre
   children?: ReactNode
 }) {
   if (!photo) return null
-  const pillText = typeof pill === 'string' ? pill : photo.illustrative ? 'Illustrative photo' : ''
+  const pillText = typeof pill === 'string' ? pill : ''
   return (
     <figure className={className ? `ds-photo ${className}` : 'ds-photo'}>
       <img src={photo.src} alt={photo.alt} title={photo.label || photo.alt} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : undefined} decoding="async" sizes={sizes} style={focus(photo)} />
