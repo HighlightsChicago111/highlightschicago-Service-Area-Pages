@@ -10,7 +10,7 @@ export function ProcessBlock({ctx}: {ctx: AreaCtx}) {
   return (
     <>
       <div className="ds-wrap">
-        <AreaHead id="process-title" eyebrow={`The process · ${PROCESS_STEPS.length} steps`} title="What happens when you call" editorial={ctx.editorial}
+        <AreaHead id="process-title" title="What happens when you call" editorial={ctx.editorial}
           lede="From the first call to the closed permit, drawn from what reviewers describe." />
       </div>
       <ProcessTrack titles={PROCESS_STEPS.map((step) => step.title)}>

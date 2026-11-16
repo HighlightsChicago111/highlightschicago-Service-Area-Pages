@@ -20,7 +20,7 @@ export function ValueBlock({ctx}: {ctx: AreaCtx}) {
 
   return (
     <div className="ds-wrap">
-      <AreaHead id="value-title" eyebrow={`Google reviews · ${total} read`} title="What clients say about value" editorial={editorial} />
+      <AreaHead id="value-title" title="What clients say about value" editorial={editorial} />
       {tiles.length > 0 && <>
         <ul className="ar-stats">
           {tiles.map(([value, label]) => (

@@ -18,7 +18,7 @@ export function ScopeBlock({ctx}: {ctx: AreaCtx}) {
   const rows = page.scopeRows || []
   return (
     <div className="ds-wrap">
-      <AreaHead id="scope-title" layout="stack" eyebrow={`Scope & price · ${rows.length} factors`} title={`What changes the scope and price of electrical work in a ${page.area} building`} lede={page.scopeLede || DEFAULT_LEDE} editorial={editorial} />
+      <AreaHead id="scope-title" layout="stack" title={`What changes the scope and price of electrical work in a ${page.area} building`} lede={page.scopeLede || DEFAULT_LEDE} editorial={editorial} />
       <div className="ar-scope">
         <div className="ar-scope-rail">
           <div className="ar-price-card">

@@ -1,8 +1,9 @@
 'use client'
 
-import {useId, useState} from 'react'
+import {useId} from 'react'
 import {useLeadSubmit} from '@/lib/use-lead-submit'
 import {Icon} from './icon'
+import {MultiSelect} from './multi-select'
 
 const NEEDS = [
   "Something's not working (repair)", "It's urgent or unsafe", 'Lighting', 'Outlets, switches or appliance circuits', 'Panel or service',
@@ -21,11 +22,10 @@ function Select({id, name, label, options}: {id: string; name: string; label: st
   )
 }
 
-/** Area request form: two numbered groups, "What do you need?" as chips (design system v3 quote form). */
+/** Area request form: two numbered groups, "What do you need?" as a multi-select dropdown (design system v3 quote form). */
 export function AreaQuoteForm({area, areaIn, districts, buildings, addressPlaceholder, rulesQuestion}: Props) {
   const {status, submit} = useLeadSubmit()
   const id = useId()
-  const [need, setNeed] = useState(NEEDS[0])
 
   return (
     <aside className="ds-form-card ar-quote" id="quote" aria-labelledby={`${id}-title`}>
@@ -54,18 +54,7 @@ export function AreaQuoteForm({area, areaIn, districts, buildings, addressPlaceh
             <Select id={`${id}-district`} name="district" label={`Where ${areaIn}?`} options={[...districts, 'Not sure']} />
             <Select id={`${id}-building`} name="buildingType" label="Building type" options={[...buildings, 'Not sure']} />
           </div>
-          <div className="ds-field" role="radiogroup" aria-labelledby={`${id}-need`}>
-            <span className="ds-label" id={`${id}-need`}>What do you need?</span>
-            <div className="ds-chip-options">
-              {NEEDS.map((option) => (
-                <label className={`ds-chip-option${need === option ? ' is-selected' : ''}`} key={option}>
-                  <input type="radio" name="issue" value={option} checked={need === option} onChange={() => setNeed(option)} />
-                  {need === option && <Icon name="check" size={14} />}
-                  <span>{option}</span>
-                </label>
-              ))}
-            </div>
-          </div>
+          <MultiSelect name="issue" label="What do you need?" options={NEEDS} />
           <Select id={`${id}-rules`} name="buildingRules" label={rulesQuestion || 'Does your building need a certificate of insurance or management approval?'} options={RULES} />
         </div>
 

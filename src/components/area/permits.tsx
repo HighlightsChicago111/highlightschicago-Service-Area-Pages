@@ -21,7 +21,7 @@ export function PermitsBlock({ctx}: {ctx: AreaCtx}) {
 
   return (
     <div className="ds-wrap">
-      <AreaHead id="permit-record-title" layout="stack" eyebrow={chicago || permits ? 'Permit record · City of Chicago data' : `Permit record · ${city}`} title={chicago || permits ? `What the ${page.area} permit record shows` : `Permits and our record ${page.areaIn}`} lede={lede} editorial={editorial} />
+      <AreaHead id="permit-record-title" layout="stack" title={chicago || permits ? `What the ${page.area} permit record shows` : `Permits and our record ${page.areaIn}`} lede={lede} editorial={editorial} />
       {!chicago && !permits && <div className="ar-source">
         <p className="ar-source-label"><IconBadge icon="info" tone="blue" size={32} />Data source</p>
         <p>Our Chicago record below is City of Chicago building permit data naming Highlights, shown by block, never by address. {city} permits are kept by the {kind} of {city} and are not published as open data, so any {city} count comes from the {kind}&apos;s own contractor register.</p>

@@ -26,7 +26,7 @@ import {WhoBlock} from './who'
 function ServicesBlock({ctx}: {ctx: AreaCtx}) {
   return (
     <div className="ds-wrap">
-      <AreaHead id="services-title" eyebrow={`All services · ${ctx.totalServices} in ${ctx.cats.length} groups`} title={`Every electrical service we offer ${ctx.page.areaIn}`} editorial={ctx.editorial} />
+      <AreaHead id="services-title" title={`Every electrical service we offer ${ctx.page.areaIn}`} editorial={ctx.editorial} />
       <ServicesTabs cats={ctx.cats} />
     </div>
   )

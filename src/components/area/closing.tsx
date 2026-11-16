@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element -- Full-bleed band photo and the white logo from /public. */
-import {Button, Eyebrow, GoogleG, IconBadge, Stars} from '@/components/ds/atoms'
+import {Button, GoogleG, IconBadge, Stars} from '@/components/ds/atoms'
 import {Icon, pickIcon} from '@/components/ds/icon'
 import {DEFAULT_READY} from '@/lib/area/copy'
 import {credentials, LOGO_WHITE, pad2, PHOTOS} from '@/lib/ds'
@@ -23,7 +23,6 @@ export function ClosingBlock({ctx}: {ctx: AreaCtx}) {
       <div className="ds-closing-scrim" aria-hidden="true" />
       <div className="ds-wrap ds-closing">
         <img className="ds-closing-logo" src={LOGO_WHITE} alt="Highlights Chicago Electrical Services" width={170} height={50} loading="lazy" />
-        <Eyebrow>Your next step</Eyebrow>
         <h2 className="ds-h1 ds-closing-title" id="closing-title">Planning electrical work {page.areaIn}?</h2>
         <p className="ds-lede">A free walkthrough with the founder, a written scope, and a registered contractor who pulls the permit if the work needs one.</p>
         <div className="ds-cta-row">

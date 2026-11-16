@@ -11,7 +11,7 @@ export function NearbyBlock({ctx}: {ctx: AreaCtx}) {
   const links = new Map(areas.filter((item) => item.slug !== page.slug).map((item) => [item.area.toLowerCase(), item.slug]))
   return (
     <div className="ds-wrap">
-      <AreaHead id="nearby-title" eyebrow={`Nearby · ${nearby.length} neighbourhoods`} title={`Neighbourhoods next to ${page.areaThe}`} editorial={editorial}
+      <AreaHead id="nearby-title" title={`Neighbourhoods next to ${page.areaThe}`} editorial={editorial}
         lede={`${isChicago(page) ? 'We cover every Chicago neighbourhood.' : 'We work across Chicago and the nearby suburbs.'} These border ${page.areaThe}, and the building stock changes as soon as you cross into them.`} />
       <ul className="ar-nearby">
         {nearby.map((item, index) => {

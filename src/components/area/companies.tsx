@@ -11,7 +11,7 @@ export function CompaniesBlock({ctx}: {ctx: AreaCtx}) {
   const {page, editorial} = ctx
   return (
     <div className="ds-wrap">
-      <AreaHead id="companies-title" eyebrow={`${COMPANY_KINDS.length} kinds of electrical company`} title={`The kinds of electrical company ${page.areaIn}, and when each one fits`} editorial={editorial}
+      <AreaHead id="companies-title" title={`The kinds of electrical company ${page.areaIn}, and when each one fits`} editorial={editorial}
         lede="Service businesses can't be compared on features. They differ in how they're run, and that decides who answers the phone and how the price is set." />
       <Carousel className="ar-kinds" headClassName="ar-carousel-top" label="Kinds of electrical company" head={<span className="ar-swipe">Swipe to compare</span>}>
         {COMPANY_KINDS.map((kind, index) => (

@@ -12,7 +12,7 @@ export function BuildingsBlock({ctx}: {ctx: AreaCtx}) {
   const buildings = page.buildings || []
   return (
     <div className="ds-wrap">
-      <AreaHead id="buildings-title" eyebrow={`Start here · ${buildings.length} building types`} title="Your building type, and what it means for electrical work" editorial={editorial}
+      <AreaHead id="buildings-title" title="Your building type, and what it means for electrical work" editorial={editorial}
         lede="Find your building and jump straight to the services people in it ask for most." />
       <PhoneAccordion className="ar-buildings" items={buildings.map((building, index) => ({
         key: building._key || String(index),

@@ -1,4 +1,4 @@
-import {Button, ConfirmNotes, Eyebrow, GoogleG, IconBadge, PhotoFrame, Stars} from '@/components/ds/atoms'
+import {Button, ConfirmNotes, GoogleG, IconBadge, PhotoFrame, Stars} from '@/components/ds/atoms'
 import {Icon} from '@/components/ds/icon'
 import {PHOTOS, splitConfirm} from '@/lib/ds'
 import type {AreaCtx} from './types'
@@ -9,7 +9,6 @@ export function FaqBlock({ctx}: {ctx: AreaCtx}) {
   return (
     <div className="ds-wrap ds-faq">
       <aside className="ds-faq-rail">
-        <Eyebrow>FAQs · {faqs.length} questions</Eyebrow>
         <h2 className="ds-h2 ar-faq-title" id="faq-title">Electricians {page.areaIn}: questions</h2>
         <PhotoFrame photo={PHOTOS.techTesting} pill={false} className="ds-faq-photo">
           <div className="ds-faq-photo-body"><p className="ds-h5">{"Didn't find your question?"}</p><Button href={tel} tone="light" icon="phone" size="m">Call {co.phoneDisplay}</Button></div>
