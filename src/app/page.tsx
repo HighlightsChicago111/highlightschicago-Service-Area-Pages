@@ -9,7 +9,7 @@ import {cardImageFor, cardRegionFor, cardSummaryFor} from '@/lib/area/card-photo
 import {isChicago} from '@/lib/area/copy'
 import {getAreaCards, getAreaSettings} from '@/lib/content'
 import {PHOTOS, telHref} from '@/lib/ds'
-import {BASE_PATH, PUBLIC_SITE_ORIGIN, absoluteUrl} from '@/lib/urls'
+import {BASE_PATH, PUBLIC_SITE_ORIGIN, absoluteUrl, areaPageUrl} from '@/lib/urls'
 import type {AreaCard} from '@/types/area'
 import {ReviewRatings} from '@/components/ds/review-ratings'
 
@@ -28,6 +28,26 @@ export const metadata: Metadata = {
 }
 
 const PIN = <svg className="ar-cc-pin" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" strokeWidth="2" /></svg>
+
+const H1 = 'Service areas across Chicago and nearby suburbs'
+
+/** CollectionPage listing the area pages this index renders, plus the breadcrumb. Built from the same cards as the grid. */
+function IndexJsonLd({areas}: {areas: AreaCard[]}) {
+  const url = `${PUBLIC_SITE_ORIGIN}${BASE_PATH}`
+  const graph = [
+    {
+      '@type': 'CollectionPage', '@id': `${url}#webpage`, url, name: H1, description: DESCRIPTION,
+      about: {'@id': `${PUBLIC_SITE_ORIGIN}/#business`}, isPartOf: {'@id': `${PUBLIC_SITE_ORIGIN}/#website`},
+      mainEntity: {'@type': 'ItemList', numberOfItems: areas.length, itemListElement: areas.map((card, i) => ({'@type': 'ListItem', position: i + 1, name: card.area, url: areaPageUrl(card.slug)}))},
+    },
+    {'@type': 'BreadcrumbList', itemListElement: [
+      {'@type': 'ListItem', position: 1, name: 'Home', item: `${PUBLIC_SITE_ORIGIN}/`},
+      {'@type': 'ListItem', position: 2, name: 'Service areas', item: url},
+    ]},
+  ]
+  const json = JSON.stringify({'@context': 'https://schema.org', '@graph': graph}).replace(/</g, '\\u003c')
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{__html: json}} />
+}
 
 const regionOf = (card: AreaCard) => cardRegionFor(card) || (isChicago(card) ? 'Chicago' : `${card.city}, IL`)
 
@@ -54,7 +74,7 @@ export default async function ServiceAreasPage() {
               <div>
                 <p className="ar-ch-kicker">Licensed Chicago electricians</p>
                 <ReviewRatings googleRating={co.googleRating} googleCount={co.googleReviews} />
-                <h1 id="areas-hero-title">Service areas across Chicago and nearby suburbs</h1>
+                <h1 id="areas-hero-title">{H1}</h1>
                 <p className="ar-ch-lede">From our shop at {co.address?.street || '5766 N Lincoln Ave'}, Highlights Chicago electricians work across the North and Northwest Sides and the suburbs around the city. Find your area below.</p>
                 <div className="ar-ch-actions">
                   <a href="#service-areas-title">See service areas</a>
@@ -114,6 +134,7 @@ export default async function ServiceAreasPage() {
         </section>
       </main>
       <SiteFooter co={co} tel={tel} />
+      <IndexJsonLd areas={cards} />
     </div>
   )
 }
