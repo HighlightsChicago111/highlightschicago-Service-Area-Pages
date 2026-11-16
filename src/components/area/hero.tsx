@@ -61,7 +61,6 @@ export function AreaHero({ctx}: {ctx: AreaCtx}) {
           rulesQuestion={page.formRulesQuestion}
         />
       </div>
-      {hero.illustrative && <span className="ds-pill-caption ds-hero-pill">Illustrative photo</span>}
     </header>
   )
 }
